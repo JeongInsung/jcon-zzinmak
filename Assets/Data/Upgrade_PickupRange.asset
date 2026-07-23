@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b9dab1f643625948aede7513ea67a76, type: 3}
+  m_Name: Upgrade_PickupRange
+  m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Data.UpgradeData
+  upgradeName: "\uBCF4\uAE09 \uBC94\uC704 \uAC15\uD654"
+  description: "\uACBD\uD5D8\uCE58 \uD68D\uB4DD \uBC94\uC704\uAC00 20% \uC99D\uAC00\uD569\uB2C8\uB2E4."
+  icon: {fileID: 21300000, guid: 3a203d8d2412e9d4c9d0ed1662b4b7e3, type: 3}
+  type: 4
+  value: 0.2

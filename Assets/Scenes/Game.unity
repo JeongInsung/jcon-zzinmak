@@ -561,7 +561,10 @@ MonoBehaviour:
   minSpawnInterval: 0.2
   intervalDecreasePerMinute: 0.15
   healthGrowthPerMinute: 0.15
+<<<<<<< Updated upstream
   spawnTimer: 0
+=======
+>>>>>>> Stashed changes
 --- !u!4 &173704470
 Transform:
   m_ObjectHideFlags: 0
@@ -851,6 +854,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 251112193}
   m_CullTransparentMesh: 1
+<<<<<<< Updated upstream
 --- !u!1 &432642182
 GameObject:
   m_ObjectHideFlags: 0
@@ -875,6 +879,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+=======
+>>>>>>> Stashed changes
 --- !u!1 &487067717
 GameObject:
   m_ObjectHideFlags: 0
@@ -1202,7 +1208,10 @@ MonoBehaviour:
   background: {fileID: 946680241}
   handle: {fileID: 1300638709}
   handleRange: 90
+<<<<<<< Updated upstream
   <Direction>k__BackingField: {x: 0, y: 0}
+=======
+>>>>>>> Stashed changes
 --- !u!114 &946680243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2527,7 +2536,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 736f18ae75889cb489b4d63a390280c4, type: 2}
   - {fileID: 11400000, guid: d48fff01cc574064583e350c37295564, type: 2}
   - {fileID: 11400000, guid: 0fe31b16dd1b0c84eb072f6afbf83237, type: 2}
+<<<<<<< Updated upstream
   pendingLevelUps: 0
+=======
+>>>>>>> Stashed changes
 --- !u!4 &1505257509
 Transform:
   m_ObjectHideFlags: 0
@@ -2936,9 +2948,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b6b6dfafc9275f408e53d61d9aebdac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Core.GameManager
+<<<<<<< Updated upstream
   <State>k__BackingField: 0
   <ElapsedTime>k__BackingField: 0
   <KillCount>k__BackingField: 0
+=======
+>>>>>>> Stashed changes
 --- !u!4 &1821478528
 Transform:
   m_ObjectHideFlags: 0
@@ -3144,9 +3159,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.UI.LevelUpUI
   cards:
+<<<<<<< Updated upstream
   - {button: {fileID: 1127111426}, icon: {fileID: 572591350}, nameText: {fileID: 81903125}, descText: {fileID: 1204513183}}
   - {button: {fileID: 1464259855}, icon: {fileID: 528952369}, nameText: {fileID: 1050656451}, descText: {fileID: 218342341}}
   - {button: {fileID: 1339095843}, icon: {fileID: 1746482179}, nameText: {fileID: 251112195}, descText: {fileID: 1578336346}}
+=======
+  - button: {fileID: 1127111426}
+    icon: {fileID: 572591350}
+    nameText: {fileID: 81903125}
+    descText: {fileID: 1204513183}
+  - button: {fileID: 1464259855}
+    icon: {fileID: 528952369}
+    nameText: {fileID: 1050656451}
+    descText: {fileID: 218342341}
+  - button: {fileID: 1339095843}
+    icon: {fileID: 1746482179}
+    nameText: {fileID: 251112195}
+    descText: {fileID: 1578336346}
+>>>>>>> Stashed changes
 --- !u!114 &2093062458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3250,6 +3280,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d9f21753e59d33489598a078cdc95a5, type: 3}
+<<<<<<< Updated upstream
 --- !u!4 &2106055863474040636
 Transform:
   m_ObjectHideFlags: 0
@@ -3272,11 +3303,25 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 2106055863474040635}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 432642182}
+=======
+--- !u!4 &2106055863474040636 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6038430725285657589, guid: 0d9f21753e59d33489598a078cdc95a5, type: 3}
+  m_PrefabInstance: {fileID: 2106055863474040635}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2106055863474040637 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7845027563408176725, guid: 0d9f21753e59d33489598a078cdc95a5, type: 3}
+  m_PrefabInstance: {fileID: 2106055863474040635}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+>>>>>>> Stashed changes
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4867574c48906ed489798b126b0ae122, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Player.PlayerHealth
+<<<<<<< Updated upstream
   invulnerabilityDuration: 0.5
   stats: {fileID: 0}
   currentHealth: 0
@@ -3288,11 +3333,20 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 2106055863474040635}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 432642182}
+=======
+--- !u!114 &2106055863474040638 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1486149998153221582, guid: 0d9f21753e59d33489598a078cdc95a5, type: 3}
+  m_PrefabInstance: {fileID: 2106055863474040635}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+>>>>>>> Stashed changes
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 106aecbbc795f5340a87793d4fcf75d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Player.PlayerStats
+<<<<<<< Updated upstream
   maxHealth: 100
   moveSpeed: 4
   pickupRange: 1.5
@@ -3468,6 +3522,8 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
+=======
+>>>>>>> Stashed changes
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

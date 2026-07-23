@@ -17,10 +17,11 @@
 | `Canvas/HUD/TopBar/TimerText` | TMP_Text | 생존 경과 시간(기록용, mm:ss) | `HUDController.timerText` |
 | `Canvas/HUD/TopBar/KillCountText` | TMP_Text | 처치 수 | `HUDController.killCountText` |
 | `Canvas/HUD/PlayerHealthBar` | Image (Filled, Horizontal) | 플레이어 체력 | `HUDController.healthBarFill` |
-| `Canvas/HUD/Joystick` | Image(Background) + 자식 Image(Handle) | 이동 입력 | `VirtualJoystick` 부착(Background에), `handle` 필드로 Handle 참조 |
+| `Canvas/HUD/JoystickTouchArea` | Image(투명, 화면 전체 스트레치, raycastTarget=true) | **플로팅 조이스틱 터치 감지 영역** | `VirtualJoystick` 부착 |
+| `Canvas/HUD/Joystick` | Image(Background, 기본 비활성) + 자식 Image(Handle) | 조이스틱 비주얼(터치 시 해당 위치로 이동해 나타남) | `VirtualJoystick.background` / `.handle` 참조 대상 |
 
 - `HUDController`는 씬의 `HUD` 루트 오브젝트에 부착하고 위 5개 필드를 인스펙터에서 드래그 연결.
-- `VirtualJoystick`은 `Joystick`(Background) 오브젝트에 부착, `Handle` 자식 오브젝트를 필드로 연결. `PlayerController`는 `VirtualJoystick.Direction` 프로퍼티를 참조.
+- **조이스틱은 플로팅 방식.** `VirtualJoystick`은 화면 전체를 덮는 `JoystickTouchArea`(투명 Image)에 부착되어 터치를 감지하고, `background`/`handle` 필드로 `Joystick`/`Handle` 비주얼 오브젝트를 참조한다. 터치 시(`OnPointerDown`) `Joystick`이 터치 지점으로 이동하며 활성화되고, 손을 떼면(`OnPointerUp`) 다시 비활성화되어 사라진다. `Joystick`/`Handle`의 Image는 `raycastTarget=false`(터치 감지는 `JoystickTouchArea`가 전담). `PlayerController`는 `VirtualJoystick.Direction` 프로퍼티를 참조.
 
 ## ② 레벨업 카드 선택창 (`Canvas/LevelUpPanel`, 기본 비활성)
 

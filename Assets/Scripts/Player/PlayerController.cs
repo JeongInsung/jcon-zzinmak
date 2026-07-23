@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Zzinmak.Combat;
 using Zzinmak.UI;
 
 namespace Zzinmak.Player
@@ -12,12 +13,18 @@ namespace Zzinmak.Player
 
         private Rigidbody2D body;
         private PlayerStats stats;
+        private WeaponController weapon;
+        private Animator animator;
+        private SpriteRenderer spriteRenderer;
         private Vector2 moveInput;
 
         private void Awake()
         {
             body = GetComponent<Rigidbody2D>();
             stats = GetComponent<PlayerStats>();
+            weapon = GetComponent<WeaponController>();
+            animator = GetComponent<Animator>();
+            spriteRenderer = GetComponent<SpriteRenderer>();
         }
 
         private void Update()
@@ -31,10 +38,25 @@ namespace Zzinmak.Player
 
             moveInput = input;
 
-            if (moveInput.sqrMagnitude > 0.01f)
+            if (animator != null)
             {
-                float angle = Mathf.Atan2(moveInput.x, moveInput.y) * Mathf.Rad2Deg;
-                transform.rotation = Quaternion.Euler(0f, 0f, -angle);
+                animator.speed = moveInput.sqrMagnitude > 0.01f ? 1f : 0f;
+            }
+
+            Vector2 facing = Vector2.zero;
+            if (weapon != null && weapon.CurrentTarget != null)
+            {
+                facing = (Vector2)weapon.CurrentTarget.position - (Vector2)transform.position;
+            }
+            else if (moveInput.sqrMagnitude > 0.01f)
+            {
+                facing = moveInput;
+            }
+
+            // Sprite is only ever flipped left/right, never rotated up/down.
+            if (spriteRenderer != null && Mathf.Abs(facing.x) > 0.01f)
+            {
+                spriteRenderer.flipX = facing.x < 0f;
             }
         }
 

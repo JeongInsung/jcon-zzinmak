@@ -14,6 +14,8 @@ namespace Zzinmak.Combat
         private readonly List<WeaponRuntime> activeWeapons = new List<WeaponRuntime>();
         private PlayerStats stats;
 
+        public Transform CurrentTarget { get; private set; }
+
         private class WeaponRuntime
         {
             public WeaponData data;
@@ -32,6 +34,9 @@ namespace Zzinmak.Combat
 
         private void Update()
         {
+            float searchRange = activeWeapons.Count > 0 ? activeWeapons[0].data.range : 0f;
+            CurrentTarget = FindNearestEnemy(searchRange);
+
             foreach (var weapon in activeWeapons)
             {
                 weapon.cooldown -= Time.deltaTime * stats.attackSpeedMultiplier;

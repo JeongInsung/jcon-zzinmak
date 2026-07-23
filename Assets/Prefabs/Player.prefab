@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 8650986238601998428}
   - component: {fileID: 4177328223751927191}
   - component: {fileID: 2100614926374738189}
+  - component: {fileID: 371071415049920593}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -88,7 +89,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: a289414f270905c4b9aa73badea228b1, type: 3}
+  m_Sprite: {fileID: -8108986508362353340, guid: 9a09cd82076d90d47abda8f17f000aac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -217,6 +218,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Player.PlayerController
   joystick: {fileID: 0}
+  turnSpeed: 720
+  spriteForwardOffset: 0
 --- !u!114 &2100614926374738189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232,3 +235,25 @@ MonoBehaviour:
   muzzle: {fileID: 0}
   startingWeapons:
   - {fileID: 11400000, guid: 8ed24e780c57e0f428bdf71843db9ad9, type: 2}
+--- !u!95 &371071415049920593
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6226427610097736337}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f16ba8f5a7decc94ebef325a082e7fad, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

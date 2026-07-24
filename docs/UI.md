@@ -34,10 +34,28 @@
 - `LevelUpUI`는 `LevelUpPanel` 루트에 부착. Card1~3 각각의 `Button`, `Icon`, `NameText`, `DescText` 참조를 배열/개별 필드로 인스펙터 연결.
 - 카드 클릭 시 `LevelUpUI`가 인덱스를 `LevelUpManager.SelectUpgrade(index)`로 전달 → 패널 비활성화 + 게임 재개.
 
+## ③ 게임오버 결과창 (`Canvas/GameOverPanel`, 기본 비활성)
+
+상세 기획은 `Docs/기획서/게임오버결과창.md` 참고.
+
+| 오브젝트 경로 | 컴포넌트 | 역할 |
+|---|---|---|
+| `Canvas/GameOverPanel` | Image (Dim 배경, 반투명 검정 a=0.75) | 패널 루트, 평소 `SetActive(false)` |
+| `Canvas/GameOverPanel/Panel` | Image (카드 배경, 800x900) | 결과 카드 |
+| `.../Panel/Title` | TMP_Text | "게임 오버" |
+| `.../Panel/SurvivalTimeText` | TMP_Text | 생존 시간(mm:ss) |
+| `.../Panel/KillCountText` | TMP_Text | 처치 수 |
+| `.../Panel/BestTimeText` | TMP_Text | 최고 기록(mm:ss, 갱신 시 NEW!) |
+| `.../Panel/RestartButton` | Button + Label(TMP) | 다시 시작 |
+| `.../Panel/MainMenuButton` | Button + Label(TMP) | 메인으로 |
+
+- `GameOverController`는 **패널이 아니라 `Canvas` 루트**에 부착한다(패널은 평소 비활성이라 그 위에 붙이면 `OnGameOver` 구독이 걸리지 않기 때문). `gameOverPanel`/`survivalTimeText`/`killCountText`/`bestTimeText` 필드를 인스펙터에서 드래그 연결.
+- `RestartButton`/`MainMenuButton`의 `Button.onClick`에 각각 `GameOverController.Restart`/`.ReturnToMainMenu`를 퍼시스턴트 리스너로 연결.
+
 ## 이번 범위 제외 (Roadmap 참고)
 
-- ③ 메인 메뉴(타이틀) 화면
-- ④ 결과창(게임오버 요약: 생존시간/킬수/재시작 버튼) — 승리 화면은 무한 생존 컨셉상 존재하지 않음
+- ④ 메인 메뉴(타이틀) 화면은 별도 씬(`2 SCENE.unity`)에 이미 구현됨(`Docs/기획서/메인메뉴.md` 참고)
+- 일시정지 메뉴
 
 ## 하이어라키 편집 시 유의사항
 

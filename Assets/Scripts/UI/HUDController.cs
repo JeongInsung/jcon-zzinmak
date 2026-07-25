@@ -9,6 +9,7 @@ namespace Zzinmak.UI
     {
         [SerializeField] private Image expBarFill;
         [SerializeField] private Image healthBarFill;
+        [SerializeField] private TMP_Text healthText;
         [SerializeField] private TMP_Text levelText;
         [SerializeField] private TMP_Text timerText;
         [SerializeField] private TMP_Text killCountText;
@@ -44,6 +45,11 @@ namespace Zzinmak.UI
             if (healthBarFill != null)
             {
                 healthBarFill.fillAmount = max > 0f ? current / max : 0f;
+            }
+
+            if (healthText != null)
+            {
+                healthText.text = Mathf.CeilToInt(current) + " / " + Mathf.CeilToInt(max);
             }
         }
 

@@ -943,8 +943,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Enemies.EnemySpawner
   player: {fileID: 2106055863474040636}
-  enemyData: {fileID: 11400000, guid: 6ea50a0a77072044c974c632178cee48, type: 2}
-  enemyPrefab: {fileID: 2031785218433059593, guid: faacb4d6e41daa5429d1afc4f316b535, type: 3}
+  enemyVariants:
+  - data: {fileID: 11400000, guid: 6ea50a0a77072044c974c632178cee48, type: 2}
+    prefab: {fileID: 2031785218433059593, guid: faacb4d6e41daa5429d1afc4f316b535, type: 3}
+    spawnWeight: 7
+  - data: {fileID: 11400000, guid: 289f8967073941ecbb7bf902baa76f95, type: 2}
+    prefab: {fileID: 1200000001, guid: 5ab9b2aa336f4b999041e336b2e6ebf8, type: 3}
+    spawnWeight: 3
   spawnRadius: 9
   initialSpawnInterval: 1.5
   minSpawnInterval: 0.2

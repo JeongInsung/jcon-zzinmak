@@ -391,6 +391,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Combat.OrbitingOrbs
   orbPrefab: {fileID: 1100000001, guid: ab166be13e0f4349806ec444055c4c6d, type: 3}
   orbCount: 3
-  orbitRadius: 1.2
+  orbitRadius: 2
   rotationSpeed: 90
   damage: 5
+  spriteAngleOffset: 90

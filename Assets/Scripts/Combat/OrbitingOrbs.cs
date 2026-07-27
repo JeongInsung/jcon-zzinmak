@@ -8,9 +8,10 @@ namespace Zzinmak.Combat
     {
         [SerializeField] private GameObject orbPrefab;
         [SerializeField] private int orbCount = 3;
-        [SerializeField] private float orbitRadius = 1.2f;
+        [SerializeField] private float orbitRadius = 2f;
         [SerializeField] private float rotationSpeed = 90f;
         [SerializeField] private float damage = 5f;
+        [SerializeField] private float spriteAngleOffset = 90f;
 
         private readonly List<Transform> orbs = new List<Transform>();
         private PlayerStats stats;
@@ -57,6 +58,7 @@ namespace Zzinmak.Combat
                 float rad = angle * Mathf.Deg2Rad;
                 Vector3 offset = new Vector3(Mathf.Cos(rad), Mathf.Sin(rad), 0f) * orbitRadius;
                 orbs[i].position = transform.position + offset;
+                orbs[i].rotation = Quaternion.Euler(0f, 0f, angle + spriteAngleOffset);
             }
         }
     }

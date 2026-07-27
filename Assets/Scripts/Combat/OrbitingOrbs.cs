@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using Zzinmak.Core;
 using Zzinmak.Player;
 
 namespace Zzinmak.Combat
@@ -8,6 +9,8 @@ namespace Zzinmak.Combat
     {
         [SerializeField] private GameObject orbPrefab;
         [SerializeField] private int orbCount = 3;
+        [SerializeField] private int levelsPerBonusOrb = 3;
+        [SerializeField] private int maxOrbCount = 8;
         [SerializeField] private float orbitRadius = 2f;
         [SerializeField] private float rotationSpeed = 90f;
         [SerializeField] private float damage = 5f;
@@ -17,28 +20,64 @@ namespace Zzinmak.Combat
         private PlayerStats stats;
         private float currentAngle;
         private bool active;
+        private int currentPlayerLevel = 1;
+        private int levelAtActivation;
+        private int bonusOrbsGranted;
 
         private void Awake()
         {
             stats = GetComponent<PlayerStats>();
         }
 
+        private void OnEnable()
+        {
+            GameEvents.OnLevelChanged += HandleLevelChanged;
+        }
+
+        private void OnDisable()
+        {
+            GameEvents.OnLevelChanged -= HandleLevelChanged;
+        }
+
+        private void HandleLevelChanged(int level)
+        {
+            currentPlayerLevel = level;
+
+            if (!active || levelsPerBonusOrb <= 0) return;
+
+            int levelsSinceActivation = currentPlayerLevel - levelAtActivation;
+            int targetBonusOrbs = levelsSinceActivation / levelsPerBonusOrb;
+
+            while (bonusOrbsGranted < targetBonusOrbs && orbs.Count < maxOrbCount)
+            {
+                SpawnOrb();
+                bonusOrbsGranted++;
+            }
+        }
+
         public void Activate()
         {
             if (active) return;
             active = true;
+            levelAtActivation = currentPlayerLevel;
 
-            for (int i = 0; i < orbCount; i++)
+            int initialOrbCount = Mathf.Min(orbCount, maxOrbCount);
+            for (int i = 0; i < initialOrbCount; i++)
             {
-                var orbObj = Instantiate(orbPrefab, transform.position, Quaternion.identity, transform);
-                var orbDamage = orbObj.GetComponent<OrbDamage>();
-                if (orbDamage != null)
-                {
-                    orbDamage.Initialize(this);
-                }
-
-                orbs.Add(orbObj.transform);
+                SpawnOrb();
             }
+        }
+
+        private void SpawnOrb()
+        {
+            var orbObj = Instantiate(orbPrefab, transform.position, Quaternion.identity, transform);
+            var orbDamage = orbObj.GetComponent<OrbDamage>();
+            if (orbDamage != null)
+            {
+                orbDamage.Initialize(this);
+            }
+
+            orbs.Add(orbObj.transform);
         }
 
         public float GetDamage()

@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.Video;
@@ -38,6 +39,7 @@ namespace Zzinmak.UI
             if (videoPlayer == null) return;
             videoPlayer.loopPointReached += OnVideoFinished;
             videoPlayer.errorReceived += OnVideoError;
+            videoPlayer.prepareCompleted += OnVideoPrepared;
         }
 
         private void OnDisable()
@@ -45,6 +47,7 @@ namespace Zzinmak.UI
             if (videoPlayer == null) return;
             videoPlayer.loopPointReached -= OnVideoFinished;
             videoPlayer.errorReceived -= OnVideoError;
+            videoPlayer.prepareCompleted -= OnVideoPrepared;
         }
 
         private void Start()
@@ -56,7 +59,40 @@ namespace Zzinmak.UI
                 return;
             }
 
+            // playOnAwake로 바로 재생하면 디코더 초기화 중에 첫 프레임이 끊기는 느낌이 생긴다.
+            // 미리 Prepare()로 디코딩을 끝내놓고, 준비가 끝난 뒤에 Play()해서 첫 프레임부터 매끄럽게 시작한다.
+            videoPlayer.playOnAwake = false;
+            videoPlayer.Prepare();
+
             StartCoroutine(WatchdogRoutine());
+        }
+
+        private void OnVideoPrepared(VideoPlayer source)
+        {
+            source.Play();
+        }
+
+        private void Update()
+        {
+            if (!isTransitioning && IsSkipInputDown())
+            {
+                BeginTransition();
+            }
+        }
+
+        // 터치/클릭/키보드 중 아무거나 눌리면 스킵한다.
+        private static bool IsSkipInputDown()
+        {
+            if (Touchscreen.current != null && Touchscreen.current.primaryTouch.press.wasPressedThisFrame)
+                return true;
+
+            if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
+                return true;
+
+            if (Keyboard.current != null && Keyboard.current.anyKey.wasPressedThisFrame)
+                return true;
+
+            return false;
         }
 
         // 영상이 정상적으로 끝났을 때 호출된다. 이게 정상 경로.

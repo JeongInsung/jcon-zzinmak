@@ -6,9 +6,16 @@ namespace Zzinmak.Enemies
 {
     public class EnemySpawner : MonoBehaviour
     {
+        [System.Serializable]
+        public class EnemyVariant
+        {
+            public EnemyData data;
+            public GameObject prefab;
+            public float spawnWeight = 1f;
+        }
+
         [SerializeField] private Transform player;
-        [SerializeField] private EnemyData enemyData;
-        [SerializeField] private GameObject enemyPrefab;
+        [SerializeField] private EnemyVariant[] enemyVariants;
         [SerializeField] private float spawnRadius = 9f;
         [SerializeField] private float initialSpawnInterval = 1.5f;
         [SerializeField] private float minSpawnInterval = 0.2f;
@@ -44,14 +51,41 @@ namespace Zzinmak.Enemies
 
         private void SpawnEnemy()
         {
-            if (player == null || enemyPrefab == null || enemyData == null) return;
+            if (player == null) return;
+
+            var variant = PickVariant();
+            if (variant == null || variant.prefab == null || variant.data == null) return;
 
             Vector2 offset = Random.insideUnitCircle.normalized * spawnRadius;
             Vector3 spawnPos = player.position + (Vector3)offset;
 
-            var enemyObj = ObjectPool.Instance.Get(enemyPrefab, spawnPos, Quaternion.identity);
+            var enemyObj = ObjectPool.Instance.Get(variant.prefab, spawnPos, Quaternion.identity);
             var enemy = enemyObj.GetComponent<Enemy>();
-            enemy.Initialize(enemyData, player, CurrentHealthMultiplier());
+            enemy.Initialize(variant.data, player, CurrentHealthMultiplier());
+        }
+
+        private EnemyVariant PickVariant()
+        {
+            if (enemyVariants == null || enemyVariants.Length == 0) return null;
+
+            float totalWeight = 0f;
+            foreach (var variant in enemyVariants)
+            {
+                totalWeight += variant.spawnWeight;
+            }
+
+            float roll = Random.Range(0f, totalWeight);
+            float cumulative = 0f;
+            foreach (var variant in enemyVariants)
+            {
+                cumulative += variant.spawnWeight;
+                if (roll <= cumulative)
+                {
+                    return variant;
+                }
+            }
+
+            return enemyVariants[enemyVariants.Length - 1];
         }
     }
 }

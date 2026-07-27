@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using Zzinmak.Combat;
 using Zzinmak.Core;
 using Zzinmak.Data;
 using Zzinmak.Player;
@@ -14,8 +15,15 @@ namespace Zzinmak.Progression
         [SerializeField] private PlayerHealth playerHealth;
         [SerializeField] private UpgradeData[] allUpgrades;
 
+        private OrbitingOrbs orbitingOrbs;
         private int pendingLevelUps;
         private readonly List<UpgradeData> currentOptions = new List<UpgradeData>();
+        private readonly HashSet<UpgradeData> obtainedUnique = new HashSet<UpgradeData>();
+
+        private void Awake()
+        {
+            orbitingOrbs = playerStats != null ? playerStats.GetComponent<OrbitingOrbs>() : null;
+        }
 
         public void TriggerLevelUp()
         {
@@ -37,7 +45,15 @@ namespace Zzinmak.Progression
 
         private List<UpgradeData> PickRandomUpgrades(int count)
         {
-            var pool = new List<UpgradeData>(allUpgrades);
+            var pool = new List<UpgradeData>();
+            foreach (var upgrade in allUpgrades)
+            {
+                if (upgrade.isUnique && obtainedUnique.Contains(upgrade)) continue;
+                if (Random.value > upgrade.dropChance) continue;
+
+                pool.Add(upgrade);
+            }
+
             var result = new List<UpgradeData>();
             count = Mathf.Min(count, pool.Count);
 
@@ -83,6 +99,23 @@ namespace Zzinmak.Progression
                 case UpgradeType.PickupRange:
                     playerStats.IncreasePickupRangePercent(upgrade.value);
                     break;
+                case UpgradeType.CritChance:
+                    playerStats.IncreaseCritChance(upgrade.value);
+                    break;
+                case UpgradeType.ProjectileCount:
+                    playerStats.AddProjectileCount(Mathf.RoundToInt(upgrade.value));
+                    break;
+                case UpgradeType.OrbitingOrbs:
+                    if (orbitingOrbs != null)
+                    {
+                        orbitingOrbs.Activate();
+                    }
+                    break;
+            }
+
+            if (upgrade.isUnique)
+            {
+                obtainedUnique.Add(upgrade);
             }
         }
     }

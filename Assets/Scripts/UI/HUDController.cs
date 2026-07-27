@@ -12,7 +12,7 @@ namespace Zzinmak.UI
         [SerializeField] private TMP_Text healthText;
         [SerializeField] private TMP_Text levelText;
         [SerializeField] private TMP_Text timerText;
-        [SerializeField] private TMP_Text killCountText;
+        [SerializeField] private TMP_Text scoreText;
 
         private void OnEnable()
         {
@@ -20,7 +20,7 @@ namespace Zzinmak.UI
             GameEvents.OnHealthChanged += HandleHealthChanged;
             GameEvents.OnLevelChanged += HandleLevelChanged;
             GameEvents.OnTimerChanged += HandleTimerChanged;
-            GameEvents.OnKillCountChanged += HandleKillCountChanged;
+            GameEvents.OnScoreChanged += HandleScoreChanged;
         }
 
         private void OnDisable()
@@ -29,7 +29,7 @@ namespace Zzinmak.UI
             GameEvents.OnHealthChanged -= HandleHealthChanged;
             GameEvents.OnLevelChanged -= HandleLevelChanged;
             GameEvents.OnTimerChanged -= HandleTimerChanged;
-            GameEvents.OnKillCountChanged -= HandleKillCountChanged;
+            GameEvents.OnScoreChanged -= HandleScoreChanged;
         }
 
         private void HandleExpChanged(float current, float needed)
@@ -71,11 +71,11 @@ namespace Zzinmak.UI
             }
         }
 
-        private void HandleKillCountChanged(int count)
+        private void HandleScoreChanged(int score)
         {
-            if (killCountText != null)
+            if (scoreText != null)
             {
-                killCountText.text = "Kills: " + count;
+                scoreText.text = "Score: " + score;
             }
         }
     }

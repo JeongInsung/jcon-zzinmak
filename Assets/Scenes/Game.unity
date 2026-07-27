@@ -464,7 +464,7 @@ MonoBehaviour:
   healthText: {fileID: 900010032}
   levelText: {fileID: 1490836198}
   timerText: {fileID: 158141130}
-  killCountText: {fileID: 1976063504}
+  scoreText: {fileID: 1976063504}
 --- !u!114 &151364906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5010,6 +5010,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 736f18ae75889cb489b4d63a390280c4, type: 2}
   - {fileID: 11400000, guid: d48fff01cc574064583e350c37295564, type: 2}
   - {fileID: 11400000, guid: 0fe31b16dd1b0c84eb072f6afbf83237, type: 2}
+  - {fileID: 11400000, guid: 60c9d541edb34b23abdd91711ef8c39d, type: 2}
+  - {fileID: 11400000, guid: 6da4612c8bb34f3fb407658df94b9747, type: 2}
+  - {fileID: 11400000, guid: 214dcea9baa242b89bcda21dd35a24da, type: 2}
 --- !u!4 &1505257509
 Transform:
   m_ObjectHideFlags: 0
@@ -5523,7 +5526,7 @@ GameObject:
   - component: {fileID: 1976063505}
   - component: {fileID: 1976063504}
   m_Layer: 0
-  m_Name: KillCountText
+  m_Name: ScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5568,7 +5571,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Kills: 0'
+  m_text: 'Score: 0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1fc5287d439699d4ab7c74e4081f4912, type: 2}
   m_sharedMaterial: {fileID: -4666633788455062515, guid: 1fc5287d439699d4ab7c74e4081f4912, type: 2}

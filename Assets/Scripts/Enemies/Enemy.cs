@@ -11,6 +11,7 @@ namespace Zzinmak.Enemies
         [SerializeField] private GameObject expGemPrefab;
 
         private Rigidbody2D body;
+        private SpriteRenderer spriteRenderer;
         private Transform target;
         private EnemyData data;
         private float currentHealth;
@@ -19,6 +20,7 @@ namespace Zzinmak.Enemies
         private void Awake()
         {
             body = GetComponent<Rigidbody2D>();
+            spriteRenderer = GetComponent<SpriteRenderer>();
         }
 
         public void Initialize(EnemyData enemyData, Transform playerTarget, float healthMultiplier)
@@ -35,6 +37,11 @@ namespace Zzinmak.Enemies
 
             Vector2 dir = ((Vector2)target.position - body.position).normalized;
             body.MovePosition(body.position + dir * data.moveSpeed * Time.fixedDeltaTime);
+
+            if (spriteRenderer != null && Mathf.Abs(dir.x) > 0.01f)
+            {
+                spriteRenderer.flipX = dir.x < 0f;
+            }
         }
 
         public void TakeDamage(float amount)

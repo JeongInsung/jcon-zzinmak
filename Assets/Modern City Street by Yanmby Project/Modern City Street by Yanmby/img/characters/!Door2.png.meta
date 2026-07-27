@@ -1,0 +1,897 @@
+fileFormatVersion: 2
+guid: 9851380b729dd8949809dbb8579cb22c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9183391198895544902
+    second: '!Door2_0'
+  - first:
+      213: -7269749489354477505
+    second: '!Door2_1'
+  - first:
+      213: 731665963390331867
+    second: '!Door2_2'
+  - first:
+      213: -2489302895677190843
+    second: '!Door2_3'
+  - first:
+      213: 8523555669221997051
+    second: '!Door2_4'
+  - first:
+      213: -8359408508946746714
+    second: '!Door2_5'
+  - first:
+      213: 6131076078252162145
+    second: '!Door2_6'
+  - first:
+      213: 3237070462005632313
+    second: '!Door2_7'
+  - first:
+      213: -4563522668859198109
+    second: '!Door2_8'
+  - first:
+      213: 5995128946089295952
+    second: '!Door2_9'
+  - first:
+      213: 634239634965896850
+    second: '!Door2_10'
+  - first:
+      213: -4232503640702451145
+    second: '!Door2_11'
+  - first:
+      213: 432416591394420040
+    second: '!Door2_12'
+  - first:
+      213: -6373003077640950548
+    second: '!Door2_13'
+  - first:
+      213: -1943970796679984420
+    second: '!Door2_14'
+  - first:
+      213: -2848569344457093851
+    second: '!Door2_15'
+  - first:
+      213: -7138765637724178028
+    second: '!Door2_16'
+  - first:
+      213: 3882905517856471747
+    second: '!Door2_17'
+  - first:
+      213: -3327784823550634652
+    second: '!Door2_18'
+  - first:
+      213: -6409535114871999712
+    second: '!Door2_19'
+  - first:
+      213: 681225282074840225
+    second: '!Door2_20'
+  - first:
+      213: 3411220003271584946
+    second: '!Door2_21'
+  - first:
+      213: -5117170522619568822
+    second: '!Door2_22'
+  - first:
+      213: 2646872813740875361
+    second: '!Door2_23'
+  - first:
+      213: 2041349508475087908
+    second: '!Door2_24'
+  - first:
+      213: -1126669351712349181
+    second: '!Door2_25'
+  - first:
+      213: -7181339153492094055
+    second: '!Door2_26'
+  - first:
+      213: 3448078823963522037
+    second: '!Door2_27'
+  - first:
+      213: -2462966503242544246
+    second: '!Door2_28'
+  - first:
+      213: 1428053257027612819
+    second: '!Door2_29'
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: '!Door2_0'
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 190
+        width: 41
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64a1e93c3a5f17f70800000000000000
+      internalID: 9183391198895544902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door2_1'
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 335
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f30f2f03b59ac1b90800000000000000
+      internalID: -7269749489354477505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door2_2'
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 343
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdbef123156672a00800000000000000
+      internalID: 731665963390331867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door2_3'
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 335
+        width: 22
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54d4fcc8438347dd0800000000000000
+      internalID: -2489302895677190843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door2_4'
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 190
+        width: 42
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf97e3fa8b0c94670800000000000000
+      internalID: 8523555669221997051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door2_5'
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 335
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a2f9db404a6dfb80800000000000000
+      internalID: -8359408508946746714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door2_6'
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 343
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16c7d179535f51550800000000000000
+      internalID: 6131076078252162145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door2_7'
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 335
+        width: 22
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93d51c83f626cec20800000000000000
+      internalID: 3237070462005632313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door2_8'
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 191
+        width: 289
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 365743eaf4c1ba0c0800000000000000
+      internalID: -4563522668859198109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door2_9'
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 287
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 050805e430af23350800000000000000
+      internalID: 5995128946089295952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door2_10'
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 295
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29e9d9076954dc800800000000000000
+      internalID: 634239634965896850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door2_11'
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 287
+        width: 22
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73202611d502345c0800000000000000
+      internalID: -4232503640702451145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door2_12'
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 287
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 845bc0d4990400600800000000000000
+      internalID: 432416591394420040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door2_13'
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 295
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cec6dbc677b8e87a0800000000000000
+      internalID: -6373003077640950548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door2_14'
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 287
+        width: 22
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cda082a2cd0a505e0800000000000000
+      internalID: -1943970796679984420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door2_15'
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 239
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52d41990649d778d0800000000000000
+      internalID: -2848569344457093851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door2_16'
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 247
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4997faca9720eec90800000000000000
+      internalID: -7138765637724178028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door2_17'
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 239
+        width: 22
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca3d38fef9d2e530800000000000000
+      internalID: 3882905517856471747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door2_18'
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 239
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4651457955551d1d0800000000000000
+      internalID: -3327784823550634652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door2_19'
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 247
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02379aea5c1cc07a0800000000000000
+      internalID: -6409535114871999712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door2_20'
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 239
+        width: 23
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ac0616e8c2347900800000000000000
+      internalID: 681225282074840225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door2_21'
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 191
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bca5b10586175f20800000000000000
+      internalID: 3411220003271584946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door2_22'
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 199
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4d192885882cf8b0800000000000000
+      internalID: -5117170522619568822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door2_23'
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 191
+        width: 23
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ed9a4ecc49bb420800000000000000
+      internalID: 2646872813740875361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door2_24'
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 191
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42c631bff84545c10800000000000000
+      internalID: 2041349508475087908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door2_25'
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 199
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 304add7a1344d50f0800000000000000
+      internalID: -1126669351712349181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door2_26'
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 191
+        width: 23
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 993df789612c65c90800000000000000
+      internalID: -7181339153492094055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door2_27'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 142
+        width: 576
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f374e3fb690adf20800000000000000
+      internalID: 3448078823963522037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door2_28'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 46
+        width: 576
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8bca80c309c1ddd0800000000000000
+      internalID: -2462966503242544246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Door2_29'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 576
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39078710fd671d310800000000000000
+      internalID: 1428053257027612819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      '!Door2_0': 9183391198895544902
+      '!Door2_1': -7269749489354477505
+      '!Door2_10': 634239634965896850
+      '!Door2_11': -4232503640702451145
+      '!Door2_12': 432416591394420040
+      '!Door2_13': -6373003077640950548
+      '!Door2_14': -1943970796679984420
+      '!Door2_15': -2848569344457093851
+      '!Door2_16': -7138765637724178028
+      '!Door2_17': 3882905517856471747
+      '!Door2_18': -3327784823550634652
+      '!Door2_19': -6409535114871999712
+      '!Door2_2': 731665963390331867
+      '!Door2_20': 681225282074840225
+      '!Door2_21': 3411220003271584946
+      '!Door2_22': -5117170522619568822
+      '!Door2_23': 2646872813740875361
+      '!Door2_24': 2041349508475087908
+      '!Door2_25': -1126669351712349181
+      '!Door2_26': -7181339153492094055
+      '!Door2_27': 3448078823963522037
+      '!Door2_28': -2462966503242544246
+      '!Door2_29': 1428053257027612819
+      '!Door2_3': -2489302895677190843
+      '!Door2_4': 8523555669221997051
+      '!Door2_5': -8359408508946746714
+      '!Door2_6': 6131076078252162145
+      '!Door2_7': 3237070462005632313
+      '!Door2_8': -4563522668859198109
+      '!Door2_9': 5995128946089295952
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

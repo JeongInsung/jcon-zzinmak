@@ -1,0 +1,2613 @@
+fileFormatVersion: 2
+guid: 3f6091f54a372e247ac232ff542b318c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2085598906853937905
+    second: '!Switch2_0'
+  - first:
+      213: -5494135447431731219
+    second: '!Switch2_1'
+  - first:
+      213: 2589586720941758032
+    second: '!Switch2_2'
+  - first:
+      213: -8007853815893087141
+    second: '!Switch2_3'
+  - first:
+      213: -6810488753235888774
+    second: '!Switch2_4'
+  - first:
+      213: -4070461738268535965
+    second: '!Switch2_5'
+  - first:
+      213: 6912503631809463678
+    second: '!Switch2_6'
+  - first:
+      213: 3785980428232578327
+    second: '!Switch2_7'
+  - first:
+      213: 8410898415569335116
+    second: '!Switch2_8'
+  - first:
+      213: 5150084653993760576
+    second: '!Switch2_9'
+  - first:
+      213: 8439121378632287551
+    second: '!Switch2_10'
+  - first:
+      213: -6328556635421350781
+    second: '!Switch2_11'
+  - first:
+      213: -5781343313967305556
+    second: '!Switch2_12'
+  - first:
+      213: 1921525225138919851
+    second: '!Switch2_13'
+  - first:
+      213: -2955772846758199497
+    second: '!Switch2_14'
+  - first:
+      213: 5279705389790473012
+    second: '!Switch2_15'
+  - first:
+      213: -2304996655173666809
+    second: '!Switch2_16'
+  - first:
+      213: 7237679556534648762
+    second: '!Switch2_17'
+  - first:
+      213: -8592260932976233295
+    second: '!Switch2_18'
+  - first:
+      213: -685280001244833369
+    second: '!Switch2_19'
+  - first:
+      213: -1012179409136485559
+    second: '!Switch2_20'
+  - first:
+      213: -732747596538048589
+    second: '!Switch2_21'
+  - first:
+      213: 7180250175560913284
+    second: '!Switch2_22'
+  - first:
+      213: -8771588202131403021
+    second: '!Switch2_23'
+  - first:
+      213: -6128364608067878147
+    second: '!Switch2_24'
+  - first:
+      213: 2699482303130447836
+    second: '!Switch2_25'
+  - first:
+      213: 3877246636616210059
+    second: '!Switch2_26'
+  - first:
+      213: -6143836290746683305
+    second: '!Switch2_27'
+  - first:
+      213: 2268696105958347894
+    second: '!Switch2_28'
+  - first:
+      213: 3956254456478035367
+    second: '!Switch2_29'
+  - first:
+      213: 6173311981536650437
+    second: '!Switch2_30'
+  - first:
+      213: -1085707755304979078
+    second: '!Switch2_31'
+  - first:
+      213: -3556333905309101041
+    second: '!Switch2_32'
+  - first:
+      213: -1563300706826521975
+    second: '!Switch2_33'
+  - first:
+      213: 6171745587356450342
+    second: '!Switch2_34'
+  - first:
+      213: -236035966002809606
+    second: '!Switch2_35'
+  - first:
+      213: -8519495547534958397
+    second: '!Switch2_36'
+  - first:
+      213: -7601160548724383474
+    second: '!Switch2_37'
+  - first:
+      213: 6292690400052222389
+    second: '!Switch2_38'
+  - first:
+      213: 3490352343135576401
+    second: '!Switch2_39'
+  - first:
+      213: 5002614666667190883
+    second: '!Switch2_40'
+  - first:
+      213: -5660327661362694112
+    second: '!Switch2_41'
+  - first:
+      213: 7265656110783852561
+    second: '!Switch2_42'
+  - first:
+      213: 657611950614195112
+    second: '!Switch2_43'
+  - first:
+      213: 3110864105199981081
+    second: '!Switch2_44'
+  - first:
+      213: 5682611788445393663
+    second: '!Switch2_45'
+  - first:
+      213: -4035457066248578392
+    second: '!Switch2_46'
+  - first:
+      213: -1723211859333041203
+    second: '!Switch2_47'
+  - first:
+      213: -961750674125513572
+    second: '!Switch2_48'
+  - first:
+      213: -4303808725848567413
+    second: '!Switch2_49'
+  - first:
+      213: -4909736720967069396
+    second: '!Switch2_50'
+  - first:
+      213: 2871472590368114960
+    second: '!Switch2_51'
+  - first:
+      213: -3687028081473919134
+    second: '!Switch2_52'
+  - first:
+      213: -5168992160986178750
+    second: '!Switch2_53'
+  - first:
+      213: -6220339390432614571
+    second: '!Switch2_54'
+  - first:
+      213: 172529819785039313
+    second: '!Switch2_55'
+  - first:
+      213: 3409207759473918456
+    second: '!Switch2_56'
+  - first:
+      213: 5432692514838761316
+    second: '!Switch2_57'
+  - first:
+      213: -4598110386044789158
+    second: '!Switch2_58'
+  - first:
+      213: 8707648881448290263
+    second: '!Switch2_59'
+  - first:
+      213: 3193663846384330291
+    second: '!Switch2_60'
+  - first:
+      213: -8060763527645014375
+    second: '!Switch2_61'
+  - first:
+      213: -6664823986292326368
+    second: '!Switch2_62'
+  - first:
+      213: -2713023597787842895
+    second: '!Switch2_63'
+  - first:
+      213: -7379131736092605351
+    second: '!Switch2_64'
+  - first:
+      213: 4812053414191568704
+    second: '!Switch2_65'
+  - first:
+      213: -2289894768346688696
+    second: '!Switch2_66'
+  - first:
+      213: -2971118282520542262
+    second: '!Switch2_67'
+  - first:
+      213: -8432207228958852564
+    second: '!Switch2_68'
+  - first:
+      213: -4842516905167965868
+    second: '!Switch2_69'
+  - first:
+      213: 8183212647122298828
+    second: '!Switch2_70'
+  - first:
+      213: -6370537959593639123
+    second: '!Switch2_71'
+  - first:
+      213: 9205112322401155432
+    second: '!Switch2_72'
+  - first:
+      213: -8478260143134702356
+    second: '!Switch2_73'
+  - first:
+      213: 2095306661411264608
+    second: '!Switch2_74'
+  - first:
+      213: 6946051503482350449
+    second: '!Switch2_75'
+  - first:
+      213: 1126284431052547140
+    second: '!Switch2_76'
+  - first:
+      213: 7216359351911067721
+    second: '!Switch2_77'
+  - first:
+      213: 6402863908561273711
+    second: '!Switch2_78'
+  - first:
+      213: -2446792265339255934
+    second: '!Switch2_79'
+  - first:
+      213: 6754002549563158134
+    second: '!Switch2_80'
+  - first:
+      213: -6350267040096831657
+    second: '!Switch2_81'
+  - first:
+      213: -782170231861023682
+    second: '!Switch2_82'
+  - first:
+      213: 5718433924653867127
+    second: '!Switch2_83'
+  - first:
+      213: 1117471918020349933
+    second: '!Switch2_84'
+  - first:
+      213: 2951511098758410144
+    second: '!Switch2_85'
+  - first:
+      213: 697567330984134525
+    second: '!Switch2_86'
+  - first:
+      213: -6524214652642514479
+    second: '!Switch2_87'
+  - first:
+      213: -5238533241178616725
+    second: '!Switch2_88'
+  - first:
+      213: 6877649394025475123
+    second: '!Switch2_89'
+  - first:
+      213: -4498813986322524886
+    second: '!Switch2_90'
+  - first:
+      213: 2975111849660550915
+    second: '!Switch2_91'
+  - first:
+      213: -1528734712288832428
+    second: '!Switch2_92'
+  - first:
+      213: -7288124809196776538
+    second: '!Switch2_93'
+  - first:
+      213: -1981023259197366500
+    second: '!Switch2_94'
+  - first:
+      213: 3727668163203768930
+    second: '!Switch2_95'
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: '!Switch2_0'
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 343
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0d270d18d67e03e0800000000000000
+      internalID: -2085598906853937905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_1'
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 343
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de723f37be8e0c3b0800000000000000
+      internalID: -5494135447431731219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_2'
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 343
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0565dc8076f00f320800000000000000
+      internalID: 2589586720941758032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_3'
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 343
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5caf62c1636ed090800000000000000
+      internalID: -8007853815893087141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_4'
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 343
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a75f49cff884c71a0800000000000000
+      internalID: -6810488753235888774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_5'
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 343
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3635fa28d90d287c0800000000000000
+      internalID: -4070461738268535965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_6'
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 343
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e75c99add652eef50800000000000000
+      internalID: 6912503631809463678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_7'
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 343
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7155267f3218a8430800000000000000
+      internalID: 3785980428232578327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_8'
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 343
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c43f7edcb8389b470800000000000000
+      internalID: 8410898415569335116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_9'
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 343
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0471d7cd4b6c87740800000000000000
+      internalID: 5150084653993760576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_10'
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 343
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3548c57e28cd1570800000000000000
+      internalID: 8439121378632287551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_11'
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 343
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 384e4cc25437c28a0800000000000000
+      internalID: -6328556635421350781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_12'
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 295
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cac266603ea84cfa0800000000000000
+      internalID: -5781343313967305556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_13'
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 295
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba99b57f201aaaa10800000000000000
+      internalID: 1921525225138919851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_14'
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 295
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73f7b38914cfaf6d0800000000000000
+      internalID: -2955772846758199497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_15'
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 295
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43b2d253418454940800000000000000
+      internalID: 5279705389790473012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_16'
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 295
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 708f8e721c10300e0800000000000000
+      internalID: -2304996655173666809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_17'
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 295
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abfba55b537617460800000000000000
+      internalID: 7237679556534648762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_18'
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 295
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b43c78843822c880800000000000000
+      internalID: -8592260932976233295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_19'
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 295
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a95f1a38756d76f0800000000000000
+      internalID: -685280001244833369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_20'
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 295
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94b747da03404f1f0800000000000000
+      internalID: -1012179409136485559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_21'
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 295
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bf045671f1c4d5f0800000000000000
+      internalID: -732747596538048589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_22'
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 295
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4819eb8fd7f55a360800000000000000
+      internalID: 7180250175560913284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_23'
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 295
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fe43f7010f054680800000000000000
+      internalID: -8771588202131403021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_24'
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 247
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df2c902cbdca3faa0800000000000000
+      internalID: -6128364608067878147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_25'
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 247
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdf2b8b2adc767520800000000000000
+      internalID: 2699482303130447836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_26'
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 247
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b865612064fbec530800000000000000
+      internalID: 3877246636616210059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_27'
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 247
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 750f3ebe175bcbaa0800000000000000
+      internalID: -6143836290746683305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_28'
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 247
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67495fa96170c7f10800000000000000
+      internalID: 2268696105958347894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_29'
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 247
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aded6f877077e630800000000000000
+      internalID: 3956254456478035367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_30'
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 247
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c4a7232a820ca550800000000000000
+      internalID: 6173311981536650437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_31'
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 247
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a75f8238c8acee0f0800000000000000
+      internalID: -1085707755304979078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_32'
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 247
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f049f57c72d55aec0800000000000000
+      internalID: -3556333905309101041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_33'
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 247
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 982fc743a4a0e4ae0800000000000000
+      internalID: -1563300706826521975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_34'
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 247
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62e377299e176a550800000000000000
+      internalID: 6171745587356450342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_35'
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 247
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af4bf2c1a8e69bcf0800000000000000
+      internalID: -236035966002809606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_36'
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 197
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c028af00fba4c980800000000000000
+      internalID: -8519495547534958397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_37'
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 197
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e01e19ce0c0438690800000000000000
+      internalID: -7601160548724383474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_38'
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 197
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b99f982490245750800000000000000
+      internalID: 6292690400052222389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_39'
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 197
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1516c81a6f8307030800000000000000
+      internalID: 3490352343135576401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_40'
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 197
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36a6bdac88bdc6540800000000000000
+      internalID: 5002614666667190883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_41'
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 197
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 028b8205bf97271b0800000000000000
+      internalID: -5660327661362694112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_42'
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 197
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 110fa67dcbbc4d460800000000000000
+      internalID: 7265656110783852561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_43'
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 197
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ab296cb59e402900800000000000000
+      internalID: 657611950614195112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_44'
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 197
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91255feeb620c2b20800000000000000
+      internalID: 3110864105199981081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_45'
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 197
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff22cb65051bcde40800000000000000
+      internalID: 5682611788445393663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_46'
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 197
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aad9e3dd2d2ff7c0800000000000000
+      internalID: -4035457066248578392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_47'
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 197
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc3b6b3a1fbe518e0800000000000000
+      internalID: -1723211859333041203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_48'
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 149
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9c91428bdc27a2f0800000000000000
+      internalID: -961750674125513572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_49'
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 149
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b81d19234ccc544c0800000000000000
+      internalID: -4303808725848567413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_50'
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 149
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c211116177c1ddbb0800000000000000
+      internalID: -4909736720967069396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_51'
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 149
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01989237b1589d720800000000000000
+      internalID: 2871472590368114960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_52'
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 149
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2676bde9e7b05dcc0800000000000000
+      internalID: -3687028081473919134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_53'
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 149
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24bd3ad140d0448b0800000000000000
+      internalID: -5168992160986178750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_54'
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 149
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 557e4eaf74aeca9a0800000000000000
+      internalID: -6220339390432614571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_55'
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 149
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dd037df4f2f46200800000000000000
+      internalID: 172529819785039313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_56'
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 149
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f1c2fcf460ff4f20800000000000000
+      internalID: 3409207759473918456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_57'
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 149
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46f43e00f0dc46b40800000000000000
+      internalID: 5432692514838761316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_58'
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 149
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5e14c937fa3030c0800000000000000
+      internalID: -4598110386044789158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_59'
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 149
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d78d87c588c7d870800000000000000
+      internalID: 8707648881448290263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_60'
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 101
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 336eeb7f85c225c20800000000000000
+      internalID: 3193663846384330291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_61'
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 101
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9965b44874a622090800000000000000
+      internalID: -8060763527645014375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_62'
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 101
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0200b8e65e9c183a0800000000000000
+      internalID: -6664823986292326368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_63'
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 101
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b67a9a7967695ad0800000000000000
+      internalID: -2713023597787842895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_64'
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 101
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 954836748ce089990800000000000000
+      internalID: -7379131736092605351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_65'
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 101
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0471819b519d7c240800000000000000
+      internalID: 4812053414191568704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_66'
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 101
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8439baf27d8a830e0800000000000000
+      internalID: -2289894768346688696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_67'
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 101
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac3c1b8e9a774c6d0800000000000000
+      internalID: -2971118282520542262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_68'
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 101
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2a3d657338cafa80800000000000000
+      internalID: -8432207228958852564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_69'
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 101
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 451b3a0188cebccb0800000000000000
+      internalID: -4842516905167965868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_70'
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 101
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc76539cb8c909170800000000000000
+      internalID: 8183212647122298828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_71'
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 101
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2387427a7d4797a0800000000000000
+      internalID: -6370537959593639123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_72'
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 53
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 869ba4ee2e02fbf70800000000000000
+      internalID: 9205112322401155432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_73'
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 53
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce48a1fc15b275a80800000000000000
+      internalID: -8478260143134702356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_74'
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 53
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0689de0ae46041d10800000000000000
+      internalID: 2095306661411264608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_75'
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 53
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17b22a86a05556060800000000000000
+      internalID: 6946051503482350449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_76'
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 53
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 444a0f409bd51af00800000000000000
+      internalID: 1126284431052547140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_77'
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 53
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9403a3eb898a52460800000000000000
+      internalID: 7216359351911067721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_78'
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 53
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f63c6fe0dca8bd850800000000000000
+      internalID: 6402863908561273711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_79'
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 53
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 283c749f56f3b0ed0800000000000000
+      internalID: -2446792265339255934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_80'
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 53
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67e6bcad8890bbd50800000000000000
+      internalID: 6754002549563158134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_81'
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 53
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 757382ea5c15fd7a0800000000000000
+      internalID: -6350267040096831657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_82'
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 53
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3ce908715c2525f0800000000000000
+      internalID: -782170231861023682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_83'
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 53
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 770698e5b55fb5f40800000000000000
+      internalID: 5718433924653867127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_84'
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 5
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: defc310f9ce028f00800000000000000
+      internalID: 1117471918020349933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_85'
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 5
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0af2e10e4bfd5f820800000000000000
+      internalID: 2951511098758410144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_86'
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 5
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d770a3aaac14ea900800000000000000
+      internalID: 697567330984134525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_87'
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 5
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d928d617555575a0800000000000000
+      internalID: -6524214652642514479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_88'
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 5
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6c0977a5cdfc47b0800000000000000
+      internalID: -5238533241178616725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_89'
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 5
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33ca19c3fa1527f50800000000000000
+      internalID: 6877649394025475123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_90'
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 5
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a25dfa2e3800191c0800000000000000
+      internalID: -4498813986322524886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_91'
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 5
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30f8216e678b94920800000000000000
+      internalID: 2975111849660550915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_92'
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 5
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4541736f0e7d8cae0800000000000000
+      internalID: -1528734712288832428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_93'
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 5
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a35d15a9116bda90800000000000000
+      internalID: -7288124809196776538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_94'
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 5
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1f11c777ddf184e0800000000000000
+      internalID: -1981023259197366500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Switch2_95'
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 5
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2622b44c1765bb330800000000000000
+      internalID: 3727668163203768930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      '!Switch2_0': -2085598906853937905
+      '!Switch2_1': -5494135447431731219
+      '!Switch2_10': 8439121378632287551
+      '!Switch2_11': -6328556635421350781
+      '!Switch2_12': -5781343313967305556
+      '!Switch2_13': 1921525225138919851
+      '!Switch2_14': -2955772846758199497
+      '!Switch2_15': 5279705389790473012
+      '!Switch2_16': -2304996655173666809
+      '!Switch2_17': 7237679556534648762
+      '!Switch2_18': -8592260932976233295
+      '!Switch2_19': -685280001244833369
+      '!Switch2_2': 2589586720941758032
+      '!Switch2_20': -1012179409136485559
+      '!Switch2_21': -732747596538048589
+      '!Switch2_22': 7180250175560913284
+      '!Switch2_23': -8771588202131403021
+      '!Switch2_24': -6128364608067878147
+      '!Switch2_25': 2699482303130447836
+      '!Switch2_26': 3877246636616210059
+      '!Switch2_27': -6143836290746683305
+      '!Switch2_28': 2268696105958347894
+      '!Switch2_29': 3956254456478035367
+      '!Switch2_3': -8007853815893087141
+      '!Switch2_30': 6173311981536650437
+      '!Switch2_31': -1085707755304979078
+      '!Switch2_32': -3556333905309101041
+      '!Switch2_33': -1563300706826521975
+      '!Switch2_34': 6171745587356450342
+      '!Switch2_35': -236035966002809606
+      '!Switch2_36': -8519495547534958397
+      '!Switch2_37': -7601160548724383474
+      '!Switch2_38': 6292690400052222389
+      '!Switch2_39': 3490352343135576401
+      '!Switch2_4': -6810488753235888774
+      '!Switch2_40': 5002614666667190883
+      '!Switch2_41': -5660327661362694112
+      '!Switch2_42': 7265656110783852561
+      '!Switch2_43': 657611950614195112
+      '!Switch2_44': 3110864105199981081
+      '!Switch2_45': 5682611788445393663
+      '!Switch2_46': -4035457066248578392
+      '!Switch2_47': -1723211859333041203
+      '!Switch2_48': -961750674125513572
+      '!Switch2_49': -4303808725848567413
+      '!Switch2_5': -4070461738268535965
+      '!Switch2_50': -4909736720967069396
+      '!Switch2_51': 2871472590368114960
+      '!Switch2_52': -3687028081473919134
+      '!Switch2_53': -5168992160986178750
+      '!Switch2_54': -6220339390432614571
+      '!Switch2_55': 172529819785039313
+      '!Switch2_56': 3409207759473918456
+      '!Switch2_57': 5432692514838761316
+      '!Switch2_58': -4598110386044789158
+      '!Switch2_59': 8707648881448290263
+      '!Switch2_6': 6912503631809463678
+      '!Switch2_60': 3193663846384330291
+      '!Switch2_61': -8060763527645014375
+      '!Switch2_62': -6664823986292326368
+      '!Switch2_63': -2713023597787842895
+      '!Switch2_64': -7379131736092605351
+      '!Switch2_65': 4812053414191568704
+      '!Switch2_66': -2289894768346688696
+      '!Switch2_67': -2971118282520542262
+      '!Switch2_68': -8432207228958852564
+      '!Switch2_69': -4842516905167965868
+      '!Switch2_7': 3785980428232578327
+      '!Switch2_70': 8183212647122298828
+      '!Switch2_71': -6370537959593639123
+      '!Switch2_72': 9205112322401155432
+      '!Switch2_73': -8478260143134702356
+      '!Switch2_74': 2095306661411264608
+      '!Switch2_75': 6946051503482350449
+      '!Switch2_76': 1126284431052547140
+      '!Switch2_77': 7216359351911067721
+      '!Switch2_78': 6402863908561273711
+      '!Switch2_79': -2446792265339255934
+      '!Switch2_8': 8410898415569335116
+      '!Switch2_80': 6754002549563158134
+      '!Switch2_81': -6350267040096831657
+      '!Switch2_82': -782170231861023682
+      '!Switch2_83': 5718433924653867127
+      '!Switch2_84': 1117471918020349933
+      '!Switch2_85': 2951511098758410144
+      '!Switch2_86': 697567330984134525
+      '!Switch2_87': -6524214652642514479
+      '!Switch2_88': -5238533241178616725
+      '!Switch2_89': 6877649394025475123
+      '!Switch2_9': 5150084653993760576
+      '!Switch2_90': -4498813986322524886
+      '!Switch2_91': 2975111849660550915
+      '!Switch2_92': -1528734712288832428
+      '!Switch2_93': -7288124809196776538
+      '!Switch2_94': -1981023259197366500
+      '!Switch2_95': 3727668163203768930
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

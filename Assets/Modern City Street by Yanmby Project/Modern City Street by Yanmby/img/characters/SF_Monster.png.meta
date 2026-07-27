@@ -1,0 +1,2379 @@
+fileFormatVersion: 2
+guid: 7616d3f37fc5cf746afedb57b6ce12ba
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8393698789382779594
+    second: SF_Monster_0
+  - first:
+      213: -617787658524251651
+    second: SF_Monster_1
+  - first:
+      213: 3603371551201683797
+    second: SF_Monster_2
+  - first:
+      213: 6741451016346005857
+    second: SF_Monster_3
+  - first:
+      213: -8725376564410961620
+    second: SF_Monster_4
+  - first:
+      213: 7739801111659885168
+    second: SF_Monster_5
+  - first:
+      213: 4625142699269252949
+    second: SF_Monster_6
+  - first:
+      213: -1484144894826472600
+    second: SF_Monster_7
+  - first:
+      213: 5279424014764770137
+    second: SF_Monster_8
+  - first:
+      213: -4859591614819445851
+    second: SF_Monster_9
+  - first:
+      213: 1333213216698774658
+    second: SF_Monster_10
+  - first:
+      213: 6509336285501876583
+    second: SF_Monster_11
+  - first:
+      213: 632214634264158368
+    second: SF_Monster_12
+  - first:
+      213: 518746741382776526
+    second: SF_Monster_13
+  - first:
+      213: -6501499903086863517
+    second: SF_Monster_14
+  - first:
+      213: 619754647200936747
+    second: SF_Monster_15
+  - first:
+      213: 6200161866592451353
+    second: SF_Monster_16
+  - first:
+      213: -7047775692892089041
+    second: SF_Monster_17
+  - first:
+      213: 1368821262843018552
+    second: SF_Monster_18
+  - first:
+      213: 2783819816790563096
+    second: SF_Monster_19
+  - first:
+      213: 1775276167805015616
+    second: SF_Monster_20
+  - first:
+      213: 2057748714839682984
+    second: SF_Monster_21
+  - first:
+      213: 2768854923364774033
+    second: SF_Monster_22
+  - first:
+      213: -513794692360038925
+    second: SF_Monster_23
+  - first:
+      213: 654080194901896239
+    second: SF_Monster_24
+  - first:
+      213: 6806518429399863861
+    second: SF_Monster_25
+  - first:
+      213: -1353665940848779288
+    second: SF_Monster_26
+  - first:
+      213: 3258894823270983405
+    second: SF_Monster_27
+  - first:
+      213: -2150086377218934632
+    second: SF_Monster_28
+  - first:
+      213: -6537321976776319408
+    second: SF_Monster_29
+  - first:
+      213: -7433682524641838353
+    second: SF_Monster_30
+  - first:
+      213: -442613603838036909
+    second: SF_Monster_31
+  - first:
+      213: -6971586495460288651
+    second: SF_Monster_32
+  - first:
+      213: 8331463351903288698
+    second: SF_Monster_33
+  - first:
+      213: -1616387298384688152
+    second: SF_Monster_34
+  - first:
+      213: -7035849017786483936
+    second: SF_Monster_35
+  - first:
+      213: -8778884441015163404
+    second: SF_Monster_36
+  - first:
+      213: -3952264397385542794
+    second: SF_Monster_37
+  - first:
+      213: 4713221656719756442
+    second: SF_Monster_38
+  - first:
+      213: 6623208069618561097
+    second: SF_Monster_39
+  - first:
+      213: -2662553142146856710
+    second: SF_Monster_40
+  - first:
+      213: 2632180069832292836
+    second: SF_Monster_41
+  - first:
+      213: 5444480205931008963
+    second: SF_Monster_42
+  - first:
+      213: -5152986281104326419
+    second: SF_Monster_43
+  - first:
+      213: -7219077757265152442
+    second: SF_Monster_44
+  - first:
+      213: 4407608142256792239
+    second: SF_Monster_45
+  - first:
+      213: 6292643572230368873
+    second: SF_Monster_46
+  - first:
+      213: -1148764374189187058
+    second: SF_Monster_47
+  - first:
+      213: -2621459547866318934
+    second: SF_Monster_48
+  - first:
+      213: 4307858645499277905
+    second: SF_Monster_49
+  - first:
+      213: -4963207974821155650
+    second: SF_Monster_50
+  - first:
+      213: 2656605482804880418
+    second: SF_Monster_51
+  - first:
+      213: -378334924630538196
+    second: SF_Monster_52
+  - first:
+      213: -6798999963350520445
+    second: SF_Monster_53
+  - first:
+      213: -8504684596186290114
+    second: SF_Monster_54
+  - first:
+      213: -6691896082935905008
+    second: SF_Monster_55
+  - first:
+      213: -3652759744354618031
+    second: SF_Monster_56
+  - first:
+      213: -2945516930537124685
+    second: SF_Monster_57
+  - first:
+      213: -3258801361937449411
+    second: SF_Monster_58
+  - first:
+      213: 5402976111802604351
+    second: SF_Monster_59
+  - first:
+      213: 8491185253646843048
+    second: SF_Monster_60
+  - first:
+      213: 4529251386676661604
+    second: SF_Monster_61
+  - first:
+      213: -5514477047187938684
+    second: SF_Monster_62
+  - first:
+      213: 6095255426071065920
+    second: SF_Monster_63
+  - first:
+      213: -5112349621497022720
+    second: SF_Monster_64
+  - first:
+      213: -4220978489133826366
+    second: SF_Monster_65
+  - first:
+      213: 8577074114729523782
+    second: SF_Monster_66
+  - first:
+      213: -2549108806871834030
+    second: SF_Monster_67
+  - first:
+      213: 1055138827899707789
+    second: SF_Monster_68
+  - first:
+      213: -2308173302142555510
+    second: SF_Monster_69
+  - first:
+      213: 6600947640660171347
+    second: SF_Monster_70
+  - first:
+      213: 4903382289806853917
+    second: SF_Monster_71
+  - first:
+      213: -7840028140173821688
+    second: SF_Monster_72
+  - first:
+      213: 909853006598663458
+    second: SF_Monster_73
+  - first:
+      213: -8063563923700423770
+    second: SF_Monster_74
+  - first:
+      213: 226761019007978265
+    second: SF_Monster_75
+  - first:
+      213: -5026408554680969495
+    second: SF_Monster_76
+  - first:
+      213: 8902661570922006143
+    second: SF_Monster_77
+  - first:
+      213: -521270574466870142
+    second: SF_Monster_78
+  - first:
+      213: -1217949150510304377
+    second: SF_Monster_79
+  - first:
+      213: -6518746066452754981
+    second: SF_Monster_80
+  - first:
+      213: -261601897183592208
+    second: SF_Monster_81
+  - first:
+      213: -4145216653841986047
+    second: SF_Monster_82
+  - first:
+      213: 681883030250728520
+    second: SF_Monster_83
+  - first:
+      213: 4059361182278528633
+    second: SF_Monster_84
+  - first:
+      213: -237627338098317078
+    second: SF_Monster_85
+  - first:
+      213: 2032318934903827250
+    second: SF_Monster_86
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SF_Monster_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 335
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac279c4c3986c7470800000000000000
+      internalID: 8393698789382779594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_1
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 335
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df9aa03d56d2d67f0800000000000000
+      internalID: -617787658524251651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_2
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 287
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 559ef17955fb10230800000000000000
+      internalID: 3603371551201683797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_3
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 335
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 161fffb4bf17e8d50800000000000000
+      internalID: 6741451016346005857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_4
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 335
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2134c26e3c39e680800000000000000
+      internalID: -8725376564410961620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_5
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 287
+        width: 31
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07239a49a1c496b60800000000000000
+      internalID: 7739801111659885168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_6
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 191
+        width: 33
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5576f69a7cecf2040800000000000000
+      internalID: 4625142699269252949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_7
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 335
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86b98acd412476be0800000000000000
+      internalID: -1484144894826472600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_8
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 287
+        width: 31
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95388ba7b28444940800000000000000
+      internalID: 5279424014764770137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 335
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a3583d6c234f8cb0800000000000000
+      internalID: -4859591614819445851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_10
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 287
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 284bf2f5b56808210800000000000000
+      internalID: 1333213216698774658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_11
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 335
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76966ec1ddec55a50800000000000000
+      internalID: 6509336285501876583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_12
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 287
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a06e193cd316c800800000000000000
+      internalID: 632214634264158368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_13
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 335
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec60380b965f23700800000000000000
+      internalID: 518746741382776526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_14
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 287
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36b5549d84806c5a0800000000000000
+      internalID: -6501499903086863517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_15
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 335
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b233f4a619fc99800800000000000000
+      internalID: 619754647200936747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_16
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 287
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91b7a282e566b0650800000000000000
+      internalID: 6200161866592451353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_17
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 335
+        width: 43
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f25d8881955413e90800000000000000
+      internalID: -7047775692892089041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_18
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 287
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83d72ccafa70ff210800000000000000
+      internalID: 1368821262843018552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_19
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 335
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8199e72cf5d12a620800000000000000
+      internalID: 2783819816790563096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_20
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 287
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0461c30d44c03a810800000000000000
+      internalID: 1775276167805015616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_21
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 287
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8af2901cd879e8c10800000000000000
+      internalID: 2057748714839682984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_22
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 239
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 190bfbdf1e2fc6620800000000000000
+      internalID: 2768854923364774033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_23
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 287
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f516621372aed8f0800000000000000
+      internalID: -513794692360038925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_24
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 239
+        width: 31
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2ceeb7c872c31900800000000000000
+      internalID: 654080194901896239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_25
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 239
+        width: 31
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5325785f27c957e50800000000000000
+      internalID: 6806518429399863861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_26
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 239
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8efd923bfffc63de0800000000000000
+      internalID: -1353665940848779288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_27
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 239
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de62d6d439be93d20800000000000000
+      internalID: 3258894823270983405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_28
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 239
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8987571e4db5922e0800000000000000
+      internalID: -2150086377218934632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_29
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 239
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05e94ef5c44c645a0800000000000000
+      internalID: -6537321976776319408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_30
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 239
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feab1b1112146d890800000000000000
+      internalID: -7433682524641838353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_31
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 239
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3547a7ab5458bd9f0800000000000000
+      internalID: -442613603838036909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_32
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 239
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 577dd29f403ff3f90800000000000000
+      internalID: -6971586495460288651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_33
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 191
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7d716dc6cd4f9370800000000000000
+      internalID: 8331463351903288698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_34
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 239
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ebc35ce0507199e0800000000000000
+      internalID: -1616387298384688152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_35
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 191
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02b3e898894ab5e90800000000000000
+      internalID: -7035849017786483936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_36
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 191
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f566190d132b2680800000000000000
+      internalID: -8778884441015163404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_37
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 191
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6735967787cb629c0800000000000000
+      internalID: -3952264397385542794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_38
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 143
+        width: 49
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9c8574002ab86140800000000000000
+      internalID: 4713221656719756442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_39
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 191
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9407d17e5ac5aeb50800000000000000
+      internalID: 6623208069618561097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_40
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 191
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af88cb62606bc0bd0800000000000000
+      internalID: -2662553142146856710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_41
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 0
+        width: 45
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e9773fd3d1678420800000000000000
+      internalID: 2632180069832292836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_42
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 191
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c3d925b6edae8b40800000000000000
+      internalID: 5444480205931008963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_43
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 143
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de0c05e674aec78b0800000000000000
+      internalID: -5152986281104326419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_44
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 191
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6467940370fa0db90800000000000000
+      internalID: -7219077757265152442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_45
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 143
+        width: 43
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa2e55cb048fa2d30800000000000000
+      internalID: 4407608142256792239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_46
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 143
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96eafe43df5f35750800000000000000
+      internalID: 6292643572230368873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_47
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 191
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0064d953e4ce00f0800000000000000
+      internalID: -1148764374189187058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_48
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 143
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa73f582e64be9bd0800000000000000
+      internalID: -2621459547866318934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_49
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 143
+        width: 47
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15274933d9698cb30800000000000000
+      internalID: 4307858645499277905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_50
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 143
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebc2662a4a42f1bb0800000000000000
+      internalID: -4963207974821155650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_51
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 143
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 224a0fe7c982ed420800000000000000
+      internalID: 2656605482804880418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_52
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 143
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c28c54bf362efbaf0800000000000000
+      internalID: -378334924630538196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_53
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 143
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38d29945e8915a1a0800000000000000
+      internalID: -6798999963350520445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_54
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 143
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3864956b6a49f980800000000000000
+      internalID: -8504684596186290114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_55
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 95
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01507ceb7fb9123a0800000000000000
+      internalID: -6691896082935905008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_56
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 47
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15575eb9d5ace4dc0800000000000000
+      internalID: -3652759744354618031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_57
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 95
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bc8f6b25fb6f17d0800000000000000
+      internalID: -2945516930537124685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_58
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 47
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3eb82c5d6966c2d0800000000000000
+      internalID: -3258801361937449411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_59
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 95
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3b5ae1c52a3bfa40800000000000000
+      internalID: 5402976111802604351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_60
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 47
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8acb7adffffb6d570800000000000000
+      internalID: 8491185253646843048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_61
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 47
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46dce41a3222bde30800000000000000
+      internalID: 4529251386676661604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_62
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 95
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4826150b754a873b0800000000000000
+      internalID: -5514477047187938684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_63
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 47
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 045fc361482b69450800000000000000
+      internalID: 6095255426071065920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_64
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 95
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 007311b0b194d09b0800000000000000
+      internalID: -5112349621497022720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_65
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 47
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cefc968d621c65c0800000000000000
+      internalID: -4220978489133826366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_66
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 95
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64ab6acc673e70770800000000000000
+      internalID: 8577074114729523782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_67
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 95
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 252a590cb0fbf9cd0800000000000000
+      internalID: -2549108806871834030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_68
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 47
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d812fa17c2b94ae00800000000000000
+      internalID: 1055138827899707789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_69
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 0
+        width: 49
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8aa0c56c98b7ffd0800000000000000
+      internalID: -2308173302142555510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_70
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 95
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35a9086e7e64b9b50800000000000000
+      internalID: 6600947640660171347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_71
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 95
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1701ed96305c0440800000000000000
+      internalID: 4903382289806853917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_72
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 47
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8097fdbd1ff923390800000000000000
+      internalID: -7840028140173821688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_73
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 47
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22d62282d7270ac00800000000000000
+      internalID: 909853006598663458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_74
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 95
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a36e208557781090800000000000000
+      internalID: -8063563923700423770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_75
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 47
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91b40e202fd952300800000000000000
+      internalID: 226761019007978265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_76
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 95
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e69142fc0c9e3ab0800000000000000
+      internalID: -5026408554680969495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_77
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 44
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f76c35ac78b9c8b70800000000000000
+      internalID: 8902661570922006143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_78
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 0
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 284d901ac2314c8f0800000000000000
+      internalID: -521270574466870142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_79
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 0
+        width: 44
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 783385953b9f81fe0800000000000000
+      internalID: -1217949150510304377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_80
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 0
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bddcb188df2c885a0800000000000000
+      internalID: -6518746066452754981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_81
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f0cdc5e57a9e5cf0800000000000000
+      internalID: -261601897183592208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_82
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10e07b66a6b3976c0800000000000000
+      internalID: -4145216653841986047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_83
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 0
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84c2674d009867900800000000000000
+      internalID: 681883030250728520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_84
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 0
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97ea8b4ec7fb55830800000000000000
+      internalID: 4059361182278528633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_85
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 0
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae86abbe137c3bcf0800000000000000
+      internalID: -237627338098317078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Monster_86
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 0
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23b2e39bd4f343c10800000000000000
+      internalID: 2032318934903827250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SF_Monster_0: 8393698789382779594
+      SF_Monster_1: -617787658524251651
+      SF_Monster_10: 1333213216698774658
+      SF_Monster_11: 6509336285501876583
+      SF_Monster_12: 632214634264158368
+      SF_Monster_13: 518746741382776526
+      SF_Monster_14: -6501499903086863517
+      SF_Monster_15: 619754647200936747
+      SF_Monster_16: 6200161866592451353
+      SF_Monster_17: -7047775692892089041
+      SF_Monster_18: 1368821262843018552
+      SF_Monster_19: 2783819816790563096
+      SF_Monster_2: 3603371551201683797
+      SF_Monster_20: 1775276167805015616
+      SF_Monster_21: 2057748714839682984
+      SF_Monster_22: 2768854923364774033
+      SF_Monster_23: -513794692360038925
+      SF_Monster_24: 654080194901896239
+      SF_Monster_25: 6806518429399863861
+      SF_Monster_26: -1353665940848779288
+      SF_Monster_27: 3258894823270983405
+      SF_Monster_28: -2150086377218934632
+      SF_Monster_29: -6537321976776319408
+      SF_Monster_3: 6741451016346005857
+      SF_Monster_30: -7433682524641838353
+      SF_Monster_31: -442613603838036909
+      SF_Monster_32: -6971586495460288651
+      SF_Monster_33: 8331463351903288698
+      SF_Monster_34: -1616387298384688152
+      SF_Monster_35: -7035849017786483936
+      SF_Monster_36: -8778884441015163404
+      SF_Monster_37: -3952264397385542794
+      SF_Monster_38: 4713221656719756442
+      SF_Monster_39: 6623208069618561097
+      SF_Monster_4: -8725376564410961620
+      SF_Monster_40: -2662553142146856710
+      SF_Monster_41: 2632180069832292836
+      SF_Monster_42: 5444480205931008963
+      SF_Monster_43: -5152986281104326419
+      SF_Monster_44: -7219077757265152442
+      SF_Monster_45: 4407608142256792239
+      SF_Monster_46: 6292643572230368873
+      SF_Monster_47: -1148764374189187058
+      SF_Monster_48: -2621459547866318934
+      SF_Monster_49: 4307858645499277905
+      SF_Monster_5: 7739801111659885168
+      SF_Monster_50: -4963207974821155650
+      SF_Monster_51: 2656605482804880418
+      SF_Monster_52: -378334924630538196
+      SF_Monster_53: -6798999963350520445
+      SF_Monster_54: -8504684596186290114
+      SF_Monster_55: -6691896082935905008
+      SF_Monster_56: -3652759744354618031
+      SF_Monster_57: -2945516930537124685
+      SF_Monster_58: -3258801361937449411
+      SF_Monster_59: 5402976111802604351
+      SF_Monster_6: 4625142699269252949
+      SF_Monster_60: 8491185253646843048
+      SF_Monster_61: 4529251386676661604
+      SF_Monster_62: -5514477047187938684
+      SF_Monster_63: 6095255426071065920
+      SF_Monster_64: -5112349621497022720
+      SF_Monster_65: -4220978489133826366
+      SF_Monster_66: 8577074114729523782
+      SF_Monster_67: -2549108806871834030
+      SF_Monster_68: 1055138827899707789
+      SF_Monster_69: -2308173302142555510
+      SF_Monster_7: -1484144894826472600
+      SF_Monster_70: 6600947640660171347
+      SF_Monster_71: 4903382289806853917
+      SF_Monster_72: -7840028140173821688
+      SF_Monster_73: 909853006598663458
+      SF_Monster_74: -8063563923700423770
+      SF_Monster_75: 226761019007978265
+      SF_Monster_76: -5026408554680969495
+      SF_Monster_77: 8902661570922006143
+      SF_Monster_78: -521270574466870142
+      SF_Monster_79: -1217949150510304377
+      SF_Monster_8: 5279424014764770137
+      SF_Monster_80: -6518746066452754981
+      SF_Monster_81: -261601897183592208
+      SF_Monster_82: -4145216653841986047
+      SF_Monster_83: 681883030250728520
+      SF_Monster_84: 4059361182278528633
+      SF_Monster_85: -237627338098317078
+      SF_Monster_86: 2032318934903827250
+      SF_Monster_9: -4859591614819445851
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

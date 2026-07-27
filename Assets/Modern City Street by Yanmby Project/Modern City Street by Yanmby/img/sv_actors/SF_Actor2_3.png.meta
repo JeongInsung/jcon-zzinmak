@@ -1,0 +1,1521 @@
+fileFormatVersion: 2
+guid: 77cfd9ac61ecc474097fb7f3c04ce062
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1267737974843446136
+    second: SF_Actor2_3_0
+  - first:
+      213: 5018552351885862502
+    second: SF_Actor2_3_1
+  - first:
+      213: -7969332177063512511
+    second: SF_Actor2_3_2
+  - first:
+      213: 4965531704545198280
+    second: SF_Actor2_3_3
+  - first:
+      213: -3866080334978799384
+    second: SF_Actor2_3_4
+  - first:
+      213: 4391478682337809294
+    second: SF_Actor2_3_5
+  - first:
+      213: 8555948045648114744
+    second: SF_Actor2_3_6
+  - first:
+      213: -8949236002932832817
+    second: SF_Actor2_3_7
+  - first:
+      213: -4277592134460735660
+    second: SF_Actor2_3_8
+  - first:
+      213: -7021590489768341198
+    second: SF_Actor2_3_9
+  - first:
+      213: 1331410992120580484
+    second: SF_Actor2_3_10
+  - first:
+      213: 4743930622109108854
+    second: SF_Actor2_3_11
+  - first:
+      213: 7656288161701798850
+    second: SF_Actor2_3_12
+  - first:
+      213: 5603005279649158791
+    second: SF_Actor2_3_13
+  - first:
+      213: -5772729678208269985
+    second: SF_Actor2_3_14
+  - first:
+      213: -2096323471057935309
+    second: SF_Actor2_3_15
+  - first:
+      213: 2257852164011170316
+    second: SF_Actor2_3_16
+  - first:
+      213: -871328168664102436
+    second: SF_Actor2_3_17
+  - first:
+      213: 1936763718393033490
+    second: SF_Actor2_3_18
+  - first:
+      213: -5699917982020994216
+    second: SF_Actor2_3_19
+  - first:
+      213: 1459554918921309438
+    second: SF_Actor2_3_20
+  - first:
+      213: -6592709667727393290
+    second: SF_Actor2_3_21
+  - first:
+      213: 6035853691800737351
+    second: SF_Actor2_3_22
+  - first:
+      213: 4335705005253874509
+    second: SF_Actor2_3_23
+  - first:
+      213: -9033784660751710405
+    second: SF_Actor2_3_24
+  - first:
+      213: -3415613008019943077
+    second: SF_Actor2_3_25
+  - first:
+      213: 2807419751719061139
+    second: SF_Actor2_3_26
+  - first:
+      213: 3940779721069709209
+    second: SF_Actor2_3_27
+  - first:
+      213: -7035767354218671769
+    second: SF_Actor2_3_28
+  - first:
+      213: 1794407465902937869
+    second: SF_Actor2_3_29
+  - first:
+      213: -6527577257280786465
+    second: SF_Actor2_3_30
+  - first:
+      213: 4917897402318958407
+    second: SF_Actor2_3_31
+  - first:
+      213: -4067811082983127253
+    second: SF_Actor2_3_32
+  - first:
+      213: -8891296368330450013
+    second: SF_Actor2_3_33
+  - first:
+      213: -3260392519562412591
+    second: SF_Actor2_3_34
+  - first:
+      213: -9022324914360953471
+    second: SF_Actor2_3_35
+  - first:
+      213: 8901661969765382790
+    second: SF_Actor2_3_36
+  - first:
+      213: 5208012265237122135
+    second: SF_Actor2_3_37
+  - first:
+      213: -3236248359427732186
+    second: SF_Actor2_3_38
+  - first:
+      213: -5583466467562633197
+    second: SF_Actor2_3_39
+  - first:
+      213: -3514816432285683444
+    second: SF_Actor2_3_40
+  - first:
+      213: 2766158976632878693
+    second: SF_Actor2_3_41
+  - first:
+      213: -2790071515861940793
+    second: SF_Actor2_3_42
+  - first:
+      213: 6310486251108495519
+    second: SF_Actor2_3_43
+  - first:
+      213: 2541095848351503141
+    second: SF_Actor2_3_44
+  - first:
+      213: 1689163288633970504
+    second: SF_Actor2_3_45
+  - first:
+      213: 1456238414077181972
+    second: SF_Actor2_3_46
+  - first:
+      213: 4620121187561700004
+    second: SF_Actor2_3_47
+  - first:
+      213: -8284228682264539733
+    second: SF_Actor2_3_48
+  - first:
+      213: -2926480337621132301
+    second: SF_Actor2_3_49
+  - first:
+      213: -4926456012927712820
+    second: SF_Actor2_3_50
+  - first:
+      213: -5651998279134849627
+    second: SF_Actor2_3_51
+  - first:
+      213: 3016514367306155422
+    second: SF_Actor2_3_52
+  - first:
+      213: 6162404572057624116
+    second: SF_Actor2_3_53
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SF_Actor2_3_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 319
+        width: 44
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87311daa8f8e79110800000000000000
+      internalID: 1267737974843446136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 319
+        width: 44
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 666abdc46ca75a540800000000000000
+      internalID: 5018552351885862502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_2
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 319
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 146f909bb9e376190800000000000000
+      internalID: -7969332177063512511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_3
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 319
+        width: 44
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c04b5ad6cc19e440800000000000000
+      internalID: 4965531704545198280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 319
+        width: 49
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e827703b6ce85ac0800000000000000
+      internalID: -3866080334978799384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 319
+        width: 49
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e831273389aa1fc30800000000000000
+      internalID: 4391478682337809294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_6
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 319
+        width: 50
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 834bd898a65dcb670800000000000000
+      internalID: 8555948045648114744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_7
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 255
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc54d0a354dedc380800000000000000
+      internalID: -8949236002932832817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_8
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 319
+        width: 50
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45f767b0e90f2a4c0800000000000000
+      internalID: -4277592134460735660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_9
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 255
+        width: 48
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 231d81bc6ac4e8e90800000000000000
+      internalID: -7021590489768341198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_10
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 319
+        width: 50
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 489c5634e3f1a7210800000000000000
+      internalID: 1331410992120580484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_11
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 255
+        width: 45
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67a49e134c3d5d140800000000000000
+      internalID: 4743930622109108854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_12
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 191
+        width: 44
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c3a340b489904a60800000000000000
+      internalID: 7656288161701798850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_13
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 255
+        width: 45
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7865028ad9fd1cd40800000000000000
+      internalID: 5603005279649158791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_14
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 191
+        width: 44
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f518a0261f423efa0800000000000000
+      internalID: -5772729678208269985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_15
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 255
+        width: 45
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 334274de8ec58e2e0800000000000000
+      internalID: -2096323471057935309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_16
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 191
+        width: 44
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0a9b3f9490855f10800000000000000
+      internalID: 2257852164011170316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_17
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 255
+        width: 44
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd90cf7a5ab68e3f0800000000000000
+      internalID: -871328168664102436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_18
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 255
+        width: 44
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2137ea82754c0ea10800000000000000
+      internalID: 1936763718393033490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_19
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 255
+        width: 44
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85bf6c87bc2d5e0b0800000000000000
+      internalID: -5699917982020994216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_20
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 255
+        width: 45
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efc8a783771614410800000000000000
+      internalID: 1459554918921309438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_21
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 191
+        width: 45
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fd33d3ac7df184a0800000000000000
+      internalID: -6592709667727393290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_22
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 127
+        width: 47
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 746530014f8a3c350800000000000000
+      internalID: 6035853691800737351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_23
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 191
+        width: 45
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d435a011bb48b2c30800000000000000
+      internalID: 4335705005253874509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_24
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 127
+        width: 47
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b37858ec6bc81a280800000000000000
+      internalID: -9033784660751710405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_25
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 191
+        width: 45
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5194ced01e4990d0800000000000000
+      internalID: -3415613008019943077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_26
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 191
+        width: 43
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39641acc365f5f620800000000000000
+      internalID: 2807419751719061139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_27
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 191
+        width: 43
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9974c64f64670b630800000000000000
+      internalID: 3940779721069709209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_28
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 191
+        width: 43
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76191815edeeb5e90800000000000000
+      internalID: -7035767354218671769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_29
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 127
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d071473451407e810800000000000000
+      internalID: 1794407465902937869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_30
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 127
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdf2cdfa1136965a0800000000000000
+      internalID: -6527577257280786465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_31
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 127
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74fa90b91a1ef3440800000000000000
+      internalID: 4917897402318958407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_32
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 127
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b27c4694f5b3c87c0800000000000000
+      internalID: -4067811082983127253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_33
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 127
+        width: 43
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ab51f4af05cb9480800000000000000
+      internalID: -8891296368330450013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_34
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 127
+        width: 43
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dd342b1742c0c2d0800000000000000
+      internalID: -3260392519562412591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_35
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 127
+        width: 43
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 185db5fea434ac280800000000000000
+      internalID: -9022324914360953471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_36
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 0
+        width: 47
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68a3872066e098b70800000000000000
+      internalID: 8901661969765382790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_37
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 63
+        width: 44
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75c065fdf83964840800000000000000
+      internalID: 5208012265237122135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_38
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 0
+        width: 47
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62d8e5373498613d0800000000000000
+      internalID: -3236248359427732186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_39
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 63
+        width: 44
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 318cf9984da8382b0800000000000000
+      internalID: -5583466467562633197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_40
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 0
+        width: 47
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c01f7eeb31dd83fc0800000000000000
+      internalID: -3514816432285683444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_41
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 63
+        width: 44
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 566f57afeee536620800000000000000
+      internalID: 2766158976632878693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_42
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 63
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c50d1f1dbca749d0800000000000000
+      internalID: -2790071515861940793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_43
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 63
+        width: 53
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f90fe4d9fc9539750800000000000000
+      internalID: 6310486251108495519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_44
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 0
+        width: 53
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5231635f539c34320800000000000000
+      internalID: 2541095848351503141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_45
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 63
+        width: 53
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84f88aabf0d117710800000000000000
+      internalID: 1689163288633970504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_46
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 0
+        width: 53
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41049534f19953410800000000000000
+      internalID: 1456238414077181972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_47
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 63
+        width: 43
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aafedbddb7fd1040800000000000000
+      internalID: 4620121187561700004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_48
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 63
+        width: 43
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bad058bb7e1880d80800000000000000
+      internalID: -8284228682264539733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_49
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 63
+        width: 43
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fb5de953ad0367d0800000000000000
+      internalID: -2926480337621132301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_50
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 0
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc14bd39b56b1abb0800000000000000
+      internalID: -4926456012927712820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_51
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 0
+        width: 63
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a55c0db2811091b0800000000000000
+      internalID: -5651998279134849627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_52
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 0
+        width: 63
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e95452bb5dfccd920800000000000000
+      internalID: 3016514367306155422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Actor2_3_53
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 0
+        width: 63
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43edcb7fe42458550800000000000000
+      internalID: 6162404572057624116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SF_Actor2_3_0: 1267737974843446136
+      SF_Actor2_3_1: 5018552351885862502
+      SF_Actor2_3_10: 1331410992120580484
+      SF_Actor2_3_11: 4743930622109108854
+      SF_Actor2_3_12: 7656288161701798850
+      SF_Actor2_3_13: 5603005279649158791
+      SF_Actor2_3_14: -5772729678208269985
+      SF_Actor2_3_15: -2096323471057935309
+      SF_Actor2_3_16: 2257852164011170316
+      SF_Actor2_3_17: -871328168664102436
+      SF_Actor2_3_18: 1936763718393033490
+      SF_Actor2_3_19: -5699917982020994216
+      SF_Actor2_3_2: -7969332177063512511
+      SF_Actor2_3_20: 1459554918921309438
+      SF_Actor2_3_21: -6592709667727393290
+      SF_Actor2_3_22: 6035853691800737351
+      SF_Actor2_3_23: 4335705005253874509
+      SF_Actor2_3_24: -9033784660751710405
+      SF_Actor2_3_25: -3415613008019943077
+      SF_Actor2_3_26: 2807419751719061139
+      SF_Actor2_3_27: 3940779721069709209
+      SF_Actor2_3_28: -7035767354218671769
+      SF_Actor2_3_29: 1794407465902937869
+      SF_Actor2_3_3: 4965531704545198280
+      SF_Actor2_3_30: -6527577257280786465
+      SF_Actor2_3_31: 4917897402318958407
+      SF_Actor2_3_32: -4067811082983127253
+      SF_Actor2_3_33: -8891296368330450013
+      SF_Actor2_3_34: -3260392519562412591
+      SF_Actor2_3_35: -9022324914360953471
+      SF_Actor2_3_36: 8901661969765382790
+      SF_Actor2_3_37: 5208012265237122135
+      SF_Actor2_3_38: -3236248359427732186
+      SF_Actor2_3_39: -5583466467562633197
+      SF_Actor2_3_4: -3866080334978799384
+      SF_Actor2_3_40: -3514816432285683444
+      SF_Actor2_3_41: 2766158976632878693
+      SF_Actor2_3_42: -2790071515861940793
+      SF_Actor2_3_43: 6310486251108495519
+      SF_Actor2_3_44: 2541095848351503141
+      SF_Actor2_3_45: 1689163288633970504
+      SF_Actor2_3_46: 1456238414077181972
+      SF_Actor2_3_47: 4620121187561700004
+      SF_Actor2_3_48: -8284228682264539733
+      SF_Actor2_3_49: -2926480337621132301
+      SF_Actor2_3_5: 4391478682337809294
+      SF_Actor2_3_50: -4926456012927712820
+      SF_Actor2_3_51: -5651998279134849627
+      SF_Actor2_3_52: 3016514367306155422
+      SF_Actor2_3_53: 6162404572057624116
+      SF_Actor2_3_6: 8555948045648114744
+      SF_Actor2_3_7: -8949236002932832817
+      SF_Actor2_3_8: -4277592134460735660
+      SF_Actor2_3_9: -7021590489768341198
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

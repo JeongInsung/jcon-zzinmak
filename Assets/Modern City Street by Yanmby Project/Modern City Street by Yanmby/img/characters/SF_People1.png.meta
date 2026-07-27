@@ -1,0 +1,2613 @@
+fileFormatVersion: 2
+guid: 60ae0ec0156de9048b265ddcc34657f1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4395723182406505288
+    second: SF_People1_0
+  - first:
+      213: 7290747585760608103
+    second: SF_People1_1
+  - first:
+      213: 4780111965448723124
+    second: SF_People1_2
+  - first:
+      213: 6352142822002973876
+    second: SF_People1_3
+  - first:
+      213: -8313064062669485748
+    second: SF_People1_4
+  - first:
+      213: 1399803193378740926
+    second: SF_People1_5
+  - first:
+      213: -1513206225637257027
+    second: SF_People1_6
+  - first:
+      213: -7874736529128104932
+    second: SF_People1_7
+  - first:
+      213: -1571278350991880071
+    second: SF_People1_8
+  - first:
+      213: 2541212437359431887
+    second: SF_People1_9
+  - first:
+      213: -3993535359548010343
+    second: SF_People1_10
+  - first:
+      213: -8058634923875866465
+    second: SF_People1_11
+  - first:
+      213: 1327474497533709189
+    second: SF_People1_12
+  - first:
+      213: 7834101786182676133
+    second: SF_People1_13
+  - first:
+      213: 7611020115624488480
+    second: SF_People1_14
+  - first:
+      213: -3467048704374379633
+    second: SF_People1_15
+  - first:
+      213: -5157800684874099924
+    second: SF_People1_16
+  - first:
+      213: -6854538995588692451
+    second: SF_People1_17
+  - first:
+      213: -7203249116872563460
+    second: SF_People1_18
+  - first:
+      213: -3506344457821186277
+    second: SF_People1_19
+  - first:
+      213: -958655419659984504
+    second: SF_People1_20
+  - first:
+      213: -4888241670308342288
+    second: SF_People1_21
+  - first:
+      213: -7502240498275156419
+    second: SF_People1_22
+  - first:
+      213: -844987714799210761
+    second: SF_People1_23
+  - first:
+      213: -7035785286047203667
+    second: SF_People1_24
+  - first:
+      213: -4602501591341766890
+    second: SF_People1_25
+  - first:
+      213: -8597008779454725928
+    second: SF_People1_26
+  - first:
+      213: -2985577411390085997
+    second: SF_People1_27
+  - first:
+      213: 5813747577021806073
+    second: SF_People1_28
+  - first:
+      213: 3954485153823208556
+    second: SF_People1_29
+  - first:
+      213: -6222630207444929375
+    second: SF_People1_30
+  - first:
+      213: 4112893967614233266
+    second: SF_People1_31
+  - first:
+      213: -7506661777082320546
+    second: SF_People1_32
+  - first:
+      213: -69715651690487419
+    second: SF_People1_33
+  - first:
+      213: 2063572369709917904
+    second: SF_People1_34
+  - first:
+      213: 2434181975479201028
+    second: SF_People1_35
+  - first:
+      213: -5689392945913124991
+    second: SF_People1_36
+  - first:
+      213: -16751781909572448
+    second: SF_People1_37
+  - first:
+      213: -6823217825234051846
+    second: SF_People1_38
+  - first:
+      213: -4167583950504996194
+    second: SF_People1_39
+  - first:
+      213: -4759558986375377729
+    second: SF_People1_40
+  - first:
+      213: -2732646863543430720
+    second: SF_People1_41
+  - first:
+      213: -3403256138921243269
+    second: SF_People1_42
+  - first:
+      213: 94895036067122935
+    second: SF_People1_43
+  - first:
+      213: -1589522905156167050
+    second: SF_People1_44
+  - first:
+      213: 6968796675981929159
+    second: SF_People1_45
+  - first:
+      213: 5466491321536137641
+    second: SF_People1_46
+  - first:
+      213: 7728076520690598279
+    second: SF_People1_47
+  - first:
+      213: -8630102359397612932
+    second: SF_People1_48
+  - first:
+      213: -1313652232060804887
+    second: SF_People1_49
+  - first:
+      213: 6376913160467252858
+    second: SF_People1_50
+  - first:
+      213: -8757606174080886560
+    second: SF_People1_51
+  - first:
+      213: -6678759041196221275
+    second: SF_People1_52
+  - first:
+      213: 4509245412804080212
+    second: SF_People1_53
+  - first:
+      213: 2725312415654780883
+    second: SF_People1_54
+  - first:
+      213: 8467882298896211428
+    second: SF_People1_55
+  - first:
+      213: 5972846663725959467
+    second: SF_People1_56
+  - first:
+      213: -3408432779020745985
+    second: SF_People1_57
+  - first:
+      213: 8482711760086188660
+    second: SF_People1_58
+  - first:
+      213: -4352518893283598627
+    second: SF_People1_59
+  - first:
+      213: -3163137043977953795
+    second: SF_People1_60
+  - first:
+      213: -8154385445989176035
+    second: SF_People1_61
+  - first:
+      213: 771635078682308234
+    second: SF_People1_62
+  - first:
+      213: -4800273080564093149
+    second: SF_People1_63
+  - first:
+      213: -7587961297111732471
+    second: SF_People1_64
+  - first:
+      213: -2227932712027018726
+    second: SF_People1_65
+  - first:
+      213: -4196223892040049057
+    second: SF_People1_66
+  - first:
+      213: -4848644560458274886
+    second: SF_People1_67
+  - first:
+      213: 398421116666442287
+    second: SF_People1_68
+  - first:
+      213: 701997106769952016
+    second: SF_People1_69
+  - first:
+      213: 4089994697357951658
+    second: SF_People1_70
+  - first:
+      213: -6844191248307000592
+    second: SF_People1_71
+  - first:
+      213: 3872552926219147714
+    second: SF_People1_72
+  - first:
+      213: -9045802457924507083
+    second: SF_People1_73
+  - first:
+      213: -2815305644003167017
+    second: SF_People1_74
+  - first:
+      213: 3557995368401330780
+    second: SF_People1_75
+  - first:
+      213: -8856123448350349016
+    second: SF_People1_76
+  - first:
+      213: 8802694625038998039
+    second: SF_People1_77
+  - first:
+      213: 6098604595133966290
+    second: SF_People1_78
+  - first:
+      213: 6225723813610724463
+    second: SF_People1_79
+  - first:
+      213: 4147171230022705768
+    second: SF_People1_80
+  - first:
+      213: -4685744599682497770
+    second: SF_People1_81
+  - first:
+      213: -2283642447242661004
+    second: SF_People1_82
+  - first:
+      213: 4422502634367931514
+    second: SF_People1_83
+  - first:
+      213: -992993548721420310
+    second: SF_People1_84
+  - first:
+      213: 6563201743123618947
+    second: SF_People1_85
+  - first:
+      213: -8322256632132435038
+    second: SF_People1_86
+  - first:
+      213: -694202717533712656
+    second: SF_People1_87
+  - first:
+      213: 4248896307383733034
+    second: SF_People1_88
+  - first:
+      213: 6079371109719482978
+    second: SF_People1_89
+  - first:
+      213: -8011155013863733701
+    second: SF_People1_90
+  - first:
+      213: 385318286928889910
+    second: SF_People1_91
+  - first:
+      213: 3714822254710167272
+    second: SF_People1_92
+  - first:
+      213: -1999644729627213063
+    second: SF_People1_93
+  - first:
+      213: 902647146758689087
+    second: SF_People1_94
+  - first:
+      213: -6161603279306308972
+    second: SF_People1_95
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SF_People1_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 335
+        width: 35
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bce5bd1e014ff2c0800000000000000
+      internalID: -4395723182406505288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_1
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 335
+        width: 35
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76f3c4c1d40fd2560800000000000000
+      internalID: 7290747585760608103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_2
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 335
+        width: 35
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ba5a27a18e565240800000000000000
+      internalID: 4780111965448723124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_3
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 335
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bcd804dd38572850800000000000000
+      internalID: 6352142822002973876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_4
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 335
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c49058d874012ac80800000000000000
+      internalID: -8313064062669485748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_5
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 335
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eba1cc086991d6310800000000000000
+      internalID: 1399803193378740926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_6
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 335
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db05bf084f2000be0800000000000000
+      internalID: -1513206225637257027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_7
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 335
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1cd68159d057b290800000000000000
+      internalID: -7874736529128104932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_8
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 287
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9701edd2aa2b13ae0800000000000000
+      internalID: -1571278350991880071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_9
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 335
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc01d937f33344320800000000000000
+      internalID: 2541212437359431887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_10
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 335
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 990dd28cfbc1498c0800000000000000
+      internalID: -3993535359548010343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_11
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 335
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9862d3bb3af92090800000000000000
+      internalID: -8058634923875866465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_12
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 287
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58b03e1b5032c6210800000000000000
+      internalID: 1327474497533709189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_13
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 335
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aeeba3511258bc60800000000000000
+      internalID: 7834101786182676133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_14
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 287
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02e66226876cf9960800000000000000
+      internalID: 7611020115624488480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_15
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 287
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8b69c4929192efc0800000000000000
+      internalID: -3467048704374379633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_16
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 287
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2310d3ba9fcb68b0800000000000000
+      internalID: -5157800684874099924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_17
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 287
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d168fd4b919cfd0a0800000000000000
+      internalID: -6854538995588692451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_18
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 287
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf42a28b71be80c90800000000000000
+      internalID: -7203249116872563460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_19
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 287
+        width: 33
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1798630b46f65fc0800000000000000
+      internalID: -3506344457821186277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_20
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 287
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 881e92999fb22b2f0800000000000000
+      internalID: -958655419659984504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_21
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 239
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f55201991a792cb0800000000000000
+      internalID: -4888241670308342288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_22
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 287
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3e72c0f300b2e790800000000000000
+      internalID: -7502240498275156419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_23
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 287
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fee2db76200644f0800000000000000
+      internalID: -844987714799210761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_24
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 239
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dae7c3d3f8edb5e90800000000000000
+      internalID: -7035785286047203667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_25
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 287
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61767e11031a020c0800000000000000
+      internalID: -4602501591341766890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_26
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 239
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d0cfa1601a41b880800000000000000
+      internalID: -8597008779454725928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_27
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 239
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 394e9a0a9291196d0800000000000000
+      internalID: -2985577411390085997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_28
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 239
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f53c266e949ea050800000000000000
+      internalID: 5813747577021806073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_29
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 239
+        width: 34
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c64303fab4721e630800000000000000
+      internalID: 3954485153823208556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_30
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 239
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a431a49bc6c4a9a0800000000000000
+      internalID: -6222630207444929375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_31
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 239
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ba4e72c54fe31930800000000000000
+      internalID: 4112893967614233266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_32
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 239
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e597100c2eaf2d790800000000000000
+      internalID: -7506661777082320546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_33
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 191
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58124b1fbf1580ff0800000000000000
+      internalID: -69715651690487419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_34
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 239
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d6eed0132843ac10800000000000000
+      internalID: 2063572369709917904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_35
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 239
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40da81f1c93f7c120800000000000000
+      internalID: 2434181975479201028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_36
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 191
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1872c3762473b01b0800000000000000
+      internalID: -5689392945913124991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_37
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 239
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a4dce5d75c74cff0800000000000000
+      internalID: -16751781909572448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_38
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 191
+        width: 35
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afc9fc5f98f0f41a0800000000000000
+      internalID: -6823217825234051846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_39
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 143
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e92d7825a74c926c0800000000000000
+      internalID: -4167583950504996194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_40
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 191
+        width: 35
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbcc391b156a2fdb0800000000000000
+      internalID: -4759558986375377729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_41
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 191
+        width: 35
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c198e1e720b31ad0800000000000000
+      internalID: -2732646863543430720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_42
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 191
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7d8ee7a29435c0d0800000000000000
+      internalID: -3403256138921243269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_43
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 191
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fe8ab35882215100800000000000000
+      internalID: 94895036067122935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_44
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 143
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67ad1d3e651e0f9e0800000000000000
+      internalID: -1589522905156167050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_45
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 191
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ca63df87a326b060800000000000000
+      internalID: 6968796675981929159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_46
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 191
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a9caebe4e0ecdb40800000000000000
+      internalID: 5466491321536137641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_47
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 143
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 781ccc486a4af3b60800000000000000
+      internalID: 7728076520690598279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_48
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 143
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7248dcd0a7bb3880800000000000000
+      internalID: -8630102359397612932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_49
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 191
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e0ed954148f4cde0800000000000000
+      internalID: -1313652232060804887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_50
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 143
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a760a2dabb85f7850800000000000000
+      internalID: 6376913160467252858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_51
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 191
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e8142f959bb67680800000000000000
+      internalID: -8757606174080886560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_52
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 143
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ac1211a9084053a0800000000000000
+      internalID: -6678759041196221275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_53
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 191
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4523f3bdfce049e30800000000000000
+      internalID: 4509245412804080212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_54
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 143
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3df9015e33142d520800000000000000
+      internalID: 2725312415654780883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_55
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 95
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4edd6890616f38570800000000000000
+      internalID: 8467882298896211428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_56
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 143
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2943492560d3e250800000000000000
+      internalID: 5972846663725959467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_57
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 143
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff2cba53270d2b0d0800000000000000
+      internalID: -3408432779020745985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_58
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 95
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47247f70765a8b570800000000000000
+      internalID: 8482711760086188660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_59
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 143
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dde97af802fb893c0800000000000000
+      internalID: -4352518893283598627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_60
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 95
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfd90d51e974a14d0800000000000000
+      internalID: -3163137043977953795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_61
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 143
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1d233204adc5de80800000000000000
+      internalID: -8154385445989176035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_62
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 95
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8ee619040665ba00800000000000000
+      internalID: 771635078682308234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_63
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 143
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32f6b10f011026db0800000000000000
+      internalID: -4800273080564093149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_64
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 95
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90f2e3c276522b690800000000000000
+      internalID: -7587961297111732471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_65
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 47
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1a2824a00bc411e0800000000000000
+      internalID: -2227932712027018726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_66
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 95
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5e12fc4a9404c5c0800000000000000
+      internalID: -4196223892040049057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_67
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 95
+        width: 31
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab721c3267726bcb0800000000000000
+      internalID: -4848644560458274886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_68
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 47
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f22fae905e9778500800000000000000
+      internalID: 398421116666442287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_69
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 95
+        width: 31
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01dff5636aefdb900800000000000000
+      internalID: 701997106769952016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_70
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 95
+        width: 31
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa2804de18492c830800000000000000
+      internalID: 4089994697357951658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_71
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 47
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fae2dd525c8401a0800000000000000
+      internalID: -6844191248307000592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_72
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 95
+        width: 31
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c911356e521eb530800000000000000
+      internalID: 3872552926219147714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_73
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 95
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53aed0b579ad67280800000000000000
+      internalID: -9045802457924507083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_74
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 47
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d4f903de660ee8d0800000000000000
+      internalID: -2815305644003167017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_75
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 95
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c52eb0ebfe9806130800000000000000
+      internalID: 3557995368401330780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_76
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 47
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 829e11e35aab81580800000000000000
+      internalID: -8856123448350349016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_77
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 0
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71a90bf6f14792a70800000000000000
+      internalID: 8802694625038998039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_78
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 47
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d76686419892a450800000000000000
+      internalID: 6098604595133966290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_79
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 47
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6c15fbb2d6366650800000000000000
+      internalID: 6225723813610724463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_80
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 0
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8622934d246bd8930800000000000000
+      internalID: 4147171230022705768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_81
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 47
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61348bbdc14e8feb0800000000000000
+      internalID: -4685744599682497770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_82
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 47
+        width: 31
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 473f8122b4fde40e0800000000000000
+      internalID: -2283642447242661004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_83
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 0
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a74dabbe6b2ef5d30800000000000000
+      internalID: 4422502634367931514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_84
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 0
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae78438e0ad2832f0800000000000000
+      internalID: -992993548721420310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_85
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 47
+        width: 31
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38c9b18463d251b50800000000000000
+      internalID: 6563201743123618947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_86
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 0
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a38b10bfa7618c80800000000000000
+      internalID: -8322256632132435038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_87
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 47
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0feca437e42bd56f0800000000000000
+      internalID: -694202717533712656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_88
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 0
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2b83111eac17fa30800000000000000
+      internalID: 4248896307383733034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_89
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 47
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2622a9c70d34e5450800000000000000
+      internalID: 6079371109719482978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_90
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 0
+        width: 37
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b360016b5f8a2d090800000000000000
+      internalID: -8011155013863733701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_91
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 0
+        width: 37
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 638cbd1c0fce85500800000000000000
+      internalID: 385318286928889910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_92
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 0
+        width: 35
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e617bf9823bd8330800000000000000
+      internalID: 3714822254710167272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_93
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 0
+        width: 35
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f2869586b5df34e0800000000000000
+      internalID: -1999644729627213063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_94
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 0
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f31521c2cc8d68c00800000000000000
+      internalID: 902647146758689087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_People1_95
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 0
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 492c01a86769d7aa0800000000000000
+      internalID: -6161603279306308972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SF_People1_0: -4395723182406505288
+      SF_People1_1: 7290747585760608103
+      SF_People1_10: -3993535359548010343
+      SF_People1_11: -8058634923875866465
+      SF_People1_12: 1327474497533709189
+      SF_People1_13: 7834101786182676133
+      SF_People1_14: 7611020115624488480
+      SF_People1_15: -3467048704374379633
+      SF_People1_16: -5157800684874099924
+      SF_People1_17: -6854538995588692451
+      SF_People1_18: -7203249116872563460
+      SF_People1_19: -3506344457821186277
+      SF_People1_2: 4780111965448723124
+      SF_People1_20: -958655419659984504
+      SF_People1_21: -4888241670308342288
+      SF_People1_22: -7502240498275156419
+      SF_People1_23: -844987714799210761
+      SF_People1_24: -7035785286047203667
+      SF_People1_25: -4602501591341766890
+      SF_People1_26: -8597008779454725928
+      SF_People1_27: -2985577411390085997
+      SF_People1_28: 5813747577021806073
+      SF_People1_29: 3954485153823208556
+      SF_People1_3: 6352142822002973876
+      SF_People1_30: -6222630207444929375
+      SF_People1_31: 4112893967614233266
+      SF_People1_32: -7506661777082320546
+      SF_People1_33: -69715651690487419
+      SF_People1_34: 2063572369709917904
+      SF_People1_35: 2434181975479201028
+      SF_People1_36: -5689392945913124991
+      SF_People1_37: -16751781909572448
+      SF_People1_38: -6823217825234051846
+      SF_People1_39: -4167583950504996194
+      SF_People1_4: -8313064062669485748
+      SF_People1_40: -4759558986375377729
+      SF_People1_41: -2732646863543430720
+      SF_People1_42: -3403256138921243269
+      SF_People1_43: 94895036067122935
+      SF_People1_44: -1589522905156167050
+      SF_People1_45: 6968796675981929159
+      SF_People1_46: 5466491321536137641
+      SF_People1_47: 7728076520690598279
+      SF_People1_48: -8630102359397612932
+      SF_People1_49: -1313652232060804887
+      SF_People1_5: 1399803193378740926
+      SF_People1_50: 6376913160467252858
+      SF_People1_51: -8757606174080886560
+      SF_People1_52: -6678759041196221275
+      SF_People1_53: 4509245412804080212
+      SF_People1_54: 2725312415654780883
+      SF_People1_55: 8467882298896211428
+      SF_People1_56: 5972846663725959467
+      SF_People1_57: -3408432779020745985
+      SF_People1_58: 8482711760086188660
+      SF_People1_59: -4352518893283598627
+      SF_People1_6: -1513206225637257027
+      SF_People1_60: -3163137043977953795
+      SF_People1_61: -8154385445989176035
+      SF_People1_62: 771635078682308234
+      SF_People1_63: -4800273080564093149
+      SF_People1_64: -7587961297111732471
+      SF_People1_65: -2227932712027018726
+      SF_People1_66: -4196223892040049057
+      SF_People1_67: -4848644560458274886
+      SF_People1_68: 398421116666442287
+      SF_People1_69: 701997106769952016
+      SF_People1_7: -7874736529128104932
+      SF_People1_70: 4089994697357951658
+      SF_People1_71: -6844191248307000592
+      SF_People1_72: 3872552926219147714
+      SF_People1_73: -9045802457924507083
+      SF_People1_74: -2815305644003167017
+      SF_People1_75: 3557995368401330780
+      SF_People1_76: -8856123448350349016
+      SF_People1_77: 8802694625038998039
+      SF_People1_78: 6098604595133966290
+      SF_People1_79: 6225723813610724463
+      SF_People1_8: -1571278350991880071
+      SF_People1_80: 4147171230022705768
+      SF_People1_81: -4685744599682497770
+      SF_People1_82: -2283642447242661004
+      SF_People1_83: 4422502634367931514
+      SF_People1_84: -992993548721420310
+      SF_People1_85: 6563201743123618947
+      SF_People1_86: -8322256632132435038
+      SF_People1_87: -694202717533712656
+      SF_People1_88: 4248896307383733034
+      SF_People1_89: 6079371109719482978
+      SF_People1_9: 2541212437359431887
+      SF_People1_90: -8011155013863733701
+      SF_People1_91: 385318286928889910
+      SF_People1_92: 3714822254710167272
+      SF_People1_93: -1999644729627213063
+      SF_People1_94: 902647146758689087
+      SF_People1_95: -6161603279306308972
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

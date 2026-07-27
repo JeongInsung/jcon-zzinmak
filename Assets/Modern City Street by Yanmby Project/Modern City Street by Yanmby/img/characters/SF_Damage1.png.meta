@@ -1,0 +1,2353 @@
+fileFormatVersion: 2
+guid: 9c5907dc0f331b248a727380215f1d48
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -224994132665981931
+    second: SF_Damage1_0
+  - first:
+      213: 6735888106989543487
+    second: SF_Damage1_1
+  - first:
+      213: -5929852926721698171
+    second: SF_Damage1_2
+  - first:
+      213: 3835539631309101334
+    second: SF_Damage1_3
+  - first:
+      213: 1969299312998691438
+    second: SF_Damage1_4
+  - first:
+      213: -1447923562714546302
+    second: SF_Damage1_5
+  - first:
+      213: -4516950744552236807
+    second: SF_Damage1_6
+  - first:
+      213: 540061787403053623
+    second: SF_Damage1_7
+  - first:
+      213: 3088688171725187537
+    second: SF_Damage1_8
+  - first:
+      213: -7372692371454471127
+    second: SF_Damage1_9
+  - first:
+      213: 450923306515246256
+    second: SF_Damage1_10
+  - first:
+      213: 5593101851434381530
+    second: SF_Damage1_11
+  - first:
+      213: -8185974799784746268
+    second: SF_Damage1_12
+  - first:
+      213: -6884282285716270506
+    second: SF_Damage1_13
+  - first:
+      213: 1828826868008897746
+    second: SF_Damage1_14
+  - first:
+      213: -157737638725646870
+    second: SF_Damage1_15
+  - first:
+      213: 665761748657337215
+    second: SF_Damage1_16
+  - first:
+      213: -6485950258554230991
+    second: SF_Damage1_17
+  - first:
+      213: 2925107866447691620
+    second: SF_Damage1_18
+  - first:
+      213: -1788666498570058828
+    second: SF_Damage1_19
+  - first:
+      213: 8951517314889404495
+    second: SF_Damage1_20
+  - first:
+      213: -3104651679260417774
+    second: SF_Damage1_21
+  - first:
+      213: -4618685751698819309
+    second: SF_Damage1_22
+  - first:
+      213: -6473798709187707115
+    second: SF_Damage1_23
+  - first:
+      213: 4119361694833598600
+    second: SF_Damage1_24
+  - first:
+      213: 8620574513761202538
+    second: SF_Damage1_25
+  - first:
+      213: 3304022056790432316
+    second: SF_Damage1_26
+  - first:
+      213: 9141992308953415896
+    second: SF_Damage1_27
+  - first:
+      213: -173939389000797997
+    second: SF_Damage1_28
+  - first:
+      213: -7725411060856325219
+    second: SF_Damage1_29
+  - first:
+      213: 2615022245140204970
+    second: SF_Damage1_30
+  - first:
+      213: -1143960613835907557
+    second: SF_Damage1_31
+  - first:
+      213: 4384708985304910042
+    second: SF_Damage1_32
+  - first:
+      213: 5580247618631013012
+    second: SF_Damage1_33
+  - first:
+      213: 490280548434065799
+    second: SF_Damage1_34
+  - first:
+      213: -8175777057868662131
+    second: SF_Damage1_35
+  - first:
+      213: 7528220804135811286
+    second: SF_Damage1_36
+  - first:
+      213: -4194193859031672273
+    second: SF_Damage1_37
+  - first:
+      213: 5695779158091504963
+    second: SF_Damage1_38
+  - first:
+      213: -1904178549440416509
+    second: SF_Damage1_39
+  - first:
+      213: -7966264728971177534
+    second: SF_Damage1_40
+  - first:
+      213: -7855275437367275164
+    second: SF_Damage1_41
+  - first:
+      213: -7154078163561279047
+    second: SF_Damage1_42
+  - first:
+      213: 4573691892639733389
+    second: SF_Damage1_43
+  - first:
+      213: -7142028829301068014
+    second: SF_Damage1_44
+  - first:
+      213: -4023977865878855299
+    second: SF_Damage1_45
+  - first:
+      213: -946572947054808189
+    second: SF_Damage1_46
+  - first:
+      213: 7161064450953723287
+    second: SF_Damage1_47
+  - first:
+      213: -7119069988113559220
+    second: SF_Damage1_48
+  - first:
+      213: 2922250681839507713
+    second: SF_Damage1_49
+  - first:
+      213: 5827841786998830337
+    second: SF_Damage1_50
+  - first:
+      213: 2787754451122515701
+    second: SF_Damage1_51
+  - first:
+      213: 4656015014327585016
+    second: SF_Damage1_52
+  - first:
+      213: 7801047619821059139
+    second: SF_Damage1_53
+  - first:
+      213: -5273936310325651473
+    second: SF_Damage1_54
+  - first:
+      213: 8768581728921130886
+    second: SF_Damage1_55
+  - first:
+      213: 4648904577049020227
+    second: SF_Damage1_56
+  - first:
+      213: -6343643342293560558
+    second: SF_Damage1_57
+  - first:
+      213: 8441371225513644716
+    second: SF_Damage1_58
+  - first:
+      213: -8786633303189827579
+    second: SF_Damage1_59
+  - first:
+      213: 243272126209625207
+    second: SF_Damage1_60
+  - first:
+      213: -5165264001886439247
+    second: SF_Damage1_61
+  - first:
+      213: 3717137146461650374
+    second: SF_Damage1_62
+  - first:
+      213: -8888566302371603564
+    second: SF_Damage1_63
+  - first:
+      213: -2487773724203799300
+    second: SF_Damage1_64
+  - first:
+      213: -1450099272347067567
+    second: SF_Damage1_65
+  - first:
+      213: -5440913237550611064
+    second: SF_Damage1_66
+  - first:
+      213: -5942847436495036773
+    second: SF_Damage1_67
+  - first:
+      213: -2752196633049385490
+    second: SF_Damage1_68
+  - first:
+      213: 2817435260647781807
+    second: SF_Damage1_69
+  - first:
+      213: -4284347399425219833
+    second: SF_Damage1_70
+  - first:
+      213: 6902854056761452207
+    second: SF_Damage1_71
+  - first:
+      213: 4438437161369893878
+    second: SF_Damage1_72
+  - first:
+      213: 4658009074466144611
+    second: SF_Damage1_73
+  - first:
+      213: -5662122661662471535
+    second: SF_Damage1_74
+  - first:
+      213: -7626286796651540082
+    second: SF_Damage1_75
+  - first:
+      213: -7252185157938938249
+    second: SF_Damage1_76
+  - first:
+      213: 3836415417851816049
+    second: SF_Damage1_77
+  - first:
+      213: 6184282922882186387
+    second: SF_Damage1_78
+  - first:
+      213: -4388918259002946605
+    second: SF_Damage1_79
+  - first:
+      213: -8239289688602975937
+    second: SF_Damage1_80
+  - first:
+      213: 2373586051848158108
+    second: SF_Damage1_81
+  - first:
+      213: 6816605549583253456
+    second: SF_Damage1_82
+  - first:
+      213: -2065515252742213859
+    second: SF_Damage1_83
+  - first:
+      213: -6883325999936507719
+    second: SF_Damage1_84
+  - first:
+      213: -2275492772611234756
+    second: SF_Damage1_85
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SF_Damage1_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 335
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 514a5e54709a0ecf0800000000000000
+      internalID: -224994132665981931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_1
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 335
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f30e3e78b8eaa7d50800000000000000
+      internalID: 6735888106989543487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_2
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 336
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 586517c4e2ee4bda0800000000000000
+      internalID: -5929852926721698171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_3
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 287
+        width: 38
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6199c1e19f29a3530800000000000000
+      internalID: 3835539631309101334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_4
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 335
+        width: 38
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6235b79a4b545b10800000000000000
+      internalID: 1969299312998691438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_5
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 336
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28f3b7ee031f7ebe0800000000000000
+      internalID: -1447923562714546302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_6
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 335
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f8170bca319051c0800000000000000
+      internalID: -4516950744552236807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_7
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 335
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73aebe2955fae7700800000000000000
+      internalID: 540061787403053623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_8
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 336
+        width: 33
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d961a117893dda20800000000000000
+      internalID: 3088688171725187537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_9
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 335
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9245931b95feea990800000000000000
+      internalID: -7372692371454471127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_10
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 335
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bc29c1bb50024600800000000000000
+      internalID: 450923306515246256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_11
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 336
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad073571080be9d40800000000000000
+      internalID: 5593101851434381530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 191
+        width: 36
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e2e78e6a43956e80800000000000000
+      internalID: -8185974799784746268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_13
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 239
+        width: 37
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6521e525cbd1670a0800000000000000
+      internalID: -6884282285716270506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_14
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 288
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dc4c5fc85c416910800000000000000
+      internalID: 1828826868008897746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_15
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 287
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae58c0c047a9fcdf0800000000000000
+      internalID: -157737638725646870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_16
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 288
+        width: 35
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7373c578c24d3900800000000000000
+      internalID: 665761748657337215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_17
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 287
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 137a5089a964df5a0800000000000000
+      internalID: -6485950258554230991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_18
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 239
+        width: 37
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46fb05d4b12189820800000000000000
+      internalID: 2925107866447691620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_19
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 287
+        width: 37
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b3071bdb416d27e0800000000000000
+      internalID: -1788666498570058828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_20
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 288
+        width: 35
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f40ddba129d2a3c70800000000000000
+      internalID: 8951517314889404495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_21
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 287
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 211ec523fbf0ae4d0800000000000000
+      internalID: -3104651679260417774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_22
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 287
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31775d897c127efb0800000000000000
+      internalID: -4618685751698819309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_23
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 288
+        width: 35
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51ffb77af527826a0800000000000000
+      internalID: -6473798709187707115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_24
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 240
+        width: 37
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88068e9d2a9ea2930800000000000000
+      internalID: 4119361694833598600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_25
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 191
+        width: 36
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a61b584b8de62a770800000000000000
+      internalID: 8620574513761202538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_26
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 239
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3a9c012e8e3add20800000000000000
+      internalID: 3304022056790432316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_27
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 240
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d085829191eede70800000000000000
+      internalID: 9141992308953415896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_28
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 191
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d0b82a1c0b069df0800000000000000
+      internalID: -173939389000797997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_29
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 239
+        width: 37
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9bf8c53293d9c490800000000000000
+      internalID: -7725411060856325219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_30
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 240
+        width: 37
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aad835180ec6a4420800000000000000
+      internalID: 2615022245140204970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_31
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 239
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1ed547f1e5df10f0800000000000000
+      internalID: -1143960613835907557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_32
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 191
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad80098479d99dc30800000000000000
+      internalID: 4384708985304910042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_33
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 239
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 492983bc4a5017d40800000000000000
+      internalID: 5580247618631013012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_34
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 240
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78932b9af83ddc600800000000000000
+      internalID: 490280548434065799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_35
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 191
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8a33fe351ec98e80800000000000000
+      internalID: -8175777057868662131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_36
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 192
+        width: 35
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d878356fec997860800000000000000
+      internalID: 7528220804135811286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_37
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 95
+        width: 39
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2ada4138ea3bc5c0800000000000000
+      internalID: -4194193859031672273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_38
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 191
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34d1e1d77f87b0f40800000000000000
+      internalID: 5695779158091504963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_39
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 192
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3057fa3b2bff295e0800000000000000
+      internalID: -1904178549440416509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_40
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 191
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c113f2af64227190800000000000000
+      internalID: -7966264728971177534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_41
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 192
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4615fd6db947cf290800000000000000
+      internalID: -7855275437367275164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_42
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 191
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b11d8d60db97bc90800000000000000
+      internalID: -7154078163561279047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_43
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 192
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8610ec3b84097f30800000000000000
+      internalID: 4573691892639733389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_44
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 143
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21f29edae9a62ec90800000000000000
+      internalID: -7142028829301068014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_45
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 143
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d71a1407375f728c0800000000000000
+      internalID: -4023977865878855299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_46
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 144
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 383bdc87be81dd2f0800000000000000
+      internalID: -946572947054808189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_47
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 143
+        width: 31
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79d36cc5d26316360800000000000000
+      internalID: 7161064450953723287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_48
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 144
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c41d853709bf33d90800000000000000
+      internalID: -7119069988113559220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_49
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 95
+        width: 37
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 109dfab238bed8820800000000000000
+      internalID: 2922250681839507713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_50
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 143
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1053e316a37a0e050800000000000000
+      internalID: 5827841786998830337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_51
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 95
+        width: 31
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5feeb2437e710b620800000000000000
+      internalID: 2787754451122515701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_52
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 144
+        width: 37
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f881e5acfc7d9040800000000000000
+      internalID: 4656015014327585016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_53
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 143
+        width: 39
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34c375f7a73e24c60800000000000000
+      internalID: 7801047619821059139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_54
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 143
+        width: 39
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe751074ed63fc6b0800000000000000
+      internalID: -5273936310325651473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_55
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 143
+        width: 39
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6871350ef9240b970800000000000000
+      internalID: 8768581728921130886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_56
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 95
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 347c1b5f41a348040800000000000000
+      internalID: 4648904577049020227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_57
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 95
+        width: 37
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21312d08df9d6f7a0800000000000000
+      internalID: -6343643342293560558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_58
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 96
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca2d1f1c766c52570800000000000000
+      internalID: 8441371225513644716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_59
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 47
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 500d0c7709b9f0680800000000000000
+      internalID: -8786633303189827579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_60
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 95
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77c8a7ab5b6406300800000000000000
+      internalID: 243272126209625207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_61
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 96
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b8327cc1cb4158b0800000000000000
+      internalID: -5165264001886439247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_62
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 96
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cd714c5a8ce59330800000000000000
+      internalID: 3717137146461650374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_63
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 0
+        width: 49
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49b12a8aa0875a480800000000000000
+      internalID: -8888566302371603564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_64
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 47
+        width: 49
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfc28478af6a97dd0800000000000000
+      internalID: -2487773724203799300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_65
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 96
+        width: 45
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15b53be056630ebe0800000000000000
+      internalID: -1450099272347067567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_66
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 47
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8854316dc3efd74b0800000000000000
+      internalID: -5440913237550611064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_67
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 47
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9e5f593eb3c68da0800000000000000
+      internalID: -5942847436495036773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_68
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 48
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee5b0177ebb3ec9d0800000000000000
+      internalID: -2752196633049385490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_69
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 0
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa53290317a891720800000000000000
+      internalID: 2817435260647781807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_70
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 47
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70324ea5db0fa84c0800000000000000
+      internalID: -4284347399425219833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_71
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 48
+        width: 33
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa661a5113ddbcf50800000000000000
+      internalID: 6902854056761452207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_72
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 47
+        width: 49
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fb7859151f789d30800000000000000
+      internalID: 4438437161369893878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_73
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 0
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 361c914f29294a040800000000000000
+      internalID: 4658009074466144611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_74
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 47
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19a4bec30791c61b0800000000000000
+      internalID: -5662122661662471535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_75
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 47
+        width: 24
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e815552709cf92690800000000000000
+      internalID: -7626286796651540082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_76
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 47
+        width: 49
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77e70b7c5001b5b90800000000000000
+      internalID: -7252185157938938249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_77
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 0
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 178a3ef0f7fad3530800000000000000
+      internalID: 3836415417851816049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_78
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 0
+        width: 37
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39c38e87d8cf2d550800000000000000
+      internalID: 6184282922882186387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_79
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 0
+        width: 37
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3db47efc81e6713c0800000000000000
+      internalID: -4388918259002946605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_80
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 0
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f31e74d8ea928ad80800000000000000
+      internalID: -8239289688602975937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_81
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 0
+        width: 33
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9b3b3830fba0f020800000000000000
+      internalID: 2373586051848158108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_82
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 0
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dfbdd4a1a2799e50800000000000000
+      internalID: 6816605549583253456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_83
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 0
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1f262a32d0d553e0800000000000000
+      internalID: -2065515252742213859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_84
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 0
+        width: 45
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b0f294f8738970a0800000000000000
+      internalID: -6883325999936507719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Damage1_85
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 0
+        width: 49
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c34e98f1163db60e0800000000000000
+      internalID: -2275492772611234756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SF_Damage1_0: -224994132665981931
+      SF_Damage1_1: 6735888106989543487
+      SF_Damage1_10: 450923306515246256
+      SF_Damage1_11: 5593101851434381530
+      SF_Damage1_12: -8185974799784746268
+      SF_Damage1_13: -6884282285716270506
+      SF_Damage1_14: 1828826868008897746
+      SF_Damage1_15: -157737638725646870
+      SF_Damage1_16: 665761748657337215
+      SF_Damage1_17: -6485950258554230991
+      SF_Damage1_18: 2925107866447691620
+      SF_Damage1_19: -1788666498570058828
+      SF_Damage1_2: -5929852926721698171
+      SF_Damage1_20: 8951517314889404495
+      SF_Damage1_21: -3104651679260417774
+      SF_Damage1_22: -4618685751698819309
+      SF_Damage1_23: -6473798709187707115
+      SF_Damage1_24: 4119361694833598600
+      SF_Damage1_25: 8620574513761202538
+      SF_Damage1_26: 3304022056790432316
+      SF_Damage1_27: 9141992308953415896
+      SF_Damage1_28: -173939389000797997
+      SF_Damage1_29: -7725411060856325219
+      SF_Damage1_3: 3835539631309101334
+      SF_Damage1_30: 2615022245140204970
+      SF_Damage1_31: -1143960613835907557
+      SF_Damage1_32: 4384708985304910042
+      SF_Damage1_33: 5580247618631013012
+      SF_Damage1_34: 490280548434065799
+      SF_Damage1_35: -8175777057868662131
+      SF_Damage1_36: 7528220804135811286
+      SF_Damage1_37: -4194193859031672273
+      SF_Damage1_38: 5695779158091504963
+      SF_Damage1_39: -1904178549440416509
+      SF_Damage1_4: 1969299312998691438
+      SF_Damage1_40: -7966264728971177534
+      SF_Damage1_41: -7855275437367275164
+      SF_Damage1_42: -7154078163561279047
+      SF_Damage1_43: 4573691892639733389
+      SF_Damage1_44: -7142028829301068014
+      SF_Damage1_45: -4023977865878855299
+      SF_Damage1_46: -946572947054808189
+      SF_Damage1_47: 7161064450953723287
+      SF_Damage1_48: -7119069988113559220
+      SF_Damage1_49: 2922250681839507713
+      SF_Damage1_5: -1447923562714546302
+      SF_Damage1_50: 5827841786998830337
+      SF_Damage1_51: 2787754451122515701
+      SF_Damage1_52: 4656015014327585016
+      SF_Damage1_53: 7801047619821059139
+      SF_Damage1_54: -5273936310325651473
+      SF_Damage1_55: 8768581728921130886
+      SF_Damage1_56: 4648904577049020227
+      SF_Damage1_57: -6343643342293560558
+      SF_Damage1_58: 8441371225513644716
+      SF_Damage1_59: -8786633303189827579
+      SF_Damage1_6: -4516950744552236807
+      SF_Damage1_60: 243272126209625207
+      SF_Damage1_61: -5165264001886439247
+      SF_Damage1_62: 3717137146461650374
+      SF_Damage1_63: -8888566302371603564
+      SF_Damage1_64: -2487773724203799300
+      SF_Damage1_65: -1450099272347067567
+      SF_Damage1_66: -5440913237550611064
+      SF_Damage1_67: -5942847436495036773
+      SF_Damage1_68: -2752196633049385490
+      SF_Damage1_69: 2817435260647781807
+      SF_Damage1_7: 540061787403053623
+      SF_Damage1_70: -4284347399425219833
+      SF_Damage1_71: 6902854056761452207
+      SF_Damage1_72: 4438437161369893878
+      SF_Damage1_73: 4658009074466144611
+      SF_Damage1_74: -5662122661662471535
+      SF_Damage1_75: -7626286796651540082
+      SF_Damage1_76: -7252185157938938249
+      SF_Damage1_77: 3836415417851816049
+      SF_Damage1_78: 6184282922882186387
+      SF_Damage1_79: -4388918259002946605
+      SF_Damage1_8: 3088688171725187537
+      SF_Damage1_80: -8239289688602975937
+      SF_Damage1_81: 2373586051848158108
+      SF_Damage1_82: 6816605549583253456
+      SF_Damage1_83: -2065515252742213859
+      SF_Damage1_84: -6883325999936507719
+      SF_Damage1_85: -2275492772611234756
+      SF_Damage1_9: -7372692371454471127
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

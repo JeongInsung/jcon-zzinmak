@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Data.EnemyData
   enemyName: Tank Zombie
   baseHealth: 15
-  moveSpeed: 2
+  moveSpeed: 1
   contactDamage: 5
   contactDamageInterval: 1
   expReward: 1

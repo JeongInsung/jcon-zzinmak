@@ -15,7 +15,7 @@
 | `Canvas/HUD/TopBar/ExpBar` | Image (Filled, Horizontal) | 경험치 진행률 | `HUDController.expBarFill` |
 | `Canvas/HUD/TopBar/LevelText` | TMP_Text | 현재 레벨 표시 | `HUDController.levelText` |
 | `Canvas/HUD/TopBar/TimerText` | TMP_Text | 생존 경과 시간(기록용, mm:ss) | `HUDController.timerText` |
-| `Canvas/HUD/TopBar/KillCountText` | TMP_Text | 처치 수 | `HUDController.killCountText` |
+| `Canvas/HUD/TopBar/ScoreText` | TMP_Text | 점수(좀비 1마리당 10점) | `HUDController.scoreText` |
 | `Canvas/HUD/PlayerHealthBar` | Image (Filled, Horizontal) | 플레이어 체력 | `HUDController.healthBarFill` |
 | `Canvas/HUD/JoystickTouchArea` | Image(투명, 화면 전체 스트레치, raycastTarget=true) | **플로팅 조이스틱 터치 감지 영역** | `VirtualJoystick` 부착 |
 | `Canvas/HUD/Joystick` | Image(Background, 기본 비활성) + 자식 Image(Handle) | 조이스틱 비주얼(터치 시 해당 위치로 이동해 나타남) | `VirtualJoystick.background` / `.handle` 참조 대상 |

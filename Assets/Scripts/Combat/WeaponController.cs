@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Zzinmak.Core;
@@ -10,6 +11,7 @@ namespace Zzinmak.Combat
     {
         [SerializeField] private Transform muzzle;
         [SerializeField] private List<WeaponData> startingWeapons = new List<WeaponData>();
+        [SerializeField] private float projectileBurstDelay = 0.08f;
 
         private readonly List<WeaponRuntime> activeWeapons = new List<WeaponRuntime>();
         private PlayerStats stats;
@@ -54,12 +56,33 @@ namespace Zzinmak.Combat
             if (target == null) return;
 
             Vector3 origin = muzzle != null ? muzzle.position : transform.position;
+            int totalProjectiles = data.projectileCount + stats.extraProjectiles;
+            Vector2 dir = ((Vector2)target.position - (Vector2)origin).normalized;
+            Vector3 aimPoint = origin + (Vector3)(dir * data.range);
 
-            for (int i = 0; i < data.projectileCount; i++)
+            StartCoroutine(FireBurst(data, aimPoint, totalProjectiles));
+        }
+
+        private IEnumerator FireBurst(WeaponData data, Vector3 aimPoint, int count)
+        {
+            for (int i = 0; i < count; i++)
             {
+                Vector3 origin = muzzle != null ? muzzle.position : transform.position;
+
+                float damage = data.damage * stats.damageMultiplier;
+                if (Random.value < stats.critChance)
+                {
+                    damage *= stats.critMultiplier;
+                }
+
                 var projectileObj = ObjectPool.Instance.Get(data.projectilePrefab, origin, Quaternion.identity);
                 var projectile = projectileObj.GetComponent<Projectile>();
-                projectile.Launch(target.position, data.projectileSpeed, data.damage * stats.damageMultiplier);
+                projectile.Launch(aimPoint, data.projectileSpeed, damage);
+
+                if (i < count - 1)
+                {
+                    yield return new WaitForSeconds(projectileBurstDelay);
+                }
             }
         }
 

@@ -8,9 +8,12 @@ namespace Zzinmak.Core
     {
         public static GameManager Instance { get; private set; }
 
+        private const int ScorePerKill = 10;
+
         public GameState State { get; private set; } = GameState.Playing;
         public float ElapsedTime { get; private set; }
         public int KillCount { get; private set; }
+        public int Score { get; private set; }
 
         private void Awake()
         {
@@ -35,7 +38,8 @@ namespace Zzinmak.Core
         public void AddKill()
         {
             KillCount++;
-            GameEvents.RaiseKillCountChanged(KillCount);
+            Score += ScorePerKill;
+            GameEvents.RaiseScoreChanged(Score);
         }
 
         public void EnterLevelUp()

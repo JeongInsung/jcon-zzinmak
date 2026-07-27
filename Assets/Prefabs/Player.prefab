@@ -18,6 +18,8 @@ GameObject:
   - component: {fileID: 4177328223751927191}
   - component: {fileID: 2100614926374738189}
   - component: {fileID: 371071415049920593}
+  - component: {fileID: 1298633031393289393}
+  - component: {fileID: 1100000010}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -133,7 +135,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6226427610097736337}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -179,6 +181,9 @@ MonoBehaviour:
   pickupRange: 1.5
   damageMultiplier: 1
   attackSpeedMultiplier: 1
+  critChance: 0
+  critMultiplier: 1.5
+  extraProjectiles: 0
 --- !u!114 &7845027563408176725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,8 +223,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Player.PlayerController
   joystick: {fileID: 0}
-  turnSpeed: 720
-  spriteForwardOffset: 0
 --- !u!114 &2100614926374738189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,6 +238,7 @@ MonoBehaviour:
   muzzle: {fileID: 0}
   startingWeapons:
   - {fileID: 11400000, guid: 8ed24e780c57e0f428bdf71843db9ad9, type: 2}
+  projectileBurstDelay: 0.08
 --- !u!95 &371071415049920593
 Animator:
   serializedVersion: 7
@@ -257,3 +261,136 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!60 &1298633031393289393
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6226427610097736337}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.21, y: 3.35}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.065, y: -1.3349999}
+      - {x: -0.055, y: -1.275}
+      - {x: -0.055, y: -1.2149999}
+      - {x: -0.085, y: -1.105}
+      - {x: 0.005, y: -1.005}
+      - {x: 0.155, y: -0.91499996}
+      - {x: 0.235, y: -0.835}
+      - {x: 0.225, y: -0.685}
+      - {x: 0.205, y: -0.635}
+      - {x: 0.345, y: -0.45499998}
+      - {x: 0.36499998, y: -0.325}
+      - {x: 0.49499997, y: -0.33499998}
+      - {x: 0.625, y: -0.185}
+      - {x: 0.645, y: -0.074999996}
+      - {x: 0.835, y: -0.105}
+      - {x: 0.885, y: -0.065}
+      - {x: 1.0649999, y: -0.105}
+      - {x: 1.105, y: -0.024999999}
+      - {x: 1.105, y: 0.044999998}
+      - {x: 1.0749999, y: 0.095}
+      - {x: 0.92499995, y: 0.185}
+      - {x: 0.875, y: 0.265}
+      - {x: 0.745, y: 0.225}
+      - {x: 0.525, y: 0.275}
+      - {x: 0.575, y: 0.345}
+      - {x: 0.48499998, y: 0.59499997}
+      - {x: 0.525, y: 0.685}
+      - {x: 0.515, y: 0.955}
+      - {x: 0.655, y: 1.115}
+      - {x: 0.655, y: 1.255}
+      - {x: 0.525, y: 1.345}
+      - {x: 0.36499998, y: 1.545}
+      - {x: 0.24499999, y: 1.605}
+      - {x: 0.105, y: 1.645}
+      - {x: -0.035, y: 1.655}
+      - {x: -0.345, y: 1.655}
+      - {x: -0.45499998, y: 1.635}
+      - {x: -0.635, y: 1.555}
+      - {x: -0.705, y: 1.495}
+      - {x: -0.84499997, y: 1.3349999}
+      - {x: -0.91499996, y: 1.135}
+      - {x: -0.875, y: 0.685}
+      - {x: -0.78499997, y: 0.53499997}
+      - {x: -1.005, y: 0.305}
+      - {x: -1.0649999, y: 0.125}
+      - {x: -1.045, y: -0.125}
+      - {x: -1.0649999, y: -0.235}
+      - {x: -1.055, y: -0.525}
+      - {x: -0.85499996, y: -0.73499995}
+      - {x: -0.835, y: -0.865}
+      - {x: -0.85499996, y: -0.995}
+      - {x: -0.945, y: -1.0749999}
+      - {x: -1.095, y: -1.125}
+      - {x: -1.095, y: -1.3349999}
+      - {x: -1.045, y: -1.425}
+      - {x: -0.97499996, y: -1.615}
+      - {x: -0.945, y: -1.645}
+      - {x: -0.73499995, y: -1.645}
+      - {x: -0.685, y: -1.615}
+      - {x: -0.685, y: -1.475}
+      - {x: -0.565, y: -1.405}
+      - {x: -0.525, y: -1.4449999}
+      - {x: -0.45499998, y: -1.475}
+      - {x: -0.445, y: -1.645}
+      - {x: -0.42499998, y: -1.655}
+      - {x: 0.13499999, y: -1.655}
+      - {x: 0.175, y: -1.5949999}
+      - {x: 0.195, y: -1.515}
+      - {x: 0.095, y: -1.375}
+  m_UseDelaunayMesh: 1
+--- !u!114 &1100000010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6226427610097736337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8d1cd5632544abc932de7d40e63a318, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Combat.OrbitingOrbs
+  orbPrefab: {fileID: 1100000001, guid: ab166be13e0f4349806ec444055c4c6d, type: 3}
+  orbCount: 3
+  orbitRadius: 1.2
+  rotationSpeed: 90
+  damage: 5

@@ -9,6 +9,9 @@ namespace Zzinmak.Player
         public float pickupRange = 1.5f;
         public float damageMultiplier = 1f;
         public float attackSpeedMultiplier = 1f;
+        public float critChance = 0f;
+        public float critMultiplier = 1.5f;
+        public int extraProjectiles = 0;
 
         public void IncreaseMoveSpeedPercent(float percent)
         {
@@ -28,6 +31,16 @@ namespace Zzinmak.Player
         public void IncreasePickupRangePercent(float percent)
         {
             pickupRange *= 1f + percent;
+        }
+
+        public void IncreaseCritChance(float amount)
+        {
+            critChance = Mathf.Clamp01(critChance + amount);
+        }
+
+        public void AddProjectileCount(int amount)
+        {
+            extraProjectiles += amount;
         }
     }
 }

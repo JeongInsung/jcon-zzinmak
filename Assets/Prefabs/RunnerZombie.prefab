@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1300000005}
   - component: {fileID: 1300000006}
   - component: {fileID: 1300000007}
+  - component: {fileID: 6800353393042038436}
   m_Layer: 9
   m_Name: RunnerZombie
   m_TagString: Enemy
@@ -171,6 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Enemies.Enemy
   expGemPrefab: {fileID: 2506447470019471358, guid: 96da21b780eec1342b43b1936eb31517, type: 3}
+  deathReturnDelay: 0
 --- !u!95 &1300000007
 Animator:
   serializedVersion: 7
@@ -193,3 +195,17 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6800353393042038436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300000001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512c19566e5f5b945a8cec9cbaab6f1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Combat.HitFlash
+  flashColor: {r: 1, g: 0, b: 0, a: 0.6}
+  flashDuration: 0.15

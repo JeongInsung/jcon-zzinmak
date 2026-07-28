@@ -1,4 +1,5 @@
 using UnityEngine;
+using Zzinmak.Combat;
 using Zzinmak.Core;
 
 namespace Zzinmak.Player
@@ -9,12 +10,14 @@ namespace Zzinmak.Player
         [SerializeField] private float invulnerabilityDuration = 0.5f;
 
         private PlayerStats stats;
+        private HitFlash hitFlash;
         private float currentHealth;
         private float invulnerableUntil;
 
         private void Awake()
         {
             stats = GetComponent<PlayerStats>();
+            hitFlash = GetComponent<HitFlash>();
         }
 
         private void Start()
@@ -31,6 +34,7 @@ namespace Zzinmak.Player
             currentHealth -= amount;
             invulnerableUntil = Time.time + invulnerabilityDuration;
             GameEvents.RaiseHealthChanged(Mathf.Max(currentHealth, 0f), stats.maxHealth);
+            hitFlash?.Flash();
 
             if (currentHealth <= 0f)
             {

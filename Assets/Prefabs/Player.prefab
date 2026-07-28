@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 371071415049920593}
   - component: {fileID: 1298633031393289393}
   - component: {fileID: 1100000010}
+  - component: {fileID: 7001775565017403690}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -387,7 +388,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8d1cd5632544abc932de7d40e63a318, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Combat.OrbitingOrbs
   orbPrefab: {fileID: 1100000001, guid: ab166be13e0f4349806ec444055c4c6d, type: 3}
   orbCount: 3
@@ -397,3 +398,17 @@ MonoBehaviour:
   rotationSpeed: 90
   damage: 5
   spriteAngleOffset: 90
+--- !u!114 &7001775565017403690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6226427610097736337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512c19566e5f5b945a8cec9cbaab6f1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Combat.HitFlash
+  flashColor: {r: 1, g: 0, b: 0, a: 0.6}
+  flashDuration: 0.15

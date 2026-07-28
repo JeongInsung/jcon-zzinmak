@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5466185961072072808}
   - component: {fileID: 7749201983456712345}
   - component: {fileID: 7730877086253972685}
+  - component: {fileID: 3973899786504762214}
   m_Layer: 9
   m_Name: Zombie
   m_TagString: Enemy
@@ -135,6 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Enemies.Enemy
   expGemPrefab: {fileID: 2506447470019471358, guid: 96da21b780eec1342b43b1936eb31517, type: 3}
+  deathReturnDelay: 0
 --- !u!95 &7749201983456712345
 Animator:
   serializedVersion: 7
@@ -312,3 +314,17 @@ PolygonCollider2D:
       - {x: -0.63, y: -1.505}
       - {x: -0.66999996, y: -1.435}
   m_UseDelaunayMesh: 1
+--- !u!114 &3973899786504762214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031785218433059593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512c19566e5f5b945a8cec9cbaab6f1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Combat.HitFlash
+  flashColor: {r: 1, g: 0, b: 0, a: 0.6}
+  flashDuration: 0.15

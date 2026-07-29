@@ -130,12 +130,15 @@ namespace Zzinmak.Environment
 
         private void ClearOutdoorZombies()
         {
-            var enemies = GameObject.FindGameObjectsWithTag("Enemy");
+            // Snapshot first: returning an enemy to the pool disables it, which
+            // unregisters it from EnemyTracker.Active and would mutate the list
+            // out from under a direct foreach over it.
+            var enemies = new List<Enemy>(EnemyTracker.Active);
             foreach (var enemy in enemies)
             {
-                if (enemy.activeInHierarchy)
+                if (enemy != null && enemy.gameObject.activeInHierarchy)
                 {
-                    ObjectPool.Instance.Return(enemy);
+                    ObjectPool.Instance.Return(enemy.gameObject);
                 }
             }
         }

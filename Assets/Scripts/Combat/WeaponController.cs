@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Zzinmak.Core;
 using Zzinmak.Data;
+using Zzinmak.Enemies;
 using Zzinmak.Player;
 
 namespace Zzinmak.Combat
@@ -13,10 +14,12 @@ namespace Zzinmak.Combat
         [SerializeField] private List<WeaponData> startingWeapons = new List<WeaponData>();
         [SerializeField] private float projectileBurstDelay = 0.08f;
         [SerializeField] private GameObject muzzleFlashPrefab;
+        [SerializeField] private float targetRefreshInterval = 0.1f;
 
         private readonly List<WeaponRuntime> activeWeapons = new List<WeaponRuntime>();
         private PlayerStats stats;
         private SpriteRenderer spriteRenderer;
+        private float targetRefreshTimer;
 
         public Transform CurrentTarget { get; private set; }
 
@@ -39,8 +42,13 @@ namespace Zzinmak.Combat
 
         private void Update()
         {
-            float searchRange = activeWeapons.Count > 0 ? activeWeapons[0].data.range : 0f;
-            CurrentTarget = FindNearestEnemy(searchRange);
+            targetRefreshTimer -= Time.deltaTime;
+            if (targetRefreshTimer <= 0f)
+            {
+                targetRefreshTimer = targetRefreshInterval;
+                float searchRange = activeWeapons.Count > 0 ? activeWeapons[0].data.range : 0f;
+                CurrentTarget = FindNearestEnemy(searchRange);
+            }
 
             foreach (var weapon in activeWeapons)
             {
@@ -106,23 +114,7 @@ namespace Zzinmak.Combat
 
         private Transform FindNearestEnemy(float maxRange)
         {
-            var enemies = GameObject.FindGameObjectsWithTag("Enemy");
-            Transform nearest = null;
-            float nearestDistSqr = maxRange * maxRange;
-
-            foreach (var enemy in enemies)
-            {
-                if (!enemy.activeInHierarchy) continue;
-
-                float distSqr = (enemy.transform.position - transform.position).sqrMagnitude;
-                if (distSqr <= nearestDistSqr)
-                {
-                    nearestDistSqr = distSqr;
-                    nearest = enemy.transform;
-                }
-            }
-
-            return nearest;
+            return EnemyTracker.GetNearest(transform.position, maxRange);
         }
     }
 }

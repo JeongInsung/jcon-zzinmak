@@ -1,4 +1,5 @@
- using System.Collections.Generic;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using Zzinmak.Core;
 using Zzinmak.Data;
@@ -6,8 +7,13 @@ using Zzinmak.Data;
 namespace Zzinmak.Enemies
 {
     [RequireComponent(typeof(Enemy))]
+    [RequireComponent(typeof(Animator))]
     public class BossBroodmother : MonoBehaviour
     {
+        private static readonly int WalkState = Animator.StringToHash("Walk");
+        private static readonly int SummonState = Animator.StringToHash("Summon");
+        private const float SummonAnimDuration = 0.8f;
+
         [Header("Summon")]
         [SerializeField] private GameObject summonPrefab;
         [SerializeField] private EnemyData summonData;
@@ -23,18 +29,23 @@ namespace Zzinmak.Enemies
         public event System.Action<GameObject> OnSummon;
 
         private Enemy enemy;
+        private Animator animator;
         private float summonTimer;
+        private Coroutine summonAnimRoutine;
         private readonly List<GameObject> activeSummons = new List<GameObject>();
 
         private void Awake()
         {
             enemy = GetComponent<Enemy>();
+            animator = GetComponent<Animator>();
         }
 
         private void OnEnable()
         {
             summonTimer = summonInterval;
             activeSummons.Clear();
+            summonAnimRoutine = null;
+            if (animator != null) animator.Play(WalkState, 0, 0f);
             enemy.OnDeath += HandleDeath;
             enemy.OnHealthChanged += HandleHealthChanged;
             if (healthBar != null) healthBar.Show();
@@ -45,6 +56,7 @@ namespace Zzinmak.Enemies
             enemy.OnDeath -= HandleDeath;
             enemy.OnHealthChanged -= HandleHealthChanged;
             OnSummon = null;
+            StopAllCoroutines();
         }
 
         private void HandleHealthChanged(float current, float max)
@@ -83,6 +95,25 @@ namespace Zzinmak.Enemies
                 activeSummons.Add(zombieObj);
                 OnSummon?.Invoke(zombieObj);
             }
+
+            if (animator != null)
+            {
+                if (summonAnimRoutine != null) StopCoroutine(summonAnimRoutine);
+                summonAnimRoutine = StartCoroutine(PlaySummonAnimation());
+            }
+        }
+
+        private IEnumerator PlaySummonAnimation()
+        {
+            animator.Play(SummonState, 0, 0f);
+            yield return new WaitForSeconds(SummonAnimDuration);
+
+            if (!enemy.IsDead)
+            {
+                animator.Play(WalkState, 0, 0f);
+            }
+
+            summonAnimRoutine = null;
         }
 
         private void HandleDeath()

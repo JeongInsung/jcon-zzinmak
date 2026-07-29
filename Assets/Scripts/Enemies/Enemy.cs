@@ -40,6 +40,16 @@ namespace Zzinmak.Enemies
             hitFlash = GetComponent<HitFlash>();
         }
 
+        private void OnEnable()
+        {
+            EnemyTracker.Register(this);
+        }
+
+        private void OnDisable()
+        {
+            EnemyTracker.Unregister(this);
+        }
+
         public void Initialize(EnemyData enemyData, Transform playerTarget, float healthMultiplier)
         {
             data = enemyData;

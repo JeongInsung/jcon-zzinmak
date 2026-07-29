@@ -22,10 +22,20 @@ namespace Zzinmak.Environment
         [SerializeField] private Transform interiorEntryPoint;
         [SerializeField] private Transform interiorHostageSpot;
         [SerializeField] private float interiorSpawnRadius = 9f;
-        [SerializeField] private int zombieCountPerBuilding = 5;
+        [SerializeField] private int zombieCountPerBuilding = 3;
         [SerializeField] private GameObject zombiePrefab;
         [SerializeField] private EnemyData zombieData;
         [SerializeField] private GameObject hostagePrefab;
+
+        [Header("Building interior - boss")]
+        [SerializeField] private BossOption[] bossOptions = new BossOption[0];
+
+        [System.Serializable]
+        private class BossOption
+        {
+            public GameObject prefab;
+            public EnemyData data;
+        }
 
         public static MissionManager Instance { get; private set; }
 
@@ -35,6 +45,8 @@ namespace Zzinmak.Environment
         private bool playerInBuilding;
         private bool interiorCleared;
         private Vector3 outdoorReturnPosition;
+        private int lastBossOptionIndex = -1;
+        private BossBroodmother currentBroodmother;
 
         private void Awake()
         {
@@ -76,6 +88,7 @@ namespace Zzinmak.Environment
 
             SpawnHostage();
             SpawnInteriorZombies();
+            SpawnInteriorBoss();
         }
 
         public void TryRescue()
@@ -88,6 +101,12 @@ namespace Zzinmak.Environment
         private void ExitBuilding()
         {
             playerInBuilding = false;
+
+            if (currentBroodmother != null)
+            {
+                currentBroodmother.OnSummon -= HandleZombieSummoned;
+                currentBroodmother = null;
+            }
 
             if (currentHostage != null)
             {
@@ -148,6 +167,41 @@ namespace Zzinmak.Environment
                 enemy.Initialize(zombieData, player, 1f);
                 interiorZombies.Add(zombieObj);
             }
+        }
+
+        private void SpawnInteriorBoss()
+        {
+            if (bossOptions == null || bossOptions.Length == 0) return;
+
+            int index = Random.Range(0, bossOptions.Length);
+            if (bossOptions.Length > 1)
+            {
+                while (index == lastBossOptionIndex)
+                {
+                    index = Random.Range(0, bossOptions.Length);
+                }
+            }
+            lastBossOptionIndex = index;
+
+            var option = bossOptions[index];
+            if (option.prefab == null || option.data == null) return;
+
+            var bossObj = ObjectPool.Instance.Get(option.prefab, interiorRoomCenter.position, Quaternion.identity);
+            var enemy = bossObj.GetComponent<Enemy>();
+            enemy.Initialize(option.data, player, 1f);
+            interiorZombies.Add(bossObj);
+
+            var broodmother = bossObj.GetComponent<BossBroodmother>();
+            if (broodmother != null)
+            {
+                currentBroodmother = broodmother;
+                currentBroodmother.OnSummon += HandleZombieSummoned;
+            }
+        }
+
+        private void HandleZombieSummoned(GameObject zombieObj)
+        {
+            interiorZombies.Add(zombieObj);
         }
 
         private void SpawnNewBuilding()

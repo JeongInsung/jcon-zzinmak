@@ -8,11 +8,13 @@ namespace Zzinmak.Progression
     {
         [SerializeField] private float moveSpeed = 8f;
         [SerializeField] private float absorbDistance = 0.2f;
+        [SerializeField] private float lifetime = 5f;
 
         private Transform player;
         private PlayerStats playerStats;
         private PlayerLevel playerLevel;
         private int expValue;
+        private float lifeTimer;
 
         public void SetValue(int value)
         {
@@ -21,6 +23,8 @@ namespace Zzinmak.Progression
 
         private void OnEnable()
         {
+            lifeTimer = lifetime;
+
             if (player == null)
             {
                 var playerObj = GameObject.FindGameObjectWithTag("Player");
@@ -35,6 +39,13 @@ namespace Zzinmak.Progression
 
         private void Update()
         {
+            lifeTimer -= Time.deltaTime;
+            if (lifeTimer <= 0f)
+            {
+                ObjectPool.Instance.Return(gameObject);
+                return;
+            }
+
             if (player == null || playerStats == null) return;
 
             float distance = Vector2.Distance(transform.position, player.position);

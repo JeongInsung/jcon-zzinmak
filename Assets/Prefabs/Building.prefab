@@ -82,7 +82,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: -7634369051329828862, guid: cfd155a3b2c285940b8465a362c88d49, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -92,7 +92,7 @@ SpriteRenderer:
   m_Size: {x: 0.5, y: 0.85}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!58 &2000539262983657190
 CircleCollider2D:

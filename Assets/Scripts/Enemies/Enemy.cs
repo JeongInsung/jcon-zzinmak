@@ -14,6 +14,8 @@ namespace Zzinmak.Enemies
         [SerializeField] private GameObject expGemPrefab;
         [Tooltip("Seconds to wait after death before returning to the pool. 0 = return immediately (default zombie behavior). Set >0 to let a death animation play first.")]
         [SerializeField] private float deathReturnDelay = 0f;
+        [Tooltip("Set true if the source art faces left by default (most sprites here face right). Flips the flipX mapping so the enemy still visually faces the direction it's moving/chasing.")]
+        [SerializeField] private bool spriteFacesLeftByDefault = false;
 
         private Rigidbody2D body;
         private SpriteRenderer spriteRenderer;
@@ -59,7 +61,8 @@ namespace Zzinmak.Enemies
 
             if (spriteRenderer != null && Mathf.Abs(dir.x) > 0.01f)
             {
-                spriteRenderer.flipX = dir.x < 0f;
+                bool shouldFlip = dir.x < 0f;
+                spriteRenderer.flipX = spriteFacesLeftByDefault ? !shouldFlip : shouldFlip;
             }
         }
 

@@ -1,6 +1,7 @@
 using UnityEngine;
 using Zzinmak.Core;
 using Zzinmak.Data;
+using Zzinmak.Environment;
 
 namespace Zzinmak.Enemies
 {
@@ -96,7 +97,9 @@ namespace Zzinmak.Enemies
             if (variant == null || variant.prefab == null || variant.data == null) return;
 
             Vector2 offset = Random.insideUnitCircle.normalized * spawnRadius;
-            Vector3 spawnPos = player.position + (Vector3)offset;
+            Vector2 rawPos = (Vector2)player.position + offset;
+            Vector2 clampedPos = MapBounds.Instance != null ? MapBounds.Instance.ClampToInterior(rawPos) : rawPos;
+            Vector3 spawnPos = new Vector3(clampedPos.x, clampedPos.y, player.position.z);
 
             var enemyObj = ObjectPool.Instance.Get(variant.prefab, spawnPos, Quaternion.identity);
             var enemy = enemyObj.GetComponent<Enemy>();

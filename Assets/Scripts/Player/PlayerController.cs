@@ -10,6 +10,7 @@ namespace Zzinmak.Player
     public class PlayerController : MonoBehaviour
     {
         [SerializeField] private VirtualJoystick joystick;
+        [SerializeField] private Transform muzzle;
 
         private Rigidbody2D body;
         private PlayerStats stats;
@@ -17,6 +18,7 @@ namespace Zzinmak.Player
         private Animator animator;
         private SpriteRenderer spriteRenderer;
         private Vector2 moveInput;
+        private float muzzleOffsetX;
 
         private void Awake()
         {
@@ -25,6 +27,11 @@ namespace Zzinmak.Player
             weapon = GetComponent<WeaponController>();
             animator = GetComponent<Animator>();
             spriteRenderer = GetComponent<SpriteRenderer>();
+
+            // The muzzle is a child transform positioned for the unflipped (facing right)
+            // sprite. Since facing is done via SpriteRenderer.flipX rather than rotation,
+            // the muzzle's own local X must be mirrored by hand to stay on the gun side.
+            if (muzzle != null) muzzleOffsetX = Mathf.Abs(muzzle.localPosition.x);
         }
 
         private void Update()
@@ -54,9 +61,18 @@ namespace Zzinmak.Player
             }
 
             // Sprite is only ever flipped left/right, never rotated up/down.
-            if (spriteRenderer != null && Mathf.Abs(facing.x) > 0.01f)
+            if (Mathf.Abs(facing.x) > 0.01f)
             {
-                spriteRenderer.flipX = facing.x < 0f;
+                bool flipped = facing.x < 0f;
+
+                if (spriteRenderer != null) spriteRenderer.flipX = flipped;
+
+                if (muzzle != null)
+                {
+                    Vector3 localPos = muzzle.localPosition;
+                    localPos.x = flipped ? -muzzleOffsetX : muzzleOffsetX;
+                    muzzle.localPosition = localPos;
+                }
             }
         }
 

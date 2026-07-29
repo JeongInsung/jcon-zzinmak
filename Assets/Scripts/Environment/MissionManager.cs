@@ -210,16 +210,33 @@ namespace Zzinmak.Environment
 
             for (int attempt = 0; attempt < 10; attempt++)
             {
-                Vector2 offset = new Vector2(
-                    Random.Range(-mapHalfExtent, mapHalfExtent),
-                    Random.Range(-mapHalfExtent, mapHalfExtent));
-                Vector3 candidate = mapRoomCenter.position + (Vector3)offset;
+                Vector3 candidate;
+                if (MapBounds.Instance != null)
+                {
+                    Vector2 point = MapBounds.Instance.RandomPointInInterior();
+                    candidate = new Vector3(point.x, point.y, mapRoomCenter.position.z);
+                }
+                else
+                {
+                    Vector2 offset = new Vector2(
+                        Random.Range(-mapHalfExtent, mapHalfExtent),
+                        Random.Range(-mapHalfExtent, mapHalfExtent));
+                    candidate = mapRoomCenter.position + (Vector3)offset;
+                }
 
                 if (Vector3.Distance(candidate, player.position) > minSpawnDistanceFromPlayer)
                 {
                     spawnPos = candidate;
                     break;
                 }
+            }
+
+            // Final safety clamp - guarantees the building never lands past the walls
+            // even if every retry above happened to fail the distance-from-player check.
+            if (MapBounds.Instance != null)
+            {
+                Vector2 clamped = MapBounds.Instance.ClampToInterior(spawnPos);
+                spawnPos = new Vector3(clamped.x, clamped.y, spawnPos.z);
             }
 
             currentBuilding = Instantiate(buildingPrefab, spawnPos, Quaternion.identity);

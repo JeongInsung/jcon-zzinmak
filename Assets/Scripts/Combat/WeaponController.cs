@@ -12,9 +12,11 @@ namespace Zzinmak.Combat
         [SerializeField] private Transform muzzle;
         [SerializeField] private List<WeaponData> startingWeapons = new List<WeaponData>();
         [SerializeField] private float projectileBurstDelay = 0.08f;
+        [SerializeField] private GameObject muzzleFlashPrefab;
 
         private readonly List<WeaponRuntime> activeWeapons = new List<WeaponRuntime>();
         private PlayerStats stats;
+        private SpriteRenderer spriteRenderer;
 
         public Transform CurrentTarget { get; private set; }
 
@@ -27,6 +29,7 @@ namespace Zzinmak.Combat
         private void Awake()
         {
             stats = GetComponent<PlayerStats>();
+            spriteRenderer = GetComponent<SpriteRenderer>();
 
             foreach (var weaponData in startingWeapons)
             {
@@ -79,11 +82,26 @@ namespace Zzinmak.Combat
                 var projectile = projectileObj.GetComponent<Projectile>();
                 projectile.Launch(aimPoint, data.projectileSpeed, damage);
 
+                SpawnMuzzleFlash(origin);
+
                 if (i < count - 1)
                 {
                     yield return new WaitForSeconds(projectileBurstDelay);
                 }
             }
+        }
+
+        private void SpawnMuzzleFlash(Vector3 origin)
+        {
+            if (muzzleFlashPrefab == null) return;
+
+            // The gun sprite itself never rotates to aim (only flips left/right), so
+            // the flash should always sit flush in front of the muzzle facing the same
+            // way - not rotated toward the actual (possibly up/down) shot trajectory.
+            bool facingLeft = spriteRenderer != null && spriteRenderer.flipX;
+            Quaternion rotation = facingLeft ? Quaternion.Euler(0f, 180f, 0f) : Quaternion.identity;
+
+            ObjectPool.Instance.Get(muzzleFlashPrefab, origin, rotation);
         }
 
         private Transform FindNearestEnemy(float maxRange)

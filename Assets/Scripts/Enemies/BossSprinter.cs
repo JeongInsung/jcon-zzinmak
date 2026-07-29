@@ -6,8 +6,12 @@ namespace Zzinmak.Enemies
 {
     [RequireComponent(typeof(Enemy))]
     [RequireComponent(typeof(Rigidbody2D))]
+    [RequireComponent(typeof(Animator))]
     public class BossSprinter : MonoBehaviour
     {
+        private static readonly int WalkState = Animator.StringToHash("Walk");
+        private static readonly int AttackState = Animator.StringToHash("Attack");
+
         [Header("Dash attack")]
         [SerializeField] private float dashTriggerRange = 6f;
         [SerializeField] private float telegraphDuration = 1f;
@@ -26,6 +30,7 @@ namespace Zzinmak.Enemies
 
         private Enemy enemy;
         private Rigidbody2D body;
+        private Animator animator;
         private SpriteRenderer spriteRenderer;
         private Color originalColor;
         private Vector3 originalScale;
@@ -38,6 +43,7 @@ namespace Zzinmak.Enemies
         {
             enemy = GetComponent<Enemy>();
             body = GetComponent<Rigidbody2D>();
+            animator = GetComponent<Animator>();
             spriteRenderer = GetComponent<SpriteRenderer>();
             if (spriteRenderer != null) originalColor = spriteRenderer.color;
             originalScale = transform.localScale;
@@ -59,6 +65,7 @@ namespace Zzinmak.Enemies
             if (spriteRenderer != null) spriteRenderer.color = originalColor;
             transform.localScale = originalScale;
             if (pathLine != null) pathLine.enabled = false;
+            if (animator != null) animator.Play(WalkState, 0, 0f);
             enemy.OnDeath += HandleDeath;
             enemy.OnHealthChanged += HandleHealthChanged;
             if (healthBar != null) healthBar.Show();
@@ -97,6 +104,7 @@ namespace Zzinmak.Enemies
         {
             isDashing = true;
             enemy.CanMove = false;
+            if (animator != null) animator.Play(AttackState, 0, 0f);
 
             // Lock the aim and path in at the moment the telegraph starts - the dash
             // later follows this exact line, it does not re-aim at the target.
@@ -136,13 +144,18 @@ namespace Zzinmak.Enemies
             float elapsed = 0f;
             while (elapsed < dashDuration && !enemy.IsDead)
             {
-                body.MovePosition(body.position + dir * dashSpeed * Time.deltaTime);
-                elapsed += Time.deltaTime;
-                yield return null;
+                // Move in FixedUpdate lockstep: calling MovePosition more than once
+                // per physics step (e.g. from a plain "yield return null" loop)
+                // reads the same stale body.position each time, so the moves don't
+                // accumulate and the boss barely travels along the shown path.
+                yield return new WaitForFixedUpdate();
+                body.MovePosition(body.position + dir * dashSpeed * Time.fixedDeltaTime);
+                elapsed += Time.fixedDeltaTime;
             }
 
             enemy.CanMove = true;
             isDashing = false;
+            if (animator != null) animator.Play(WalkState, 0, 0f);
         }
 
         private void OnTriggerEnter2D(Collider2D other)
@@ -166,6 +179,7 @@ namespace Zzinmak.Enemies
             if (spriteRenderer != null) spriteRenderer.color = originalColor;
             transform.localScale = originalScale;
             if (pathLine != null) pathLine.enabled = false;
+            if (animator != null) animator.Play(WalkState, 0, 0f);
             if (healthBar != null) healthBar.Hide();
         }
     }

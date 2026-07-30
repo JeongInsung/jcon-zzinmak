@@ -14,7 +14,9 @@ namespace Zzinmak.Combat
         [SerializeField] private List<WeaponData> startingWeapons = new List<WeaponData>();
         [SerializeField] private float projectileBurstDelay = 0.08f;
         [SerializeField] private GameObject muzzleFlashPrefab;
+        [SerializeField] private AudioClip gunshotClip;
         [SerializeField] private float targetRefreshInterval = 0.1f;
+        [SerializeField] private float fanAngleStep = 15f;
 
         private readonly List<WeaponRuntime> activeWeapons = new List<WeaponRuntime>();
         private PlayerStats stats;
@@ -69,9 +71,26 @@ namespace Zzinmak.Combat
             Vector3 origin = muzzle != null ? muzzle.position : transform.position;
             int totalProjectiles = data.projectileCount + stats.extraProjectiles;
             Vector2 dir = ((Vector2)target.position - (Vector2)origin).normalized;
-            Vector3 aimPoint = origin + (Vector3)(dir * data.range);
 
-            StartCoroutine(FireBurst(data, aimPoint, totalProjectiles));
+            foreach (float angle in FanAngles(stats.fanShotCount))
+            {
+                Vector2 fanDir = Quaternion.Euler(0f, 0f, angle) * dir;
+                Vector3 aimPoint = origin + (Vector3)(fanDir * data.range);
+                StartCoroutine(FireBurst(data, aimPoint, totalProjectiles));
+            }
+        }
+
+        // Center shot plus one extra direction per fan level, alternating sides
+        // so the spread widens symmetrically into a fan/wedge shape as levels are gained.
+        private IEnumerable<float> FanAngles(int fanShotCount)
+        {
+            yield return 0f;
+
+            for (int i = 1; i <= fanShotCount; i++)
+            {
+                float angle = Mathf.CeilToInt(i / 2f) * fanAngleStep;
+                yield return i % 2 == 1 ? angle : -angle;
+            }
         }
 
         private IEnumerator FireBurst(WeaponData data, Vector3 aimPoint, int count)
@@ -91,6 +110,7 @@ namespace Zzinmak.Combat
                 projectile.Launch(aimPoint, data.projectileSpeed, damage);
 
                 SpawnMuzzleFlash(origin);
+                if (gunshotClip != null) AudioSource.PlayClipAtPoint(gunshotClip, origin);
 
                 if (i < count - 1)
                 {

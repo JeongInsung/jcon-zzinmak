@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8adba35adea12d84d804e89b671d238b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307740
+  packageName: dynamic bullets pooling system & barrel with fire spread and aim assist
+  packageVersion: 1.0.0
+  assetPath: Assets/object pooling/matirials/Palette256.mat
+  uploadId: 727627

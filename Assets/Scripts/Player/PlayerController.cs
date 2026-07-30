@@ -11,14 +11,18 @@ namespace Zzinmak.Player
     {
         [SerializeField] private VirtualJoystick joystick;
         [SerializeField] private Transform muzzle;
+        [SerializeField] private Transform shadow;
+        [SerializeField] private AudioClip footstepClip;
 
         private Rigidbody2D body;
         private PlayerStats stats;
         private WeaponController weapon;
         private Animator animator;
         private SpriteRenderer spriteRenderer;
+        private SpriteRenderer shadowRenderer;
         private Vector2 moveInput;
         private float muzzleOffsetX;
+        private float shadowOffsetX;
 
         private void Awake()
         {
@@ -27,11 +31,13 @@ namespace Zzinmak.Player
             weapon = GetComponent<WeaponController>();
             animator = GetComponent<Animator>();
             spriteRenderer = GetComponent<SpriteRenderer>();
+            if (shadow != null) shadowRenderer = shadow.GetComponent<SpriteRenderer>();
 
             // The muzzle is a child transform positioned for the unflipped (facing right)
             // sprite. Since facing is done via SpriteRenderer.flipX rather than rotation,
             // the muzzle's own local X must be mirrored by hand to stay on the gun side.
             if (muzzle != null) muzzleOffsetX = Mathf.Abs(muzzle.localPosition.x);
+            if (shadow != null) shadowOffsetX = Mathf.Abs(shadow.localPosition.x);
         }
 
         private void Update()
@@ -73,12 +79,27 @@ namespace Zzinmak.Player
                     localPos.x = flipped ? -muzzleOffsetX : muzzleOffsetX;
                     muzzle.localPosition = localPos;
                 }
+
+                if (shadowRenderer != null) shadowRenderer.flipX = flipped;
+
+                if (shadow != null)
+                {
+                    Vector3 shadowPos = shadow.localPosition;
+                    shadowPos.x = flipped ? -shadowOffsetX : shadowOffsetX;
+                    shadow.localPosition = shadowPos;
+                }
             }
         }
 
         private void FixedUpdate()
         {
             body.MovePosition(body.position + moveInput * stats.moveSpeed * Time.fixedDeltaTime);
+        }
+
+        // Called via Animation Event on PlayerWalk.anim, once per footfall pose.
+        private void PlayFootstep()
+        {
+            if (footstepClip != null) AudioSource.PlayClipAtPoint(footstepClip, transform.position);
         }
 
         private Vector2 ReadKeyboardFallback()

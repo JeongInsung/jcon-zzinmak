@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b9dab1f643625948aede7513ea67a76, type: 3}
-  m_Name: Upgrade_CritChance
+  m_Name: Upgrade_FanShot
   m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Data.UpgradeData
-  upgradeName: "치명타 확률 증가"
-  description: "치명타 확률이 10% 증가합니다."
+  upgradeName: "부채꼴 사격"
+  description: "부채꼴 모양으로 발사 방향이 하나 늘어납니다. (최대 2)"
   icon: {fileID: 21300000, guid: 507e5a73c8b727a48ad2ab207d3d3127, type: 3}
   type: 5
-  value: 0.1
+  value: 1
+  maxStack: 2

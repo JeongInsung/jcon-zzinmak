@@ -12,6 +12,7 @@ namespace Zzinmak.Player
         public float critChance = 0f;
         public float critMultiplier = 1.5f;
         public int extraProjectiles = 0;
+        public int fanShotCount = 0;
 
         public void IncreaseMoveSpeedPercent(float percent)
         {
@@ -33,9 +34,9 @@ namespace Zzinmak.Player
             pickupRange *= 1f + percent;
         }
 
-        public void IncreaseCritChance(float amount)
+        public void AddFanShot(int amount)
         {
-            critChance = Mathf.Clamp01(critChance + amount);
+            fanShotCount = Mathf.Clamp(fanShotCount + amount, 0, 2);
         }
 
         public void AddProjectileCount(int amount)

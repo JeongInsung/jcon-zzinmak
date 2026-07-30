@@ -127,10 +127,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 784
-        width: 1402
-        height: 338
+        width: 1389
+        height: 94
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -152,7 +152,7 @@ TextureImporter:
         width: 1292
         height: 188
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -174,7 +174,7 @@ TextureImporter:
         width: 1302
         height: 172
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -196,7 +196,7 @@ TextureImporter:
         width: 1350
         height: 255
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -209,11 +209,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: "ChatGPT Image 2026\uB144 7\uC6D4 29\uC77C \uC624\uD6C4 04_42_16-Photoroom_4"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 880
+        width: 1398
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85234fd81a3e3f044a121fbecbc5d715
+      internalID: 931672977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a69ed0f8ffe811c41b09a23fefb0eb8c
     internalID: 0
     vertices: []
     indices: 
@@ -227,6 +249,7 @@ TextureImporter:
       "ChatGPT Image 2026\uB144 7\uC6D4 29\uC77C \uC624\uD6C4 04_42_16-Photoroom_1": -5322888329766640637
       "ChatGPT Image 2026\uB144 7\uC6D4 29\uC77C \uC624\uD6C4 04_42_16-Photoroom_2": 1326894359052747178
       "ChatGPT Image 2026\uB144 7\uC6D4 29\uC77C \uC624\uD6C4 04_42_16-Photoroom_3": -4768058135995215064
+      "ChatGPT Image 2026\uB144 7\uC6D4 29\uC77C \uC624\uD6C4 04_42_16-Photoroom_4": 931672977
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

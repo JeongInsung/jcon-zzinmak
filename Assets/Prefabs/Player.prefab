@@ -90,7 +90,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: -8108986508362353340, guid: 9a09cd82076d90d47abda8f17f000aac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -136,7 +136,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6226427610097736337}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -163,8 +163,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.42
+  m_Offset: {x: -0.15570329, y: -0.07496797}
+  m_Radius: 1.0197448
 --- !u!114 &1486149998153221582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,6 +224,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Player.PlayerController
   joystick: {fileID: 0}
+  muzzle: {fileID: 0}
+  shadow: {fileID: 0}
+  footstepClip: {fileID: 0}
 --- !u!114 &2100614926374738189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,6 +243,9 @@ MonoBehaviour:
   startingWeapons:
   - {fileID: 11400000, guid: 8ed24e780c57e0f428bdf71843db9ad9, type: 2}
   projectileBurstDelay: 0.08
+  muzzleFlashPrefab: {fileID: 0}
+  gunshotClip: {fileID: 0}
+  targetRefreshInterval: 0.1
 --- !u!95 &371071415049920593
 Animator:
   serializedVersion: 7
@@ -269,7 +275,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6226427610097736337}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}

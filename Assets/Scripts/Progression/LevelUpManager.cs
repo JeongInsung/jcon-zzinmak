@@ -19,6 +19,7 @@ namespace Zzinmak.Progression
         private int pendingLevelUps;
         private readonly List<UpgradeData> currentOptions = new List<UpgradeData>();
         private readonly HashSet<UpgradeData> obtainedUnique = new HashSet<UpgradeData>();
+        private readonly Dictionary<UpgradeData, int> upgradeCounts = new Dictionary<UpgradeData, int>();
 
         private void Awake()
         {
@@ -49,6 +50,7 @@ namespace Zzinmak.Progression
             foreach (var upgrade in allUpgrades)
             {
                 if (upgrade.isUnique && obtainedUnique.Contains(upgrade)) continue;
+                if (upgrade.maxStack > 0 && GetUpgradeCount(upgrade) >= upgrade.maxStack) continue;
                 if (Random.value > upgrade.dropChance) continue;
 
                 pool.Add(upgrade);
@@ -99,8 +101,8 @@ namespace Zzinmak.Progression
                 case UpgradeType.PickupRange:
                     playerStats.IncreasePickupRangePercent(upgrade.value);
                     break;
-                case UpgradeType.CritChance:
-                    playerStats.IncreaseCritChance(upgrade.value);
+                case UpgradeType.FanShot:
+                    playerStats.AddFanShot(Mathf.RoundToInt(upgrade.value));
                     break;
                 case UpgradeType.ProjectileCount:
                     playerStats.AddProjectileCount(Mathf.RoundToInt(upgrade.value));
@@ -113,10 +115,17 @@ namespace Zzinmak.Progression
                     break;
             }
 
+            upgradeCounts[upgrade] = GetUpgradeCount(upgrade) + 1;
+
             if (upgrade.isUnique)
             {
                 obtainedUnique.Add(upgrade);
             }
+        }
+
+        private int GetUpgradeCount(UpgradeData upgrade)
+        {
+            return upgradeCounts.TryGetValue(upgrade, out int count) ? count : 0;
         }
     }
 }

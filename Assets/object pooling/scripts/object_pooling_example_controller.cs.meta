@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: ce70191ca97c76a4fa148fb4e877f609
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307740
+  packageName: dynamic bullets pooling system & barrel with fire spread and aim assist
+  packageVersion: 1.0.0
+  assetPath: Assets/object pooling/scripts/object_pooling_example_controller.cs
+  uploadId: 727627

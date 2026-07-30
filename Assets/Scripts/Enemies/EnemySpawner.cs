@@ -29,6 +29,9 @@ namespace Zzinmak.Enemies
         [SerializeField] private int levelsPerSpawnCountIncrease = 5;
         [SerializeField] private int spawnCountIncreasePerStep = 1;
         [SerializeField] private int maxSpawnCountPerTick = 8;
+        [SerializeField] private int baseMaxAliveEnemies = 30;
+        [SerializeField] private int levelsPerMaxAliveIncrease = 10;
+        [SerializeField] private int maxAliveIncreasePerStep = 10;
 
         private float spawnTimer;
         private int currentPlayerLevel = 1;
@@ -76,8 +79,10 @@ namespace Zzinmak.Enemies
         private void SpawnEnemy()
         {
             int count = CurrentSpawnCount();
+            int maxAlive = CurrentMaxAliveEnemies();
             for (int i = 0; i < count; i++)
             {
+                if (EnemyTracker.Active.Count >= maxAlive) return;
                 SpawnSingleEnemy();
             }
         }
@@ -87,6 +92,12 @@ namespace Zzinmak.Enemies
             int tier = (currentPlayerLevel - 1) / Mathf.Max(1, levelsPerSpawnCountIncrease);
             int count = baseSpawnCount + tier * spawnCountIncreasePerStep;
             return Mathf.Clamp(count, 1, maxSpawnCountPerTick);
+        }
+
+        private int CurrentMaxAliveEnemies()
+        {
+            int tier = (currentPlayerLevel - 1) / Mathf.Max(1, levelsPerMaxAliveIncrease);
+            return baseMaxAliveEnemies + tier * maxAliveIncreasePerStep;
         }
 
         private void SpawnSingleEnemy()

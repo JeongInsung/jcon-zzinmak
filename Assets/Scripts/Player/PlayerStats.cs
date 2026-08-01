@@ -13,6 +13,7 @@ namespace Zzinmak.Player
         public float critMultiplier = 1.5f;
         public int extraProjectiles = 0;
         public int fanShotCount = 0;
+        public int pierceCount = 0;
 
         public void IncreaseMoveSpeedPercent(float percent)
         {
@@ -42,6 +43,11 @@ namespace Zzinmak.Player
         public void AddProjectileCount(int amount)
         {
             extraProjectiles += amount;
+        }
+
+        public void AddPierceCount(int amount)
+        {
+            pierceCount += amount;
         }
     }
 }

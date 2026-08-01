@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b9dab1f643625948aede7513ea67a76, type: 3}
+  m_Name: Upgrade_Piercing
+  m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Data.UpgradeData
+  upgradeName: "\uAD00\uD1B5 \uCD1D\uC54C"
+  description: "\uCD1D\uC54C\uC774 \uC801\uC744 1\uBC88 \uAD00\uD1B5\uD569\uB2C8\uB2E4.\n(\uC911\uCCA9\uAC00\uB2A5)"
+  icon: {fileID: 8558041250643444950, guid: 76d6da47af860194c899971036abf533, type: 3}
+  type: 8
+  value: 1
+  dropChance: 1
+  isUnique: 0
+  maxStack: 0

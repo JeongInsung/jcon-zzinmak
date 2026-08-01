@@ -107,6 +107,9 @@ namespace Zzinmak.Progression
                 case UpgradeType.ProjectileCount:
                     playerStats.AddProjectileCount(Mathf.RoundToInt(upgrade.value));
                     break;
+                case UpgradeType.Piercing:
+                    playerStats.AddPierceCount(Mathf.RoundToInt(upgrade.value));
+                    break;
                 case UpgradeType.OrbitingOrbs:
                     if (orbitingOrbs != null)
                     {

@@ -14,6 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Data.UpgradeData
   upgradeName: "\uAE30\uB3D9\uB825 \uAC15\uD654"
   description: "\uC774\uB3D9 \uC18D\uB3C4\uAC00 10% \uC99D\uAC00\uD569\uB2C8\uB2E4."
-  icon: {fileID: 21300000, guid: b0aeb81654ebd1b49b9436b57fe24bdb, type: 3}
+  icon: {fileID: 6077786553870726686, guid: 1c1809c9bb53a7948af96b874b8259fc, type: 3}
   type: 2
   value: 0.1
+  dropChance: 1
+  isUnique: 0
+  maxStack: 0

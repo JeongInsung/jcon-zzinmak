@@ -19,18 +19,20 @@ namespace Zzinmak.Combat
         private float remainingLife;
         private float frameTimer;
         private int frameIndex;
+        private int pierceRemaining;
 
         private void Awake()
         {
             spriteRenderer = GetComponent<SpriteRenderer>();
         }
 
-        public void Launch(Vector3 targetPosition, float speed, float dmg)
+        public void Launch(Vector3 targetPosition, float speed, float dmg, int pierceCount = 0)
         {
             Vector2 dir = ((Vector2)targetPosition - (Vector2)transform.position).normalized;
             velocity = dir * speed;
             damage = dmg;
             remainingLife = lifetime;
+            pierceRemaining = pierceCount;
             transform.rotation = Quaternion.Euler(0f, 0f, Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg);
 
             frameTimer = 0f;
@@ -82,6 +84,12 @@ namespace Zzinmak.Combat
             if (enemy != null)
             {
                 enemy.TakeDamage(damage);
+            }
+
+            if (pierceRemaining > 0)
+            {
+                pierceRemaining--;
+                return;
             }
 
             ObjectPool.Instance.Return(gameObject);

@@ -107,7 +107,7 @@ namespace Zzinmak.Combat
 
                 var projectileObj = ObjectPool.Instance.Get(data.projectilePrefab, origin, Quaternion.identity);
                 var projectile = projectileObj.GetComponent<Projectile>();
-                projectile.Launch(aimPoint, data.projectileSpeed, damage);
+                projectile.Launch(aimPoint, data.projectileSpeed, damage, stats.pierceCount);
 
                 SpawnMuzzleFlash(origin);
                 if (gunshotClip != null) AudioSource.PlayClipAtPoint(gunshotClip, origin);

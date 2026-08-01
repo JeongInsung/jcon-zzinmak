@@ -51071,7 +51071,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7230225335894588447, guid: 0d9f21753e59d33489598a078cdc95a5, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8650986238601998428, guid: 0d9f21753e59d33489598a078cdc95a5, type: 3}
       propertyPath: levelUpManager

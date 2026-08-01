@@ -51079,7 +51079,6 @@ PrefabInstance:
       objectReference: {fileID: 1505257508}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-<<<<<<< HEAD
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 6038430725285657589, guid: 0d9f21753e59d33489598a078cdc95a5, type: 3}
       insertIndex: -1
@@ -51091,10 +51090,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6226427610097736337, guid: 0d9f21753e59d33489598a078cdc95a5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2106055863474040645}
-=======
-    m_AddedGameObjects: []
-    m_AddedComponents: []
->>>>>>> fc6dfecf478b247d48c501f88c1a62c4f5d81167
   m_SourcePrefab: {fileID: 100100000, guid: 0d9f21753e59d33489598a078cdc95a5, type: 3}
 --- !u!4 &2106055863474040636 stripped
 Transform:
@@ -51123,7 +51118,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 106aecbbc795f5340a87793d4fcf75d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Player.PlayerStats
-<<<<<<< HEAD
 --- !u!95 &2106055863474040645
 Animator:
   serializedVersion: 7
@@ -51141,13 +51135,11 @@ Animator:
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
-=======
->>>>>>> fc6dfecf478b247d48c501f88c1a62c4f5d81167
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

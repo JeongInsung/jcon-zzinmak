@@ -19639,14 +19639,6 @@ PrefabInstance:
       propertyPath: m_ShadowMesh.m_InitialTrim
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1338423025847385305, guid: 3b700161cbf4f7b4a813d416d9e785e8, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1338423025847385305, guid: 3b700161cbf4f7b4a813d416d9e785e8, type: 3}
-      propertyPath: m_PointLightOuterRadius
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 1387251659565165235, guid: 3b700161cbf4f7b4a813d416d9e785e8, type: 3}
       propertyPath: m_ShadowMesh.m_Mesh
       value: 
@@ -19735,14 +19727,6 @@ PrefabInstance:
       propertyPath: m_ShadowMesh.m_InitialTrim
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2097412254084718385, guid: 3b700161cbf4f7b4a813d416d9e785e8, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5.95
-      objectReference: {fileID: 0}
-    - target: {fileID: 2097412254084718385, guid: 3b700161cbf4f7b4a813d416d9e785e8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -5.68
-      objectReference: {fileID: 0}
     - target: {fileID: 2212617981394285972, guid: 3b700161cbf4f7b4a813d416d9e785e8, type: 3}
       propertyPath: m_ShadowMesh.m_Mesh
       value: 
@@ -19775,10 +19759,6 @@ PrefabInstance:
       propertyPath: m_ShadowMesh.m_InitialTrim
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2461293737487394537, guid: 3b700161cbf4f7b4a813d416d9e785e8, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2518735280712155556, guid: 3b700161cbf4f7b4a813d416d9e785e8, type: 3}
       propertyPath: m_ShadowMesh.m_Mesh
       value: 
@@ -19794,14 +19774,6 @@ PrefabInstance:
     - target: {fileID: 2532431627925270993, guid: 3b700161cbf4f7b4a813d416d9e785e8, type: 3}
       propertyPath: m_ShadowMesh.m_InitialTrim
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687735024912845200, guid: 3b700161cbf4f7b4a813d416d9e785e8, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 17.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687735024912845200, guid: 3b700161cbf4f7b4a813d416d9e785e8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 24.15
       objectReference: {fileID: 0}
     - target: {fileID: 2827348800934842808, guid: 3b700161cbf4f7b4a813d416d9e785e8, type: 3}
       propertyPath: m_ShadowMesh.m_Mesh
@@ -20167,10 +20139,6 @@ PrefabInstance:
       propertyPath: m_ShadowMesh.m_InitialTrim
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5842330094889748294, guid: 3b700161cbf4f7b4a813d416d9e785e8, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5845972913518453827, guid: 3b700161cbf4f7b4a813d416d9e785e8, type: 3}
       propertyPath: m_ShadowMesh.m_Mesh
       value: 
@@ -20277,10 +20245,6 @@ PrefabInstance:
       objectReference: {fileID: 1234360337}
     - target: {fileID: 6625277844003540023, guid: 3b700161cbf4f7b4a813d416d9e785e8, type: 3}
       propertyPath: m_ShadowMesh.m_InitialTrim
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6727805171646015450, guid: 3b700161cbf4f7b4a813d416d9e785e8, type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6739776590173596406, guid: 3b700161cbf4f7b4a813d416d9e785e8, type: 3}
@@ -51115,8 +51079,22 @@ PrefabInstance:
       objectReference: {fileID: 1505257508}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
+<<<<<<< HEAD
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6038430725285657589, guid: 0d9f21753e59d33489598a078cdc95a5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 125745822}
+    - targetCorrespondingSourceObject: {fileID: 6038430725285657589, guid: 0d9f21753e59d33489598a078cdc95a5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 826104465}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6226427610097736337, guid: 0d9f21753e59d33489598a078cdc95a5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2106055863474040645}
+=======
     m_AddedGameObjects: []
     m_AddedComponents: []
+>>>>>>> fc6dfecf478b247d48c501f88c1a62c4f5d81167
   m_SourcePrefab: {fileID: 100100000, guid: 0d9f21753e59d33489598a078cdc95a5, type: 3}
 --- !u!4 &2106055863474040636 stripped
 Transform:
@@ -51145,6 +51123,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 106aecbbc795f5340a87793d4fcf75d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Player.PlayerStats
+<<<<<<< HEAD
+--- !u!95 &2106055863474040645
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102646706}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f16ba8f5a7decc94ebef325a082e7fad, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+=======
+>>>>>>> fc6dfecf478b247d48c501f88c1a62c4f5d81167
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

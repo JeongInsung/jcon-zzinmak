@@ -19843,14 +19843,6 @@ PrefabInstance:
       propertyPath: m_ShadowMesh.m_InitialTrim
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1338423025847385305, guid: 3b700161cbf4f7b4a813d416d9e785e8, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1338423025847385305, guid: 3b700161cbf4f7b4a813d416d9e785e8, type: 3}
-      propertyPath: m_PointLightOuterRadius
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 1387251659565165235, guid: 3b700161cbf4f7b4a813d416d9e785e8, type: 3}
       propertyPath: m_ShadowMesh.m_Mesh
       value: 
@@ -19939,14 +19931,6 @@ PrefabInstance:
       propertyPath: m_ShadowMesh.m_InitialTrim
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2097412254084718385, guid: 3b700161cbf4f7b4a813d416d9e785e8, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5.95
-      objectReference: {fileID: 0}
-    - target: {fileID: 2097412254084718385, guid: 3b700161cbf4f7b4a813d416d9e785e8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -5.68
-      objectReference: {fileID: 0}
     - target: {fileID: 2212617981394285972, guid: 3b700161cbf4f7b4a813d416d9e785e8, type: 3}
       propertyPath: m_ShadowMesh.m_Mesh
       value: 
@@ -19979,10 +19963,6 @@ PrefabInstance:
       propertyPath: m_ShadowMesh.m_InitialTrim
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2461293737487394537, guid: 3b700161cbf4f7b4a813d416d9e785e8, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2518735280712155556, guid: 3b700161cbf4f7b4a813d416d9e785e8, type: 3}
       propertyPath: m_ShadowMesh.m_Mesh
       value: 
@@ -19998,14 +19978,6 @@ PrefabInstance:
     - target: {fileID: 2532431627925270993, guid: 3b700161cbf4f7b4a813d416d9e785e8, type: 3}
       propertyPath: m_ShadowMesh.m_InitialTrim
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687735024912845200, guid: 3b700161cbf4f7b4a813d416d9e785e8, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 17.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 2687735024912845200, guid: 3b700161cbf4f7b4a813d416d9e785e8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 24.15
       objectReference: {fileID: 0}
     - target: {fileID: 2827348800934842808, guid: 3b700161cbf4f7b4a813d416d9e785e8, type: 3}
       propertyPath: m_ShadowMesh.m_Mesh
@@ -20371,10 +20343,6 @@ PrefabInstance:
       propertyPath: m_ShadowMesh.m_InitialTrim
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5842330094889748294, guid: 3b700161cbf4f7b4a813d416d9e785e8, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5845972913518453827, guid: 3b700161cbf4f7b4a813d416d9e785e8, type: 3}
       propertyPath: m_ShadowMesh.m_Mesh
       value: 
@@ -20481,10 +20449,6 @@ PrefabInstance:
       objectReference: {fileID: 1234360337}
     - target: {fileID: 6625277844003540023, guid: 3b700161cbf4f7b4a813d416d9e785e8, type: 3}
       propertyPath: m_ShadowMesh.m_InitialTrim
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6727805171646015450, guid: 3b700161cbf4f7b4a813d416d9e785e8, type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6739776590173596406, guid: 3b700161cbf4f7b4a813d416d9e785e8, type: 3}
@@ -51258,9 +51222,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6226427610097736337, guid: 0d9f21753e59d33489598a078cdc95a5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2106055863474040645}
-    - targetCorrespondingSourceObject: {fileID: 6226427610097736337, guid: 0d9f21753e59d33489598a078cdc95a5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2106055863474040654}
   m_SourcePrefab: {fileID: 100100000, guid: 0d9f21753e59d33489598a078cdc95a5, type: 3}
 --- !u!4 &2106055863474040636 stripped
 Transform:
@@ -51311,58 +51272,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2106055863474040654
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1102646706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.2D.Runtime::UnityEngine.Rendering.Universal.Light2D
-  m_ComponentVersion: 3
-  m_LightType: 3
-  m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.5
-  m_Color: {r: 0.5391922, g: 0.7830189, b: 0.32872018, a: 1}
-  m_Intensity: 1
-  m_LightVolumeIntensity: 1
-  m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 4bcae59b00000000
-  m_LightCookieSprite: {fileID: 0}
-  m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
-  m_AlphaBlendOnOverlap: 0
-  m_OverlapOperation: 0
-  m_NormalMapDistance: 3
-  m_NormalMapQuality: 2
-  m_UseNormalMap: 0
-  m_ShadowsEnabled: 1
-  m_ShadowIntensity: 0.75
-  m_ShadowSoftness: 0.3
-  m_ShadowSoftnessFalloffIntensity: 0.5
-  m_ShadowVolumeIntensityEnabled: 0
-  m_ShadowVolumeIntensity: 0.75
-  m_LocalBounds:
-    m_Center: {x: 0, y: -0.00000011920929, z: 0}
-    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
-  m_PointLightInnerAngle: 360
-  m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 1
-  m_PointLightOuterRadius: 10
-  m_ShapeLightParametricSides: 5
-  m_ShapeLightParametricAngleOffset: 0
-  m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
-  m_ShapeLightFalloffOffset: {x: 0, y: 0}
-  m_ShapePath:
-  - {x: -0.5, y: -0.5, z: 0}
-  - {x: 0.5, y: -0.5, z: 0}
-  - {x: 0.5, y: 0.5, z: 0}
-  - {x: -0.5, y: 0.5, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

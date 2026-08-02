@@ -1,6 +1,7 @@
 using UnityEngine;
 using Zzinmak.Core;
 using Zzinmak.Data;
+using Zzinmak.Environment;
 
 namespace Zzinmak.Enemies
 {
@@ -22,6 +23,15 @@ namespace Zzinmak.Enemies
         [SerializeField] private float minSpawnInterval = 0.2f;
         [SerializeField] private float intervalDecreasePerMinute = 0.15f;
         [SerializeField] private float healthGrowthPerMinute = 0.15f;
+
+        [Header("Level scaling")]
+        [SerializeField] private int baseSpawnCount = 1;
+        [SerializeField] private int levelsPerSpawnCountIncrease = 5;
+        [SerializeField] private int spawnCountIncreasePerStep = 1;
+        [SerializeField] private int maxSpawnCountPerTick = 8;
+        [SerializeField] private int baseMaxAliveEnemies = 30;
+        [SerializeField] private int levelsPerMaxAliveIncrease = 10;
+        [SerializeField] private int maxAliveIncreasePerStep = 10;
 
         private float spawnTimer;
         private int currentPlayerLevel = 1;
@@ -68,13 +78,39 @@ namespace Zzinmak.Enemies
 
         private void SpawnEnemy()
         {
+            int count = CurrentSpawnCount();
+            int maxAlive = CurrentMaxAliveEnemies();
+            for (int i = 0; i < count; i++)
+            {
+                if (EnemyTracker.Active.Count >= maxAlive) return;
+                SpawnSingleEnemy();
+            }
+        }
+
+        private int CurrentSpawnCount()
+        {
+            int tier = (currentPlayerLevel - 1) / Mathf.Max(1, levelsPerSpawnCountIncrease);
+            int count = baseSpawnCount + tier * spawnCountIncreasePerStep;
+            return Mathf.Clamp(count, 1, maxSpawnCountPerTick);
+        }
+
+        private int CurrentMaxAliveEnemies()
+        {
+            int tier = (currentPlayerLevel - 1) / Mathf.Max(1, levelsPerMaxAliveIncrease);
+            return baseMaxAliveEnemies + tier * maxAliveIncreasePerStep;
+        }
+
+        private void SpawnSingleEnemy()
+        {
             if (player == null) return;
 
             var variant = PickVariant();
             if (variant == null || variant.prefab == null || variant.data == null) return;
 
             Vector2 offset = Random.insideUnitCircle.normalized * spawnRadius;
-            Vector3 spawnPos = player.position + (Vector3)offset;
+            Vector2 rawPos = (Vector2)player.position + offset;
+            Vector2 clampedPos = MapBounds.Instance != null ? MapBounds.Instance.ClampToInterior(rawPos) : rawPos;
+            Vector3 spawnPos = new Vector3(clampedPos.x, clampedPos.y, player.position.z);
 
             var enemyObj = ObjectPool.Instance.Get(variant.prefab, spawnPos, Quaternion.identity);
             var enemy = enemyObj.GetComponent<Enemy>();

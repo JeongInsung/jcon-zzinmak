@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 5466185961072072808}
   - component: {fileID: 7749201983456712345}
   - component: {fileID: 7730877086253972685}
+  - component: {fileID: 3973899786504762214}
+  - component: {fileID: 2880999311771558633}
   m_Layer: 9
   m_Name: Zombie
   m_TagString: Enemy
@@ -83,7 +85,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 4684134699921383014, guid: 714353e7869ded0448c6cb7fa02d72c8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -135,6 +137,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Enemies.Enemy
   expGemPrefab: {fileID: 2506447470019471358, guid: 96da21b780eec1342b43b1936eb31517, type: 3}
+  deathReturnDelay: 0
+  spriteFacesLeftByDefault: 0
 --- !u!95 &7749201983456712345
 Animator:
   serializedVersion: 7
@@ -164,7 +168,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2031785218433059593}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -312,3 +316,53 @@ PolygonCollider2D:
       - {x: -0.63, y: -1.505}
       - {x: -0.66999996, y: -1.435}
   m_UseDelaunayMesh: 1
+--- !u!114 &3973899786504762214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031785218433059593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512c19566e5f5b945a8cec9cbaab6f1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Combat.HitFlash
+  flashColor: {r: 1, g: 0, b: 0, a: 0.6}
+  flashDuration: 0.15
+--- !u!58 &2880999311771558633
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031785218433059593}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.065383434, y: -0.10461354}
+  m_Radius: 1.1150086

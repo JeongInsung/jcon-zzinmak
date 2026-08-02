@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Zzinmak.Data
 {
-    public enum UpgradeType { Damage, AttackSpeed, MoveSpeed, Heal, PickupRange, CritChance, ProjectileCount, OrbitingOrbs }
+    public enum UpgradeType { Damage, AttackSpeed, MoveSpeed, Heal, PickupRange, FanShot, ProjectileCount, OrbitingOrbs, Piercing }
 
     [CreateAssetMenu(fileName = "UpgradeData", menuName = "Zzinmak/Upgrade Data")]
     public class UpgradeData : ScriptableObject
@@ -20,5 +20,8 @@ namespace Zzinmak.Data
         public float dropChance = 1f;
 
         public bool isUnique = false;
+
+        [Tooltip("Max number of times this upgrade can be obtained. 0 = unlimited.")]
+        public int maxStack = 0;
     }
 }

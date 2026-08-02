@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c2d6608a551caec4fae1a1cd4f743cca
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307740
+  packageName: dynamic bullets pooling system & barrel with fire spread and aim assist
+  packageVersion: 1.0.0
+  assetPath: Assets/object pooling/Prefabs/bullet_destroy_effect.prefab
+  uploadId: 727627

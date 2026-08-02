@@ -2,6 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Zzinmak.Core;
+using Zzinmak.Player;
 
 namespace Zzinmak.UI
 {
@@ -13,6 +14,21 @@ namespace Zzinmak.UI
         [SerializeField] private TMP_Text levelText;
         [SerializeField] private TMP_Text timerText;
         [SerializeField] private TMP_Text scoreText;
+
+        [Header("Stat panel (below exp bar)")]
+        [SerializeField] private PlayerStats playerStats;
+        [SerializeField] private TMP_Text attackText;
+        [SerializeField] private TMP_Text attackSpeedText;
+        [SerializeField] private TMP_Text moveSpeedText;
+
+        private void Update()
+        {
+            if (playerStats == null) return;
+
+            if (attackText != null) attackText.text = "공격력 " + Mathf.RoundToInt(playerStats.damageMultiplier * 100f) + "%";
+            if (attackSpeedText != null) attackSpeedText.text = "공격속도 " + Mathf.RoundToInt(playerStats.attackSpeedMultiplier * 100f) + "%";
+            if (moveSpeedText != null) moveSpeedText.text = "이동속도 " + playerStats.moveSpeed.ToString("0.0");
+        }
 
         private void OnEnable()
         {

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a81bbdc67e827d347bc99c3c4b6eeda3
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307740
+  packageName: dynamic bullets pooling system & barrel with fire spread and aim assist
+  packageVersion: 1.0.0
+  assetPath: Assets/object pooling/Prefabs/bullet.prefab
+  uploadId: 727627

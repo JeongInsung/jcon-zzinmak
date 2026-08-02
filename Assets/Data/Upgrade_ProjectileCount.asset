@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b9dab1f643625948aede7513ea67a76, type: 3}
   m_Name: Upgrade_ProjectileCount
   m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Data.UpgradeData
-  upgradeName: "투사체 수 증가"
-  description: "무기 투사체 수가 1개 증가합니다."
-  icon: {fileID: 21300000, guid: f78a79807474ba040901a855a33a2f61, type: 3}
+  upgradeName: "\uD22C\uC0AC\uCCB4 \uC218 \uC99D\uAC00"
+  description: "\uBB34\uAE30 \uD22C\uC0AC\uCCB4 \uC218\uAC00 1\uAC1C \uC99D\uAC00\uD569\uB2C8\uB2E4."
+  icon: {fileID: -3850107500890881433, guid: 92eb9a988e1cea24789b331406cc8a68, type: 3}
   type: 6
   value: 1
+  dropChance: 1
+  isUnique: 0
+  maxStack: 0

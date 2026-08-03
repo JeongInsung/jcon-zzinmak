@@ -14,7 +14,7 @@ namespace Zzinmak.Environment
         [Header("Building (outdoor)")]
         [SerializeField] private GameObject buildingPrefab;
         [SerializeField] private Transform mapRoomCenter;
-        [SerializeField] private float mapHalfExtent = 16f;
+        [SerializeField] private Transform portalSpawner;
         [SerializeField] private float minSpawnDistanceFromPlayer = 5f;
 
         [Header("Building interior")]
@@ -209,24 +209,11 @@ namespace Zzinmak.Environment
 
         private void SpawnNewBuilding()
         {
-            Vector3 spawnPos = mapRoomCenter.position;
+            Vector3 spawnPos = GetRandomPortalPosition();
 
             for (int attempt = 0; attempt < 10; attempt++)
             {
-                Vector3 candidate;
-                if (MapBounds.Instance != null)
-                {
-                    Vector2 point = MapBounds.Instance.RandomPointInInterior();
-                    candidate = new Vector3(point.x, point.y, mapRoomCenter.position.z);
-                }
-                else
-                {
-                    Vector2 offset = new Vector2(
-                        Random.Range(-mapHalfExtent, mapHalfExtent),
-                        Random.Range(-mapHalfExtent, mapHalfExtent));
-                    candidate = mapRoomCenter.position + (Vector3)offset;
-                }
-
+                Vector3 candidate = GetRandomPortalPosition();
                 if (Vector3.Distance(candidate, player.position) > minSpawnDistanceFromPlayer)
                 {
                     spawnPos = candidate;
@@ -234,15 +221,18 @@ namespace Zzinmak.Environment
                 }
             }
 
-            // Final safety clamp - guarantees the building never lands past the walls
-            // even if every retry above happened to fail the distance-from-player check.
-            if (MapBounds.Instance != null)
+            currentBuilding = Instantiate(buildingPrefab, spawnPos, Quaternion.identity);
+        }
+
+        private Vector3 GetRandomPortalPosition()
+        {
+            if (portalSpawner == null || portalSpawner.childCount == 0)
             {
-                Vector2 clamped = MapBounds.Instance.ClampToInterior(spawnPos);
-                spawnPos = new Vector3(clamped.x, clamped.y, spawnPos.z);
+                return mapRoomCenter.position;
             }
 
-            currentBuilding = Instantiate(buildingPrefab, spawnPos, Quaternion.identity);
+            int index = Random.Range(0, portalSpawner.childCount);
+            return portalSpawner.GetChild(index).position;
         }
     }
 }

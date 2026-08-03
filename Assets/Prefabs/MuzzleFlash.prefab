@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 0.17259474, y: 0.17259474, z: 0.69037896}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -45,9 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ec6b3d790a2a394abcc44b3bc1240d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Combat.MuzzleFlash
-  flashSprites:
-  - {fileID: 8873926187012147737, guid: 76468e925460ec34697a32d9f89950ab, type: 3}
-  displayDuration: 0.12
+  flashSprite: {fileID: 4052390252365831513, guid: fb32a8ccdd52d8148a3bbe375e9c4b61, type: 3}
+  displayDuration: 0.08
 --- !u!212 &643004284693985451
 SpriteRenderer:
   serializedVersion: 2
@@ -95,14 +94,14 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 8873926187012147737, guid: 76468e925460ec34697a32d9f89950ab, type: 3}
+  m_Sprite: {fileID: 4052390252365831513, guid: fb32a8ccdd52d8148a3bbe375e9c4b61, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 10.24, y: 10.24}
+  m_Size: {x: 1.29, y: 1.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

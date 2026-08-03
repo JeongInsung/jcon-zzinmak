@@ -104,6 +104,7 @@ namespace Zzinmak.Enemies
         {
             isAttacking = true;
             enemy.CanMove = false;
+            enemy.FaceTarget();
             animator.Play(Attack1State, 0, 0f);
 
             yield return new WaitForSeconds(meleeHitTime);
@@ -126,6 +127,7 @@ namespace Zzinmak.Enemies
         {
             isAttacking = true;
             enemy.CanMove = false;
+            enemy.FaceTarget();
             animator.Play(Attack2State, 0, 0f);
 
             yield return new WaitForSeconds(rangedSpitTime);

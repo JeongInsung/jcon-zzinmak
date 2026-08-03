@@ -69,11 +69,25 @@ namespace Zzinmak.Enemies
             Vector2 dir = ((Vector2)target.position - body.position).normalized;
             body.MovePosition(body.position + dir * data.moveSpeed * Time.fixedDeltaTime);
 
-            if (spriteRenderer != null && Mathf.Abs(dir.x) > 0.01f)
-            {
-                bool shouldFlip = dir.x < 0f;
-                spriteRenderer.flipX = spriteFacesLeftByDefault ? !shouldFlip : shouldFlip;
-            }
+            UpdateFacing(dir.x);
+        }
+
+        // Movement (and the facing update tied to it) pauses whenever CanMove is false,
+        // e.g. mid-attack. Callers that lock movement for an attack should call this first
+        // so the enemy still snaps to face the target instead of freezing mid-turn.
+        public void FaceTarget()
+        {
+            if (target == null) return;
+
+            UpdateFacing(target.position.x - transform.position.x);
+        }
+
+        private void UpdateFacing(float dirX)
+        {
+            if (spriteRenderer == null || Mathf.Abs(dirX) <= 0.01f) return;
+
+            bool shouldFlip = dirX < 0f;
+            spriteRenderer.flipX = spriteFacesLeftByDefault ? !shouldFlip : shouldFlip;
         }
 
         public void TakeDamage(float amount)

@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: fb32a8ccdd52d8148a3bbe375e9c4b61
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6320537273874259518
+    second: muzzleflash1_0
+  - first:
+      213: 4052390252365831513
+    second: muzzleflash1_1
+  - first:
+      213: -4477126575923960960
+    second: muzzleflash1_2
+  - first:
+      213: -7290527143676665706
+    second: muzzleflash1_3
+  - first:
+      213: -8396894453727613488
+    second: muzzleflash1_4
+  - first:
+      213: 9158994161142010832
+    second: muzzleflash1_5
+  - first:
+      213: 8198522937387354947
+    second: muzzleflash1_6
+  - first:
+      213: -4910322525124919233
+    second: muzzleflash1_7
+  - first:
+      213: -3678118734049734267
+    second: muzzleflash1_8
+  - first:
+      213: -428085726411064355
+    second: muzzleflash1_9
+  - first:
+      213: 4694551160530372460
+    second: muzzleflash1_10
+  - first:
+      213: -685298721205205597
+    second: muzzleflash1_11
+  - first:
+      213: 4635222296614836424
+    second: muzzleflash1_12
+  - first:
+      213: -171350501215478840
+    second: muzzleflash1_13
+  - first:
+      213: -169250728838299873
+    second: muzzleflash1_14
+  - first:
+      213: -6583950272372151378
+    second: muzzleflash1_15
+  - first:
+      213: -2480570458611185346
+    second: muzzleflash1_16
+  - first:
+      213: 8776997271750327325
+    second: muzzleflash1_17
+  - first:
+      213: -4327496517871198838
+    second: muzzleflash1_18
+  - first:
+      213: 4729815891431996812
+    second: muzzleflash1_19
+  - first:
+      213: 4810990395562818238
+    second: muzzleflash1_20
+  - first:
+      213: 2198293434069497005
+    second: muzzleflash1_21
+  - first:
+      213: 323548116511353602
+    second: muzzleflash1_22
+  - first:
+      213: 2827615271453791168
+    second: muzzleflash1_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: muzzleflash1_0
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1787
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c1eb1946d0f848a0800000000000000
+      internalID: -6320537273874259518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muzzleflash1_1
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 1714
+        width: 129
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95d558bc67bfc3830800000000000000
+      internalID: 4052390252365831513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muzzleflash1_2
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 1684
+        width: 194
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 083679b991d0ed1c0800000000000000
+      internalID: -4477126575923960960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muzzleflash1_3
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 1664
+        width: 227
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6902fcf8038d2da90800000000000000
+      internalID: -7290527143676665706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muzzleflash1_4
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1138
+        width: 242
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dd2e15abfc387b80800000000000000
+      internalID: -8396894453727613488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muzzleflash1_5
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 1129
+        width: 239
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d31fb2c9a84b1f70800000000000000
+      internalID: 9158994161142010832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muzzleflash1_6
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 1122
+        width: 236
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34b8dd58c2107c170800000000000000
+      internalID: 8198522937387354947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muzzleflash1_7
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 1187
+        width: 232
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f30845deda70bdbb0800000000000000
+      internalID: -4910322525124919233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muzzleflash1_8
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 1317
+        width: 56
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5819147bf72b4fcc0800000000000000
+      internalID: -3678118734049734267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muzzleflash1_9
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 1118
+        width: 57
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddb7ad7cc422f0af0800000000000000
+      internalID: -428085726411064355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muzzleflash1_10
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 839
+        width: 40
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c678f4f5865662140800000000000000
+      internalID: 4694551160530372460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muzzleflash1_11
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 865
+        width: 19
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a5c885a1745d76f0800000000000000
+      internalID: -685298721205205597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muzzleflash1_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 675
+        width: 226
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c892bcce1e935040800000000000000
+      internalID: 4635222296614836424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muzzleflash1_13
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 808
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cb57f280ad3f9df0800000000000000
+      internalID: -171350501215478840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muzzleflash1_14
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 745
+        width: 219
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1ffd9ddb53b6adf0800000000000000
+      internalID: -169250728838299873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muzzleflash1_15
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 750
+        width: 209
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eabeb6c4c1c11a4a0800000000000000
+      internalID: -6583950272372151378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muzzleflash1_16
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 754
+        width: 197
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e39072e7f4e339dd0800000000000000
+      internalID: -2480570458611185346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muzzleflash1_17
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 605
+        width: 41
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1c304124882ec970800000000000000
+      internalID: 8776997271750327325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muzzleflash1_18
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 685
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8d1c8558d4a1f3c0800000000000000
+      internalID: -4327496517871198838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muzzleflash1_19
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 627
+        width: 20
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8d3dcd5e7ea3a140800000000000000
+      internalID: 4729815891431996812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muzzleflash1_20
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 245
+        width: 181
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eba7659664214c240800000000000000
+      internalID: 4810990395562818238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muzzleflash1_21
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 247
+        width: 157
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da439c13b38e18e10800000000000000
+      internalID: 2198293434069497005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muzzleflash1_22
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 248
+        width: 125
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20be7683c497d7400800000000000000
+      internalID: 323548116511353602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muzzleflash1_23
+      rect:
+        serializedVersion: 2
+        x: 1592
+        y: 251
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c31978ab15bd3720800000000000000
+      internalID: 2827615271453791168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      muzzleflash1_0: -6320537273874259518
+      muzzleflash1_1: 4052390252365831513
+      muzzleflash1_10: 4694551160530372460
+      muzzleflash1_11: -685298721205205597
+      muzzleflash1_12: 4635222296614836424
+      muzzleflash1_13: -171350501215478840
+      muzzleflash1_14: -169250728838299873
+      muzzleflash1_15: -6583950272372151378
+      muzzleflash1_16: -2480570458611185346
+      muzzleflash1_17: 8776997271750327325
+      muzzleflash1_18: -4327496517871198838
+      muzzleflash1_19: 4729815891431996812
+      muzzleflash1_2: -4477126575923960960
+      muzzleflash1_20: 4810990395562818238
+      muzzleflash1_21: 2198293434069497005
+      muzzleflash1_22: 323548116511353602
+      muzzleflash1_23: 2827615271453791168
+      muzzleflash1_3: -7290527143676665706
+      muzzleflash1_4: -8396894453727613488
+      muzzleflash1_5: 9158994161142010832
+      muzzleflash1_6: 8198522937387354947
+      muzzleflash1_7: -4910322525124919233
+      muzzleflash1_8: -3678118734049734267
+      muzzleflash1_9: -428085726411064355
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

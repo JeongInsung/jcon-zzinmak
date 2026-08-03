@@ -395,7 +395,7 @@ TextureImporter:
         width: 360
         height: 189
       alignment: 9
-      pivot: {x: 0.5, y: 0.12169312169312169}
+      pivot: {x: 0.5, y: 0.12169312}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -417,7 +417,7 @@ TextureImporter:
         width: 295
         height: 197
       alignment: 9
-      pivot: {x: 0.5, y: 0.1218274111675127}
+      pivot: {x: 0.5, y: 0.12182741}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -439,7 +439,7 @@ TextureImporter:
         width: 297
         height: 222
       alignment: 9
-      pivot: {x: 0.5, y: 0.12387387387387387}
+      pivot: {x: 0.5, y: 0.123873875}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -510,6 +510,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+      ChatGPT Image 2026\uB144 8\uC6D4 1\uC77C \uC624\uD6C4 06_24_09-Photoroom_top1: -4569082852142469918
+      ChatGPT Image 2026\uB144 8\uC6D4 1\uC77C \uC624\uD6C4 06_24_09-Photoroom_top2: 5294557853205002862
+      ChatGPT Image 2026\uB144 8\uC6D4 1\uC77C \uC624\uD6C4 06_24_09-Photoroom_top3: -6293653944870703023
+      ChatGPT Image 2026\uB144 8\uC6D4 1\uC77C \uC624\uD6C4 06_24_09-Photoroom_top6: 2397694073577390166
+      ChatGPT Image 2026\uB144 8\uC6D4 1\uC77C \uC624\uD6C4 06_24_09-Photoroom_top8: 4380607959191104807
       "ChatGPT Image 2026\uB144 8\uC6D4 1\uC77C \uC624\uD6C4 06_24_09-Photoroom_0": -2611977862448886073
       "ChatGPT Image 2026\uB144 8\uC6D4 1\uC77C \uC624\uD6C4 06_24_09-Photoroom_1": 4656125470895453708
       "ChatGPT Image 2026\uB144 8\uC6D4 1\uC77C \uC624\uD6C4 06_24_09-Photoroom_10": 9107769360127950741
@@ -521,11 +526,6 @@ TextureImporter:
       "ChatGPT Image 2026\uB144 8\uC6D4 1\uC77C \uC624\uD6C4 06_24_09-Photoroom_7": -7310255268761886962
       "ChatGPT Image 2026\uB144 8\uC6D4 1\uC77C \uC624\uD6C4 06_24_09-Photoroom_8": 6459006176611388542
       "ChatGPT Image 2026\uB144 8\uC6D4 1\uC77C \uC624\uD6C4 06_24_09-Photoroom_9": 5669694901179747331
-      ChatGPT Image 2026\uB144 8\uC6D4 1\uC77C \uC624\uD6C4 06_24_09-Photoroom_top1: -4569082852142469918
-      ChatGPT Image 2026\uB144 8\uC6D4 1\uC77C \uC624\uD6C4 06_24_09-Photoroom_top2: 5294557853205002862
-      ChatGPT Image 2026\uB144 8\uC6D4 1\uC77C \uC624\uD6C4 06_24_09-Photoroom_top3: -6293653944870703023
-      ChatGPT Image 2026\uB144 8\uC6D4 1\uC77C \uC624\uD6C4 06_24_09-Photoroom_top6: 2397694073577390166
-      ChatGPT Image 2026\uB144 8\uC6D4 1\uC77C \uC624\uD6C4 06_24_09-Photoroom_top8: 4380607959191104807
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

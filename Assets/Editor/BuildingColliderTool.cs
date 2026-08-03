@@ -26,7 +26,7 @@ namespace Zzinmak.EditorTools
         private float widthRatio = 0.85f;
         private float thicknessRatio = 0.40f;
         private float minThickness = 0.7f;
-        private float topOffset = 0f;
+        private float bottomOverlapRatio = 0.10f;
         private bool onlySelected;
         private bool overwriteExisting;
 
@@ -34,6 +34,25 @@ namespace Zzinmak.EditorTools
         private static void Open()
         {
             GetWindow<BuildingColliderTool>("건물 콜라이더").minSize = new Vector2(320, 260);
+        }
+
+        /// <summary>
+        /// 창을 띄우지 않고 커맨드라인에서 실행하기 위한 진입점.
+        /// 예: Unity.exe -batchmode -executeMethod Zzinmak.EditorTools.BuildingColliderTool.BatchFixExistingScene -quit
+        /// "2 SCENE.unity"만 열어서 측정 로그 → 없는 건물 생성 → 안 겹치는 fw 위로 올리기까지 수행하고 저장한다.
+        /// </summary>
+        public static void BatchFixExistingScene()
+        {
+            EditorSceneManager.OpenScene("Assets/Scenes/2 SCENE.unity");
+
+            var tool = ScriptableObject.CreateInstance<BuildingColliderTool>();
+            tool.RunMeasure();
+            tool.RunGenerate(previewOnly: false);
+            tool.RunFixOverlap();
+            DestroyImmediate(tool);
+
+            EditorSceneManager.SaveOpenScenes();
+            Debug.Log("[BuildingColliderTool] 배치 완료");
         }
 
         private void OnGUI()
@@ -52,7 +71,8 @@ namespace Zzinmak.EditorTools
             widthRatio = EditorGUILayout.Slider("가로 비율 (건물 폭 대비)", widthRatio, 0.1f, 1f);
             thicknessRatio = EditorGUILayout.Slider("두께 비율 (건물 높이 대비)", thicknessRatio, 0.05f, 1f);
             minThickness = EditorGUILayout.FloatField("최소 두께 (월드 단위 근사)", minThickness);
-            topOffset = EditorGUILayout.FloatField("윗변 보정 (월드 단위 근사)", topOffset);
+            bottomOverlapRatio = EditorGUILayout.Slider(
+                "밑변 겹침 비율 (건물 높이 대비, 스프라이트 안으로 파고드는 양)", bottomOverlapRatio, 0f, 0.5f);
             EditorGUILayout.Space();
             onlySelected = EditorGUILayout.ToggleLeft("선택한 오브젝트만 대상으로", onlySelected);
             overwriteExisting = EditorGUILayout.ToggleLeft("기존 fw 덮어쓰기", overwriteExisting);
@@ -70,6 +90,10 @@ namespace Zzinmak.EditorTools
 
             if (GUILayout.Button("4. 건물 콜라이더 일괄 생성"))
                 RunGenerate(previewOnly: false);
+
+            EditorGUILayout.Space();
+            if (GUILayout.Button("5. 기존 fw 위로 올리기 (부족한 것만)"))
+                RunFixOverlap();
         }
 
         // ----- 모드 A: 측정 -----
@@ -210,15 +234,19 @@ namespace Zzinmak.EditorTools
                 float localHeight = Mathf.Abs(localMax.y - localMin.y);
                 float localCenterX = (localMax.x + localMin.x) * 0.5f;
 
-                // minThickness/topOffset은 월드 단위 기준 슬라이더값이라, 건물 자신의 스케일로
-                // 나눠서 로컬 단위로 근사 환산한다(회전은 프로젝트 전역에서 쓰이지 않는다는 전제).
+                // minThickness는 월드 단위 기준 슬라이더값이라, 건물 자신의 스케일로 나눠서
+                // 로컬 단위로 근사 환산한다(회전은 프로젝트 전역에서 쓰이지 않는다는 전제).
                 float scaleY = Mathf.Max(0.0001f, Mathf.Abs(b.lossyScale.y));
                 float minThicknessLocal = minThickness / scaleY;
-                float topOffsetLocal = topOffset / scaleY;
 
                 float sizeY = Mathf.Max(localHeight * thicknessRatio, minThicknessLocal);
                 float sizeX = localWidth * widthRatio;
-                float offsetY = localMin.y - sizeY * 0.5f + topOffsetLocal;
+
+                // 콜라이더 윗변이 스프라이트 밑변(localMin.y)보다 조금 위로 파고들게 해서
+                // 건물과 실제로 겹치게 한다. 겹침이 0이면 콜라이더 전체가 스프라이트 바깥(아래)
+                // 빈 공간에 놓여 "건물 밖에 생긴" 것처럼 보인다 — 실제로 겪었던 문제.
+                float bottomOverlap = localHeight * bottomOverlapRatio;
+                float offsetY = localMin.y - sizeY * 0.5f + bottomOverlap;
 
                 var go = new GameObject("fw");
                 Undo.RegisterCreatedObjectUndo(go, "fw 콜라이더 생성");
@@ -243,6 +271,58 @@ namespace Zzinmak.EditorTools
             Debug.Log(previewOnly
                 ? $"[BuildingColliderTool] 미리보기 — 생성 대상: {created}개, 스킵(이미 있음/스프라이트 없음): {skipped}개"
                 : $"[BuildingColliderTool] 생성 완료: {created}개, 스킵: {skipped}개");
+        }
+
+        // ----- 모드 D: 이미 배치된 fw 중 안 겹치는 것만 위로 올리기 -----
+
+        /// <summary>
+        /// 예전 버그(겹침 0으로 생성)로 이미 건물 밖에 놓인 fw들을 되살린다.
+        /// 새로 만들지 않고, 각 fw의 실제 월드 콜라이더 윗변이 목표 겹침선(건물 밑변 +
+        /// bottomOverlapRatio*높이)보다 낮으면 부족한 만큼만 위로 올린다. X/크기는 손대지
+        /// 않으므로, 이미 충분히 겹쳐 있는 것(손으로 이관한 것 포함)은 그대로 둔다.
+        /// </summary>
+        private void RunFixOverlap()
+        {
+            const float epsilon = 0.001f;
+            var roots = GetScanRoots();
+            var buildings = CollectBuildings(roots);
+
+            int raised = 0, alreadyOk = 0, noFw = 0;
+            foreach (var b in buildings)
+            {
+                var fw = FindFwChild(b);
+                if (fw == null)
+                {
+                    noFw++;
+                    continue;
+                }
+
+                var col = fw.GetComponent<BoxCollider2D>();
+                if (col == null) continue;
+
+                Bounds spriteBounds = GetCombinedSpriteBounds(b);
+                float requiredOverlap = spriteBounds.size.y * bottomOverlapRatio;
+                float desiredWorldTop = spriteBounds.min.y + requiredOverlap;
+                float currentWorldTop = col.bounds.max.y;
+
+                if (currentWorldTop >= desiredWorldTop - epsilon)
+                {
+                    alreadyOk++;
+                    continue;
+                }
+
+                float deltaWorld = desiredWorldTop - currentWorldTop;
+                float scaleY = Mathf.Max(0.0001f, Mathf.Abs(fw.lossyScale.y));
+                float deltaLocal = deltaWorld / scaleY;
+
+                Undo.RecordObject(col, "fw 위로 올리기");
+                col.offset += new Vector2(0f, deltaLocal);
+                EditorUtility.SetDirty(fw.gameObject);
+                raised++;
+            }
+
+            MarkScenesDirty(roots);
+            Debug.Log($"[BuildingColliderTool] 위로 올림: {raised}개 / 이미 충분히 겹침: {alreadyOk}개 / fw 없음: {noFw}개");
         }
 
         // ----- 공용 헬퍼 -----
@@ -343,10 +423,118 @@ namespace Zzinmak.EditorTools
             if (renderers.Length == 0)
                 return new Bounds(t.position, Vector3.zero);
 
-            Bounds b = renderers[0].bounds;
+            Bounds b = GetTightWorldBounds(renderers[0]);
             for (int i = 1; i < renderers.Length; i++)
-                b.Encapsulate(renderers[i].bounds);
+                b.Encapsulate(GetTightWorldBounds(renderers[i]));
             return b;
+        }
+
+        // 스프라이트 원본(sprite.bounds/Renderer.bounds)은 텍스처 전체 사각형이라 투명 여백까지
+        // 포함한다 — Photoroom류 배경제거 이미지는 여백이 커서 이 여백 기준으로 아무리 비율을
+        // 조정해도 콜라이더가 건물 밖에 놓였다(실제로 겪은 문제). 그래서 픽셀 알파값을 직접 읽어
+        // 불투명 영역만의 타이트한 바운드를 계산해 쓴다. 스프라이트 하나당 한 번만 계산해 캐시한다.
+        private static readonly Dictionary<Sprite, Rect> tightLocalRectCache = new Dictionary<Sprite, Rect>();
+
+        private static Bounds GetTightWorldBounds(SpriteRenderer sr)
+        {
+            if (sr.sprite == null)
+                return sr.bounds;
+
+            Rect local = GetTightLocalRect(sr.sprite);
+            Transform t = sr.transform;
+            Vector3 c0 = t.TransformPoint(new Vector3(local.xMin, local.yMin, 0));
+            Vector3 c1 = t.TransformPoint(new Vector3(local.xMax, local.yMax, 0));
+            Vector3 c2 = t.TransformPoint(new Vector3(local.xMin, local.yMax, 0));
+            Vector3 c3 = t.TransformPoint(new Vector3(local.xMax, local.yMin, 0));
+
+            Bounds b = new Bounds(c0, Vector3.zero);
+            b.Encapsulate(c1);
+            b.Encapsulate(c2);
+            b.Encapsulate(c3);
+            return b;
+        }
+
+        /// <summary>
+        /// 스프라이트의 불투명 픽셀만의 바운딩 사각형을 (GameObject 로컬 유닛 공간으로) 계산한다.
+        /// 텍스처가 Read/Write 꺼져 있으면 이번 계산 동안만 켰다가 즉시 원래대로 되돌린다.
+        /// </summary>
+        private static Rect GetTightLocalRect(Sprite sprite)
+        {
+            if (tightLocalRectCache.TryGetValue(sprite, out var cached))
+                return cached;
+
+            Rect fallback = new Rect(sprite.bounds.min, sprite.bounds.size);
+            Rect result = fallback;
+
+            Texture2D tex = sprite.texture;
+            string path = tex != null ? AssetDatabase.GetAssetPath(tex) : null;
+            var importer = string.IsNullOrEmpty(path) ? null : AssetImporter.GetAtPath(path) as TextureImporter;
+            bool madeReadable = false;
+
+            try
+            {
+                if (importer != null && !importer.isReadable)
+                {
+                    importer.isReadable = true;
+                    importer.SaveAndReimport();
+                    madeReadable = true;
+                }
+
+                Rect texRect = sprite.rect; // 텍스처 안에서 이 스프라이트가 차지하는 픽셀 영역
+                int rx = Mathf.RoundToInt(texRect.x);
+                int ry = Mathf.RoundToInt(texRect.y);
+                int rw = Mathf.RoundToInt(texRect.width);
+                int rh = Mathf.RoundToInt(texRect.height);
+
+                Color[] pixels = tex.GetPixels(rx, ry, rw, rh);
+
+                const float alphaThreshold = 0.02f;
+                int minX = int.MaxValue, minY = int.MaxValue, maxX = -1, maxY = -1;
+                for (int y = 0; y < rh; y++)
+                {
+                    int rowBase = y * rw;
+                    for (int x = 0; x < rw; x++)
+                    {
+                        if (pixels[rowBase + x].a > alphaThreshold)
+                        {
+                            if (x < minX) minX = x;
+                            if (x > maxX) maxX = x;
+                            if (y < minY) minY = y;
+                            if (y > maxY) maxY = y;
+                        }
+                    }
+                }
+
+                if (maxX >= minX && maxY >= minY)
+                {
+                    float ppu = sprite.pixelsPerUnit;
+                    Vector2 pivotPx = sprite.pivot; // 스프라이트 rect 왼쪽 아래 기준 픽셀 좌표
+                    float localMinX = (minX - pivotPx.x) / ppu;
+                    float localMaxX = (maxX + 1 - pivotPx.x) / ppu;
+                    float localMinY = (minY - pivotPx.y) / ppu;
+                    float localMaxY = (maxY + 1 - pivotPx.y) / ppu;
+                    result = Rect.MinMaxRect(localMinX, localMinY, localMaxX, localMaxY);
+                }
+                else
+                {
+                    Debug.LogWarning($"[BuildingColliderTool] {sprite.name}: 완전히 투명한 스프라이트라 전체 바운드로 대체합니다.");
+                }
+            }
+            catch (System.Exception e)
+            {
+                Debug.LogWarning($"[BuildingColliderTool] {sprite.name}: 픽셀을 읽지 못해 전체 바운드로 대체합니다 ({e.Message}).");
+            }
+            finally
+            {
+                if (madeReadable && importer != null)
+                {
+                    importer.isReadable = false;
+                    importer.SaveAndReimport();
+                }
+            }
+
+            tightLocalRectCache[sprite] = result;
+            return result;
         }
 
         /// <summary>

@@ -112,6 +112,7 @@ GameObject:
   - component: {fileID: 1100000010}
   - component: {fileID: 7001775565017403690}
   - component: {fileID: 2588486443747673743}
+  - component: {fileID: 9071844173271873749}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -279,6 +280,7 @@ MonoBehaviour:
   critMultiplier: 1.5
   extraProjectiles: 0
   fanShotCount: 0
+  pierceCount: 0
 --- !u!114 &7845027563408176725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -513,6 +515,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &9071844173271873749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6226427610097736337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c257756a6156541a321a1e5f1e1af4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Combat.TacticalDrone
+  dronePrefab: {fileID: 6378385456782025557, guid: 61de90b2e06dc60479637719372d6ab9, type: 3}
+  damage: 4
 --- !u!1 &8799457722260672287
 GameObject:
   m_ObjectHideFlags: 0

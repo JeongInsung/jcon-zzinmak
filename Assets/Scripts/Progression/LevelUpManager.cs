@@ -16,7 +16,9 @@ namespace Zzinmak.Progression
         [SerializeField] private UpgradeData[] allUpgrades;
 
         private OrbitingOrbs orbitingOrbs;
+        private TacticalDrone tacticalDrone;
         private int pendingLevelUps;
+        private int currentPlayerLevel = 1;
         private readonly List<UpgradeData> currentOptions = new List<UpgradeData>();
         private readonly HashSet<UpgradeData> obtainedUnique = new HashSet<UpgradeData>();
         private readonly Dictionary<UpgradeData, int> upgradeCounts = new Dictionary<UpgradeData, int>();
@@ -24,6 +26,22 @@ namespace Zzinmak.Progression
         private void Awake()
         {
             orbitingOrbs = playerStats != null ? playerStats.GetComponent<OrbitingOrbs>() : null;
+            tacticalDrone = playerStats != null ? playerStats.GetComponent<TacticalDrone>() : null;
+        }
+
+        private void OnEnable()
+        {
+            GameEvents.OnLevelChanged += HandleLevelChanged;
+        }
+
+        private void OnDisable()
+        {
+            GameEvents.OnLevelChanged -= HandleLevelChanged;
+        }
+
+        private void HandleLevelChanged(int level)
+        {
+            currentPlayerLevel = level;
         }
 
         public void TriggerLevelUp()
@@ -46,24 +64,37 @@ namespace Zzinmak.Progression
 
         private List<UpgradeData> PickRandomUpgrades(int count)
         {
-            var pool = new List<UpgradeData>();
+            var guaranteedPool = new List<UpgradeData>();
+            var randomPool = new List<UpgradeData>();
+
             foreach (var upgrade in allUpgrades)
             {
+                if (currentPlayerLevel < upgrade.minLevel) continue;
                 if (upgrade.isUnique && obtainedUnique.Contains(upgrade)) continue;
                 if (upgrade.maxStack > 0 && GetUpgradeCount(upgrade) >= upgrade.maxStack) continue;
-                if (Random.value > upgrade.dropChance) continue;
 
-                pool.Add(upgrade);
+                if (upgrade.guaranteed)
+                {
+                    guaranteedPool.Add(upgrade);
+                    continue;
+                }
+
+                if (Random.value > upgrade.dropChance) continue;
+                randomPool.Add(upgrade);
             }
 
             var result = new List<UpgradeData>();
-            count = Mathf.Min(count, pool.Count);
-
-            for (int i = 0; i < count; i++)
+            for (int i = 0; i < guaranteedPool.Count && result.Count < count; i++)
             {
-                int index = Random.Range(0, pool.Count);
-                result.Add(pool[index]);
-                pool.RemoveAt(index);
+                result.Add(guaranteedPool[i]);
+            }
+
+            int remaining = Mathf.Min(count - result.Count, randomPool.Count);
+            for (int i = 0; i < remaining; i++)
+            {
+                int index = Random.Range(0, randomPool.Count);
+                result.Add(randomPool[index]);
+                randomPool.RemoveAt(index);
             }
 
             return result;
@@ -114,6 +145,12 @@ namespace Zzinmak.Progression
                     if (orbitingOrbs != null)
                     {
                         orbitingOrbs.Activate();
+                    }
+                    break;
+                case UpgradeType.TacticalDrone:
+                    if (tacticalDrone != null)
+                    {
+                        tacticalDrone.Activate();
                     }
                     break;
             }

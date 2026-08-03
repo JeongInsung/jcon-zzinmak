@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b9dab1f643625948aede7513ea67a76, type: 3}
+  m_Name: Upgrade_TacticalDrone
+  m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Data.UpgradeData
+  upgradeName: "\uC804\uC220 \uB4DC\uB860"
+  description: "\uD50C\uB808\uC774\uC5B4\uB97C \uB530\uB77C\uB2E4\uB2C8\uBA70 \uADFC\uCC98
+    \uC880\uBE44\uB97C \uC790\uB3D9\uC73C\uB85C \uACF5\uACA9\uD558\uB294 \uC804\uC220
+    \uB4DC\uB860\uC744 \uC18C\uD658\uD569\uB2C8\uB2E4."
+  icon: {fileID: 6077786553870726686, guid: 1c1809c9bb53a7948af96b874b8259fc, type: 3}
+  type: 9
+  value: 0.1
+  dropChance: 1
+  isUnique: 1
+  maxStack: 0
+  minLevel: 10
+  guaranteed: 1

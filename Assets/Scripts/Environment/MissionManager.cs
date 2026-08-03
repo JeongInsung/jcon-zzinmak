@@ -22,6 +22,8 @@ namespace Zzinmak.Environment
         [SerializeField] private Transform interiorEntryPoint;
         [SerializeField] private Transform interiorHostageSpot;
         [SerializeField] private float interiorSpawnRadius = 9f;
+        [SerializeField] private MapBounds outdoorBounds;
+        [SerializeField] private MapBounds indoorBounds;
         [SerializeField] private int zombieCountPerBuilding = 3;
         [SerializeField] private GameObject zombiePrefab;
         [SerializeField] private EnemyData zombieData;
@@ -86,6 +88,11 @@ namespace Zzinmak.Environment
 
             player.position = interiorEntryPoint.position;
 
+            if (indoorBounds != null)
+            {
+                indoorBounds.MakeActive();
+            }
+
             SpawnHostage();
             SpawnInteriorZombies();
             SpawnInteriorBoss();
@@ -114,6 +121,11 @@ namespace Zzinmak.Environment
             }
 
             player.position = outdoorReturnPosition;
+
+            if (outdoorBounds != null)
+            {
+                outdoorBounds.MakeActive();
+            }
 
             if (outdoorSpawner != null)
             {

@@ -16,8 +16,20 @@ namespace Zzinmak.Environment
 
         private void Awake()
         {
-            Instance = this;
+            // Multiple MapBounds can exist (outdoor map, building interiors). Whichever
+            // region the player is currently in is switched to active via MakeActive() -
+            // the first one to Awake just claims the slot as an initial default.
+            if (Instance == null)
+            {
+                Instance = this;
+            }
+
             RecomputeBounds();
+        }
+
+        public void MakeActive()
+        {
+            Instance = this;
         }
 
         public void RecomputeBounds()
@@ -58,6 +70,31 @@ namespace Zzinmak.Environment
             return new Vector2(
                 Random.Range(interior.xMin, interior.xMax),
                 Random.Range(interior.yMin, interior.yMax));
+        }
+
+        // Clamps a camera's center so its view rectangle (center +/- halfExtents) never
+        // shows past the walls, instead of just clamping the center point itself.
+        public Vector2 ClampCameraCenter(Vector2 center, Vector2 halfExtents)
+        {
+            float minX = interior.xMin + halfExtents.x;
+            float maxX = interior.xMax - halfExtents.x;
+            float minY = interior.yMin + halfExtents.y;
+            float maxY = interior.yMax - halfExtents.y;
+
+            if (minX > maxX)
+            {
+                float midX = (interior.xMin + interior.xMax) * 0.5f;
+                minX = maxX = midX;
+            }
+            if (minY > maxY)
+            {
+                float midY = (interior.yMin + interior.yMax) * 0.5f;
+                minY = maxY = midY;
+            }
+
+            return new Vector2(
+                Mathf.Clamp(center.x, minX, maxX),
+                Mathf.Clamp(center.y, minY, maxY));
         }
     }
 }

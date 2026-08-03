@@ -1,0 +1,494 @@
+fileFormatVersion: 2
+guid: 0a8fd96aa35b9a441bb35a352347d6f9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3005043485805629459
+    second: doctor_sprites_no_numbers-Photoroom_0
+  - first:
+      213: 2483734692428334337
+    second: doctor_sprites_no_numbers-Photoroom_1
+  - first:
+      213: -1166324711040358492
+    second: doctor_sprites_no_numbers-Photoroom_2
+  - first:
+      213: 914439761551193246
+    second: doctor_sprites_no_numbers-Photoroom_3
+  - first:
+      213: 8883020864571340586
+    second: doctor_sprites_no_numbers-Photoroom_4
+  - first:
+      213: 4778907577506992293
+    second: doctor_sprites_no_numbers-Photoroom_5
+  - first:
+      213: 7845125119711344063
+    second: doctor_sprites_no_numbers-Photoroom_6
+  - first:
+      213: 2742373731126892393
+    second: doctor_sprites_no_numbers-Photoroom_7
+  - first:
+      213: 3975839566703928546
+    second: doctor_sprites_no_numbers-Photoroom_8
+  - first:
+      213: -22231120530360037
+    second: doctor_sprites_no_numbers-Photoroom_9
+  - first:
+      213: -5963924532149138460
+    second: doctor_sprites_no_numbers-Photoroom_10
+  - first:
+      213: 7366401502277774018
+    second: doctor_sprites_no_numbers-Photoroom_11
+  - first:
+      213: -7801995307711364579
+    second: doctor_sprites_no_numbers-Photoroom_12
+  - first:
+      213: -4392560585996989585
+    second: doctor_sprites_no_numbers-Photoroom_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: doctor_sprites_no_numbers-Photoroom_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 617
+        width: 216
+        height: 407
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 91}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: def24fdfed0fb46d0800000000000000
+      internalID: -3005043485805629459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doctor_sprites_no_numbers-Photoroom_1
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 617
+        width: 197
+        height: 319
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 105418a1b8ff77220800000000000000
+      internalID: 2483734692428334337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doctor_sprites_no_numbers-Photoroom_2
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 616
+        width: 154
+        height: 325
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a7eda1dad160dfe0800000000000000
+      internalID: -1166324711040358492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doctor_sprites_no_numbers-Photoroom_3
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 617
+        width: 200
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9470c34e1eb0bc00800000000000000
+      internalID: 914439761551193246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doctor_sprites_no_numbers-Photoroom_4
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 616
+        width: 198
+        height: 323
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a27782d7964d64b70800000000000000
+      internalID: 8883020864571340586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doctor_sprites_no_numbers-Photoroom_5
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 617
+        width: 210
+        height: 323
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a01abb3f17125240800000000000000
+      internalID: 4778907577506992293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doctor_sprites_no_numbers-Photoroom_6
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 616
+        width: 221
+        height: 408
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 85}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb573ea2bbb7fdc60800000000000000
+      internalID: 7845125119711344063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doctor_sprites_no_numbers-Photoroom_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 148
+        width: 187
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9675e25f06ede0620800000000000000
+      internalID: 2742373731126892393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doctor_sprites_no_numbers-Photoroom_8
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 150
+        width: 193
+        height: 319
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e4a45165050d2730800000000000000
+      internalID: 3975839566703928546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doctor_sprites_no_numbers-Photoroom_9
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 149
+        width: 195
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1934d5e9e401bff0800000000000000
+      internalID: -22231120530360037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doctor_sprites_no_numbers-Photoroom_10
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 149
+        width: 183
+        height: 311
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eb430a7c32eb3da0800000000000000
+      internalID: -5963924532149138460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doctor_sprites_no_numbers-Photoroom_11
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 149
+        width: 196
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2caab203327ba3660800000000000000
+      internalID: 7366401502277774018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doctor_sprites_no_numbers-Photoroom_12
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 150
+        width: 194
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d128998ba9eb9b390800000000000000
+      internalID: -7801995307711364579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doctor_sprites_no_numbers-Photoroom_13
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 148
+        width: 206
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6b84497b6d7a03c0800000000000000
+      internalID: -4392560585996989585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f4eb0a85e4b7376439b5b881d439d3df
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      doctor_sprites_no_numbers-Photoroom_0: -3005043485805629459
+      doctor_sprites_no_numbers-Photoroom_1: 2483734692428334337
+      doctor_sprites_no_numbers-Photoroom_10: -5963924532149138460
+      doctor_sprites_no_numbers-Photoroom_11: 7366401502277774018
+      doctor_sprites_no_numbers-Photoroom_12: -7801995307711364579
+      doctor_sprites_no_numbers-Photoroom_13: -4392560585996989585
+      doctor_sprites_no_numbers-Photoroom_2: -1166324711040358492
+      doctor_sprites_no_numbers-Photoroom_3: 914439761551193246
+      doctor_sprites_no_numbers-Photoroom_4: 8883020864571340586
+      doctor_sprites_no_numbers-Photoroom_5: 4778907577506992293
+      doctor_sprites_no_numbers-Photoroom_6: 7845125119711344063
+      doctor_sprites_no_numbers-Photoroom_7: 2742373731126892393
+      doctor_sprites_no_numbers-Photoroom_8: 3975839566703928546
+      doctor_sprites_no_numbers-Photoroom_9: -22231120530360037
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

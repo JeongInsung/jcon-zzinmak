@@ -184,8 +184,8 @@ Transform:
   m_GameObject: {fileID: 6426167584664913549}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalPosition: {x: 0.017344, y: -0.29797, z: 0}
+  m_LocalScale: {x: 1.2295281, y: 1.2295281, z: 2.4590561}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3265876424053054707}
@@ -240,12 +240,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7320404327467970095, guid: 8140b5e420bc90940a5b91e18efb2c82, type: 3}
+  m_Sprite: {fileID: -8667502337515847474, guid: 57b1474a0d01dc540a83f0ffdb313707, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.05, y: 3.18}
+  m_Size: {x: 2.15, y: 4.47}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -327,7 +327,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Enemies.Enemy
   expGemPrefab: {fileID: 2506447470019471358, guid: 96da21b780eec1342b43b1936eb31517, type: 3}
   deathReturnDelay: 1.1
-  spriteFacesLeftByDefault: 1
+  spriteFacesLeftByDefault: 0
 --- !u!95 &7227118982155288102
 Animator:
   serializedVersion: 7
@@ -428,8 +428,8 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.05, y: 3.18}
-    newSize: {x: 3.05, y: 3.18}
+    oldSize: {x: 2.15, y: 2.55}
+    newSize: {x: 2.15, y: 4.47}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0

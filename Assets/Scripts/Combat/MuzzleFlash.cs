@@ -6,8 +6,8 @@ namespace Zzinmak.Combat
     [RequireComponent(typeof(SpriteRenderer))]
     public class MuzzleFlash : MonoBehaviour
     {
-        [SerializeField] private Sprite[] flashSprites;
-        [SerializeField] private float displayDuration = 0.06f;
+        [SerializeField] private Sprite flashSprite;
+        [SerializeField] private float displayDuration = 0.08f;
 
         private SpriteRenderer spriteRenderer;
 
@@ -18,9 +18,9 @@ namespace Zzinmak.Combat
 
         private void OnEnable()
         {
-            if (spriteRenderer != null && flashSprites != null && flashSprites.Length > 0)
+            if (spriteRenderer != null && flashSprite != null)
             {
-                spriteRenderer.sprite = flashSprites[Random.Range(0, flashSprites.Length)];
+                spriteRenderer.sprite = flashSprite;
             }
 
             Invoke(nameof(ReturnToPool), displayDuration);

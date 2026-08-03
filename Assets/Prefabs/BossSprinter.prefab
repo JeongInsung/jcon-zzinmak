@@ -284,9 +284,9 @@ MonoBehaviour:
   telegraphDuration: 1
   dashSpeed: 14
   dashDuration: 0.35
-  dashDamage: 25
+  dashDamage: 30
   dashCooldown: 4
-  telegraphColor: {r: 1, g: 1, b: 0.2, a: 1}
+  telegraphColor: {r: 0.9811321, g: 0, b: 0.018103546, a: 1}
   telegraphScalePunch: 1.25
   pathLine: {fileID: 8463386644794492902}
   healthBar: {fileID: 3445402172115712854}

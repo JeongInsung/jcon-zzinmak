@@ -129,7 +129,13 @@ namespace Zzinmak.Combat
             bool facingLeft = spriteRenderer != null && spriteRenderer.flipX;
             Quaternion rotation = facingLeft ? Quaternion.Euler(0f, 180f, 0f) : Quaternion.identity;
 
-            ObjectPool.Instance.Get(muzzleFlashPrefab, origin, rotation);
+            var flashObj = ObjectPool.Instance.Get(muzzleFlashPrefab, origin, rotation);
+            if (muzzle != null)
+            {
+                // Parented so the flash keeps tracking the muzzle (position and the
+                // left/right mirroring PlayerController applies to it) for its short lifetime.
+                flashObj.transform.SetParent(muzzle, true);
+            }
         }
 
         private Transform FindNearestEnemy(float maxRange)

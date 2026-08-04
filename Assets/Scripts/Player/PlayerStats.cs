@@ -30,11 +30,6 @@ namespace Zzinmak.Player
             attackSpeedMultiplier *= 1f + percent;
         }
 
-        public void IncreasePickupRangePercent(float percent)
-        {
-            pickupRange *= 1f + percent;
-        }
-
         public void AddFanShot(int amount)
         {
             fanShotCount = Mathf.Clamp(fanShotCount + amount, 0, 2);

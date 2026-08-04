@@ -13,6 +13,7 @@ namespace Zzinmak.Combat
 
         private readonly List<Transform> drones = new List<Transform>();
         private PlayerStats stats;
+        private int bonusProjectiles;
 
         private void Awake()
         {
@@ -21,8 +22,14 @@ namespace Zzinmak.Combat
 
         public void Activate()
         {
-            if (drones.Count >= maxDroneCount) return;
-            SpawnDrone();
+            if (drones.Count < maxDroneCount)
+            {
+                SpawnDrone();
+            }
+            else
+            {
+                bonusProjectiles++;
+            }
         }
 
         private void SpawnDrone()
@@ -44,9 +51,9 @@ namespace Zzinmak.Combat
             return damage * (stats != null ? stats.damageMultiplier : 1f);
         }
 
-        public int GetExtraProjectiles()
+        public int GetBonusProjectiles()
         {
-            return stats != null ? stats.extraProjectiles : 0;
+            return bonusProjectiles;
         }
     }
 }

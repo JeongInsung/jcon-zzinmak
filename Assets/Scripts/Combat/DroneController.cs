@@ -51,7 +51,7 @@ namespace Zzinmak.Combat
 
         private IEnumerator FireBurst(Vector3 aimPoint)
         {
-            int count = 1 + (owner != null ? owner.GetExtraProjectiles() : 0);
+            int count = 1 + (owner != null ? owner.GetBonusProjectiles() : 0);
             for (int i = 0; i < count; i++)
             {
                 var projectileObj = ObjectPool.Instance.Get(projectilePrefab, transform.position, Quaternion.identity);

@@ -18,6 +18,7 @@ namespace Zzinmak.Progression
         private OrbitingOrbs orbitingOrbs;
         private TacticalDrone tacticalDrone;
         private TurretSpawner turretSpawner;
+        private ExpDogSpawner expDogSpawner;
         private int pendingLevelUps;
         private int currentPlayerLevel = 1;
         private readonly List<UpgradeData> currentOptions = new List<UpgradeData>();
@@ -29,6 +30,7 @@ namespace Zzinmak.Progression
             orbitingOrbs = playerStats != null ? playerStats.GetComponent<OrbitingOrbs>() : null;
             tacticalDrone = playerStats != null ? playerStats.GetComponent<TacticalDrone>() : null;
             turretSpawner = playerStats != null ? playerStats.GetComponent<TurretSpawner>() : null;
+            expDogSpawner = playerStats != null ? playerStats.GetComponent<ExpDogSpawner>() : null;
         }
 
         private void OnEnable()
@@ -131,8 +133,11 @@ namespace Zzinmak.Progression
                 case UpgradeType.AttackSpeed:
                     playerStats.IncreaseAttackSpeedPercent(upgrade.value);
                     break;
-                case UpgradeType.PickupRange:
-                    playerStats.IncreasePickupRangePercent(upgrade.value);
+                case UpgradeType.ExpDog:
+                    if (expDogSpawner != null)
+                    {
+                        expDogSpawner.Activate(upgrade.value);
+                    }
                     break;
                 case UpgradeType.FanShot:
                     playerStats.AddFanShot(Mathf.RoundToInt(upgrade.value));

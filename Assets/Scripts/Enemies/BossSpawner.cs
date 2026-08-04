@@ -1,11 +1,14 @@
 using UnityEngine;
 using Zzinmak.Core;
 using Zzinmak.Data;
+using Zzinmak.Environment;
 
 namespace Zzinmak.Enemies
 {
     public class BossSpawner : MonoBehaviour
     {
+        private const int MaxSpawnPositionAttempts = 8;
+
         [SerializeField] private Transform player;
         [SerializeField] private EnemyData bossData;
         [SerializeField] private GameObject bossPrefab;
@@ -44,8 +47,7 @@ namespace Zzinmak.Enemies
             if (player == null || bossPrefab == null || bossData == null) return;
             if (GameManager.Instance != null && GameManager.Instance.State != GameState.Playing) return;
 
-            Vector2 offset = Random.insideUnitCircle.normalized * spawnRadius;
-            Vector3 spawnPos = player.position + (Vector3)offset;
+            Vector3 spawnPos = FindSpawnPosition();
 
             float healthMultiplier = 1f + (tier - 1) * healthGrowthPerTier;
             if (level > highHealthLevelThreshold) healthMultiplier *= highHealthMultiplier;
@@ -61,6 +63,22 @@ namespace Zzinmak.Enemies
             {
                 boss.ApplyDamageMultiplier(damageMultiplier);
             }
+        }
+
+        // Retries a few times to avoid landing inside a building's "fw" collider - spawning
+        // there would leave the boss wedged in place, unable to move on any axis.
+        private Vector3 FindSpawnPosition()
+        {
+            Vector2 candidate = player.position;
+            for (int attempt = 0; attempt < MaxSpawnPositionAttempts; attempt++)
+            {
+                Vector2 offset = Random.insideUnitCircle.normalized * spawnRadius;
+                candidate = (Vector2)player.position + offset;
+
+                if (!BuildingCollision.OverlapsBuilding(candidate)) break;
+            }
+
+            return new Vector3(candidate.x, candidate.y, player.position.z);
         }
     }
 }

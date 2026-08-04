@@ -1,6 +1,7 @@
 using UnityEngine;
 using Zzinmak.Core;
 using Zzinmak.Enemies;
+using Zzinmak.Environment;
 
 namespace Zzinmak.Combat
 {
@@ -78,6 +79,12 @@ namespace Zzinmak.Combat
 
         private void OnTriggerEnter2D(Collider2D other)
         {
+            if (BuildingCollision.IsFootCollider(other))
+            {
+                ObjectPool.Instance.Return(gameObject);
+                return;
+            }
+
             if (!other.CompareTag("Enemy")) return;
 
             var enemy = other.GetComponent<Enemy>();

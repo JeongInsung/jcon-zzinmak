@@ -48,13 +48,28 @@ namespace Zzinmak.Progression
 
             if (player == null || playerStats == null) return;
 
-            float distance = Vector2.Distance(transform.position, player.position);
-            if (distance <= playerStats.pickupRange)
+            Transform magnetTarget = player;
+            float magnetDistance = Vector2.Distance(transform.position, player.position);
+            float magnetRange = playerStats.pickupRange;
+
+            var dog = ExpDog.Instance;
+            if (dog != null)
             {
-                transform.position = Vector3.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
+                float dogDistance = Vector2.Distance(transform.position, dog.transform.position);
+                if (dogDistance <= dog.PickupRange)
+                {
+                    magnetTarget = dog.transform;
+                    magnetDistance = dogDistance;
+                    magnetRange = dog.PickupRange;
+                }
             }
 
-            if (distance <= absorbDistance)
+            if (magnetDistance <= magnetRange)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, magnetTarget.position, moveSpeed * Time.deltaTime);
+            }
+
+            if (magnetDistance <= absorbDistance)
             {
                 playerLevel.AddExp(expValue);
                 ObjectPool.Instance.Return(gameObject);

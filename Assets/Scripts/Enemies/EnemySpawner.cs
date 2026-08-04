@@ -7,6 +7,8 @@ namespace Zzinmak.Enemies
 {
     public class EnemySpawner : MonoBehaviour
     {
+        private const int MaxSpawnPositionAttempts = 8;
+
         [System.Serializable]
         public class EnemyVariant
         {
@@ -107,14 +109,28 @@ namespace Zzinmak.Enemies
             var variant = PickVariant();
             if (variant == null || variant.prefab == null || variant.data == null) return;
 
-            Vector2 offset = Random.insideUnitCircle.normalized * spawnRadius;
-            Vector2 rawPos = (Vector2)player.position + offset;
-            Vector2 clampedPos = MapBounds.Instance != null ? MapBounds.Instance.ClampToInterior(rawPos) : rawPos;
-            Vector3 spawnPos = new Vector3(clampedPos.x, clampedPos.y, player.position.z);
+            Vector3 spawnPos = FindSpawnPosition();
 
             var enemyObj = ObjectPool.Instance.Get(variant.prefab, spawnPos, Quaternion.identity);
             var enemy = enemyObj.GetComponent<Enemy>();
             enemy.Initialize(variant.data, player, CurrentHealthMultiplier());
+        }
+
+        // Retries a few times to avoid landing inside a building's "fw" collider - spawning
+        // there would leave the enemy wedged in place, unable to move on any axis.
+        private Vector3 FindSpawnPosition()
+        {
+            Vector2 candidate = player.position;
+            for (int attempt = 0; attempt < MaxSpawnPositionAttempts; attempt++)
+            {
+                Vector2 offset = Random.insideUnitCircle.normalized * spawnRadius;
+                Vector2 rawPos = (Vector2)player.position + offset;
+                candidate = MapBounds.Instance != null ? MapBounds.Instance.ClampToInterior(rawPos) : rawPos;
+
+                if (!BuildingCollision.OverlapsBuilding(candidate)) break;
+            }
+
+            return new Vector3(candidate.x, candidate.y, player.position.z);
         }
 
         private EnemyVariant PickVariant()

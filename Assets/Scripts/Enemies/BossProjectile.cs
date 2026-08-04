@@ -1,5 +1,6 @@
 using UnityEngine;
 using Zzinmak.Core;
+using Zzinmak.Environment;
 using Zzinmak.Player;
 
 namespace Zzinmak.Enemies
@@ -35,6 +36,12 @@ namespace Zzinmak.Enemies
 
         private void OnTriggerEnter2D(Collider2D other)
         {
+            if (BuildingCollision.IsFootCollider(other))
+            {
+                ObjectPool.Instance.Return(gameObject);
+                return;
+            }
+
             if (!other.CompareTag("Player")) return;
 
             var health = other.GetComponent<PlayerHealth>();

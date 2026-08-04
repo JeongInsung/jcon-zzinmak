@@ -4,6 +4,7 @@ using UnityEngine;
 using Zzinmak.Combat;
 using Zzinmak.Core;
 using Zzinmak.Data;
+using Zzinmak.Environment;
 using Zzinmak.Progression;
 
 namespace Zzinmak.Enemies
@@ -16,10 +17,16 @@ namespace Zzinmak.Enemies
         [SerializeField] private float deathReturnDelay = 0f;
         [Tooltip("Set true if the source art faces left by default (most sprites here face right). Flips the flipX mapping so the enemy still visually faces the direction it's moving/chasing.")]
         [SerializeField] private bool spriteFacesLeftByDefault = false;
+        [SerializeField] private Transform shadow;
+
+        private static readonly Collider2D[] ObstacleOverlapBuffer = new Collider2D[8];
 
         private Rigidbody2D body;
         private SpriteRenderer spriteRenderer;
+        private SpriteRenderer shadowRenderer;
         private HitFlash hitFlash;
+        private float shadowBaseX;
+        private float obstacleCheckRadius = 0.3f;
         private Transform target;
         private EnemyData data;
         private float currentHealth;
@@ -38,6 +45,18 @@ namespace Zzinmak.Enemies
             body = GetComponent<Rigidbody2D>();
             spriteRenderer = GetComponent<SpriteRenderer>();
             hitFlash = GetComponent<HitFlash>();
+
+            if (shadow != null)
+            {
+                shadowRenderer = shadow.GetComponent<SpriteRenderer>();
+                shadowBaseX = shadow.localPosition.x;
+            }
+
+            var bodyCollider = GetComponent<CircleCollider2D>();
+            if (bodyCollider != null)
+            {
+                obstacleCheckRadius = bodyCollider.radius * transform.lossyScale.x;
+            }
         }
 
         private void OnEnable()
@@ -67,9 +86,33 @@ namespace Zzinmak.Enemies
             if (target == null || data == null || IsDead || !CanMove) return;
 
             Vector2 dir = ((Vector2)target.position - body.position).normalized;
-            body.MovePosition(body.position + dir * data.moveSpeed * Time.fixedDeltaTime);
+            Vector2 desired = body.position + dir * data.moveSpeed * Time.fixedDeltaTime;
+
+            body.MovePosition(ResolveMovement(body.position, desired));
 
             UpdateFacing(dir.x);
+        }
+
+        // Buildings aren't on their own physics layer, so blocking is done by name:
+        // BuildingColliderTool.cs generates a non-trigger "fw" ("footwall") child under
+        // each building for exactly this purpose. X and Y are resolved separately so the
+        // enemy slides along a wall instead of stopping dead when approaching at an angle.
+        private Vector2 ResolveMovement(Vector2 current, Vector2 desired)
+        {
+            Vector2 next = current;
+
+            Vector2 tryX = new Vector2(desired.x, current.y);
+            if (!IsBlockedByBuilding(tryX)) next.x = desired.x;
+
+            Vector2 tryY = new Vector2(next.x, desired.y);
+            if (!IsBlockedByBuilding(tryY)) next.y = desired.y;
+
+            return next;
+        }
+
+        private bool IsBlockedByBuilding(Vector2 position)
+        {
+            return BuildingCollision.OverlapsBuilding(position, obstacleCheckRadius, ObstacleOverlapBuffer);
         }
 
         // Movement (and the facing update tied to it) pauses whenever CanMove is false,
@@ -87,7 +130,17 @@ namespace Zzinmak.Enemies
             if (spriteRenderer == null || Mathf.Abs(dirX) <= 0.01f) return;
 
             bool shouldFlip = dirX < 0f;
-            spriteRenderer.flipX = spriteFacesLeftByDefault ? !shouldFlip : shouldFlip;
+            bool flipX = spriteFacesLeftByDefault ? !shouldFlip : shouldFlip;
+            spriteRenderer.flipX = flipX;
+
+            if (shadowRenderer != null) shadowRenderer.flipX = flipX;
+
+            if (shadow != null)
+            {
+                Vector3 shadowPos = shadow.localPosition;
+                shadowPos.x = flipX ? -shadowBaseX : shadowBaseX;
+                shadow.localPosition = shadowPos;
+            }
         }
 
         public void TakeDamage(float amount)

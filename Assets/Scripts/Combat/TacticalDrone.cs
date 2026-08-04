@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using UnityEngine;
-using Zzinmak.Core;
 using Zzinmak.Player;
 
 namespace Zzinmak.Combat
@@ -9,54 +8,20 @@ namespace Zzinmak.Combat
     {
         [SerializeField] private GameObject dronePrefab;
         [SerializeField] private float damage = 4f;
-        [SerializeField] private int levelsPerBonusDrone = 3;
         [SerializeField] private int maxDroneCount = 3;
         [SerializeField] private float hoverRadius = 1.5f;
 
         private readonly List<Transform> drones = new List<Transform>();
         private PlayerStats stats;
-        private bool active;
-        private int currentPlayerLevel = 1;
-        private int levelAtActivation;
-        private int bonusDronesGranted;
 
         private void Awake()
         {
             stats = GetComponent<PlayerStats>();
         }
 
-        private void OnEnable()
-        {
-            GameEvents.OnLevelChanged += HandleLevelChanged;
-        }
-
-        private void OnDisable()
-        {
-            GameEvents.OnLevelChanged -= HandleLevelChanged;
-        }
-
-        private void HandleLevelChanged(int level)
-        {
-            currentPlayerLevel = level;
-
-            if (!active || levelsPerBonusDrone <= 0) return;
-
-            int levelsSinceActivation = currentPlayerLevel - levelAtActivation;
-            int targetBonusDrones = levelsSinceActivation / levelsPerBonusDrone;
-
-            while (bonusDronesGranted < targetBonusDrones && drones.Count < maxDroneCount)
-            {
-                SpawnDrone();
-                bonusDronesGranted++;
-            }
-        }
-
         public void Activate()
         {
-            if (active) return;
-            active = true;
-            levelAtActivation = currentPlayerLevel;
-
+            if (drones.Count >= maxDroneCount) return;
             SpawnDrone();
         }
 

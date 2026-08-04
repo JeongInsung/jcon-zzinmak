@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Enemy_BossZombie
   m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Data.EnemyData
   enemyName: Boss Zombie
-  baseHealth: 300
+  baseHealth: 500
   moveSpeed: 0.6
   contactDamage: 15
   contactDamageInterval: 1

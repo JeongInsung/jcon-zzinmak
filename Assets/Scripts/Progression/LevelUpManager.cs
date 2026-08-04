@@ -17,6 +17,7 @@ namespace Zzinmak.Progression
 
         private OrbitingOrbs orbitingOrbs;
         private TacticalDrone tacticalDrone;
+        private TurretSpawner turretSpawner;
         private int pendingLevelUps;
         private int currentPlayerLevel = 1;
         private readonly List<UpgradeData> currentOptions = new List<UpgradeData>();
@@ -27,6 +28,7 @@ namespace Zzinmak.Progression
         {
             orbitingOrbs = playerStats != null ? playerStats.GetComponent<OrbitingOrbs>() : null;
             tacticalDrone = playerStats != null ? playerStats.GetComponent<TacticalDrone>() : null;
+            turretSpawner = playerStats != null ? playerStats.GetComponent<TurretSpawner>() : null;
         }
 
         private void OnEnable()
@@ -151,6 +153,12 @@ namespace Zzinmak.Progression
                     if (tacticalDrone != null)
                     {
                         tacticalDrone.Activate();
+                    }
+                    break;
+                case UpgradeType.Turret:
+                    if (turretSpawner != null)
+                    {
+                        turretSpawner.PlaceTurret(upgrade.value);
                     }
                     break;
             }

@@ -142,5 +142,10 @@ namespace Zzinmak.Combat
         {
             return EnemyTracker.GetNearest(transform.position, maxRange);
         }
+
+        public float GetCurrentDamage()
+        {
+            return activeWeapons.Count > 0 ? activeWeapons[0].data.damage * stats.damageMultiplier : 0f;
+        }
     }
 }

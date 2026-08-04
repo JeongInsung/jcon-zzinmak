@@ -13,6 +13,8 @@ namespace Zzinmak.Enemies
         [SerializeField] private float spawnRadius = 9f;
         [SerializeField] private float healthGrowthPerTier = 0.6f;
         [SerializeField] private float damageGrowthPerTier = 0.3f;
+        [SerializeField] private int highHealthLevelThreshold = 15;
+        [SerializeField] private float highHealthMultiplier = 2f;
 
         private int lastSpawnedTier;
 
@@ -34,10 +36,10 @@ namespace Zzinmak.Enemies
             if (tier <= lastSpawnedTier) return;
 
             lastSpawnedTier = tier;
-            SpawnBoss(tier);
+            SpawnBoss(tier, level);
         }
 
-        private void SpawnBoss(int tier)
+        private void SpawnBoss(int tier, int level)
         {
             if (player == null || bossPrefab == null || bossData == null) return;
             if (GameManager.Instance != null && GameManager.Instance.State != GameState.Playing) return;
@@ -46,6 +48,8 @@ namespace Zzinmak.Enemies
             Vector3 spawnPos = player.position + (Vector3)offset;
 
             float healthMultiplier = 1f + (tier - 1) * healthGrowthPerTier;
+            if (level > highHealthLevelThreshold) healthMultiplier *= highHealthMultiplier;
+
             float damageMultiplier = 1f + (tier - 1) * damageGrowthPerTier;
 
             var bossObj = ObjectPool.Instance.Get(bossPrefab, spawnPos, Quaternion.identity);

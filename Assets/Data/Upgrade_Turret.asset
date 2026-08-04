@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b9dab1f643625948aede7513ea67a76, type: 3}
+  m_Name: Upgrade_Turret
+  m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Data.UpgradeData
+  upgradeName: "\uD130\uB81B \uC124\uCE58"
+  description: "20\uCD08 \uB3D9\uC548 \uC720\uC9C0\uB418\uB294 \uC790\uB3D9 \uACF5\uACA9
+    \uD130\uB81B\uC744 \uC124\uCE58\uD569\uB2C8\uB2E4. \uC0AC\uB77C\uC9C4 \uD130\uB81B\uC740
+    5\uCD08 \uD6C4 \uC7AC\uC124\uCE58\uB429\uB2C8\uB2E4.\n"
+  icon: {fileID: 7459359019329915734, guid: b533d5f0aaf7b1a4e80236d06dc7cfb1, type: 3}
+  type: 10
+  value: 20
+  dropChance: 1
+  isUnique: 0
+  maxStack: 0
+  minLevel: 1
+  guaranteed: 0

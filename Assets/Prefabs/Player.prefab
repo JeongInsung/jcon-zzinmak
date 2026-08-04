@@ -114,6 +114,7 @@ GameObject:
   - component: {fileID: 2588486443747673743}
   - component: {fileID: 9071844173271873749}
   - component: {fileID: -7160447136967300377}
+  - component: {fileID: 908802609793821746}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -530,7 +531,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Combat.TacticalDrone
   dronePrefab: {fileID: 6378385456782025557, guid: 61de90b2e06dc60479637719372d6ab9, type: 3}
   damage: 4
-  levelsPerBonusDrone: 3
   maxDroneCount: 3
   hoverRadius: 1.5
 --- !u!114 &-7160447136967300377
@@ -585,6 +585,19 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &908802609793821746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6226427610097736337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b81dc7d42a8d884d9da82d08c568e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Combat.TurretSpawner
+  turretPrefab: {fileID: 2026205351872213330, guid: 3a09349a65a41064b95e5cbfab550016, type: 3}
 --- !u!1 &8799457722260672287
 GameObject:
   m_ObjectHideFlags: 0

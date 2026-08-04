@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Zzinmak.Data
 {
-    public enum UpgradeType { Damage, AttackSpeed, MoveSpeed, Heal, PickupRange, FanShot, ProjectileCount, OrbitingOrbs, Piercing, TacticalDrone }
+    public enum UpgradeType { Damage, AttackSpeed, MoveSpeed, Heal, PickupRange, FanShot, ProjectileCount, OrbitingOrbs, Piercing, TacticalDrone, Turret }
 
     [CreateAssetMenu(fileName = "UpgradeData", menuName = "Zzinmak/Upgrade Data")]
     public class UpgradeData : ScriptableObject

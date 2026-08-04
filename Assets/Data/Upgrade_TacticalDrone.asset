@@ -16,11 +16,11 @@ MonoBehaviour:
   description: "\uD50C\uB808\uC774\uC5B4\uB97C \uB530\uB77C\uB2E4\uB2C8\uBA70 \uADFC\uCC98
     \uC880\uBE44\uB97C \uC790\uB3D9\uC73C\uB85C \uACF5\uACA9\uD558\uB294 \uC804\uC220
     \uB4DC\uB860\uC744 \uC18C\uD658\uD569\uB2C8\uB2E4."
-  icon: {fileID: 6077786553870726686, guid: 1c1809c9bb53a7948af96b874b8259fc, type: 3}
+  icon: {fileID: 7183333536268541195, guid: c7bd0fb40e6030f4aa0573b8ee48c993, type: 3}
   type: 9
   value: 0.1
   dropChance: 1
-  isUnique: 1
-  maxStack: 0
+  isUnique: 0
+  maxStack: 3
   minLevel: 10
   guaranteed: 1

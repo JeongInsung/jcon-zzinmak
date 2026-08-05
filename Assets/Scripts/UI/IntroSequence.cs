@@ -11,6 +11,7 @@ namespace Zzinmak.UI
     {
         [SerializeField] private VideoPlayer videoPlayer;
         [SerializeField] private Image fadeImage;
+        [SerializeField] private AudioSource heliAudioSource;
         [SerializeField] private string nextSceneName = "2 SCENE";
         [SerializeField] private float fadeDuration = 1f;
 
@@ -70,6 +71,7 @@ namespace Zzinmak.UI
         private void OnVideoPrepared(VideoPlayer source)
         {
             source.Play();
+            if (heliAudioSource != null) heliAudioSource.Play();
         }
 
         private void Update()
@@ -150,19 +152,42 @@ namespace Zzinmak.UI
 
         private IEnumerator FadeAndLoad()
         {
-            if (fadeImage != null)
+            // 스킵으로 중간에 끊기더라도 헬기 사운드가 화면 페이드와 같이 서서히 사라지도록 한다.
+            float heliStartVolume = heliAudioSource != null ? heliAudioSource.volume : 0f;
+
+            if (fadeImage != null || heliAudioSource != null)
             {
                 float elapsed = 0f;
-                Color color = fadeImage.color;
+                Color color = fadeImage != null ? fadeImage.color : default;
                 while (elapsed < fadeDuration)
                 {
                     elapsed += Time.unscaledDeltaTime;
-                    color.a = Mathf.Clamp01(elapsed / fadeDuration);
-                    fadeImage.color = color;
+                    float t = Mathf.Clamp01(elapsed / fadeDuration);
+
+                    if (fadeImage != null)
+                    {
+                        color.a = t;
+                        fadeImage.color = color;
+                    }
+
+                    if (heliAudioSource != null)
+                    {
+                        heliAudioSource.volume = Mathf.Lerp(heliStartVolume, 0f, t);
+                    }
+
                     yield return null;
                 }
-                color.a = 1f;
-                fadeImage.color = color;
+
+                if (fadeImage != null)
+                {
+                    color.a = 1f;
+                    fadeImage.color = color;
+                }
+
+                if (heliAudioSource != null)
+                {
+                    heliAudioSource.volume = 0f;
+                }
             }
 
             if (!Application.CanStreamedLevelBeLoaded(nextSceneName))

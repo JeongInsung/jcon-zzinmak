@@ -116,6 +116,7 @@ GameObject:
   - component: {fileID: -7160447136967300377}
   - component: {fileID: 908802609793821746}
   - component: {fileID: 8985078197625268021}
+  - component: {fileID: 6023635477744196208}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -614,6 +615,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Progression.ExpDogSpawner
   dogPrefab: {fileID: 6383574090260432779, guid: 0c08bb50b5665c748af45516005b6318, type: 3}
   initialPickupRange: 2.5
+--- !u!114 &6023635477744196208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6226427610097736337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc2fddc9741a4dd49bccdc1d584306f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Combat.MineSpawner
+  minePrefab: {fileID: 4709870416066765951, guid: d7096dad6ce1cf744b4954660f6b60bb, type: 3}
+  bossZombieData: {fileID: 11400000, guid: 1198d4a2b5eb4e8418386ffc05217d5a, type: 2}
+  baseInterval: 15
+  intervalReductionPerLevel: 3
+  minInterval: 6
 --- !u!1 &8799457722260672287
 GameObject:
   m_ObjectHideFlags: 0

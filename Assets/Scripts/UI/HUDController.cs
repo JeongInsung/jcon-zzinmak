@@ -15,6 +15,13 @@ namespace Zzinmak.UI
         [SerializeField] private TMP_Text timerText;
         [SerializeField] private TMP_Text scoreText;
 
+        [Header("Bar fill smoothing")]
+        [Tooltip("How much of the bar (0-1) it can sweep per second.")]
+        [SerializeField] private float barFillSpeed = 1.5f;
+
+        private float expTargetFill;
+        private float healthTargetFill;
+
         [Header("Stat panel (below exp bar)")]
         [SerializeField] private PlayerStats playerStats;
         [SerializeField] private TMP_Text attackText;
@@ -23,6 +30,16 @@ namespace Zzinmak.UI
 
         private void Update()
         {
+            if (expBarFill != null)
+            {
+                expBarFill.fillAmount = Mathf.MoveTowards(expBarFill.fillAmount, expTargetFill, barFillSpeed * Time.deltaTime);
+            }
+
+            if (healthBarFill != null)
+            {
+                healthBarFill.fillAmount = Mathf.MoveTowards(healthBarFill.fillAmount, healthTargetFill, barFillSpeed * Time.deltaTime);
+            }
+
             if (playerStats == null) return;
 
             if (attackText != null) attackText.text = "공격력 " + Mathf.RoundToInt(playerStats.damageMultiplier * 100f) + "%";
@@ -50,18 +67,12 @@ namespace Zzinmak.UI
 
         private void HandleExpChanged(float current, float needed)
         {
-            if (expBarFill != null)
-            {
-                expBarFill.fillAmount = needed > 0f ? current / needed : 0f;
-            }
+            expTargetFill = needed > 0f ? current / needed : 0f;
         }
 
         private void HandleHealthChanged(float current, float max)
         {
-            if (healthBarFill != null)
-            {
-                healthBarFill.fillAmount = max > 0f ? current / max : 0f;
-            }
+            healthTargetFill = max > 0f ? current / max : 0f;
 
             if (healthText != null)
             {

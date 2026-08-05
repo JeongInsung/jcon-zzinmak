@@ -107,3 +107,4 @@ MonoBehaviour:
   moveSpeed: 8
   absorbDistance: 0.2
   lifetime: 5
+  pickupClip: {fileID: 8300000, guid: 65ba2531e17bd6649977e93bfa7714f6, type: 3}

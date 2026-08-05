@@ -9,6 +9,7 @@ namespace Zzinmak.Progression
         [SerializeField] private float moveSpeed = 8f;
         [SerializeField] private float absorbDistance = 0.2f;
         [SerializeField] private float lifetime = 5f;
+        [SerializeField] private AudioClip pickupClip;
 
         private Transform player;
         private PlayerStats playerStats;
@@ -71,6 +72,20 @@ namespace Zzinmak.Progression
 
             if (magnetDistance <= absorbDistance)
             {
+                if (pickupClip != null)
+                {
+                    // Plain PlayClipAtPoint defaults to a fully 3D source, so it fades out
+                    // with camera distance and can end up nearly inaudible. Force 2D so the
+                    // pickup cue always plays at full, consistent volume.
+                    var soundObj = new GameObject("ExpGemPickupSound");
+                    var soundSource = soundObj.AddComponent<AudioSource>();
+                    soundSource.clip = pickupClip;
+                    soundSource.spatialBlend = 0f;
+                    soundSource.volume = PlayerPrefs.GetFloat("SFXVolume", 1f);
+                    soundSource.Play();
+                    Destroy(soundObj, pickupClip.length);
+                }
+
                 playerLevel.AddExp(expValue);
                 ObjectPool.Instance.Return(gameObject);
             }

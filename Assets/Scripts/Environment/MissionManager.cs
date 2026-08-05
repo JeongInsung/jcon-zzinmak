@@ -96,6 +96,11 @@ namespace Zzinmak.Environment
             SpawnHostage();
             SpawnInteriorZombies();
             SpawnInteriorBoss();
+
+            if (MusicManager.Instance != null)
+            {
+                MusicManager.Instance.PlayDungeon();
+            }
         }
 
         public void TryRescue()
@@ -138,6 +143,11 @@ namespace Zzinmak.Environment
             }
 
             SpawnNewBuilding();
+
+            if (MusicManager.Instance != null)
+            {
+                MusicManager.Instance.PlayOutdoor();
+            }
         }
 
         private void ClearOutdoorZombies()

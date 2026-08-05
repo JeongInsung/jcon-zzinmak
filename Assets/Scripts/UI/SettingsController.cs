@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using Zzinmak.Core;
 
 namespace Zzinmak.UI
 {
@@ -62,11 +63,13 @@ namespace Zzinmak.UI
 
         public void Open()
         {
+            if (UiClickSound.Instance != null) UiClickSound.Instance.Play();
             if (settingsPanel != null) settingsPanel.SetActive(true);
         }
 
         public void Close()
         {
+            if (UiClickSound.Instance != null) UiClickSound.Instance.Play();
             if (settingsPanel != null) settingsPanel.SetActive(false);
         }
 
@@ -85,6 +88,8 @@ namespace Zzinmak.UI
                 PlayerPrefs.SetInt(BgmMutedKey, 0);
                 bgmMuteToggle.SetIsOnWithoutNotify(false);
             }
+
+            GameEvents.RaiseBgmVolumeChanged(value);
         }
 
         private void OnSfxVolumeChanged(float value)
@@ -96,6 +101,8 @@ namespace Zzinmak.UI
                 PlayerPrefs.SetInt(SfxMutedKey, 0);
                 sfxMuteToggle.SetIsOnWithoutNotify(false);
             }
+
+            GameEvents.RaiseSfxVolumeChanged(value);
         }
 
         private void OnBgmMuteToggleChanged(bool muted)

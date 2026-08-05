@@ -10,6 +10,8 @@ namespace Zzinmak.Core
         public static event Action<int> OnScoreChanged;
         public static event Action<float> OnTimerChanged;
         public static event Action OnGameOver;
+        public static event Action<float> OnBgmVolumeChanged;
+        public static event Action<float> OnSfxVolumeChanged;
 
         public static void RaiseHealthChanged(float current, float max) => OnHealthChanged?.Invoke(current, max);
         public static void RaiseExpChanged(float current, float needed) => OnExpChanged?.Invoke(current, needed);
@@ -17,5 +19,7 @@ namespace Zzinmak.Core
         public static void RaiseScoreChanged(int score) => OnScoreChanged?.Invoke(score);
         public static void RaiseTimerChanged(float elapsed) => OnTimerChanged?.Invoke(elapsed);
         public static void RaiseGameOver() => OnGameOver?.Invoke();
+        public static void RaiseBgmVolumeChanged(float volume) => OnBgmVolumeChanged?.Invoke(volume);
+        public static void RaiseSfxVolumeChanged(float volume) => OnSfxVolumeChanged?.Invoke(volume);
     }
 }

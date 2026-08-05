@@ -1,7 +1,9 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Zzinmak.Core;
 using Zzinmak.Data;
 
 public class CardInfo : MonoBehaviour
@@ -10,10 +12,15 @@ public class CardInfo : MonoBehaviour
     public TMP_Text NameTitle;
     public TMP_Text Description;
 
+    [SerializeField] private float popInDuration = 0.25f;
+    [SerializeField] private float clickPunchScale = 1.15f;
+    [SerializeField] private float clickPunchDuration = 0.18f;
+
     private UpgradeData upgrade;
     private Action<UpgradeData> onClicked;
+    private Button button;
 
-    public void Setup(UpgradeData data, Action<UpgradeData> callback)
+    public void Setup(UpgradeData data, Action<UpgradeData> callback, float appearDelay = 0f)
     {
         upgrade = data;
         onClicked = callback;
@@ -22,11 +29,83 @@ public class CardInfo : MonoBehaviour
         if (NameTitle != null) NameTitle.text = data.upgradeName;
         if (Description != null) Description.text = data.description;
 
-        var button = GetComponent<Button>();
+        button = GetComponent<Button>();
         if (button != null)
         {
+            button.interactable = true;
             button.onClick.RemoveAllListeners();
-            button.onClick.AddListener(() => onClicked?.Invoke(upgrade));
+            button.onClick.AddListener(HandleClick);
         }
+
+        StopAllCoroutines();
+        StartCoroutine(PopIn(appearDelay));
+    }
+
+    private void HandleClick()
+    {
+        if (button != null) button.interactable = false;
+        if (UiClickSound.Instance != null) UiClickSound.Instance.Play();
+
+        StopAllCoroutines();
+        StartCoroutine(PunchThenSelect());
+    }
+
+    // Plays the punch feedback before invoking the callback so it's actually visible -
+    // the level-up screen destroys/hides every card the instant a choice is confirmed.
+    private IEnumerator PunchThenSelect()
+    {
+        yield return PunchScale();
+        onClicked?.Invoke(upgrade);
+    }
+
+    private IEnumerator PunchScale()
+    {
+        float half = clickPunchDuration * 0.5f;
+
+        float elapsed = 0f;
+        while (elapsed < half)
+        {
+            elapsed += Time.unscaledDeltaTime;
+            transform.localScale = Vector3.one * Mathf.Lerp(1f, clickPunchScale, elapsed / half);
+            yield return null;
+        }
+
+        elapsed = 0f;
+        while (elapsed < half)
+        {
+            elapsed += Time.unscaledDeltaTime;
+            transform.localScale = Vector3.one * Mathf.Lerp(clickPunchScale, 1f, elapsed / half);
+            yield return null;
+        }
+
+        transform.localScale = Vector3.one;
+    }
+
+    // Uses unscaled time since the level-up screen pauses the game (Time.timeScale = 0),
+    // and eases past 1 briefly for a springy "pop" instead of just growing linearly.
+    private IEnumerator PopIn(float delay)
+    {
+        transform.localScale = Vector3.zero;
+
+        if (delay > 0f)
+        {
+            yield return new WaitForSecondsRealtime(delay);
+        }
+
+        float elapsed = 0f;
+        while (elapsed < popInDuration)
+        {
+            elapsed += Time.unscaledDeltaTime;
+            float t = Mathf.Clamp01(elapsed / popInDuration);
+
+            const float c1 = 1.70158f;
+            const float c3 = c1 + 1f;
+            float eased = 1f + c3 * Mathf.Pow(t - 1f, 3f) + c1 * Mathf.Pow(t - 1f, 2f);
+
+            transform.localScale = Vector3.one * eased;
+            yield return null;
+        }
+
+        transform.localScale = Vector3.one;
     }
 }

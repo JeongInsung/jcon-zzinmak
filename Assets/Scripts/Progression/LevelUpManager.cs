@@ -14,6 +14,8 @@ namespace Zzinmak.Progression
         [SerializeField] private PlayerStats playerStats;
         [SerializeField] private PlayerHealth playerHealth;
         [SerializeField] private UpgradeData[] allUpgrades;
+        [SerializeField] private AudioSource sfxAudioSource;
+        [SerializeField] private AudioClip levelUpClip;
 
         private OrbitingOrbs orbitingOrbs;
         private TacticalDrone tacticalDrone;
@@ -33,16 +35,23 @@ namespace Zzinmak.Progression
             turretSpawner = playerStats != null ? playerStats.GetComponent<TurretSpawner>() : null;
             expDogSpawner = playerStats != null ? playerStats.GetComponent<ExpDogSpawner>() : null;
             mineSpawner = playerStats != null ? playerStats.GetComponent<MineSpawner>() : null;
+
+            if (sfxAudioSource != null)
+            {
+                sfxAudioSource.volume = PlayerPrefs.GetFloat("SFXVolume", 1f);
+            }
         }
 
         private void OnEnable()
         {
             GameEvents.OnLevelChanged += HandleLevelChanged;
+            GameEvents.OnSfxVolumeChanged += HandleSfxVolumeChanged;
         }
 
         private void OnDisable()
         {
             GameEvents.OnLevelChanged -= HandleLevelChanged;
+            GameEvents.OnSfxVolumeChanged -= HandleSfxVolumeChanged;
         }
 
         private void HandleLevelChanged(int level)
@@ -50,9 +59,23 @@ namespace Zzinmak.Progression
             currentPlayerLevel = level;
         }
 
+        private void HandleSfxVolumeChanged(float volume)
+        {
+            if (sfxAudioSource != null)
+            {
+                sfxAudioSource.volume = volume;
+            }
+        }
+
         public void TriggerLevelUp()
         {
             pendingLevelUps++;
+
+            if (sfxAudioSource != null && levelUpClip != null)
+            {
+                sfxAudioSource.PlayOneShot(levelUpClip);
+            }
+
             if (pendingLevelUps == 1)
             {
                 ShowNextLevelUp();

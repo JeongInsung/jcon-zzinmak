@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Zzinmak.Core;
 
 namespace Zzinmak.UI
 {
@@ -16,18 +17,24 @@ namespace Zzinmak.UI
 
         public void Resume()
         {
+            if (UiClickSound.Instance != null) UiClickSound.Instance.Play();
+
             if (pausePanel != null) pausePanel.SetActive(false);
             Time.timeScale = 1f;
         }
 
         public void ReturnToMainMenu()
         {
+            if (UiClickSound.Instance != null) UiClickSound.Instance.Play();
+
             Time.timeScale = 1f;
             SceneManager.LoadScene(mainMenuSceneName);
         }
 
         public void QuitGame()
         {
+            if (UiClickSound.Instance != null) UiClickSound.Instance.Play();
+
 #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;
 #else

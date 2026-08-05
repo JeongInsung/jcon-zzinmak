@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using Zzinmak.Core;
 
 namespace Zzinmak.UI
 {
@@ -32,22 +33,26 @@ namespace Zzinmak.UI
 
         public void Open()
         {
+            if (UiClickSound.Instance != null) UiClickSound.Instance.Play();
             if (settingsPanel != null) settingsPanel.SetActive(true);
         }
 
         public void Close()
         {
+            if (UiClickSound.Instance != null) UiClickSound.Instance.Play();
             if (settingsPanel != null) settingsPanel.SetActive(false);
         }
 
         private void OnBgmVolumeChanged(float value)
         {
             PlayerPrefs.SetFloat(BgmVolumeKey, value);
+            GameEvents.RaiseBgmVolumeChanged(value);
         }
 
         private void OnSfxVolumeChanged(float value)
         {
             PlayerPrefs.SetFloat(SfxVolumeKey, value);
+            GameEvents.RaiseSfxVolumeChanged(value);
         }
     }
 }

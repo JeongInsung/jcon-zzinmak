@@ -122,6 +122,7 @@ namespace Zzinmak.Enemies
             if (pathLine != null)
             {
                 pathLine.enabled = true;
+                pathLine.positionCount = 2;
                 pathLine.SetPosition(0, startPos);
                 pathLine.SetPosition(1, endPos);
             }

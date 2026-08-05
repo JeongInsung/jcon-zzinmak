@@ -140,10 +140,10 @@ TextureImporter:
         x: 0
         y: 550
         width: 339
-        height: 474
+        height: 433
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 41}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -206,10 +206,10 @@ TextureImporter:
         x: 1147
         y: 552
         width: 314
-        height: 472
+        height: 429
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 43}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -225,13 +225,13 @@ TextureImporter:
       name: "\uB7ED\uBE44-Photoroom_4"
       rect:
         serializedVersion: 2
-        x: 44
-        y: 0
+        x: 45
+        y: 66
         width: 295
-        height: 495
+        height: 429
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 68, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -292,12 +292,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1158
-        y: 0
-        width: 378
-        height: 496
+        y: 63
+        width: 300
+        height: 433
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 60, z: 84, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []

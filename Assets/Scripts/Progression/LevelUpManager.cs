@@ -19,6 +19,7 @@ namespace Zzinmak.Progression
         private TacticalDrone tacticalDrone;
         private TurretSpawner turretSpawner;
         private ExpDogSpawner expDogSpawner;
+        private MineSpawner mineSpawner;
         private int pendingLevelUps;
         private int currentPlayerLevel = 1;
         private readonly List<UpgradeData> currentOptions = new List<UpgradeData>();
@@ -31,6 +32,7 @@ namespace Zzinmak.Progression
             tacticalDrone = playerStats != null ? playerStats.GetComponent<TacticalDrone>() : null;
             turretSpawner = playerStats != null ? playerStats.GetComponent<TurretSpawner>() : null;
             expDogSpawner = playerStats != null ? playerStats.GetComponent<ExpDogSpawner>() : null;
+            mineSpawner = playerStats != null ? playerStats.GetComponent<MineSpawner>() : null;
         }
 
         private void OnEnable()
@@ -164,6 +166,12 @@ namespace Zzinmak.Progression
                     if (turretSpawner != null)
                     {
                         turretSpawner.PlaceTurret(upgrade.value);
+                    }
+                    break;
+                case UpgradeType.Mine:
+                    if (mineSpawner != null)
+                    {
+                        mineSpawner.Activate();
                     }
                     break;
             }

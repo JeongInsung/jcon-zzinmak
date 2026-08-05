@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b9dab1f643625948aede7513ea67a76, type: 3}
+  m_Name: Upgrade_Mine
+  m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Data.UpgradeData
+  upgradeName: "\uC9C0\uB8B0 \uC124\uCE58"
+  description: "15\uCD08\uB9C8\uB2E4 \uD50C\uB808\uC774\uC5B4\uAC00 \uC788\uB358
+    \uC790\uB9AC\uC5D0 \uC9C0\uB8B0\uB97C \uC124\uCE58\uD569\uB2C8\uB2E4. \uC880\uBE44\uAC00
+    \uB2FF\uC73C\uBA74 \uD3ED\uBC1C\uD558\uBA70 \uD0F1\uD06C \uC880\uBE44 \uCCB4\uB825\uC758
+    \uC808\uBC18\uB9CC\uD07C \uD53C\uD574\uB97C \uC785\uD799\uB2C8\uB2E4. \uB2E4\uC2DC
+    \uD68D\uB4DD\uD560 \uB54C\uB9C8\uB2E4 \uC124\uCE58 \uAC04\uACA9\uC774 3\uCD08\uC529
+    \uC904\uC5B4\uB4E4\uBA70, \uCD5C\uC18C 6\uCD08\uAE4C\uC9C0 \uC904\uC5B4\uB4ED\uB2C8\uB2E4."
+  icon: {fileID: 0}
+  type: 11
+  value: 0
+  dropChance: 1
+  isUnique: 0
+  maxStack: 0
+  minLevel: 1
+  guaranteed: 1

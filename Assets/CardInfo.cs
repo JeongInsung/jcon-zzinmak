@@ -16,18 +16,18 @@ public class CardInfo : MonoBehaviour
     [SerializeField] private float clickPunchScale = 1.15f;
     [SerializeField] private float clickPunchDuration = 0.18f;
 
-    private UpgradeData upgrade;
-    private Action<UpgradeData> onClicked;
+    private ICardOption option;
+    private Action<ICardOption> onClicked;
     private Button button;
 
-    public void Setup(UpgradeData data, Action<UpgradeData> callback, float appearDelay = 0f)
+    public void Setup(ICardOption data, Action<ICardOption> callback, float appearDelay = 0f)
     {
-        upgrade = data;
+        option = data;
         onClicked = callback;
 
-        if (icon != null) icon.sprite = data.icon;
-        if (NameTitle != null) NameTitle.text = data.upgradeName;
-        if (Description != null) Description.text = data.description;
+        if (icon != null) icon.sprite = data.CardIcon;
+        if (NameTitle != null) NameTitle.text = data.CardTitle;
+        if (Description != null) Description.text = data.CardDescription;
 
         button = GetComponent<Button>();
         if (button != null)
@@ -55,7 +55,7 @@ public class CardInfo : MonoBehaviour
     private IEnumerator PunchThenSelect()
     {
         yield return PunchScale();
-        onClicked?.Invoke(upgrade);
+        onClicked?.Invoke(option);
     }
 
     private IEnumerator PunchScale()

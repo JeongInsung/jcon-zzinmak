@@ -12,9 +12,9 @@ namespace Zzinmak.UI
         [SerializeField] private float cardStaggerDelay = 0.08f;
 
         private readonly List<CardInfo> spawnedCards = new List<CardInfo>();
-        private Action<UpgradeData> onSelected;
+        private Action<ICardOption> onSelected;
 
-        public void Show(List<UpgradeData> options, Action<UpgradeData> callback)
+        public void Show(List<ICardOption> options, Action<ICardOption> callback)
         {
             onSelected = callback;
             ClearCards();
@@ -34,9 +34,9 @@ namespace Zzinmak.UI
             ClearCards();
         }
 
-        private void HandleCardClicked(UpgradeData upgrade)
+        private void HandleCardClicked(ICardOption option)
         {
-            onSelected?.Invoke(upgrade);
+            onSelected?.Invoke(option);
         }
 
         private void ClearCards()

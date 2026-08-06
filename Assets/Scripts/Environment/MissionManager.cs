@@ -20,17 +20,17 @@ namespace Zzinmak.Environment
         [Header("Building interior")]
         [SerializeField] private Transform interiorRoomCenter;
         [SerializeField] private Transform interiorEntryPoint;
-        [SerializeField] private Transform interiorHostageSpot;
         [SerializeField] private float interiorSpawnRadius = 9f;
         [SerializeField] private MapBounds outdoorBounds;
         [SerializeField] private MapBounds indoorBounds;
         [SerializeField] private int zombieCountPerBuilding = 3;
         [SerializeField] private GameObject zombiePrefab;
         [SerializeField] private EnemyData zombieData;
-        [SerializeField] private GameObject hostagePrefab;
 
         [Header("Building interior - boss")]
         [SerializeField] private BossOption[] bossOptions = new BossOption[0];
+        [Tooltip("Dropped by the interior boss on death. Approaching it opens the item selection screen; picking an item exits the building.")]
+        [SerializeField] private GameObject bossBagPrefab;
 
         [System.Serializable]
         private class BossOption
@@ -42,7 +42,7 @@ namespace Zzinmak.Environment
         public static MissionManager Instance { get; private set; }
 
         private GameObject currentBuilding;
-        private GameObject currentHostage;
+        private Enemy currentInteriorBoss;
         private readonly List<GameObject> interiorZombies = new List<GameObject>();
         private bool playerInBuilding;
         private bool interiorCleared;
@@ -115,7 +115,6 @@ namespace Zzinmak.Environment
                 indoorBounds.MakeActive();
             }
 
-            SpawnHostage();
             SpawnInteriorZombies();
             SpawnInteriorBoss();
 
@@ -125,15 +124,12 @@ namespace Zzinmak.Environment
             }
         }
 
-        public void TryRescue()
+        // Called once the player picks an item from the boss's dropped bag - that's the
+        // only way out of the building now that the hostage/rescue flow is gone.
+        public void ExitBuilding()
         {
-            if (!playerInBuilding || !interiorCleared) return;
+            if (!playerInBuilding) return;
 
-            ExitBuilding();
-        }
-
-        private void ExitBuilding()
-        {
             playerInBuilding = false;
 
             if (currentBroodmother != null)
@@ -142,9 +138,10 @@ namespace Zzinmak.Environment
                 currentBroodmother = null;
             }
 
-            if (currentHostage != null)
+            if (currentInteriorBoss != null)
             {
-                currentHostage.SetActive(false);
+                currentInteriorBoss.OnDeath -= HandleInteriorBossDeath;
+                currentInteriorBoss = null;
             }
 
             TeleportPlayer(outdoorReturnPosition);
@@ -187,19 +184,6 @@ namespace Zzinmak.Environment
             }
         }
 
-        private void SpawnHostage()
-        {
-            if (currentHostage == null)
-            {
-                currentHostage = Instantiate(hostagePrefab, interiorHostageSpot.position, Quaternion.identity);
-            }
-            else
-            {
-                currentHostage.transform.position = interiorHostageSpot.position;
-                currentHostage.SetActive(true);
-            }
-        }
-
         private void SpawnInteriorZombies()
         {
             interiorZombies.Clear();
@@ -238,6 +222,9 @@ namespace Zzinmak.Environment
             enemy.Initialize(option.data, player, 1f);
             interiorZombies.Add(bossObj);
 
+            currentInteriorBoss = enemy;
+            enemy.OnDeath += HandleInteriorBossDeath;
+
             var broodmother = bossObj.GetComponent<BossBroodmother>();
             if (broodmother != null)
             {
@@ -249,6 +236,20 @@ namespace Zzinmak.Environment
         private void HandleZombieSummoned(GameObject zombieObj)
         {
             interiorZombies.Add(zombieObj);
+        }
+
+        private void HandleInteriorBossDeath()
+        {
+            if (currentInteriorBoss == null) return;
+
+            Vector3 dropPosition = currentInteriorBoss.transform.position;
+            currentInteriorBoss.OnDeath -= HandleInteriorBossDeath;
+            currentInteriorBoss = null;
+
+            if (bossBagPrefab != null)
+            {
+                Instantiate(bossBagPrefab, dropPosition, Quaternion.identity);
+            }
         }
 
         private void SpawnNewBuilding()

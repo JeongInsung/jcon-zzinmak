@@ -12,6 +12,10 @@ namespace Zzinmak.Combat
         [SerializeField] private float explosionRadius = 1.5f;
         [Tooltip("Index into explosionFrames where damage is applied (the actual blast frame), instead of the instant the mine is triggered.")]
         [SerializeField] private int damageFrameIndex = 11;
+        [Tooltip("Extra blast VFX, layered on top of the mine's own frame animation.")]
+        [SerializeField] private GameObject explosionEffectPrefab;
+        [Tooltip("Index into explosionFrames where the extra blast VFX is spawned. Kept earlier than damageFrameIndex so the VFX has time to build up before the actual blast frame.")]
+        [SerializeField] private int effectFrameIndex = 8;
 
         private SpriteRenderer spriteRenderer;
         private Collider2D triggerCollider;
@@ -77,6 +81,11 @@ namespace Zzinmak.Combat
 
                     spriteRenderer.sprite = frame;
 
+                    if (i == effectFrameIndex)
+                    {
+                        SpawnExplosionEffect();
+                    }
+
                     if (i == damageFrameIndex)
                     {
                         ApplyDamage();
@@ -90,9 +99,18 @@ namespace Zzinmak.Combat
             if (!damageApplied)
             {
                 ApplyDamage();
+                SpawnExplosionEffect();
             }
 
             Destroy(gameObject);
+        }
+
+        private void SpawnExplosionEffect()
+        {
+            if (explosionEffectPrefab != null)
+            {
+                Instantiate(explosionEffectPrefab, transform.position, Quaternion.identity);
+            }
         }
     }
 }

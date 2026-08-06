@@ -25,6 +25,10 @@ namespace Zzinmak.Player
         private float shadowOffsetX;
         private AudioSource footstepSource;
 
+        // Unlike the sprite's left/right-only flip, this keeps the full aim vector
+        // (including vertical) for consumers like LaserSight that need a real direction.
+        public Vector2 AimDirection { get; private set; } = Vector2.right;
+
         private void Awake()
         {
             body = GetComponent<Rigidbody2D>();
@@ -72,6 +76,11 @@ namespace Zzinmak.Player
             else if (moveInput.sqrMagnitude > 0.01f)
             {
                 facing = moveInput;
+            }
+
+            if (facing.sqrMagnitude > 0.0001f)
+            {
+                AimDirection = facing.normalized;
             }
 
             // Sprite is only ever flipped left/right, never rotated up/down.

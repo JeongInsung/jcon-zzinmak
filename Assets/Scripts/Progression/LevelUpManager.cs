@@ -88,7 +88,12 @@ namespace Zzinmak.Progression
 
             currentOptions.Clear();
             currentOptions.AddRange(PickRandomUpgrades(3));
-            levelUpUI.Show(currentOptions, OnUpgradeSelected);
+            levelUpUI.Show(currentOptions.ConvertAll(u => (ICardOption)u), HandleCardSelected);
+        }
+
+        private void HandleCardSelected(ICardOption option)
+        {
+            OnUpgradeSelected((UpgradeData)option);
         }
 
         private List<UpgradeData> PickRandomUpgrades(int count)

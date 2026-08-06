@@ -5,7 +5,7 @@ namespace Zzinmak.Data
     public enum UpgradeType { Damage, AttackSpeed, MoveSpeed, Heal, ExpDog, FanShot, ProjectileCount, OrbitingOrbs, Piercing, TacticalDrone, Turret, Mine }
 
     [CreateAssetMenu(fileName = "UpgradeData", menuName = "Zzinmak/Upgrade Data")]
-    public class UpgradeData : ScriptableObject
+    public class UpgradeData : ScriptableObject, ICardOption
     {
         public string upgradeName = "Upgrade";
 
@@ -29,5 +29,9 @@ namespace Zzinmak.Data
 
         [Tooltip("If eligible (level/unique/stack checks pass), always include this upgrade as one of the offered options instead of competing with dropChance/random selection.")]
         public bool guaranteed = false;
+
+        public string CardTitle => upgradeName;
+        public string CardDescription => description;
+        public Sprite CardIcon => icon;
     }
 }

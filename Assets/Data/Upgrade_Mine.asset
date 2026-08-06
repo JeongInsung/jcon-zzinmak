@@ -26,4 +26,4 @@ MonoBehaviour:
   isUnique: 0
   maxStack: 0
   minLevel: 1
-  guaranteed: 1
+  guaranteed: 0

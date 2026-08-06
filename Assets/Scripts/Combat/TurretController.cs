@@ -67,12 +67,15 @@ namespace Zzinmak.Combat
             }
         }
 
+        // Left/right only. The base sprite art faces down, so flipX alone (a left-right
+        // mirror of a downward-facing image) can't turn it sideways - rotate +/-90 instead.
         private void FaceTarget(Vector3 targetPosition)
         {
-            Vector2 dir = ((Vector2)targetPosition - (Vector2)transform.position).normalized;
-            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-            float snappedAngle = Mathf.Round(angle / 90f) * 90f;
-            transform.rotation = Quaternion.Euler(0f, 0f, snappedAngle);
+            float dirX = targetPosition.x - transform.position.x;
+            if (Mathf.Abs(dirX) < 0.01f) return;
+
+            float angle = dirX > 0f ? 90f : -90f;
+            transform.rotation = Quaternion.Euler(0f, 0f, angle);
         }
 
         private IEnumerator FireBurst()

@@ -99,9 +99,14 @@ namespace Zzinmak.Progression
 
         private void HandleItemSelected(ICardOption option)
         {
-            ApplyItem((ItemData)option);
+            // Close out of this screen and its shared LevelUpUI/state *before* applying the
+            // item - some items (BonusExp) can themselves trigger LevelUpManager, which shows
+            // its cards on that same shared panel. Applying first would have it clobber (or get
+            // clobbered by) this screen's still-open cards and leave GameManager stuck mid-transition.
             selectionUI.Hide();
             GameManager.Instance.ExitLevelUp();
+
+            ApplyItem((ItemData)option);
 
             if (MissionManager.Instance != null)
             {

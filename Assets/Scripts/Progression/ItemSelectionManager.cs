@@ -15,6 +15,8 @@ namespace Zzinmak.Progression
 
         private const string LaserSightUnlockedKey = "Item_LaserSightUnlocked";
         private const float LaserSightDamageBonus = 0.05f;
+        private const string NightVisionUnlockedKey = "Item_NightVisionUnlocked";
+        private const string DungeonLocatorUnlockedKey = "Item_DungeonLocatorUnlocked";
 
         [SerializeField] private LevelUpUI selectionUI;
         [SerializeField] private PlayerStats playerStats;
@@ -23,6 +25,7 @@ namespace Zzinmak.Progression
         [Tooltip("Off by default (dev keeps it on to see while working); NightVision item turns it on.")]
         [SerializeField] private Light2D globalLight;
         [SerializeField] private Zzinmak.Player.LaserSight laserSight;
+        [SerializeField] private DungeonDirectionIndicator dungeonIndicator;
         [SerializeField] private ItemData[] allItems;
         [SerializeField] private int optionCount = 3;
 
@@ -38,10 +41,29 @@ namespace Zzinmak.Progression
         // over into a fresh game start instead of needing to be picked up again.
         private void ApplyPersistentUnlocks()
         {
-            if (PlayerPrefs.GetInt(LaserSightUnlockedKey, 0) != 1) return;
+            if (PlayerPrefs.GetInt(LaserSightUnlockedKey, 0) == 1)
+            {
+                if (laserSight != null) laserSight.Enable();
+                if (playerStats != null) playerStats.IncreaseDamagePercent(LaserSightDamageBonus);
+            }
 
-            if (laserSight != null) laserSight.Enable();
-            if (playerStats != null) playerStats.IncreaseDamagePercent(LaserSightDamageBonus);
+            if (PlayerPrefs.GetInt(NightVisionUnlockedKey, 0) == 1)
+            {
+                EnableNightVision();
+            }
+
+            if (PlayerPrefs.GetInt(DungeonLocatorUnlockedKey, 0) == 1)
+            {
+                if (dungeonIndicator != null) dungeonIndicator.Unlock();
+            }
+        }
+
+        private void EnableNightVision()
+        {
+            if (globalLight == null) return;
+
+            globalLight.gameObject.SetActive(true);
+            globalLight.enabled = true;
         }
 
         public void Open()
@@ -104,11 +126,9 @@ namespace Zzinmak.Progression
                     }
                     break;
                 case ItemType.NightVision:
-                    if (globalLight != null)
-                    {
-                        globalLight.gameObject.SetActive(true);
-                        globalLight.enabled = true;
-                    }
+                    EnableNightVision();
+                    PlayerPrefs.SetInt(NightVisionUnlockedKey, 1);
+                    PlayerPrefs.Save();
                     break;
                 case ItemType.Damage:
                     if (playerStats != null)
@@ -144,6 +164,14 @@ namespace Zzinmak.Progression
                         playerStats.IncreaseDamagePercent(LaserSightDamageBonus);
                     }
                     PlayerPrefs.SetInt(LaserSightUnlockedKey, 1);
+                    PlayerPrefs.Save();
+                    break;
+                case ItemType.DungeonLocator:
+                    if (dungeonIndicator != null)
+                    {
+                        dungeonIndicator.Unlock();
+                    }
+                    PlayerPrefs.SetInt(DungeonLocatorUnlockedKey, 1);
                     PlayerPrefs.Save();
                     break;
             }

@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Zzinmak.Core;
@@ -16,6 +17,8 @@ namespace Zzinmak.Environment
         [SerializeField] private Transform mapRoomCenter;
         [SerializeField] private Transform portalSpawner;
         [SerializeField] private float minSpawnDistanceFromPlayer = 5f;
+        [Tooltip("Delay after clearing a building (exiting via the boss bag) before a new one spawns. The very first building at game start is not delayed.")]
+        [SerializeField] private float newBuildingSpawnDelay = 30f;
 
         [Header("Building interior")]
         [SerializeField] private Transform interiorRoomCenter;
@@ -40,6 +43,9 @@ namespace Zzinmak.Environment
         }
 
         public static MissionManager Instance { get; private set; }
+
+        public Transform CurrentBuilding => currentBuilding != null ? currentBuilding.transform : null;
+        public bool PlayerInBuilding => playerInBuilding;
 
         private GameObject currentBuilding;
         private Enemy currentInteriorBoss;
@@ -161,12 +167,18 @@ namespace Zzinmak.Environment
                 Destroy(currentBuilding);
             }
 
-            SpawnNewBuilding();
+            StartCoroutine(SpawnNewBuildingAfterDelay(newBuildingSpawnDelay));
 
             if (MusicManager.Instance != null)
             {
                 MusicManager.Instance.PlayOutdoor();
             }
+        }
+
+        private IEnumerator SpawnNewBuildingAfterDelay(float delay)
+        {
+            yield return new WaitForSeconds(delay);
+            SpawnNewBuilding();
         }
 
         private void ClearOutdoorZombies()

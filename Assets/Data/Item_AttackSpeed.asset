@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8fbe1c7d6674c74fbec038df4a4b64f, type: 3}
   m_Name: Item_AttackSpeed
   m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Data.ItemData
-  itemName: "\uAC15\uD654\uB41C \uBC1C\uC0AC \uC18D\uB3C4"
+  itemName: "\uBC1C\uC0AC \uC18D\uB3C4 \uAC15\uD654"
   description: "\uACF5\uACA9 \uC18D\uB3C4\uAC00 20% \uC99D\uAC00\uD569\uB2C8\uB2E4."
   icon: {fileID: 5177673616161367443, guid: 99cc663c04e6aa044ba7555f8899dbd5, type: 3}
   type: 4

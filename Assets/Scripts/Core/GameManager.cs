@@ -30,7 +30,7 @@ namespace Zzinmak.Core
             // quality level happens to be active (editor "Very Low" runs vSync 0, Android
             // defaults to "Medium" with vSync 1) or on the display's native refresh rate.
             QualitySettings.vSyncCount = 0;
-            Application.targetFrameRate = 60;
+            Application.targetFrameRate = 120;
 
             Time.timeScale = 1f;
         }

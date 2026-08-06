@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8fbe1c7d6674c74fbec038df4a4b64f, type: 3}
   m_Name: Item_ExpVial
   m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Data.ItemData
-  itemName: "\uACBD\uD5D8\uCE58 \uBE44\uC57D"
+  itemName: "\uACBD\uD5D8\uCE58 \uD0A4\uD2B8"
   description: "\uACBD\uD5D8\uCE58 30\uC744 \uC989\uC2DC \uD68D\uB4DD\uD569\uB2C8\uB2E4."
   icon: {fileID: 6019820507502135, guid: 3a92bd4d9ace3844ebd7fcf784e344e1, type: 3}
   type: 1

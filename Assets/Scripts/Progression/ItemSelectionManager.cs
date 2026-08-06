@@ -116,6 +116,10 @@ namespace Zzinmak.Progression
 
         private void ApplyItem(ItemData item)
         {
+            // 도감 등록용 "한 번이라도 획득함" 표시. 3종의 영구 효과 재적용용 PlayerPrefs
+            // 키(LaserSightUnlockedKey 등)와는 별개 관심사라 9종 전부 여기서 균일하게 기록한다.
+            ItemCollection.MarkCollected(item);
+
             switch (item.type)
             {
                 case ItemType.Heal:

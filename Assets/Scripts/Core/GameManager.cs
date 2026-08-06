@@ -24,6 +24,14 @@ namespace Zzinmak.Core
             }
 
             Instance = this;
+
+            // vSyncCount is ignored on Android/iOS; targetFrameRate is the authoritative cap
+            // there. Setting both explicitly stops frame pacing from depending on whichever
+            // quality level happens to be active (editor "Very Low" runs vSync 0, Android
+            // defaults to "Medium" with vSync 1) or on the display's native refresh rate.
+            QualitySettings.vSyncCount = 0;
+            Application.targetFrameRate = 60;
+
             Time.timeScale = 1f;
         }
 

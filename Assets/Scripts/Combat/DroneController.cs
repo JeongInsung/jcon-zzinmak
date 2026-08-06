@@ -19,6 +19,11 @@ namespace Zzinmak.Combat
         private Vector2 hoverOffset;
         private float cooldown;
 
+        // followLerpSpeed is calibrated against this frame time, so the smoothing matches the
+        // old `followLerpSpeed * Time.deltaTime` lerp exactly at 60 fps and holds that same
+        // response at other framerates instead of tightening/loosening with them.
+        private const float ReferenceDeltaTime = 1f / 60f;
+
         public void Initialize(TacticalDrone droneOwner, Transform target, Vector2 offset)
         {
             owner = droneOwner;
@@ -31,7 +36,9 @@ namespace Zzinmak.Combat
             if (followTarget == null) return;
 
             Vector3 desiredPosition = followTarget.position + (Vector3)hoverOffset;
-            transform.position = Vector3.Lerp(transform.position, desiredPosition, followLerpSpeed * Time.deltaTime);
+            float retention = Mathf.Clamp01(1f - followLerpSpeed * ReferenceDeltaTime);
+            float t = 1f - Mathf.Pow(retention, Time.deltaTime / ReferenceDeltaTime);
+            transform.position = Vector3.Lerp(transform.position, desiredPosition, t);
 
             cooldown -= Time.deltaTime;
             if (cooldown <= 0f)

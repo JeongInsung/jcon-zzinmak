@@ -23,6 +23,7 @@ namespace Zzinmak.Player
         private Vector2 moveInput;
         private float muzzleOffsetX;
         private float shadowOffsetX;
+        private AudioSource footstepSource;
 
         private void Awake()
         {
@@ -38,6 +39,13 @@ namespace Zzinmak.Player
             // the muzzle's own local X must be mirrored by hand to stay on the gun side.
             if (muzzle != null) muzzleOffsetX = Mathf.Abs(muzzle.localPosition.x);
             if (shadow != null) shadowOffsetX = Mathf.Abs(shadow.localPosition.x);
+
+            // PlayClipAtPoint spawns and destroys a GameObject per call. The walk clip fires
+            // two footstep events per 0.9s loop, so that was ~2 object churns per second the
+            // whole time the player was moving - a hitch that only ever showed up in motion.
+            footstepSource = gameObject.AddComponent<AudioSource>();
+            footstepSource.playOnAwake = false;
+            footstepSource.spatialBlend = 0f;
         }
 
         private void Update()
@@ -99,7 +107,7 @@ namespace Zzinmak.Player
         // Called via Animation Event on PlayerWalk.anim, once per footfall pose.
         private void PlayFootstep()
         {
-            if (footstepClip != null) AudioSource.PlayClipAtPoint(footstepClip, transform.position);
+            if (footstepClip != null && footstepSource != null) footstepSource.PlayOneShot(footstepClip);
         }
 
         private Vector2 ReadKeyboardFallback()

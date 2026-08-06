@@ -36,7 +36,7 @@ Assets/
 - **PlayerStats**: 런타임 스탯 컨테이너(이동속도, 최대체력, 픽업범위, 데미지배율, 공속배율). 강화 적용 시 이 값들이 수정됨.
 - **PlayerHealth**: 현재체력, 피격 무적시간 처리, 0 이하 시 `GameEvents.OnGameOver` 발행.
 - **PlayerLevel**: XP 누적/레벨 계산, 레벨업 임계치 도달 시 `LevelUpManager.TriggerLevelUp()` 호출.
-- **CameraFollow**: 메인 카메라가 플레이어를 따라가도록 처리(단순 Lerp).
+- **CameraFollow**: 메인 카메라가 플레이어를 따라가도록 처리(프레임 독립 지수 스무딩 — 자세한 배경은 [Docs/기획서/이동_버벅임_수정.md](기획서/이동_버벅임_수정.md) 참고).
 - **걷기 애니메이션**: `Assets/character/Player/walk_1~8.png` 8프레임을 `Assets/Animations/PlayerWalk.anim`(10fps, 루프)으로 만들고 `Assets/Animations/PlayerAnimator.controller`(단일 Walk 스테이트)로 재생. `PlayerController`가 이동 입력이 있을 때만 `Animator.speed=1`, 정지 시 `0`으로 설정해 멈추면 걷기 동작도 함께 멈춘다.
 
 ### Combat

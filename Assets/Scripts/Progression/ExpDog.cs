@@ -17,6 +17,11 @@ namespace Zzinmak.Progression
         private SpriteRenderer shadowRenderer;
         private float shadowBaseX;
 
+        // followSpeed is calibrated against this frame time, so the smoothing matches the old
+        // `followSpeed * Time.deltaTime` lerp exactly at 60 fps and holds that same response at
+        // other framerates instead of tightening/loosening with them.
+        private const float ReferenceDeltaTime = 1f / 60f;
+
         private void Awake()
         {
             spriteRenderer = GetComponent<SpriteRenderer>();
@@ -56,7 +61,9 @@ namespace Zzinmak.Progression
             Vector3 desiredPosition = followTarget.position + (Vector3)followOffset;
             float dx = desiredPosition.x - transform.position.x;
 
-            transform.position = Vector3.Lerp(transform.position, desiredPosition, followSpeed * Time.deltaTime);
+            float retention = Mathf.Clamp01(1f - followSpeed * ReferenceDeltaTime);
+            float t = 1f - Mathf.Pow(retention, Time.deltaTime / ReferenceDeltaTime);
+            transform.position = Vector3.Lerp(transform.position, desiredPosition, t);
 
             if (Mathf.Abs(dx) > 0.01f)
             {

@@ -49,10 +49,32 @@ namespace Zzinmak.Environment
         private Vector3 outdoorReturnPosition;
         private int lastBossOptionIndex = -1;
         private BossBroodmother currentBroodmother;
+        private Rigidbody2D playerBody;
 
         private void Awake()
         {
             Instance = this;
+            if (player != null) playerBody = player.GetComponent<Rigidbody2D>();
+        }
+
+        // The player's Rigidbody2D uses Interpolate. Writing Transform.position directly on an
+        // interpolated body makes the interpolation pass smear the character across the map over
+        // one fixed step instead of cutting instantly. Move the body itself and bounce the
+        // interpolation mode so its interpolation history restarts at the new pose.
+        private void TeleportPlayer(Vector3 destination)
+        {
+            if (playerBody == null)
+            {
+                player.position = destination;
+                return;
+            }
+
+            var previous = playerBody.interpolation;
+            playerBody.interpolation = RigidbodyInterpolation2D.None;
+            playerBody.linearVelocity = Vector2.zero;
+            playerBody.position = destination;
+            player.position = destination;
+            playerBody.interpolation = previous;
         }
 
         private void Start()
@@ -86,7 +108,7 @@ namespace Zzinmak.Environment
 
             ClearOutdoorZombies();
 
-            player.position = interiorEntryPoint.position;
+            TeleportPlayer(interiorEntryPoint.position);
 
             if (indoorBounds != null)
             {
@@ -125,7 +147,7 @@ namespace Zzinmak.Environment
                 currentHostage.SetActive(false);
             }
 
-            player.position = outdoorReturnPosition;
+            TeleportPlayer(outdoorReturnPosition);
 
             if (outdoorBounds != null)
             {

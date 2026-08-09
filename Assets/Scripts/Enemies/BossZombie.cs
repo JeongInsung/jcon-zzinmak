@@ -78,7 +78,7 @@ namespace Zzinmak.Enemies
 
         private void Update()
         {
-            if (isAttacking || enemy.IsDead) return;
+            if (isAttacking || enemy.IsDead || enemy.IsStunned) return;
 
             var target = enemy.Target;
             if (target == null) return;

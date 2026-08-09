@@ -8,13 +8,19 @@ using UnityEngine;
 namespace Zzinmak.EditorTools
 {
     /// <summary>
-    /// 건물 스프라이트 밑단에 "fw"라는 이름의 보이지 않는 BoxCollider2D 자식을 일괄로 만들어
+    /// 건물 스프라이트 밑단에 보이지 않는 BoxCollider2D 자식을 일괄로 만들어
     /// 플레이어/좀비가 건물을 통과하지 못하게 막는 툴.
     ///
     /// 기존에 손으로 넣은 fw 6개(씬 루트, 흰 사각형 스프라이트 + Transform 스케일로 크기 조절)를
     /// 그대로 참고해서 만들었다. 다만 씬 루트에 두면 MapRoom/Map의 트랜스폼이 바뀔 때마다
-    /// 건물과 어긋나므로(7/30 사례), 이 툴이 만드는 fw는 항상 해당 건물의 "자식"으로 들어가고
+    /// 건물과 어긋나므로(7/30 사례), 이 툴이 만드는 콜라이더는 항상 해당 건물의 "자식"으로 들어가고
     /// 크기는 Transform 스케일이 아니라 BoxCollider2D의 size/offset으로만 표현한다.
+    ///
+    /// 이름: 원래는 전부 "fw"였는데, 2026-08-09 MapHierarchyOrganizerTool.cs 하이러키 정리에서
+    /// "&lt;건물이름&gt;_충돌"로 통일했다(Assets/Scripts/Environment/BuildingCollision.cs가
+    /// 이 이름으로 "적을 막는 콜라이더"를 판별하므로 둘 중 하나가 바뀌면 반드시 같이 맞출 것).
+    /// 이 툴이 새로 만들거나 이관하는 콜라이더도 이제 그 이름으로 생성된다. `IsFwName`/`IsBuildingName`은
+    /// 레거시 이름("fw", "_건물_")과 정리 후 이름("_충돌", "건물 N") 둘 다 인식한다.
     ///
     /// 사용 순서: 측정 → (필요하면 비율 조정) → 기존 fw 이관 → 일괄 생성.
     /// 가능하면 Map.prefab을 프리팹 모드로 열어놓고 실행할 것 — 그래야 Game.unity와
@@ -185,7 +191,7 @@ namespace Zzinmak.EditorTools
                 if (sr != null)
                     Undo.DestroyObjectImmediate(sr);
 
-                fw.gameObject.name = "fw";
+                fw.gameObject.name = $"{building.name}_충돌";
                 EditorUtility.SetDirty(fw.gameObject);
                 migrated++;
             }
@@ -248,7 +254,7 @@ namespace Zzinmak.EditorTools
                 float bottomOverlap = localHeight * bottomOverlapRatio;
                 float offsetY = localMin.y - sizeY * 0.5f + bottomOverlap;
 
-                var go = new GameObject("fw");
+                var go = new GameObject($"{b.name}_충돌");
                 Undo.RegisterCreatedObjectUndo(go, "fw 콜라이더 생성");
                 go.layer = b.gameObject.layer;
                 go.tag = "Untagged";
@@ -403,16 +409,28 @@ namespace Zzinmak.EditorTools
             return null;
         }
 
+        // "_건물_" 태그는 레거시 이름(MapHierarchyOrganizerTool 정리 전)이고,
+        // "건물 N"은 정리 후 이름(Assets/Editor/MapHierarchyOrganizerTool.cs) — 둘 다 인식한다.
         private static bool IsBuildingName(string name)
         {
+            if (IsExactCategoryNumbered(name, "건물")) return true;
             if (!name.Contains("_건물_")) return false;
             if (name.Contains("_장식_") || name.Contains("_자동차_")) return false;
             return true;
         }
 
+        private static bool IsExactCategoryNumbered(string name, string category)
+        {
+            string prefix = category + " ";
+            return name.StartsWith(prefix) && int.TryParse(name.Substring(prefix.Length), out _);
+        }
+
+        // "fw"는 레거시 이름, "_충돌" 접미사는 정리 후 이름 — 둘 다 인식한다.
+        // Assets/Scripts/Environment/BuildingCollision.cs의 판별 규칙과 반드시 맞춰야 한다.
         private static bool IsFwName(string name)
         {
             if (string.IsNullOrEmpty(name)) return false;
+            if (name.EndsWith("_충돌")) return true;
             string lower = name.ToLowerInvariant();
             return lower == "fw" || lower.StartsWith("fw (") || lower.StartsWith("fw(");
         }

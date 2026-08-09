@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using Zzinmak.Combat;
 using Zzinmak.Core;
 using Zzinmak.Data;
 using Zzinmak.Environment;
@@ -26,6 +27,7 @@ namespace Zzinmak.Progression
         [SerializeField] private Light2D globalLight;
         [SerializeField] private Zzinmak.Player.LaserSight laserSight;
         [SerializeField] private DungeonDirectionIndicator dungeonIndicator;
+        [SerializeField] private FlashbangSpawner flashbangSpawner;
         [SerializeField] private ItemData[] allItems;
         [SerializeField] private int optionCount = 3;
 
@@ -117,7 +119,7 @@ namespace Zzinmak.Progression
         private void ApplyItem(ItemData item)
         {
             // 도감 등록용 "한 번이라도 획득함" 표시. 3종의 영구 효과 재적용용 PlayerPrefs
-            // 키(LaserSightUnlockedKey 등)와는 별개 관심사라 9종 전부 여기서 균일하게 기록한다.
+            // 키(LaserSightUnlockedKey 등)와는 별개 관심사라 전체 아이템 종류 여기서 균일하게 기록한다.
             ItemCollection.MarkCollected(item);
 
             switch (item.type)
@@ -182,6 +184,12 @@ namespace Zzinmak.Progression
                     }
                     PlayerPrefs.SetInt(DungeonLocatorUnlockedKey, 1);
                     PlayerPrefs.Save();
+                    break;
+                case ItemType.Flashbang:
+                    if (flashbangSpawner != null)
+                    {
+                        flashbangSpawner.Activate();
+                    }
                     break;
             }
         }

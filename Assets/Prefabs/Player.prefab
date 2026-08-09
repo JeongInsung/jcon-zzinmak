@@ -117,6 +117,7 @@ GameObject:
   - component: {fileID: 908802609793821746}
   - component: {fileID: 8985078197625268021}
   - component: {fileID: 6023635477744196208}
+  - component: {fileID: 1160681282526313367}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -634,6 +635,21 @@ MonoBehaviour:
   baseInterval: 15
   intervalReductionPerLevel: 3
   minInterval: 6
+--- !u!114 &1160681282526313367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6226427610097736337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aea71a20a68261c4bbaaf8400bf4cc47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Combat.FlashbangSpawner
+  interval: 30
+  throwDistance: 4
+  grenadePrefab: {fileID: 4633976267528910867, guid: 0e44e82f963bf9947b447b714f695df9, type: 3}
 --- !u!1 &8799457722260672287
 GameObject:
   m_ObjectHideFlags: 0

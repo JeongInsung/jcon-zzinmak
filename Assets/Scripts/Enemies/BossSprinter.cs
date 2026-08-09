@@ -85,7 +85,7 @@ namespace Zzinmak.Enemies
 
         private void Update()
         {
-            if (isDashing || enemy.IsDead) return;
+            if (isDashing || enemy.IsDead || enemy.IsStunned) return;
 
             dashTimer -= Time.deltaTime;
 

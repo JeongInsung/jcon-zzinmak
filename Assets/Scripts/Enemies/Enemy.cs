@@ -32,6 +32,7 @@ namespace Zzinmak.Enemies
         private float currentHealth;
         private float maxHealth;
         private float lastContactDamageTime;
+        private float stunEndTime = -1f;
 
         public event Action OnDeath;
         public event Action<float, float> OnHealthChanged;
@@ -39,6 +40,18 @@ namespace Zzinmak.Enemies
         public Transform Target => target;
         public bool IsDead { get; private set; }
         public bool CanMove { get; set; } = true;
+        public bool IsStunned => Time.time < stunEndTime;
+
+        // Freezes movement, contact damage, and (via IsStunned checks in boss scripts)
+        // attack initiation for the given duration. Stacking calls extend rather than
+        // shorten/refresh-shorten the remaining stun, so overlapping flashbangs don't
+        // cut an earlier stun short.
+        public void Stun(float duration)
+        {
+            if (IsDead) return;
+
+            stunEndTime = Mathf.Max(stunEndTime, Time.time + duration);
+        }
 
         private void Awake()
         {
@@ -78,12 +91,13 @@ namespace Zzinmak.Enemies
             lastContactDamageTime = -data.contactDamageInterval;
             IsDead = false;
             CanMove = true;
+            stunEndTime = -1f;
             OnHealthChanged?.Invoke(currentHealth, maxHealth);
         }
 
         private void FixedUpdate()
         {
-            if (target == null || data == null || IsDead || !CanMove) return;
+            if (target == null || data == null || IsDead || !CanMove || IsStunned) return;
 
             Vector2 dir = ((Vector2)target.position - body.position).normalized;
             Vector2 desired = body.position + dir * data.moveSpeed * Time.fixedDeltaTime;
@@ -191,7 +205,7 @@ namespace Zzinmak.Enemies
 
         private void OnTriggerStay2D(Collider2D other)
         {
-            if (data == null || IsDead) return;
+            if (data == null || IsDead || IsStunned) return;
             if (!other.CompareTag("Player")) return;
             if (Time.time - lastContactDamageTime < data.contactDamageInterval) return;
 

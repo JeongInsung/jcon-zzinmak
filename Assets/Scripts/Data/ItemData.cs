@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Zzinmak.Data
 {
-    public enum ItemType { Heal, BonusExp, NightVision, Damage, AttackSpeed, MoveSpeed, GuardianAngel, LaserSight, DungeonLocator }
+    public enum ItemType { Heal, BonusExp, NightVision, Damage, AttackSpeed, MoveSpeed, GuardianAngel, LaserSight, DungeonLocator, Flashbang }
 
     [CreateAssetMenu(fileName = "ItemData", menuName = "Zzinmak/Item Data")]
     public class ItemData : ScriptableObject, ICardOption

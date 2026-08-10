@@ -6,13 +6,14 @@ namespace Zzinmak.Environment
     // by name: BuildingColliderTool.cs generates a non-trigger "fw" ("footwall") child
     // under each building for exactly this purpose. MapHierarchyOrganizerTool.cs
     // (Assets/Editor) later renamed those to "<건물이름>_충돌" during the 2026-08-09
-    // hierarchy cleanup, so both forms are recognized here.
+    // hierarchy cleanup, and buildings also carry a separate "<건물이름>_콜라이더"
+    // collider that must block zombies the same way, so all three forms are recognized here.
     public static class BuildingCollision
     {
         public static bool IsFootCollider(Collider2D col)
         {
             string name = col.gameObject.name;
-            return name.EndsWith("_충돌")
+            return name.EndsWith("_충돌") || name.EndsWith("_콜라이더")
                 || name == "fw" || name.StartsWith("fw (") || name.StartsWith("fw(");
         }
 

@@ -134,9 +134,10 @@ namespace Zzinmak.Enemies
 
             if (target != null && spitProjectilePrefab != null)
             {
+                Vector2 dir = ((Vector2)target.position - (Vector2)transform.position).normalized;
                 var projObj = ObjectPool.Instance.Get(spitProjectilePrefab, transform.position, Quaternion.identity);
                 var projectile = projObj.GetComponent<BossProjectile>();
-                projectile.Launch(target.position, spitSpeed, rangedDamage * damageMultiplier);
+                projectile.Launch(dir, spitSpeed, rangedDamage * damageMultiplier);
             }
 
             yield return new WaitForSeconds(Mathf.Max(0f, rangedClipDuration - rangedSpitTime));

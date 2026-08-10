@@ -12,6 +12,7 @@ namespace Zzinmak.Enemies
     {
         private static readonly int WalkState = Animator.StringToHash("Walk");
         private static readonly int SummonState = Animator.StringToHash("Summon");
+        private static readonly int RangedState = Animator.StringToHash("Ranged");
         private const float SummonAnimDuration = 0.8f;
 
         [Header("Summon")]
@@ -23,6 +24,17 @@ namespace Zzinmak.Enemies
         [SerializeField] private float summonRadius = 2.5f;
         [SerializeField] private int maxActiveSummons = 8;
 
+        [Header("Ranged attack")]
+        [SerializeField] private GameObject rangedProjectilePrefab;
+        [SerializeField] private float rangedRange = 6f;
+        [SerializeField] private float rangedDamage = 8f;
+        [SerializeField] private float rangedCooldown = 4f;
+        [SerializeField] private float rangedProjectileSpeed = 6f;
+        [SerializeField] private float rangedClipDuration = 1.3f;
+        [SerializeField] private float rangedThrowTime = 0.6f;
+        [Tooltip("Angle in degrees between each of the 3 syringes in the fan (outer two are offset by this much from the center shot).")]
+        [SerializeField] private float rangedFanAngle = 18f;
+
         [Header("UI")]
         [SerializeField] private BossHealthBar healthBar;
 
@@ -31,6 +43,8 @@ namespace Zzinmak.Enemies
         private Enemy enemy;
         private Animator animator;
         private float summonTimer;
+        private float rangedTimer;
+        private bool isAttacking;
         private Coroutine summonAnimRoutine;
         private readonly List<GameObject> activeSummons = new List<GameObject>();
 
@@ -43,6 +57,8 @@ namespace Zzinmak.Enemies
         private void OnEnable()
         {
             summonTimer = summonInterval;
+            rangedTimer = rangedCooldown;
+            isAttacking = false;
             activeSummons.Clear();
             summonAnimRoutine = null;
             if (animator != null) animator.Play(WalkState, 0, 0f);
@@ -66,13 +82,68 @@ namespace Zzinmak.Enemies
 
         private void Update()
         {
-            if (enemy.IsDead || summonPrefab == null || summonData == null) return;
+            if (enemy.IsDead) return;
 
-            summonTimer -= Time.deltaTime;
-            if (summonTimer > 0f) return;
+            if (!isAttacking && summonPrefab != null && summonData != null)
+            {
+                summonTimer -= Time.deltaTime;
+                if (summonTimer <= 0f)
+                {
+                    summonTimer = summonInterval;
+                    SummonWave();
+                }
+            }
 
-            summonTimer = summonInterval;
-            SummonWave();
+            if (isAttacking || enemy.IsStunned || summonAnimRoutine != null) return;
+
+            var target = enemy.Target;
+            if (target == null || rangedProjectilePrefab == null) return;
+
+            rangedTimer -= Time.deltaTime;
+            if (rangedTimer <= 0f && Vector2.Distance(transform.position, target.position) <= rangedRange)
+            {
+                rangedTimer = rangedCooldown;
+                StartCoroutine(RangedAttack(target));
+            }
+        }
+
+        private IEnumerator RangedAttack(Transform target)
+        {
+            isAttacking = true;
+            enemy.CanMove = false;
+            enemy.FaceTarget();
+            if (animator != null) animator.Play(RangedState, 0, 0f);
+
+            yield return new WaitForSeconds(rangedThrowTime);
+
+            if (target != null)
+            {
+                Vector2 baseDir = ((Vector2)target.position - (Vector2)transform.position).normalized;
+
+                foreach (float angle in new[] { -rangedFanAngle, 0f, rangedFanAngle })
+                {
+                    var projObj = ObjectPool.Instance.Get(rangedProjectilePrefab, transform.position, Quaternion.identity);
+                    var projectile = projObj.GetComponent<BossProjectile>();
+                    projectile.Launch(RotateDegrees(baseDir, angle), rangedProjectileSpeed, rangedDamage);
+                }
+            }
+
+            yield return new WaitForSeconds(Mathf.Max(0f, rangedClipDuration - rangedThrowTime));
+
+            enemy.CanMove = true;
+            isAttacking = false;
+            if (!enemy.IsDead && animator != null)
+            {
+                animator.Play(WalkState, 0, 0f);
+            }
+        }
+
+        private static Vector2 RotateDegrees(Vector2 v, float degrees)
+        {
+            float rad = degrees * Mathf.Deg2Rad;
+            float cos = Mathf.Cos(rad);
+            float sin = Mathf.Sin(rad);
+            return new Vector2(v.x * cos - v.y * sin, v.x * sin + v.y * cos);
         }
 
         private void SummonWave()

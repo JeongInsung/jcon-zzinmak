@@ -362,6 +362,13 @@ MonoBehaviour:
   summonCountMax: 3
   summonRadius: 2.5
   maxActiveSummons: 8
+  rangedProjectilePrefab: {fileID: 8245118517801346095, guid: 0785576a57365f149bf8d49f2044171e, type: 3}
+  rangedRange: 6
+  rangedDamage: 20
+  rangedCooldown: 4
+  rangedProjectileSpeed: 6
+  rangedClipDuration: 1.3
+  rangedThrowTime: 0.6
   healthBar: {fileID: 3706010570601993838}
 --- !u!114 &3387954120863183136
 MonoBehaviour:

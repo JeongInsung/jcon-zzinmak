@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5364046185039812236}
   - component: {fileID: 4448492413705107481}
   - component: {fileID: 3821525089665571529}
+  - component: {fileID: 5019741754009145589}
   m_Layer: 11
   m_Name: ExpGem
   m_TagString: Untagged
@@ -108,3 +109,20 @@ MonoBehaviour:
   absorbDistance: 0.2
   lifetime: 5
   pickupClip: {fileID: 8300000, guid: 65ba2531e17bd6649977e93bfa7714f6, type: 3}
+--- !u!114 &5019741754009145589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2506447470019471358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f48d3c714917a4442884b664fdcf26d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Core.SpriteSparkle
+  pulseSpeed: 3
+  minBrightness: 0.6
+  maxBrightness: 1
+  minScale: 0.85
+  maxScale: 1.15

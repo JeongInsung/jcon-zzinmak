@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using Zzinmak.Combat;
 using Zzinmak.Core;
@@ -62,6 +63,38 @@ namespace Zzinmak.Player
                 guardianArmed = false;
                 guardianBlocksRemaining = guardianBlockCount;
             }
+
+            if (currentHealth <= 0f)
+            {
+                GameManager.Instance?.TriggerGameOver();
+            }
+        }
+
+        // Poison-style damage over time. Ticks bypass the post-hit invulnerability window
+        // (and don't extend it) so a lingering effect keeps chipping away even while the
+        // player is otherwise taking normal hits.
+        public void ApplyDamageOverTime(float damagePerTick, float tickInterval, int tickCount)
+        {
+            StartCoroutine(DamageOverTimeRoutine(damagePerTick, tickInterval, tickCount));
+        }
+
+        private IEnumerator DamageOverTimeRoutine(float damagePerTick, float tickInterval, int tickCount)
+        {
+            for (int i = 0; i < tickCount; i++)
+            {
+                yield return new WaitForSeconds(tickInterval);
+                ApplyDotTick(damagePerTick);
+            }
+        }
+
+        private void ApplyDotTick(float amount)
+        {
+            if (currentHealth <= 0f) return;
+            if (GameManager.Instance != null && GameManager.Instance.State != GameState.Playing) return;
+
+            currentHealth -= amount;
+            GameEvents.RaiseHealthChanged(Mathf.Max(currentHealth, 0f), stats.maxHealth);
+            hitFlash?.Flash();
 
             if (currentHealth <= 0f)
             {

@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.28, y: 0.28, z: 0.28}
+  m_LocalScale: {x: 0.1859536, y: 0.1859536, z: 0.1859536}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -110,3 +110,4 @@ MonoBehaviour:
   stunRadius: 5
   stunDuration: 3
   splashEffectPrefab: {fileID: 8286575484844522852, guid: 04040b84a23df9a449bf726587b57de8, type: 3}
+  explosionClip: {fileID: 8300000, guid: 6b6c29cf8481dc1459859bbb93069048, type: 3}

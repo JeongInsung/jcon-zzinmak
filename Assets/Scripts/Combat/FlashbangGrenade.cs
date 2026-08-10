@@ -15,6 +15,7 @@ namespace Zzinmak.Combat
         [SerializeField] private float stunDuration = 3f;
         [Tooltip("Prefab's own visual radius should be 1 unit at scale 1, so scaling its transform by stunRadius matches the stun range exactly.")]
         [SerializeField] private GameObject splashEffectPrefab;
+        [SerializeField] private AudioClip explosionClip;
 
         public void Throw(Vector3 landingPosition)
         {
@@ -51,8 +52,25 @@ namespace Zzinmak.Combat
                 effect.transform.localScale = Vector3.one * stunRadius;
             }
 
+            PlayExplosionSound();
             StunZombiesInRange();
             Destroy(gameObject);
+        }
+
+        private void PlayExplosionSound()
+        {
+            if (explosionClip == null) return;
+
+            // Plain PlayClipAtPoint defaults to a fully 3D source, so it fades out
+            // with camera distance. Force 2D so the explosion cue always plays at
+            // full, consistent volume regardless of where it lands on screen.
+            var soundObj = new GameObject("FlashbangExplosionSound");
+            var soundSource = soundObj.AddComponent<AudioSource>();
+            soundSource.clip = explosionClip;
+            soundSource.spatialBlend = 0f;
+            soundSource.volume = PlayerPrefs.GetFloat("SFXVolume", 1f);
+            soundSource.Play();
+            Destroy(soundObj, explosionClip.length);
         }
 
         private void StunZombiesInRange()

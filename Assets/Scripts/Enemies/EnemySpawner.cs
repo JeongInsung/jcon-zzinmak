@@ -8,6 +8,7 @@ namespace Zzinmak.Enemies
     public class EnemySpawner : MonoBehaviour
     {
         private const int MaxSpawnPositionAttempts = 8;
+        private static readonly Collider2D[] SpawnOverlapBuffer = new Collider2D[8];
 
         [System.Serializable]
         public class EnemyVariant
@@ -109,7 +110,7 @@ namespace Zzinmak.Enemies
             var variant = PickVariant();
             if (variant == null || variant.prefab == null || variant.data == null) return;
 
-            Vector3 spawnPos = FindSpawnPosition();
+            Vector3 spawnPos = FindSpawnPosition(variant.prefab);
 
             var enemyObj = ObjectPool.Instance.Get(variant.prefab, spawnPos, Quaternion.identity);
             var enemy = enemyObj.GetComponent<Enemy>();
@@ -117,9 +118,13 @@ namespace Zzinmak.Enemies
         }
 
         // Retries a few times to avoid landing inside a building's "fw" collider - spawning
-        // there would leave the enemy wedged in place, unable to move on any axis.
-        private Vector3 FindSpawnPosition()
+        // there would leave the enemy wedged in place, unable to move on any axis. Checked
+        // with the same collider-radius overlap test Enemy.ResolveMovement uses (not just a
+        // point), so a position that passes here doesn't immediately block the enemy's own
+        // body the instant it spawns.
+        private Vector3 FindSpawnPosition(GameObject prefab)
         {
+            float checkRadius = GetObstacleCheckRadius(prefab);
             Vector2 candidate = player.position;
             for (int attempt = 0; attempt < MaxSpawnPositionAttempts; attempt++)
             {
@@ -127,10 +132,16 @@ namespace Zzinmak.Enemies
                 Vector2 rawPos = (Vector2)player.position + offset;
                 candidate = MapBounds.Instance != null ? MapBounds.Instance.ClampToInterior(rawPos) : rawPos;
 
-                if (!BuildingCollision.OverlapsBuilding(candidate)) break;
+                if (!BuildingCollision.OverlapsBuilding(candidate, checkRadius, SpawnOverlapBuffer)) break;
             }
 
             return new Vector3(candidate.x, candidate.y, player.position.z);
+        }
+
+        private static float GetObstacleCheckRadius(GameObject prefab)
+        {
+            var collider = prefab.GetComponent<CircleCollider2D>();
+            return collider != null ? collider.radius * prefab.transform.lossyScale.x : 0.3f;
         }
 
         private EnemyVariant PickVariant()

@@ -117,11 +117,11 @@ namespace Zzinmak.Enemies
             enemy.Initialize(variant.data, player, CurrentHealthMultiplier());
         }
 
-        // Retries a few times to avoid landing inside a building's "fw" collider - spawning
-        // there would leave the enemy wedged in place, unable to move on any axis. Checked
-        // with the same collider-radius overlap test Enemy.ResolveMovement uses (not just a
-        // point), so a position that passes here doesn't immediately block the enemy's own
-        // body the instant it spawns.
+        // Retries a few times to avoid landing inside a building or decoration collider -
+        // spawning there would leave the enemy wedged in place, unable to move on any axis.
+        // Unlike Enemy.ResolveMovement's name-matched check, this treats any non-trigger
+        // collider as an obstacle so a mis-named building/decoration collider can't create
+        // a spawn-in-obstacle gap the way it would for movement blocking.
         private Vector3 FindSpawnPosition(GameObject prefab)
         {
             float checkRadius = GetObstacleCheckRadius(prefab);
@@ -132,7 +132,7 @@ namespace Zzinmak.Enemies
                 Vector2 rawPos = (Vector2)player.position + offset;
                 candidate = MapBounds.Instance != null ? MapBounds.Instance.ClampToInterior(rawPos) : rawPos;
 
-                if (!BuildingCollision.OverlapsBuilding(candidate, checkRadius, SpawnOverlapBuffer)) break;
+                if (!BuildingCollision.OverlapsSolidObstacle(candidate, checkRadius, SpawnOverlapBuffer)) break;
             }
 
             return new Vector3(candidate.x, candidate.y, player.position.z);

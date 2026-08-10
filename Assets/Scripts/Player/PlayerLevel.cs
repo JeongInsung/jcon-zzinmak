@@ -8,7 +8,7 @@ namespace Zzinmak.Player
     {
         [SerializeField] private LevelUpManager levelUpManager;
 
-        public int Level { get; private set; } = 8;
+        public int Level { get; private set; } = 1;
         public float CurrentExp { get; private set; }
         public float ExpToNextLevel { get; private set; }
 

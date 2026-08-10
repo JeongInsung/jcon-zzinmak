@@ -54,5 +54,53 @@ namespace Zzinmak.Environment
 
             return false;
         }
+
+        // Unlike OverlapsBuilding, this isn't limited to name-matched colliders - it treats
+        // any non-trigger collider (other than the player's own) as an obstacle. Spawn-point
+        // checks need that: relying on the "_충돌"/"_콜라이더" naming convention means any
+        // building or decoration collider that wasn't renamed correctly (as has happened
+        // before) would silently let enemies spawn inside it.
+        public static bool OverlapsSolidObstacle(Vector2 position, float radius, Collider2D[] buffer)
+        {
+            int count = Physics2D.OverlapCircleNonAlloc(position, radius, buffer);
+            for (int i = 0; i < count; i++)
+            {
+                var col = buffer[i];
+                if (col == null || col.isTrigger) continue;
+                if (col.CompareTag("Player")) continue;
+                return true;
+            }
+
+            return false;
+        }
+
+        private static readonly RaycastHit2D[] LineOfSightBuffer = new RaycastHit2D[8];
+        private static readonly ContactFilter2D LineOfSightFilter = BuildSolidFilter();
+
+        private static ContactFilter2D BuildSolidFilter()
+        {
+            var filter = new ContactFilter2D();
+            filter.NoFilter();
+            filter.useTriggers = false;
+            return filter;
+        }
+
+        // Enemy/Player colliders never match IsFootCollider (their names aren't
+        // "fw"/"_충돌"/"_콜라이더"), so a ray happening to pass through one on the way
+        // to the target doesn't falsely count as blocked.
+        public static bool IsLineOfSightBlocked(Vector2 from, Vector2 to)
+        {
+            Vector2 offset = to - from;
+            float distance = offset.magnitude;
+            if (distance < 0.01f) return false;
+
+            int count = Physics2D.Raycast(from, offset / distance, LineOfSightFilter, LineOfSightBuffer, distance);
+            for (int i = 0; i < count; i++)
+            {
+                if (IsFootCollider(LineOfSightBuffer[i].collider)) return true;
+            }
+
+            return false;
+        }
     }
 }

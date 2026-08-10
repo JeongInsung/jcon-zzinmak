@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using Zzinmak.Environment;
 
 namespace Zzinmak.Enemies
 {
@@ -22,7 +23,7 @@ namespace Zzinmak.Enemies
             active.Remove(enemy);
         }
 
-        public static Transform GetNearest(Vector3 from, float maxRange)
+        public static Transform GetNearest(Vector3 from, float maxRange, bool requireLineOfSight = false)
         {
             Transform nearest = null;
             float nearestDistSqr = maxRange * maxRange;
@@ -33,11 +34,11 @@ namespace Zzinmak.Enemies
                 if (enemy == null || !enemy.isActiveAndEnabled || enemy.IsDead) continue;
 
                 float distSqr = (enemy.transform.position - from).sqrMagnitude;
-                if (distSqr <= nearestDistSqr)
-                {
-                    nearestDistSqr = distSqr;
-                    nearest = enemy.transform;
-                }
+                if (distSqr > nearestDistSqr) continue;
+                if (requireLineOfSight && BuildingCollision.IsLineOfSightBlocked(from, enemy.transform.position)) continue;
+
+                nearestDistSqr = distSqr;
+                nearest = enemy.transform;
             }
 
             return nearest;

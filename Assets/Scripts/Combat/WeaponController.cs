@@ -140,7 +140,7 @@ namespace Zzinmak.Combat
 
         private Transform FindNearestEnemy(float maxRange)
         {
-            return EnemyTracker.GetNearest(transform.position, maxRange);
+            return EnemyTracker.GetNearest(transform.position, maxRange, requireLineOfSight: true);
         }
 
         public float GetCurrentDamage()

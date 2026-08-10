@@ -9,18 +9,22 @@ namespace Zzinmak.Enemies
     public class BossProjectile : MonoBehaviour
     {
         [SerializeField] private float lifetime = 4f;
+        [Header("Damage over time (optional - tickCount 0 disables it)")]
+        [SerializeField] private float dotDamagePerTick = 0f;
+        [SerializeField] private float dotTickInterval = 1f;
+        [SerializeField] private int dotTickCount = 0;
 
         private Vector2 velocity;
         private float damage;
         private float remainingLife;
 
-        public void Launch(Vector3 targetPosition, float speed, float dmg)
+        public void Launch(Vector2 direction, float speed, float dmg)
         {
-            Vector2 dir = ((Vector2)targetPosition - (Vector2)transform.position).normalized;
+            Vector2 dir = direction.normalized;
             velocity = dir * speed;
             damage = dmg;
             remainingLife = lifetime;
-            transform.rotation = Quaternion.Euler(0f, 0f, Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg);
+            FaceDirection(dir);
         }
 
         private void Update()
@@ -32,6 +36,11 @@ namespace Zzinmak.Enemies
             {
                 ObjectPool.Instance.Return(gameObject);
             }
+        }
+
+        private void FaceDirection(Vector2 dir)
+        {
+            transform.rotation = Quaternion.Euler(0f, 0f, Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg);
         }
 
         private void OnTriggerEnter2D(Collider2D other)
@@ -48,6 +57,10 @@ namespace Zzinmak.Enemies
             if (health != null)
             {
                 health.TakeDamage(damage);
+                if (dotTickCount > 0)
+                {
+                    health.ApplyDamageOverTime(dotDamagePerTick, dotTickInterval, dotTickCount);
+                }
             }
 
             ObjectPool.Instance.Return(gameObject);

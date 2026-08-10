@@ -485,7 +485,7 @@ MonoBehaviour:
   orbitRadius: 2
   rotationSpeed: 90
   damage: 5
-  spriteAngleOffset: 90
+  spriteAngleOffset: -90
 --- !u!114 &7001775565017403690
 MonoBehaviour:
   m_ObjectHideFlags: 0

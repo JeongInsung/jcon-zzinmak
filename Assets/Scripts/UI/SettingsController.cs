@@ -14,12 +14,18 @@ namespace Zzinmak.UI
         private const string BgmPreMuteVolumeKey = "BGMVolumePreMute";
         private const string SfxPreMuteVolumeKey = "SFXVolumePreMute";
 
+        // 체크마크 그래픽만으로는 체크 여부가 잘 안 보여서, 체크박스 배경 자체도
+        // 켜짐/꺼짐에 따라 흰색과 이 색 사이를 오간다 (메뉴 버튼과 같은 톤).
+        private static readonly Color MuteCheckedColor = new Color(0.6045301f, 0.8962264f, 0.6931695f, 1f);
+
         [SerializeField] private GameObject settingsPanel;
         [SerializeField] private Slider masterSlider;
         [SerializeField] private Slider bgmSlider;
         [SerializeField] private Slider sfxSlider;
         [SerializeField] private Toggle bgmMuteToggle;
         [SerializeField] private Toggle sfxMuteToggle;
+        [SerializeField] private Image bgmMuteCheckbox;
+        [SerializeField] private Image sfxMuteCheckbox;
 
         private void Start()
         {
@@ -53,12 +59,19 @@ namespace Zzinmak.UI
                 bgmMuteToggle.SetIsOnWithoutNotify(bgmMuted);
                 bgmMuteToggle.onValueChanged.AddListener(OnBgmMuteToggleChanged);
             }
+            SetMuteCheckboxVisual(bgmMuteCheckbox, bgmMuted);
 
             if (sfxMuteToggle != null)
             {
                 sfxMuteToggle.SetIsOnWithoutNotify(sfxMuted);
                 sfxMuteToggle.onValueChanged.AddListener(OnSfxMuteToggleChanged);
             }
+            SetMuteCheckboxVisual(sfxMuteCheckbox, sfxMuted);
+        }
+
+        private static void SetMuteCheckboxVisual(Image checkbox, bool muted)
+        {
+            if (checkbox != null) checkbox.color = muted ? MuteCheckedColor : Color.white;
         }
 
         public void Open()
@@ -87,6 +100,7 @@ namespace Zzinmak.UI
             {
                 PlayerPrefs.SetInt(BgmMutedKey, 0);
                 bgmMuteToggle.SetIsOnWithoutNotify(false);
+                SetMuteCheckboxVisual(bgmMuteCheckbox, false);
             }
 
             GameEvents.RaiseBgmVolumeChanged(value);
@@ -100,6 +114,7 @@ namespace Zzinmak.UI
             {
                 PlayerPrefs.SetInt(SfxMutedKey, 0);
                 sfxMuteToggle.SetIsOnWithoutNotify(false);
+                SetMuteCheckboxVisual(sfxMuteCheckbox, false);
             }
 
             GameEvents.RaiseSfxVolumeChanged(value);
@@ -107,6 +122,8 @@ namespace Zzinmak.UI
 
         private void OnBgmMuteToggleChanged(bool muted)
         {
+            SetMuteCheckboxVisual(bgmMuteCheckbox, muted);
+
             if (muted)
             {
                 float current = PlayerPrefs.GetFloat(BgmVolumeKey, 1f);
@@ -126,6 +143,8 @@ namespace Zzinmak.UI
 
         private void OnSfxMuteToggleChanged(bool muted)
         {
+            SetMuteCheckboxVisual(sfxMuteCheckbox, muted);
+
             if (muted)
             {
                 float current = PlayerPrefs.GetFloat(SfxVolumeKey, 1f);

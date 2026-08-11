@@ -7,8 +7,6 @@ namespace Zzinmak.UI
 {
     public class GameOverController : MonoBehaviour
     {
-        private const string BestSurvivalTimeKey = "BestSurvivalTime";
-
         [SerializeField] private GameObject gameOverPanel;
         [SerializeField] private TMP_Text survivalTimeText;
         [SerializeField] private TMP_Text killCountText;
@@ -41,17 +39,12 @@ namespace Zzinmak.UI
                 killCountText.text = "처치 수  " + kills;
             }
 
-            float bestTime = PlayerPrefs.GetFloat(BestSurvivalTimeKey, 0f);
-            bool isNewRecord = elapsed > bestTime;
-            if (isNewRecord)
-            {
-                bestTime = elapsed;
-                PlayerPrefs.SetFloat(BestSurvivalTimeKey, bestTime);
-            }
+            bool isNewRecord = SurvivalRecords.TrySubmit(elapsed);
+            float bestTime = SurvivalRecords.GetAll()[0];
 
             if (bestTimeText != null)
             {
-                bestTimeText.text = "최고 기록  " + FormatTime(bestTime) + (isNewRecord ? "  NEW!" : "");
+                bestTimeText.text = "최고 기록  " + SurvivalRecords.Format(bestTime) + (isNewRecord ? "  NEW!" : "");
             }
 
             if (gameOverPanel != null)

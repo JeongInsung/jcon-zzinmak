@@ -100,28 +100,45 @@ namespace Zzinmak.Enemies
             if (target == null || data == null || IsDead || !CanMove || IsStunned) return;
 
             Vector2 dir = ((Vector2)target.position - body.position).normalized;
-            Vector2 desired = body.position + dir * data.moveSpeed * Time.fixedDeltaTime;
 
-            body.MovePosition(ResolveMovement(body.position, desired));
+            body.MovePosition(ResolveMovement(body.position, dir));
 
             UpdateFacing(dir.x);
         }
 
+        // Angles to steer toward on either side of the direct path, tried nearest-first.
+        // 15 deg increment out to 150 deg gives a smooth turn around most building
+        // corners while still bailing out (returning to "stay put") if fully boxed in.
+        private static readonly float[] SteerAngles =
+        {
+            15f, -15f, 30f, -30f, 45f, -45f, 60f, -60f, 75f, -75f,
+            90f, -90f, 105f, -105f, 120f, -120f, 135f, -135f, 150f, -150f
+        };
+
         // Buildings aren't on their own physics layer, so blocking is done by name:
         // BuildingColliderTool.cs generates a non-trigger "fw" ("footwall") child under
-        // each building for exactly this purpose. X and Y are resolved separately so the
-        // enemy slides along a wall instead of stopping dead when approaching at an angle.
-        private Vector2 ResolveMovement(Vector2 current, Vector2 desired)
+        // each building for exactly this purpose. Resolving X/Y independently made the
+        // enemy grind along the wall face when approaching at an angle, so instead the
+        // direct path is tried first and, if blocked, progressively wider angles to
+        // either side until one is clear - steering around the obstacle instead of
+        // sliding along it. Most enemies take the direct path every step (one overlap
+        // check); the angle scan only runs for the minority currently pressed against
+        // something, and stops at the first clear angle rather than checking all 20.
+        private Vector2 ResolveMovement(Vector2 current, Vector2 dir)
         {
-            Vector2 next = current;
+            float step = data.moveSpeed * Time.fixedDeltaTime;
 
-            Vector2 tryX = new Vector2(desired.x, current.y);
-            if (!IsBlockedByBuilding(tryX)) next.x = desired.x;
+            Vector2 direct = current + dir * step;
+            if (!IsBlockedByBuilding(direct)) return direct;
 
-            Vector2 tryY = new Vector2(next.x, desired.y);
-            if (!IsBlockedByBuilding(tryY)) next.y = desired.y;
+            foreach (float angle in SteerAngles)
+            {
+                Vector2 steeredDir = Quaternion.Euler(0f, 0f, angle) * dir;
+                Vector2 candidate = current + steeredDir * step;
+                if (!IsBlockedByBuilding(candidate)) return candidate;
+            }
 
-            return next;
+            return current;
         }
 
         private bool IsBlockedByBuilding(Vector2 position)

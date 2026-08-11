@@ -9,6 +9,8 @@ namespace Zzinmak.Enemies
     public class BossProjectile : MonoBehaviour
     {
         [SerializeField] private float lifetime = 4f;
+        [Tooltip("If true, this projectile flies straight through building colliders instead of despawning on impact.")]
+        [SerializeField] private bool passesThroughBuildings = false;
         [Header("Damage over time (optional - tickCount 0 disables it)")]
         [SerializeField] private float dotDamagePerTick = 0f;
         [SerializeField] private float dotTickInterval = 1f;
@@ -45,7 +47,7 @@ namespace Zzinmak.Enemies
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (BuildingCollision.IsFootCollider(other))
+            if (!passesThroughBuildings && BuildingCollision.IsFootCollider(other))
             {
                 ObjectPool.Instance.Return(gameObject);
                 return;

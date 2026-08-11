@@ -17,4 +17,4 @@ MonoBehaviour:
   moveSpeed: 0.65
   contactDamage: 8
   contactDamageInterval: 1
-  expReward: 60
+  expReward: 1

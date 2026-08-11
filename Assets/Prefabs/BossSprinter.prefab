@@ -343,7 +343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 375ebdee94d22584ebc4e646ba4e48e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Enemies.Enemy
-  expGemPrefab: {fileID: 2506447470019471358, guid: 96da21b780eec1342b43b1936eb31517, type: 3}
+  expGemPrefab: {fileID: 7412345698760001, guid: 97947781ee1eeec43b52b649581449a4, type: 3}
   deathReturnDelay: 0
   spriteFacesLeftByDefault: 1
   shadow: {fileID: 4408138319145046696}

@@ -101,7 +101,7 @@ namespace Zzinmak.Environment
 
         public void EnterBuilding()
         {
-            if (playerInBuilding) return;
+            if (playerInBuilding || MonsterWaveManager.IsWaveActive) return;
 
             playerInBuilding = true;
             interiorCleared = false;

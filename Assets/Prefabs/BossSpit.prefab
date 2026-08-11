@@ -170,3 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Enemies.BossProjectile
   lifetime: 4
+  passesThroughBuildings: 1
+  dotDamagePerTick: 0
+  dotTickInterval: 1
+  dotTickCount: 0

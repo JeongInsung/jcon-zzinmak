@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 199485530d547b14cabe783910a159bf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5525168472481929592
+    second: siren-Photoroom_0
+  - first:
+      213: -104578034621279695
+    second: siren-Photoroom_1
+  - first:
+      213: -3144317160058573753
+    second: siren-Photoroom_2
+  - first:
+      213: -5277511189944549924
+    second: siren-Photoroom_3
+  - first:
+      213: -540263049410604835
+    second: siren-Photoroom_4
+  - first:
+      213: -8566215639456878383
+    second: siren-Photoroom_5
+  - first:
+      213: 6520884527833465606
+    second: siren-Photoroom_6
+  - first:
+      213: 7338493479504938068
+    second: siren-Photoroom_7
+  - first:
+      213: -4962970659630720544
+    second: siren-Photoroom_8
+  - first:
+      213: -4014618241244842782
+    second: siren-Photoroom_9
+  - first:
+      213: -4668989838919312716
+    second: siren-Photoroom_10
+  - first:
+      213: -1612178063971265457
+    second: siren-Photoroom_11
+  - first:
+      213: -8593765735149176917
+    second: siren-Photoroom_12
+  - first:
+      213: -4126186858845201388
+    second: siren-Photoroom_13
+  - first:
+      213: -4343945161933829672
+    second: siren-Photoroom_14
+  - first:
+      213: 4457759641277085565
+    second: siren-Photoroom_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: siren-Photoroom_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 506
+        width: 146
+        height: 186
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 879197eb3775dac40800000000000000
+      internalID: 5525168472481929592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: siren-Photoroom_1
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 506
+        width: 144
+        height: 186
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1321713e4d67c8ef0800000000000000
+      internalID: -104578034621279695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: siren-Photoroom_2
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 506
+        width: 144
+        height: 186
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74c2b85c3342d54d0800000000000000
+      internalID: -3144317160058573753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: siren-Photoroom_3
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 506
+        width: 142
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cddb431c88382c6b0800000000000000
+      internalID: -5277511189944549924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: siren-Photoroom_4
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 507
+        width: 142
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd09c967e999088f0800000000000000
+      internalID: -540263049410604835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: siren-Photoroom_5
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 507
+        width: 140
+        height: 184
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d0f6ccf240be1980800000000000000
+      internalID: -8566215639456878383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: siren-Photoroom_6
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 507
+        width: 141
+        height: 184
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 603cadecde5de7a50800000000000000
+      internalID: 6520884527833465606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: siren-Photoroom_7
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 507
+        width: 145
+        height: 186
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 454896840f097d560800000000000000
+      internalID: 7338493479504938068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: siren-Photoroom_8
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 192
+        width: 144
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e95602ea7cff1bb0800000000000000
+      internalID: -4962970659630720544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: siren-Photoroom_9
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 192
+        width: 143
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e43ccddaf53948c0800000000000000
+      internalID: -4014618241244842782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: siren-Photoroom_10
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 192
+        width: 143
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ba5e479a7a643fb0800000000000000
+      internalID: -4668989838919312716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: siren-Photoroom_11
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 192
+        width: 142
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f44d05ea79460a9e0800000000000000
+      internalID: -1612178063971265457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: siren-Photoroom_12
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 192
+        width: 141
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba77289789fccb880800000000000000
+      internalID: -8593765735149176917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: siren-Photoroom_13
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 192
+        width: 139
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41c95a1d9e6dcb6c0800000000000000
+      internalID: -4126186858845201388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: siren-Photoroom_14
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 192
+        width: 140
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d94823f3e437b3c0800000000000000
+      internalID: -4343945161933829672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: siren-Photoroom_15
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 192
+        width: 141
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d77b46886c42ddd30800000000000000
+      internalID: 4457759641277085565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e34d1948ca549cf449841c3d4621ffcd
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      siren-Photoroom_0: 5525168472481929592
+      siren-Photoroom_1: -104578034621279695
+      siren-Photoroom_10: -4668989838919312716
+      siren-Photoroom_11: -1612178063971265457
+      siren-Photoroom_12: -8593765735149176917
+      siren-Photoroom_13: -4126186858845201388
+      siren-Photoroom_14: -4343945161933829672
+      siren-Photoroom_15: 4457759641277085565
+      siren-Photoroom_2: -3144317160058573753
+      siren-Photoroom_3: -5277511189944549924
+      siren-Photoroom_4: -540263049410604835
+      siren-Photoroom_5: -8566215639456878383
+      siren-Photoroom_6: 6520884527833465606
+      siren-Photoroom_7: 7338493479504938068
+      siren-Photoroom_8: -4962970659630720544
+      siren-Photoroom_9: -4014618241244842782
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

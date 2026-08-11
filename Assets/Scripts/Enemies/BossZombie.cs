@@ -83,10 +83,14 @@ namespace Zzinmak.Enemies
             var target = enemy.Target;
             if (target == null) return;
 
+            float distance = Vector2.Distance(transform.position, target.position);
+
+            // Stands its ground once the player is within ranged range - only closes
+            // in from outside it, rather than always walking up into melee.
+            enemy.CanMove = distance > rangedRange;
+
             meleeTimer -= Time.deltaTime;
             rangedTimer -= Time.deltaTime;
-
-            float distance = Vector2.Distance(transform.position, target.position);
 
             if (distance <= meleeRange && meleeTimer <= 0f)
             {

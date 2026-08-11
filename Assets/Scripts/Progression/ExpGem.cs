@@ -10,6 +10,8 @@ namespace Zzinmak.Progression
         [SerializeField] private float absorbDistance = 0.2f;
         [SerializeField] private float lifetime = 5f;
         [SerializeField] private AudioClip pickupClip;
+        [Tooltip("Boss gem: grants exactly one level regardless of the current exp curve, instead of adding expValue as exp.")]
+        [SerializeField] private bool guaranteedLevelUp = false;
 
         private Transform player;
         private PlayerStats playerStats;
@@ -86,7 +88,14 @@ namespace Zzinmak.Progression
                     Destroy(soundObj, pickupClip.length);
                 }
 
-                playerLevel.AddExp(expValue);
+                if (guaranteedLevelUp)
+                {
+                    playerLevel.ForceLevelUp();
+                }
+                else
+                {
+                    playerLevel.AddExp(expValue);
+                }
                 ObjectPool.Instance.Return(gameObject);
             }
         }

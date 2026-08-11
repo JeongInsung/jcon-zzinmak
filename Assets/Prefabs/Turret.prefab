@@ -80,7 +80,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 8400052887847806915, guid: b22915da9ded79b40b103a33b0328b78, type: 3}
   m_Color: {r: 0.4527927, g: 0.6132076, b: 0.4078409, a: 1}
@@ -109,6 +109,7 @@ MonoBehaviour:
   fireInterval: 1
   projectileSpeed: 14
   burstDelay: 0.08
+  targetRefreshInterval: 0.1
   levelSprites:
   - {fileID: 8400052887847806915, guid: b22915da9ded79b40b103a33b0328b78, type: 3}
   - {fileID: -981143437598366214, guid: b22915da9ded79b40b103a33b0328b78, type: 3}

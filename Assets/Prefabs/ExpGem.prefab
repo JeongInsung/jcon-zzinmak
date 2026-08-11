@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5364046185039812236}
-  - component: {fileID: 4448492413705107481}
   - component: {fileID: 3821525089665571529}
+  - component: {fileID: 4448492413705107481}
   - component: {fileID: 5019741754009145589}
   m_Layer: 11
   m_Name: ExpGem
@@ -34,6 +34,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3821525089665571529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2506447470019471358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c65613441255474f8ce1748dd77fa69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Progression.ExpGem
+  moveSpeed: 8
+  absorbDistance: 0.2
+  lifetime: 5
+  pickupClip: {fileID: 8300000, guid: 65ba2531e17bd6649977e93bfa7714f6, type: 3}
 --- !u!212 &4448492413705107481
 SpriteRenderer:
   serializedVersion: 2
@@ -93,22 +109,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &3821525089665571529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2506447470019471358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c65613441255474f8ce1748dd77fa69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Progression.ExpGem
-  moveSpeed: 8
-  absorbDistance: 0.2
-  lifetime: 5
-  pickupClip: {fileID: 8300000, guid: 65ba2531e17bd6649977e93bfa7714f6, type: 3}
 --- !u!114 &5019741754009145589
 MonoBehaviour:
   m_ObjectHideFlags: 0

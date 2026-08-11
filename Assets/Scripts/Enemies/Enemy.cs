@@ -13,6 +13,12 @@ namespace Zzinmak.Enemies
     public class Enemy : MonoBehaviour
     {
         [SerializeField] private GameObject expGemPrefab;
+        [Header("Bonus gem (optional - leave prefab empty to disable)")]
+        [Tooltip("Extra gem that can additionally drop alongside the normal exp gem, once the player has reached the required level.")]
+        [SerializeField] private GameObject bonusGemPrefab;
+        [SerializeField] private int bonusGemMinPlayerLevel = 10;
+        [SerializeField] private float bonusGemDropChance = 0.1f;
+        [SerializeField] private int bonusGemValue = 5;
         [Tooltip("Seconds to wait after death before returning to the pool. 0 = return immediately (default zombie behavior). Set >0 to let a death animation play first.")]
         [SerializeField] private float deathReturnDelay = 0f;
         [Tooltip("Set true if the source art faces left by default (most sprites here face right). Flips the flipX mapping so the enemy still visually faces the direction it's moving/chasing.")]
@@ -195,7 +201,9 @@ namespace Zzinmak.Enemies
 
             GameManager.Instance.AddKill();
 
-            if (expGemPrefab != null)
+            // Bonus gem replaces the normal exp gem rather than dropping alongside it -
+            // only one gem should ever come out of a single kill.
+            if (!TryDropBonusGem() && expGemPrefab != null)
             {
                 var gemObj = ObjectPool.Instance.Get(expGemPrefab, transform.position, Quaternion.identity);
                 var gem = gemObj.GetComponent<ExpGem>();
@@ -212,6 +220,20 @@ namespace Zzinmak.Enemies
             {
                 ObjectPool.Instance.Return(gameObject);
             }
+        }
+
+        private bool TryDropBonusGem()
+        {
+            if (bonusGemPrefab == null || target == null) return false;
+
+            var playerLevel = target.GetComponent<Player.PlayerLevel>();
+            if (playerLevel == null || playerLevel.Level < bonusGemMinPlayerLevel) return false;
+            if (UnityEngine.Random.value >= bonusGemDropChance) return false;
+
+            var bonusObj = ObjectPool.Instance.Get(bonusGemPrefab, transform.position, Quaternion.identity);
+            var bonusGem = bonusObj.GetComponent<ExpGem>();
+            bonusGem.SetValue(bonusGemValue);
+            return true;
         }
 
         private IEnumerator ReturnToPoolAfterDelay(float delay)

@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 76468e925460ec34697a32d9f89950ab
+guid: c7eda70fa0b86814683a9353e02617b9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8873926187012147737
-    second: muzzle_rifle_0
-  - first:
-      213: 820884891691385435
-    second: muzzle_rifle_1
-  - first:
-      213: -8075540971747937422
-    second: muzzle_rifle_2
+      213: -9021103063425184942
+    second: NicePng_vignette-png_3797450_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -119,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: muzzle_rifle_0
+      name: NicePng_vignette-png_3797450_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
-        width: 12
-        height: 17
+        width: 768
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,52 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 91a45ebd9d4862b70800000000000000
-      internalID: 8873926187012147737
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: muzzle_rifle_1
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 0
-        width: 12
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b5200c2b57e546b00800000000000000
-      internalID: 820884891691385435
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: muzzle_rifle_2
-      rect:
-        serializedVersion: 2
-        x: 28
-        y: 0
-        width: 14
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 273f9d1b54aedef80800000000000000
-      internalID: -8075540971747937422
+      spriteID: 25b8a564f8a9ec280800000000000000
+      internalID: -9021103063425184942
       vertices: []
       indices: 
       edges: []
@@ -198,9 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      muzzle_rifle_0: 8873926187012147737
-      muzzle_rifle_1: 820884891691385435
-      muzzle_rifle_2: -8075540971747937422
+      NicePng_vignette-png_3797450_0: -9021103063425184942
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

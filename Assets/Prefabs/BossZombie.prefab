@@ -276,7 +276,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.017344, y: -0.29797, z: 0}
-  m_LocalScale: {x: 1.2295281, y: 1.2295281, z: 2.4590561}
+  m_LocalScale: {x: 0.7187575, y: 0.7187575, z: 1.437515}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7226052593933591796}
@@ -417,7 +417,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 375ebdee94d22584ebc4e646ba4e48e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Enemies.Enemy
-  expGemPrefab: {fileID: 2506447470019471358, guid: 96da21b780eec1342b43b1936eb31517, type: 3}
+  expGemPrefab: {fileID: 7412345698760001, guid: 97947781ee1eeec43b52b649581449a4, type: 3}
+  bonusGemPrefab: {fileID: 0}
+  bonusGemMinPlayerLevel: 10
+  bonusGemDropChance: 0.1
+  bonusGemValue: 5
   deathReturnDelay: 1.1
   spriteFacesLeftByDefault: 0
   shadow: {fileID: 7226052593933591796}

@@ -15,9 +15,15 @@ namespace Zzinmak.Enemies
         private static readonly int RangedState = Animator.StringToHash("Ranged");
         private const float SummonAnimDuration = 0.8f;
 
+        [System.Serializable]
+        public class SummonVariant
+        {
+            public GameObject prefab;
+            public EnemyData data;
+        }
+
         [Header("Summon")]
-        [SerializeField] private GameObject summonPrefab;
-        [SerializeField] private EnemyData summonData;
+        [SerializeField] private SummonVariant[] summonVariants;
         [SerializeField] private float summonInterval = 8f;
         [SerializeField] private int summonCountMin = 2;
         [SerializeField] private int summonCountMax = 3;
@@ -84,7 +90,7 @@ namespace Zzinmak.Enemies
         {
             if (enemy.IsDead) return;
 
-            if (!isAttacking && summonPrefab != null && summonData != null)
+            if (!isAttacking && summonVariants != null && summonVariants.Length > 0)
             {
                 summonTimer -= Time.deltaTime;
                 if (summonTimer <= 0f)
@@ -156,12 +162,15 @@ namespace Zzinmak.Enemies
 
             for (int i = 0; i < count; i++)
             {
+                var variant = summonVariants[Random.Range(0, summonVariants.Length)];
+                if (variant.prefab == null || variant.data == null) continue;
+
                 Vector2 offset = Random.insideUnitCircle * summonRadius;
                 Vector3 spawnPos = transform.position + (Vector3)offset;
 
-                var zombieObj = ObjectPool.Instance.Get(summonPrefab, spawnPos, Quaternion.identity);
+                var zombieObj = ObjectPool.Instance.Get(variant.prefab, spawnPos, Quaternion.identity);
                 var zombieEnemy = zombieObj.GetComponent<Enemy>();
-                zombieEnemy.Initialize(summonData, enemy.Target, 1f);
+                zombieEnemy.Initialize(variant.data, enemy.Target, 1f);
 
                 activeSummons.Add(zombieObj);
                 OnSummon?.Invoke(zombieObj);

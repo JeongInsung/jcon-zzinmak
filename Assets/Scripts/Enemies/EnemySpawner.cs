@@ -57,6 +57,7 @@ namespace Zzinmak.Enemies
         private void Update()
         {
             if (GameManager.Instance != null && GameManager.Instance.State != GameState.Playing) return;
+            if (MonsterWaveManager.IsWaveActive) return;
 
             spawnTimer -= Time.deltaTime;
             if (spawnTimer <= 0f)

@@ -12,6 +12,7 @@ namespace Zzinmak.Combat
         [SerializeField] private float fireInterval = 1f;
         [SerializeField] private float projectileSpeed = 14f;
         [SerializeField] private float burstDelay = 0.08f;
+        [SerializeField] private float targetRefreshInterval = 0.1f;
         [Tooltip("Sprite shown for each turret level. Index 0 = level 1, index 1 = level 2, etc. If the level exceeds the array, the last entry is reused.")]
         [SerializeField] private Sprite[] levelSprites;
 
@@ -20,6 +21,8 @@ namespace Zzinmak.Combat
         private float damage;
         private float remainingLife;
         private float cooldown;
+        private float targetRefreshTimer;
+        private Transform currentTarget;
 
         private void Awake()
         {
@@ -32,6 +35,8 @@ namespace Zzinmak.Combat
             damage = turretDamage;
             remainingLife = duration;
             cooldown = 0f;
+            targetRefreshTimer = 0f;
+            currentTarget = null;
 
             ApplyLevelSprite();
         }
@@ -53,14 +58,20 @@ namespace Zzinmak.Combat
                 return;
             }
 
-            var target = EnemyTracker.GetNearest(transform.position, attackRange);
-            if (target != null)
+            targetRefreshTimer -= Time.deltaTime;
+            if (targetRefreshTimer <= 0f)
             {
-                FaceTarget(target.position);
+                targetRefreshTimer = targetRefreshInterval;
+                currentTarget = EnemyTracker.GetNearest(transform.position, attackRange);
+            }
+
+            if (currentTarget != null)
+            {
+                FaceTarget(currentTarget.position);
             }
 
             cooldown -= Time.deltaTime;
-            if (cooldown <= 0f && target != null)
+            if (cooldown <= 0f && currentTarget != null)
             {
                 cooldown = fireInterval;
                 StartCoroutine(FireBurst());

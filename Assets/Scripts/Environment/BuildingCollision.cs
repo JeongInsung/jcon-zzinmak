@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Zzinmak.Environment
@@ -14,11 +15,23 @@ namespace Zzinmak.Environment
     // extra segments silently stop blocking zombies/projectiles/spawn checks.
     public static class BuildingCollision
     {
+        // Building colliders are static level geometry - name (and therefore the
+        // classification below) never changes after scene load, but Collider2D.name
+        // is a native-to-managed marshalled call that allocates a new string on every
+        // access. This is checked for every overlap/raycast hit on every enemy/turret
+        // frame, so results are cached per collider instance to avoid that per-frame GC churn.
+        private static readonly Dictionary<int, bool> FootColliderCache = new Dictionary<int, bool>();
+
         public static bool IsFootCollider(Collider2D col)
         {
+            int id = col.GetInstanceID();
+            if (FootColliderCache.TryGetValue(id, out bool cached)) return cached;
+
             string name = StripTrailingIndex(col.gameObject.name);
-            return name.EndsWith("_충돌") || name.EndsWith("_콜라이더")
+            bool isFoot = name.EndsWith("_충돌") || name.EndsWith("_콜라이더")
                 || name == "fw" || name.StartsWith("fw (") || name.StartsWith("fw(");
+            FootColliderCache[id] = isFoot;
+            return isFoot;
         }
 
         private static string StripTrailingIndex(string name)

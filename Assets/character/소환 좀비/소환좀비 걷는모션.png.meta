@@ -158,10 +158,10 @@ TextureImporter:
         x: 0
         y: 617
         width: 216
-        height: 407
+        height: 319
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 91}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -290,10 +290,10 @@ TextureImporter:
         x: 1315
         y: 616
         width: 221
-        height: 408
+        height: 323
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 85}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []

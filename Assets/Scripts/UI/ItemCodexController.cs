@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -5,9 +6,10 @@ using Zzinmak.Data;
 
 namespace Zzinmak.UI
 {
-    // 메인메뉴의 아이템 도감. 9개 타일은 순서가 고정이라 배열 인덱스로 직접 다룬다.
-    // ItemCollection이 기록한 "최초 획득 여부"를 읽어서 아이콘/이름을 실물 또는 검은 빈 칸+"???"로 보여주고,
-    // 타일을 클릭하면 같은 정보를 상세 팝업에 크게 띄운다.
+    // 메인메뉴의 아이템 도감. `items`는 도감에 등록될 수 있는 귀속 아이템 "풀"이고,
+    // 실제로 어느 타일에 뜨는지는 고정 인덱스가 아니라 ItemCollection이 기록한 "먹은 순서"로
+    // 정해진다 - 첫 번째로 먹은 귀속 아이템이 타일 0, 두 번째가 타일 1... 아직 안 먹은 나머지
+    // 타일은 전부 빈 칸+"???". 나중에 귀속 아이템을 추가할 땐 `items`에 넣기만 하면 된다.
     public class ItemCodexController : MonoBehaviour
     {
         [SerializeField] private ItemData[] items = new ItemData[9];
@@ -22,22 +24,35 @@ namespace Zzinmak.UI
 
         private const string LockedLabel = "???";
 
+        private readonly List<ItemData> displayedItems = new List<ItemData>();
+
         // 메뉴로 돌아올 때마다(게임 한 판 하고 온 뒤에도) 최신 수집 상태를 반영한다.
         private void OnEnable()
         {
-            int count = Mathf.Min(Mathf.Min(items.Length, tileButtons.Length), Mathf.Min(tileIcons.Length, tileLabels.Length));
-            for (int i = 0; i < count; i++)
+            displayedItems.Clear();
+            foreach (string collectedName in ItemCollection.GetCollectionOrder())
             {
-                var item = items[i];
-                if (item == null) continue;
+                foreach (var candidate in items)
+                {
+                    if (candidate != null && candidate.name == collectedName)
+                    {
+                        displayedItems.Add(candidate);
+                        break;
+                    }
+                }
+            }
 
-                bool unlocked = ItemCollection.IsUnlocked(item);
+            int tileCount = Mathf.Min(Mathf.Min(tileButtons.Length, tileIcons.Length), tileLabels.Length);
+            for (int i = 0; i < tileCount; i++)
+            {
+                var item = i < displayedItems.Count ? displayedItems[i] : null;
+                bool unlocked = item != null;
 
                 if (tileIcons[i] != null)
                 {
-                    // 미획득 아이템은 실루엣(그림자)을 보여주지 않고 아이콘 자체를 꺼서,
+                    // 미획득 칸은 실루엣(그림자)을 보여주지 않고 아이콘 자체를 꺼서,
                     // 타일 배경의 검은 자리가 그대로 빈 칸처럼 보이게 한다.
-                    tileIcons[i].sprite = item.icon;
+                    tileIcons[i].sprite = unlocked ? item.icon : null;
                     tileIcons[i].enabled = unlocked;
                 }
 
@@ -55,10 +70,10 @@ namespace Zzinmak.UI
 
         private void ShowDetail(int index)
         {
-            if (index < 0 || index >= items.Length) return;
+            if (index < 0 || index >= displayedItems.Count) return;
 
-            var item = items[index];
-            if (item == null || !ItemCollection.IsUnlocked(item)) return;
+            var item = displayedItems[index];
+            if (item == null) return;
 
             if (detailIcon != null) detailIcon.sprite = item.icon;
             if (detailTitle != null) detailTitle.text = item.itemName;

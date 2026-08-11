@@ -9,6 +9,7 @@ namespace Zzinmak.Data
     public static class ItemCollection
     {
         private const string KeyPrefix = "ItemCollected_";
+        private const string OrderKey = "ItemCollectionOrder";
 
         public static bool IsUnlocked(ItemData item)
         {
@@ -19,8 +20,30 @@ namespace Zzinmak.Data
         public static void MarkCollected(ItemData item)
         {
             if (item == null) return;
-            PlayerPrefs.SetInt(KeyPrefix + item.name, 1);
+
+            string key = KeyPrefix + item.name;
+            if (PlayerPrefs.GetInt(key, 0) != 1)
+            {
+                PlayerPrefs.SetInt(key, 1);
+                AppendToOrder(item.name);
+            }
+
             PlayerPrefs.Save();
+        }
+
+        private static void AppendToOrder(string itemAssetName)
+        {
+            string existing = PlayerPrefs.GetString(OrderKey, "");
+            PlayerPrefs.SetString(OrderKey, string.IsNullOrEmpty(existing) ? itemAssetName : existing + "," + itemAssetName);
+        }
+
+        // Names of every collected item (asset name, e.g. "Item_LaserSight"), in the order
+        // each was first picked up. Lets the codex fill slots in pickup order instead of a
+        // fixed per-item slot, so it stays correct as bound items are added later.
+        public static string[] GetCollectionOrder()
+        {
+            string existing = PlayerPrefs.GetString(OrderKey, "");
+            return string.IsNullOrEmpty(existing) ? new string[0] : existing.Split(',');
         }
     }
 }

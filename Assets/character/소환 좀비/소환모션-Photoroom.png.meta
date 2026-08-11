@@ -155,12 +155,12 @@ TextureImporter:
       name: "\uC18C\uD658\uBAA8\uC158-Photoroom_0"
       rect:
         serializedVersion: 2
-        x: 0
+        x: 43
         y: 564
-        width: 329
-        height: 460
+        width: 286
+        height: 389
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -174,28 +174,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\uC18C\uD658\uBAA8\uC158-Photoroom_1"
-      rect:
-        serializedVersion: 2
-        x: 457
-        y: 853
-        width: 10
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4616f4c710ee7a610800000000000000
-      internalID: 1632535080093049188
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: "\uC18C\uD658\uBAA8\uC158-Photoroom_2"
       rect:
         serializedVersion: 2
@@ -204,7 +182,7 @@ TextureImporter:
         width: 228
         height: 389
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -226,7 +204,7 @@ TextureImporter:
         width: 243
         height: 435
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -245,10 +223,10 @@ TextureImporter:
         serializedVersion: 2
         x: 1166
         y: 564
-        width: 370
-        height: 460
+        width: 283
+        height: 343
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -262,50 +240,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\uC18C\uD658\uBAA8\uC158-Photoroom_5"
-      rect:
-        serializedVersion: 2
-        x: 457
-        y: 831
-        width: 10
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d640d79f437d0e810800000000000000
-      internalID: 1792669274217448557
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "\uC18C\uD658\uBAA8\uC158-Photoroom_6"
-      rect:
-        serializedVersion: 2
-        x: 457
-        y: 803
-        width: 10
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4f84c17b6dda861b0800000000000000
-      internalID: -5663085393711707916
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: "\uC18C\uD658\uBAA8\uC158-Photoroom_7"
       rect:
         serializedVersion: 2
@@ -314,7 +248,7 @@ TextureImporter:
         width: 7
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -331,12 +265,12 @@ TextureImporter:
       name: "\uC18C\uD658\uBAA8\uC158-Photoroom_8"
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 335
-        height: 471
+        x: 64
+        y: 102
+        width: 271
+        height: 369
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -358,7 +292,7 @@ TextureImporter:
         width: 297
         height: 394
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -380,7 +314,7 @@ TextureImporter:
         width: 391
         height: 397
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -394,50 +328,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\uC18C\uD658\uBAA8\uC158-Photoroom_11"
-      rect:
-        serializedVersion: 2
-        x: 1128
-        y: 416
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 37d196880d1b783f0800000000000000
-      internalID: -898554091437220493
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "\uC18C\uD658\uBAA8\uC158-Photoroom_12"
-      rect:
-        serializedVersion: 2
-        x: 1135
-        y: 423
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 52b430c1bcc6d4d00800000000000000
-      internalID: 958541915303922469
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: "\uC18C\uD658\uBAA8\uC158-Photoroom_13"
       rect:
         serializedVersion: 2
@@ -446,7 +336,7 @@ TextureImporter:
         width: 279
         height: 388
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -463,7 +353,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 40499e503007a4e4cba2fe7c68db324c
     internalID: 0
     vertices: []
     indices: 

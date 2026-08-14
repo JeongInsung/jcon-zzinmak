@@ -113,7 +113,6 @@ namespace Zzinmak.Progression
                     continue;
                 }
 
-                if (Random.value > upgrade.dropChance) continue;
                 randomPool.Add(upgrade);
             }
 
@@ -126,12 +125,33 @@ namespace Zzinmak.Progression
             int remaining = Mathf.Min(count - result.Count, randomPool.Count);
             for (int i = 0; i < remaining; i++)
             {
-                int index = Random.Range(0, randomPool.Count);
-                result.Add(randomPool[index]);
-                randomPool.RemoveAt(index);
+                var picked = PickWeighted(randomPool);
+                result.Add(picked);
+                randomPool.Remove(picked);
             }
 
             return result;
+        }
+
+        // Weighted-without-replacement draw: each upgrade's dropChance acts as its
+        // relative weight against the others still left in the pool, not an independent
+        // per-item probability.
+        private static UpgradeData PickWeighted(List<UpgradeData> pool)
+        {
+            float totalWeight = 0f;
+            foreach (var upgrade in pool) totalWeight += Mathf.Max(0f, upgrade.dropChance);
+
+            if (totalWeight <= 0f) return pool[Random.Range(0, pool.Count)];
+
+            float roll = Random.value * totalWeight;
+            float cumulative = 0f;
+            foreach (var upgrade in pool)
+            {
+                cumulative += Mathf.Max(0f, upgrade.dropChance);
+                if (roll <= cumulative) return upgrade;
+            }
+
+            return pool[pool.Count - 1];
         }
 
         private void OnUpgradeSelected(UpgradeData upgrade)

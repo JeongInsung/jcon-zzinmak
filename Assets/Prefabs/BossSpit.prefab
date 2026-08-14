@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 952952962890842443}
   - component: {fileID: 2945090719887918507}
   - component: {fileID: 3444520400973864997}
+  - component: {fileID: 9162383845907559591}
   m_Layer: 11
   m_Name: BossSpit
   m_TagString: Untagged
@@ -84,7 +85,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 8344e19adf79fd942b74c9363671135b, type: 3}
+  m_Sprite: {fileID: 2138938490238705117, guid: 77350ce28c69d3449ad26d322b7037ca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -174,3 +175,25 @@ MonoBehaviour:
   dotDamagePerTick: 0
   dotTickInterval: 1
   dotTickCount: 0
+--- !u!95 &9162383845907559591
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8245118517801346095}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0b442346795422d4f8c3dc8f9e471753, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

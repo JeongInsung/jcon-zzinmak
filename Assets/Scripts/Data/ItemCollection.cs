@@ -21,14 +21,33 @@ namespace Zzinmak.Data
         {
             if (item == null) return;
 
-            string key = KeyPrefix + item.name;
+            MarkCollectedName(item.name);
+            PlayerPrefs.Save();
+        }
+
+        // 클라우드에서 내려온 획득 순서(이름 배열)를 로컬과 합친다. 이미 획득한 항목은
+        // 건드리지 않고, 로컬에 없던 항목만 기존 순서 뒤에 추가된다.
+        public static void ImportCollected(string[] itemAssetNames)
+        {
+            if (itemAssetNames == null) return;
+
+            foreach (string name in itemAssetNames)
+            {
+                MarkCollectedName(name);
+            }
+            PlayerPrefs.Save();
+        }
+
+        private static void MarkCollectedName(string itemAssetName)
+        {
+            if (string.IsNullOrEmpty(itemAssetName)) return;
+
+            string key = KeyPrefix + itemAssetName;
             if (PlayerPrefs.GetInt(key, 0) != 1)
             {
                 PlayerPrefs.SetInt(key, 1);
-                AppendToOrder(item.name);
+                AppendToOrder(itemAssetName);
             }
-
-            PlayerPrefs.Save();
         }
 
         private static void AppendToOrder(string itemAssetName)

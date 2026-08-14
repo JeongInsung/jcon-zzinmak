@@ -47,6 +47,12 @@ namespace Zzinmak.UI
                 bestTimeText.text = "최고 기록  " + SurvivalRecords.Format(bestTime) + (isNewRecord ? "  NEW!" : "");
             }
 
+            if (isNewRecord)
+            {
+                PlayServices.Instance?.SubmitBestTime(bestTime);
+            }
+            PlayServices.Instance?.SaveToCloud();
+
             if (gameOverPanel != null)
             {
                 gameOverPanel.SetActive(true);

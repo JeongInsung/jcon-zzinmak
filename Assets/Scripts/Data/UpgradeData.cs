@@ -16,7 +16,8 @@ namespace Zzinmak.Data
         public UpgradeType type;
         public float value = 0.1f;
 
-        [Range(0f, 1f)]
+        [Tooltip("Relative weight for random selection among non-guaranteed, eligible upgrades - higher values appear more often relative to the others in the pool. Does not need to sum to any particular total.")]
+        [Range(0.1f, 3f)]
         public float dropChance = 1f;
 
         public bool isUnique = false;

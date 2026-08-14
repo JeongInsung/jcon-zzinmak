@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Data.ItemData
   itemName: "\uAC15\uD654\uB41C \uAE30\uB3D9\uB825"
   description: "\uC774\uB3D9 \uC18D\uB3C4\uAC00 20% \uC99D\uAC00\uD569\uB2C8\uB2E4."
-  icon: {fileID: 21300000, guid: b0aeb81654ebd1b49b9436b57fe24bdb, type: 3}
+  icon: {fileID: 6655047042656882048, guid: 3a92bd4d9ace3844ebd7fcf784e344e1, type: 3}
   type: 5
   value: 0.2

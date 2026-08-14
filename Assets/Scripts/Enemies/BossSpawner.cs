@@ -71,14 +71,19 @@ namespace Zzinmak.Enemies
         // Unlike Enemy.ResolveMovement's name-matched check, this treats any non-trigger
         // collider as an obstacle so a mis-named building/decoration collider can't create
         // a spawn-in-obstacle gap the way it would for movement blocking.
+        // Each retry widens the ring instead of resampling the same distance, since a fixed
+        // ring can sit entirely inside a building cluster (common near dense blocks) and would
+        // otherwise fail every attempt and fall through to a colliding candidate.
         private Vector3 FindSpawnPosition(GameObject prefab)
         {
             float checkRadius = GetObstacleCheckRadius(prefab);
             Vector2 candidate = player.position;
             for (int attempt = 0; attempt < MaxSpawnPositionAttempts; attempt++)
             {
-                Vector2 offset = Random.insideUnitCircle.normalized * spawnRadius;
-                candidate = (Vector2)player.position + offset;
+                float radius = spawnRadius * (1f + attempt * 0.25f);
+                Vector2 offset = Random.insideUnitCircle.normalized * radius;
+                Vector2 rawPos = (Vector2)player.position + offset;
+                candidate = MapBounds.Instance != null ? MapBounds.Instance.ClampToInterior(rawPos) : rawPos;
 
                 if (!BuildingCollision.OverlapsSolidObstacle(candidate, checkRadius, SpawnOverlapBuffer)) break;
             }

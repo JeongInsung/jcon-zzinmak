@@ -14,9 +14,25 @@ namespace Zzinmak.Enemies
         private const int MaxSpawnPositionAttempts = 8;
         private static readonly Collider2D[] SpawnOverlapBuffer = new Collider2D[8];
 
-        // EnemySpawner checks this to pause its own trickle-spawning while a wave is
-        // out, so the wave's monsters don't get lost in a flood of regular spawns.
+        // MissionManager checks this for the wave's whole duration (blocks entering
+        // buildings until every wave monster is down). EnemySpawner instead checks
+        // IsBlockingRegularSpawns below, which only holds for the first
+        // regularSpawnResumeDelay seconds - an unfinished wave shouldn't starve the
+        // player of any zombies to fight for the rest of its run.
         public static bool IsWaveActive { get; private set; }
+
+        private static float waveStartElapsedTime;
+        private static float spawnBlockDuration;
+
+        public static bool IsBlockingRegularSpawns
+        {
+            get
+            {
+                if (!IsWaveActive) return false;
+                float elapsed = GameManager.Instance != null ? GameManager.Instance.ElapsedTime : 0f;
+                return elapsed - waveStartElapsedTime < spawnBlockDuration;
+            }
+        }
 
         // Fired once per wave, right when it starts. UI alerts (siren/screen flash) hook
         // this instead of polling IsWaveActive, since they should only play briefly at
@@ -48,6 +64,8 @@ namespace Zzinmak.Enemies
         [SerializeField] private int countIncreasePerTierAfterTable = 5;
         [SerializeField] private WaveVariant[] bossVariants;
         [SerializeField] private float spawnRadius = 9f;
+        [Tooltip("웨이브 좀비를 다 못 잡아도, 웨이브 시작 후 이 시간(초)이 지나면 필드 좀비 스폰을 재개한다.")]
+        [SerializeField] private float regularSpawnResumeDelay = 20f;
 
         private void OnEnable()
         {
@@ -111,7 +129,12 @@ namespace Zzinmak.Enemies
             }
 
             IsWaveActive = activeWaveEnemies.Count > 0;
-            if (IsWaveActive) OnWaveStarted?.Invoke();
+            if (IsWaveActive)
+            {
+                waveStartElapsedTime = GameManager.Instance != null ? GameManager.Instance.ElapsedTime : 0f;
+                spawnBlockDuration = regularSpawnResumeDelay;
+                OnWaveStarted?.Invoke();
+            }
         }
 
         private GameObject SpawnEnemy(GameObject prefab, EnemyData data)

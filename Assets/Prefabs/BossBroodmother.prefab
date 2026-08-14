@@ -326,6 +326,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Enemies.Enemy
   expGemPrefab: {fileID: 7412345698760001, guid: 97947781ee1eeec43b52b649581449a4, type: 3}
+  bonusGemPrefab: {fileID: 0}
+  bonusGemMinPlayerLevel: 10
+  bonusGemDropChance: 0.1
+  bonusGemValue: 5
   deathReturnDelay: 0
   spriteFacesLeftByDefault: 1
   shadow: {fileID: 4371888366223404312}
@@ -472,7 +476,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_TargetDisplay: 0
 --- !u!114 &3706010570601993838
 MonoBehaviour:

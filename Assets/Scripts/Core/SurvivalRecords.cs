@@ -49,8 +49,19 @@ namespace Zzinmak.Core
             {
                 PlayerPrefs.SetFloat(KeyFor(i), records[i]);
             }
+            PlayerPrefs.Save();
 
             return insertIndex == 0;
+        }
+
+        // 클라우드와 병합된 TOP5를 통째로 덮어쓴다 (병합 결과는 이미 정렬되어 있다고 가정).
+        public static void SetAll(float[] records)
+        {
+            for (int i = 0; i < Count; i++)
+            {
+                PlayerPrefs.SetFloat(KeyFor(i), i < records.Length ? records[i] : 0f);
+            }
+            PlayerPrefs.Save();
         }
 
         public static string Format(float time)

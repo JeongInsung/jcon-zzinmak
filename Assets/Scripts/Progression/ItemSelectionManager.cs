@@ -14,10 +14,11 @@ namespace Zzinmak.Progression
     {
         public static ItemSelectionManager Instance { get; private set; }
 
-        private const string LaserSightUnlockedKey = "Item_LaserSightUnlocked";
+        // PlaySaveBridge가 클라우드 세이브 병합 대상으로 그대로 참조하는 키라 public.
+        public const string LaserSightUnlockedKey = "Item_LaserSightUnlocked";
         private const float LaserSightDamageBonus = 0.05f;
-        private const string NightVisionUnlockedKey = "Item_NightVisionUnlocked";
-        private const string DungeonLocatorUnlockedKey = "Item_DungeonLocatorUnlocked";
+        public const string NightVisionUnlockedKey = "Item_NightVisionUnlocked";
+        public const string DungeonLocatorUnlockedKey = "Item_DungeonLocatorUnlocked";
 
         [SerializeField] private LevelUpUI selectionUI;
         [SerializeField] private PlayerStats playerStats;
@@ -121,6 +122,7 @@ namespace Zzinmak.Progression
             // 도감 등록용 "한 번이라도 획득함" 표시. 3종의 영구 효과 재적용용 PlayerPrefs
             // 키(LaserSightUnlockedKey 등)와는 별개 관심사라 전체 아이템 종류 여기서 균일하게 기록한다.
             ItemCollection.MarkCollected(item);
+            PlayServices.Instance?.SaveToCloud();
 
             switch (item.type)
             {

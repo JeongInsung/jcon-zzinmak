@@ -10,6 +10,7 @@ namespace Zzinmak.Enemies
     public class BossZombie : MonoBehaviour
     {
         private static readonly int WalkState = Animator.StringToHash("Walk");
+        private static readonly int IdleState = Animator.StringToHash("Idle");
         private static readonly int Attack1State = Animator.StringToHash("Attack1");
         private static readonly int Attack2State = Animator.StringToHash("Attack2");
         private static readonly int DieState = Animator.StringToHash("Die");
@@ -30,6 +31,9 @@ namespace Zzinmak.Enemies
         [SerializeField] private float rangedSpitTime = 0.5f;
         [SerializeField] private GameObject spitProjectilePrefab;
         [SerializeField] private float spitSpeed = 6f;
+        [SerializeField] private int spitCount = 3;
+        [Tooltip("Total angle (degrees) the spitCount projectiles fan out across, centered on the target direction.")]
+        [SerializeField] private float spitSpreadAngle = 20f;
 
         [Header("UI")]
         [SerializeField] private BossHealthBar healthBar;
@@ -37,6 +41,7 @@ namespace Zzinmak.Enemies
         private Enemy enemy;
         private Animator animator;
         private bool isAttacking;
+        private bool isStandingGround;
         private float meleeTimer;
         private float rangedTimer;
         private float damageMultiplier = 1f;
@@ -55,6 +60,7 @@ namespace Zzinmak.Enemies
         private void OnEnable()
         {
             isAttacking = false;
+            isStandingGround = false;
             meleeTimer = 0f;
             rangedTimer = 0f;
             damageMultiplier = 1f;
@@ -87,7 +93,14 @@ namespace Zzinmak.Enemies
 
             // Stands its ground once the player is within ranged range - only closes
             // in from outside it, rather than always walking up into melee.
-            enemy.CanMove = distance > rangedRange;
+            bool standGround = distance <= rangedRange;
+            enemy.CanMove = !standGround;
+
+            if (standGround != isStandingGround)
+            {
+                isStandingGround = standGround;
+                animator.Play(standGround ? IdleState : WalkState, 0, 0f);
+            }
 
             meleeTimer -= Time.deltaTime;
             rangedTimer -= Time.deltaTime;
@@ -139,9 +152,7 @@ namespace Zzinmak.Enemies
             if (target != null && spitProjectilePrefab != null)
             {
                 Vector2 dir = ((Vector2)target.position - (Vector2)transform.position).normalized;
-                var projObj = ObjectPool.Instance.Get(spitProjectilePrefab, transform.position, Quaternion.identity);
-                var projectile = projObj.GetComponent<BossProjectile>();
-                projectile.Launch(dir, spitSpeed, rangedDamage * damageMultiplier);
+                FireSpitVolley(dir);
             }
 
             yield return new WaitForSeconds(Mathf.Max(0f, rangedClipDuration - rangedSpitTime));
@@ -149,14 +160,33 @@ namespace Zzinmak.Enemies
             EndAttack();
         }
 
+        // Fans spitCount projectiles evenly across spitSpreadAngle, centered on baseDir -
+        // e.g. count 3 fires one straight at the target plus one on either side.
+        private void FireSpitVolley(Vector2 baseDir)
+        {
+            float halfSpread = spitSpreadAngle * 0.5f;
+
+            for (int i = 0; i < spitCount; i++)
+            {
+                float t = spitCount > 1 ? (float)i / (spitCount - 1) : 0.5f;
+                float angle = Mathf.Lerp(-halfSpread, halfSpread, t);
+                Vector2 dir = Quaternion.Euler(0f, 0f, angle) * baseDir;
+
+                var projObj = ObjectPool.Instance.Get(spitProjectilePrefab, transform.position, Quaternion.identity);
+                var projectile = projObj.GetComponent<BossProjectile>();
+                projectile.Launch(dir, spitSpeed, rangedDamage * damageMultiplier);
+            }
+        }
+
         private void EndAttack()
         {
-            enemy.CanMove = true;
             isAttacking = false;
-            if (!enemy.IsDead)
-            {
-                animator.Play(WalkState, 0, 0f);
-            }
+            if (enemy.IsDead) return;
+
+            var target = enemy.Target;
+            isStandingGround = target != null && Vector2.Distance(transform.position, target.position) <= rangedRange;
+            enemy.CanMove = !isStandingGround;
+            animator.Play(isStandingGround ? IdleState : WalkState, 0, 0f);
         }
 
         private void HandleDeath()

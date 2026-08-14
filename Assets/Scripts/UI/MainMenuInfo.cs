@@ -17,7 +17,20 @@ namespace Zzinmak.UI
         [SerializeField] private TMP_Text versionText;
 
         // 게임 플레이 후 메뉴로 돌아왔을 때도 최신 기록이 반영되도록 OnEnable에서 매번 읽는다.
+        // 클라우드 동기화가 메뉴 표시보다 늦게 끝나는 경우(로그인/병합이 비동기라)를 위해
+        // OnDataSynced가 오면 한 번 더 다시 읽는다.
         private void OnEnable()
+        {
+            PlayServices.OnDataSynced += Refresh;
+            Refresh();
+        }
+
+        private void OnDisable()
+        {
+            PlayServices.OnDataSynced -= Refresh;
+        }
+
+        private void Refresh()
         {
             float[] records = SurvivalRecords.GetAll();
 

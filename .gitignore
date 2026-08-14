@@ -26,6 +26,11 @@
 # Recordings can get excessive in size
 /[Rr]ecordings/
 
+# Android signing keys must never be committed - losing this file just means a lost
+# keystore, committing it means a leaked signing key for the published app.
+*.keystore
+*.jks
+
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # /[Aa]ssets/AssetStoreTools*
 

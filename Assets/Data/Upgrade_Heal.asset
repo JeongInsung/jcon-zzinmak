@@ -17,6 +17,6 @@ MonoBehaviour:
   icon: {fileID: 6291172614262969420, guid: cb62f86be35bd7a4ba06055d6d897d3a, type: 3}
   type: 3
   value: 0.3
-  dropChance: 1
+  dropChance: 0.5
   isUnique: 0
   maxStack: 0

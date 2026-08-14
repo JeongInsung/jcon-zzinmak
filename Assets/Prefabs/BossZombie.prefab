@@ -151,7 +151,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_TargetDisplay: 0
 --- !u!114 &2981011472124643647
 MonoBehaviour:
@@ -472,6 +472,8 @@ MonoBehaviour:
   rangedSpitTime: 0.5
   spitProjectilePrefab: {fileID: 8245118517801346095, guid: 97c9608404337d24998801e8445349c4, type: 3}
   spitSpeed: 6
+  spitCount: 3
+  spitSpreadAngle: 20
   healthBar: {fileID: 2981011472124643647}
 --- !u!114 &7347218104485219790
 MonoBehaviour:

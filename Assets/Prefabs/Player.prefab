@@ -279,7 +279,7 @@ MonoBehaviour:
   maxHealth: 100
   moveSpeed: 4
   pickupRange: 1.5
-  damageMultiplier: 1
+  damageMultiplier: 2
   attackSpeedMultiplier: 1
   critChance: 0
   critMultiplier: 1.5
@@ -647,7 +647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aea71a20a68261c4bbaaf8400bf4cc47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Zzinmak.Combat.FlashbangSpawner
-  interval: 30
+  interval: 5
   throwDistance: 4
   grenadePrefab: {fileID: 4633976267528910867, guid: 0e44e82f963bf9947b447b714f695df9, type: 3}
 --- !u!1 &8799457722260672287
